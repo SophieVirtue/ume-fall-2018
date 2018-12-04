@@ -2,4 +2,35 @@
 # Page Templates
 --------------------------------------------------------------*/
 
-/* Front page */
+
+
+
+/* Front page */ 
+
+
+
+.banner {
+
+
+
+
+    @include desktop {
+
+        background: 
+        url(../../assets/grid-lines.png),
+        url(../../assets/background.png); 
+        // linear-gradient(180deg, purple, blue);
+        background-size: cover, 800px, 0, cover;
+        height: 200vh;
+        
+    }
+    
+}
+
+// .game-background {
+//     background: 
+//     url(../../assets/background.png);
+//     background-size: cover;
+//     background-position: top;
+//     height: 200vh;
+// }
