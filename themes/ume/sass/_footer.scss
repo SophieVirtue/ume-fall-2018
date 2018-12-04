@@ -1,0 +1,29 @@
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 53px;
+    font-size: 10px;
+    font-family: 'Futura-Bk-BT';
+    text-transform: uppercase;
+    background: linear-gradient( rgba(255,255,255,0.68) 0%, #000000 100%);
+    .site-info {
+        display: flex;
+        justify-content: space-around;
+        width: 85%;
+        color: white;
+        p {
+            margin: 0;
+        }
+        a {
+            color: white;
+            text-decoration: none;
+            margin: 0;
+        } 
+    }
+    img {
+        width: 28px;
+        height: 28px;
+        margin-left: 10px;
+    }
+}
