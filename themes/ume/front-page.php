@@ -9,6 +9,9 @@ get_header(); ?>
 
 <div id="primary" class="content-area">
     <main id="main" class="site-main" role="main">
+    <div class="popup">
+        <p>Please play our games on a desktop or laptop</p>
+    </div>
         <section>
             <div class="banner">
             
@@ -20,10 +23,9 @@ get_header(); ?>
 
         </section>
     
-    
-    
-    
     </section>
+
+    
 	
 
 		</main><!-- #main -->
