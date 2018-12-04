@@ -2,7 +2,7 @@
 /**
  * The header for our theme.
  *
- * @package RED_Starter_Theme
+ * @package UME
  */
 
 ?><!DOCTYPE html>
@@ -23,12 +23,34 @@
 			<header id="masthead" class="site-header" role="banner">
 				<div class="site-branding">
 					<h1 class="site-title screen-reader-text"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-					<p class="site-description"><?php bloginfo( 'description' ); ?></p>
+				
 				</div><!-- .site-branding -->
+			<div class="main-header">
+			  <div class="left-column">
+			      <div class="logo">
+				  <img src="<?php echo get_template_directory_uri();?>/images/Lightning R.png" alt="lightning-right"/>
+                  </div>
+                  <div class="label">
+				  <h3 class="site-title"> UME Arcade </h3>
+                   </div>
+
+			
+              </div>
+			  <div class="right-column">
+			    <div class="search-form">
+                    <?php get_search_form(); ?>
+			    </div>
+			     <div class="hamburger-icon">
+			      <div class="hamburger-bar"></div>
+                  <div class="hamburger-bar"></div>
+                  <div class="hamburger-bar"></div>
+				 </div>
+				</div>
+             </div>
+
 
 				<nav id="site-navigation" class="main-navigation" role="navigation">
-					<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php echo esc_html( 'Primary Menu' ); ?></button>
-					<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
+					
 				</nav><!-- #site-navigation -->
 			</header><!-- #masthead -->
 
