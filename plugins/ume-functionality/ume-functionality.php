@@ -7,7 +7,7 @@
  * @copyright 2015 RED Academy
  *
  * @wordpress-plugin
- * Plugin Name: [SITE NAME] Functionality
+ * Plugin Name: UME Functionality
  * Description: This very important plugin contains all of the core functionality for this website so that it remains theme-independent.
  * Version:     1.0.0
  * Author:      Your Name
