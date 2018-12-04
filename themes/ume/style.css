@@ -707,23 +707,13 @@ footer {
   height: 53px;
   font-size: 10px;
   font-family: 'Futura-Bk-BT';
-  text-transform: uppercase;
+  color: white;
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.68)), to(#000000));
   background: linear-gradient(rgba(255, 255, 255, 0.68) 0%, #000000 100%); }
-  footer .site-info {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-    width: 85%;
+  footer p {
+    margin: 0;
+    margin-right: 10px;
     color: white; }
-    footer .site-info p {
-      margin: 0; }
-    footer .site-info a {
-      color: white;
-      text-decoration: none;
-      margin: 0; }
   footer img {
     width: 28px;
     height: 28px;
