@@ -639,23 +639,23 @@ i.fa-search {
     .prizes .coin-winnings .times-five {
       padding-right: 21px; }
 
-.page-template-default .site-main {
+.page-id-19 .page-template-default .site-main {
   width: 1000px;
   margin-left: auto;
   margin-right: auto; }
 
-.site {
+.page-id-19 .page-template-default .site {
   background: url(../../assets/background.png);
   background-size: cover, 800px; }
   @media (min-width: 1024px) {
-    .site {
+    .page-id-19 .page-template-default .site {
       background: url(../../assets/background.png);
       background-size: cover, 800px; } }
 
-.wpcf7-form {
+.page-id-19 .page-template-default .wpcf7-form {
   display: block; }
-  .wpcf7-form .parentsName,
-  .wpcf7-form .studentsName {
+  .page-id-19 .page-template-default .wpcf7-form .parentsName,
+  .page-id-19 .page-template-default .wpcf7-form .studentsName {
     font-family: 'futura-bold';
     text-transform: uppercase;
     font-size: 25px;
@@ -666,34 +666,34 @@ i.fa-search {
         -ms-flex-pack: justify;
             justify-content: space-between;
     margin-top: 3rem; }
-  .wpcf7-form ::-webkit-input-placeholder {
+  .page-id-19 .page-template-default .wpcf7-form ::-webkit-input-placeholder {
     /* Chrome/Opera/Safari */
     color: white;
     font-size: 1rem;
     opacity: 0.5;
     text-transform: capitalize; }
 
-input[type='email'],
-input[type='password'],
-input[type='search'],
-input[type='text'],
-input[type='url'] {
+.page-id-19 .page-template-default input[type='email'],
+.page-id-19 .page-template-default input[type='password'],
+.page-id-19 .page-template-default input[type='search'],
+.page-id-19 .page-template-default input[type='text'],
+.page-id-19 .page-template-default input[type='url'] {
   padding: 15px 15%;
   background: transparent;
   border: 3px solid white;
   width: 60%;
   text-transform: uppercase; }
-  input[type='email']:focus,
-  input[type='password']:focus,
-  input[type='search']:focus,
-  input[type='text']:focus,
-  input[type='url']:focus {
+  .page-id-19 .page-template-default input[type='email']:focus,
+  .page-id-19 .page-template-default input[type='password']:focus,
+  .page-id-19 .page-template-default input[type='search']:focus,
+  .page-id-19 .page-template-default input[type='text']:focus,
+  .page-id-19 .page-template-default input[type='url']:focus {
     outline: 0; }
 
-.site-content {
+.page-id-19 .page-template-default .site-content {
   padding-top: 50px; }
 
-.entry-title {
+.page-id-19 .page-template-default .entry-title {
   font-family: 'futura-bold';
   font-size: 40px;
   text-transform: uppercase;
@@ -701,14 +701,14 @@ input[type='url'] {
   padding-top: 3rem;
   margin: 0; }
 
-.project-setup {
+.page-id-19 .page-template-default .project-setup {
   margin-top: 6rem;
   line-height: 1.6;
   max-width: 90%;
   font-family: 'futura-heavy';
   font-weight: 100; }
 
-.email {
+.page-id-19 .page-template-default .email {
   margin-top: 6rem;
   font-family: 'futura-bold';
   text-transform: uppercase;
@@ -720,15 +720,15 @@ input[type='url'] {
   -webkit-box-pack: justify;
           justify-content: space-between;
   margin-top: 3rem; }
-  .email input {
+  .page-id-19 .page-template-default .email input {
     width: 65%; }
 
-.submit {
+.page-id-19 .page-template-default .submit {
   margin-top: 6rem;
   margin-bottom: 12rem;
   text-align: center; }
 
-.wpcf7-submit {
+.page-id-19 .page-template-default .wpcf7-submit {
   color: white;
   width: 275px;
   padding: 20px;
@@ -736,7 +736,7 @@ input[type='url'] {
   background: linear-gradient(180deg, #f5d672, #e77839);
   border-radius: 3px; }
 
-input[type='submit'] {
+.page-id-19 .page-template-default input[type='submit'] {
   font-size: 25px;
   font-family: 'futura-bk-bt' normal;
   text-transform: uppercase; }
