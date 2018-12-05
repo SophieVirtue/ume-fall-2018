@@ -12,7 +12,7 @@
 		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 	</header><!-- .entry-header -->
 
-	<p>To download your game, please fill in this form and we will send you a link along with instructions for installing Unity to your computer and getting your project setup.</p>
+	<p class="project-setup">To download your game, please fill in this form and we will send you a link along with instructions for installing Unity to your computer and getting your project setup.</p>
 
 	<div class="entry-content">
 		<?php the_content(); ?>
