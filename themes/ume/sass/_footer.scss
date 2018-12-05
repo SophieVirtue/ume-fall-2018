@@ -1,22 +1,23 @@
-footer {
+.site-footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: absolute;
     height: 53px;
     font-size: 10px;
-    font-family: 'Futura-Bk-BT';
+    width: 100%;
+    font-family: 'Futura-Bk-BT', sans-serif;
     color: white;
-    background: linear-gradient( rgba(255,255,255,0.68) 0%, #000000 100%);
+    background: linear-gradient( rgba(255,255,255,0.62) 0%, #000000 100%); 
+    position: absolute;
         p {
         margin: 0;
         margin-right: 10px;
         color: white;
+        text-transform: uppercase;
         }
         img {
         width: 28px;
         height: 28px;
         margin-left: 10px;
-        
     }
 }

@@ -1,47 +1,60 @@
-.page-template-default .prizes .site-main {
+.prizes {
     background: url(../../assets/images/grid-lines.png), url(../../assets/images/background.png); 
     background-repeat: no-repeat;
     background-size: cover, cover;
     background-position: top; 
-    // overflow: hidden;
     text-align: center;
     width: 100%;
     .page-name {
-        width: 162px;
+        width: 167px;
         height: auto;
-        padding-top: 64px;
+        padding-top: 54px;
     }
     h3 {
         text-transform: uppercase;
         font-size: 10px;
         color: white;
-        font-family: 'Futura', sans-serif;
+        font-family: 'Futura-Bk-BT', sans-serif;
         padding-bottom: 45px;
         margin: 0;
     }
-    .coin-winnings {
+    .coin-legend {
         display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-        width: 332px;
-        text-align: center;
-        background-color: rgba(0.17, 0.17, 0.17, 0.44);
-        .coin {
-            width: 23px;
-            height: 23px;
+        justify-content: center;
+        .coin-winnings {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            width: 332px;
+            background-color: rgba(0.17, 0.17, 0.17, 0.2);
+            .coin {
+                width: 23px;
+                height: 23px;
+            }
+            p {
+                font-size: 15px;
+                color: white;
+                font-family: 'Futura-Bk-BT', sans-serif;
+                margin: 0;
+                padding: 9px 0;
+            }
+            .coin-action {
+                padding-right: 5px;
+                text-transform: uppercase;
+            }
+            .coin-amount {
+                padding-left: 5px;
+            }
+            .coin-space {
+                padding-right: 20px;
+            }
         }
-        p {
-            text-transform: uppercase;
-            font-size: 15px;
-            color: white;
-            font-family: 'Futura', sans-serif;
-            padding: 4.5px 0;
-        }
-        .one-play {
-            padding-left: 21px;
-        }
-        .times-five {
-            padding-right: 21px;
-        }
+    }
+    .prize-path {
+        width: 340px;
+        height: auto;
+        padding-top: 25px;
+        padding-bottom: 40px;
     }
 }

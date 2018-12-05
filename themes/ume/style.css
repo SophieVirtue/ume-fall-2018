@@ -227,29 +227,29 @@ th {
 --------------------------------------------------------------*/
 @font-face {
   font-family: 'Futura-Heavy';
-  src: url("../../fonts/Futura-Heavy.eot");
-  src: url("../../fonts/Futura-Heavy.eot?#iefix") format("embedded-opentype"), url("../../fonts/Futura-Heavy.woff2") format("woff2"), url("../../fonts/Futura-Heavy.woff") format("woff"), url("../../fonts/Futura-Heavy.ttf") format("truetype"), url("../../fonts/Futura-Heavy.svg#Futura-Heavy") format("svg");
+  src: url("../../assets/fonts/Futura-Heavy.eot");
+  src: url("../../assets/fonts/Futura-Heavy.eot?#iefix") format("embedded-opentype"), url("../../assets/fonts/Futura-Heavy.woff2") format("woff2"), url("../../assets/fonts/Futura-Heavy.woff") format("woff"), url("../../assets/fonts/Futura-Heavy.ttf") format("truetype"), url("../../assets/fonts/Futura-Heavy.svg#Futura-Heavy") format("svg");
   font-weight: 900;
   font-style: normal; }
 
 @font-face {
   font-family: 'Futura-Bk-BT';
-  src: url("../../fonts/FuturaBT-Book.eot");
-  src: url("../../fonts/FuturaBT-Book.eot?#iefix") format("embedded-opentype"), url("../../fonts/FuturaBT-Book.woff2") format("woff2"), url("../../fonts/FuturaBT-Book.woff") format("woff"), url("../../fonts/FuturaBT-Book.ttf") format("truetype"), url("../../fonts/FuturaBT-Book.svg#FuturaBT-Book") format("svg");
+  src: url("../../assets/fonts/FuturaBT-Book.eot");
+  src: url("../../assets/fonts/FuturaBT-Book.eot?#iefix") format("embedded-opentype"), url("../../assets/fonts/FuturaBT-Book.woff2") format("woff2"), url("../../assets/fonts/FuturaBT-Book.woff") format("woff"), url("../../assets/fonts/FuturaBT-Book.ttf") format("truetype"), url("../../assets/fonts/FuturaBT-Book.svg#FuturaBT-Book") format("svg");
   font-weight: normal;
   font-style: normal; }
 
 @font-face {
   font-family: 'Futura-Bold';
-  src: url("../../fonts/Futura-Bold.eot");
-  src: url("../../fonts/Futura-Bold.eot?#iefix") format("embedded-opentype"), url("../../fonts/Futura-Bold.woff2") format("woff2"), url("../../fonts/Futura-Bold.woff") format("woff"), url("../../fonts/Futura-Bold.ttf") format("truetype"), url("../../fonts/Futura-Bold.svg#Futura-Bold") format("svg");
+  src: url("../../assets/fonts/Futura-Bold.eot");
+  src: url("../../assets/fonts/Futura-Bold.eot?#iefix") format("embedded-opentype"), url("../../assets/fonts/Futura-Bold.woff2") format("woff2"), url("../../assets/fonts/Futura-Bold.woff") format("woff"), url("../../assets/fonts/Futura-Bold.ttf") format("truetype"), url("../../assets/fonts/Futura-Bold.svg#Futura-Bold") format("svg");
   font-weight: 500;
   font-style: normal; }
 
 @font-face {
   font-family: 'Futura';
-  src: url("../../fonts/Futura.eot");
-  src: url("../../fonts/Futura.eot?#iefix") format("embedded-opentype"), url("../../fonts/Futura.woff2") format("woff2"), url("../../fonts/Futura.woff") format("woff"), url("../../fonts/Futura.ttf") format("truetype"), url("../../fonts/Futura.svg#Futura") format("svg");
+  src: url("../../assets/fonts/Futura.eot");
+  src: url("../../assets/fonts/Futura.eot?#iefix") format("embedded-opentype"), url("../../assets/fonts/Futura.woff2") format("woff2"), url("../../assets/fonts/Futura.woff") format("woff"), url("../../assets/fonts/Futura.ttf") format("truetype"), url("../../assets/fonts/Futura.svg#Futura") format("svg");
   font-weight: normal;
   font-style: normal; }
 
@@ -485,7 +485,7 @@ object {
 .gallery-caption {
   display: block; }
 
-footer {
+.site-footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -495,18 +495,20 @@ footer {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  position: absolute;
   height: 53px;
   font-size: 10px;
-  font-family: 'Futura-Bk-BT';
+  width: 100%;
+  font-family: 'Futura-Bk-BT', sans-serif;
   color: white;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.68)), to(#000000));
-  background: linear-gradient(rgba(255, 255, 255, 0.68) 0%, #000000 100%); }
-  footer p {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.62)), to(#000000));
+  background: linear-gradient(rgba(255, 255, 255, 0.62) 0%, #000000 100%);
+  position: absolute; }
+  .site-footer p {
     margin: 0;
     margin-right: 10px;
-    color: white; }
-  footer img {
+    color: white;
+    text-transform: uppercase; }
+  .site-footer img {
     width: 28px;
     height: 28px;
     margin-left: 10px; }
@@ -595,154 +597,187 @@ i.fa-search {
   left: 2rem;
   top: 0.3rem; }
 
-.page-template-default .prizes .site-main {
+.prizes {
   background: url(../../assets/images/grid-lines.png), url(../../assets/images/background.png);
   background-repeat: no-repeat;
   background-size: cover, cover;
   background-position: top;
   text-align: center;
   width: 100%; }
-  .page-template-default .prizes .site-main .page-name {
-    width: 162px;
+  .prizes .page-name {
+    width: 167px;
     height: auto;
-    padding-top: 64px; }
-  .page-template-default .prizes .site-main h3 {
+    padding-top: 54px; }
+  .prizes h3 {
     text-transform: uppercase;
     font-size: 10px;
     color: white;
-    font-family: 'Futura', sans-serif;
+    font-family: 'Futura-Bk-BT', sans-serif;
     padding-bottom: 45px;
     margin: 0; }
-  .page-template-default .prizes .site-main .coin-winnings {
+  .prizes .coin-legend {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    width: 332px;
-    text-align: center;
-    background-color: rgba(0, 0, 0, 0.44); }
-    .page-template-default .prizes .site-main .coin-winnings .coin {
-      width: 23px;
-      height: 23px; }
-    .page-template-default .prizes .site-main .coin-winnings p {
-      text-transform: uppercase;
-      font-size: 15px;
-      color: white;
-      font-family: 'Futura', sans-serif;
-      padding: 4.5px 0; }
-    .page-template-default .prizes .site-main .coin-winnings .one-play {
-      padding-left: 21px; }
-    .page-template-default .prizes .site-main .coin-winnings .times-five {
-      padding-right: 21px; }
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+    .prizes .coin-legend .coin-winnings {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      width: 332px;
+      background-color: rgba(0, 0, 0, 0.2); }
+      .prizes .coin-legend .coin-winnings .coin {
+        width: 23px;
+        height: 23px; }
+      .prizes .coin-legend .coin-winnings p {
+        font-size: 15px;
+        color: white;
+        font-family: 'Futura-Bk-BT', sans-serif;
+        margin: 0;
+        padding: 9px 0; }
+      .prizes .coin-legend .coin-winnings .coin-action {
+        padding-right: 5px;
+        text-transform: uppercase; }
+      .prizes .coin-legend .coin-winnings .coin-amount {
+        padding-left: 5px; }
+      .prizes .coin-legend .coin-winnings .coin-space {
+        padding-right: 20px; }
+  .prizes .prize-path {
+    width: 340px;
+    height: auto;
+    padding-top: 25px;
+    padding-bottom: 40px; }
 
-.page-template-default .site-main {
-  width: 1000px;
-  margin-left: auto;
-  margin-right: auto; }
-
-.site {
-  background: url(../../assets/background.png);
+.page-id-19 {
+  color: #fff;
+  background: url(../../assets/images/background.png);
   background-size: cover, 800px; }
   @media (min-width: 1024px) {
-    .site {
-      background: url(../../assets/background.png);
+    .page-id-19 {
+      background: url(../../assets/images/background.png);
       background-size: cover, 800px; } }
-
-.wpcf7-form {
-  display: block; }
-  .wpcf7-form .parentsName,
-  .wpcf7-form .studentsName {
+  .page-id-19 .site-main {
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto; }
+    @media (min-width: 600px) {
+      .page-id-19 .site-main {
+        width: 600px; } }
+    @media (min-width: 1024px) {
+      .page-id-19 .site-main {
+        width: 800px; } }
+  .page-id-19 .wpcf7-form {
+    display: block; }
+    .page-id-19 .wpcf7-form .parentsName,
+    .page-id-19 .wpcf7-form .studentsName {
+      font-family: 'futura-bold';
+      text-transform: uppercase;
+      font-size: 25px;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      margin-top: 3rem; }
+      @media (min-width: 1024px) {
+        .page-id-19 .wpcf7-form .parentsName,
+        .page-id-19 .wpcf7-form .studentsName {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex; } }
+    .page-id-19 .wpcf7-form ::-webkit-input-placeholder {
+      /* Chrome/Opera/Safari */
+      color: white;
+      font-size: 1rem;
+      opacity: 0.5;
+      text-transform: capitalize; }
+  .page-id-19 input[type='email'],
+  .page-id-19 input[type='password'],
+  .page-id-19 input[type='search'],
+  .page-id-19 input[type='text'],
+  .page-id-19 input[type='url'] {
+    color: #fff;
+    padding: 15px 10px;
+    background: transparent;
+    border: 3px solid white;
+    width: 100%;
+    text-transform: uppercase; }
+    @media (min-width: 1024px) {
+      .page-id-19 input[type='email'],
+      .page-id-19 input[type='password'],
+      .page-id-19 input[type='search'],
+      .page-id-19 input[type='text'],
+      .page-id-19 input[type='url'] {
+        width: 80%; } }
+    .page-id-19 input[type='email']:focus,
+    .page-id-19 input[type='password']:focus,
+    .page-id-19 input[type='search']:focus,
+    .page-id-19 input[type='text']:focus,
+    .page-id-19 input[type='url']:focus {
+      outline: 0; }
+  .page-id-19 .site-content {
+    padding-top: 50px; }
+  .page-id-19 .entry-title {
     font-family: 'futura-bold';
+    font-size: 30px;
     text-transform: uppercase;
+    line-height: 53px;
+    padding-top: 3rem;
+    margin: 0; }
+    @media (min-width: 1024px) {
+      .page-id-19 .entry-title {
+        font-size: 40px; } }
+  .page-id-19 .project-setup {
+    margin-top: 3rem;
+    line-height: 1.6;
+    font-family: 'futura-heavy';
+    font-weight: lighter; }
+    @media (min-width: 1024px) {
+      .page-id-19 .project-setup {
+        margin-top: 6rem;
+        max-width: 90%; } }
+  .page-id-19 .email {
+    margin-top: 6rem;
+    font-family: 'futura-bold';
     font-size: 25px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -ms-flex-pack: justify;
     -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
             justify-content: space-between;
     margin-top: 3rem; }
-  .wpcf7-form ::-webkit-input-placeholder {
-    /* Chrome/Opera/Safari */
+    .page-id-19 .email ::-webkit-input-placeholder {
+      /* Chrome/Opera/Safari */
+      text-transform: lowercase; }
+    @media (min-width: 1024px) {
+      .page-id-19 .email input {
+        width: 43%; } }
+    .page-id-19 .email input {
+      text-transform: lowercase; }
+  .page-id-19 .submit {
+    margin-top: 6rem;
+    margin-bottom: 12rem;
+    text-align: center; }
+  .page-id-19 .wpcf7-submit {
     color: white;
-    font-size: 1rem;
-    opacity: 0.5;
-    text-transform: capitalize; }
-
-input[type='email'],
-input[type='password'],
-input[type='search'],
-input[type='text'],
-input[type='url'] {
-  padding: 15px 15%;
-  background: transparent;
-  border: 3px solid white;
-  width: 60%;
-  text-transform: uppercase; }
-  input[type='email']:focus,
-  input[type='password']:focus,
-  input[type='search']:focus,
-  input[type='text']:focus,
-  input[type='url']:focus {
-    outline: 0; }
-
-.site-content {
-  padding-top: 50px; }
-
-.entry-title {
-  font-family: 'futura-bold';
-  font-size: 40px;
-  text-transform: uppercase;
-  line-height: 53px;
-  padding-top: 3rem;
-  margin: 0; }
-
-.project-setup {
-  margin-top: 6rem;
-  line-height: 1.6;
-  max-width: 90%;
-  font-family: 'futura-heavy';
-  font-weight: 100; }
-
-.email {
-  margin-top: 6rem;
-  font-family: 'futura-bold';
-  text-transform: uppercase;
-  font-size: 25px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: justify;
-  -webkit-box-pack: justify;
-          justify-content: space-between;
-  margin-top: 3rem; }
-  .email input {
-    width: 65%; }
-
-.submit {
-  margin-top: 6rem;
-  margin-bottom: 12rem;
-  text-align: center; }
-
-.wpcf7-submit {
-  color: white;
-  width: 275px;
-  padding: 20px;
-  background: -webkit-gradient(linear, left top, left bottom, from(#f5d672), to(#e77839));
-  background: linear-gradient(180deg, #f5d672, #e77839);
-  border-radius: 3px; }
-
-input[type='submit'] {
-  font-size: 25px;
-  font-family: 'futura-bk-bt' normal;
-  text-transform: uppercase; }
-
-body {
-  color: #fff; }
+    width: 275px;
+    padding: 20px;
+    background: -webkit-gradient(linear, left top, left bottom, from(#f5d672), to(#e77839));
+    background: linear-gradient(180deg, #f5d672, #e77839);
+    border-radius: 3px; }
+  .page-id-19 input[type='submit'] {
+    font-size: 25px;
+    font-family: 'futura-bk-bt' normal;
+    text-transform: uppercase; }
 
 .agriculture-games, .science-games, .fashion-games, .pet-games, .space-games, .sea-games {
   display: -webkit-box;
