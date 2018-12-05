@@ -788,8 +788,7 @@ i.fa-search {
 .agriculture-games, .science-games, .fashion-games, .pet-games, .space-games, .sea-games {
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex;
-  color: red; }
+  display: flex; }
 
 .hide-div {
   width: 100vw;
@@ -817,3 +816,16 @@ i.fa-search {
       color: white;
       font-family: 'Futura-Bk-BT';
       font-size: 18px; }
+
+<<<<<<< HEAD
+.play-game {
+  color: #fff;
+  background: url(../../assets/images/background.png);
+  background-size: cover, 800px;
+  height: 100vh; }
+=======
+.leaderboard {
+  color: black; }
+  .leaderboard .leader-title {
+    width: 500px; }
+>>>>>>> d52c8cd88d052d5b231f489ad2c81ca0cd8ed05b

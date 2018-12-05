@@ -109,4 +109,14 @@ require get_template_directory() . '/inc/template-tags.php';
  */
 require get_template_directory() . '/inc/extras.php';
 
+//Page Slug Body Class
+function ume_slug_body_class( $classes ) {
+	global $post;
+	if ( isset( $post ) ) {
+	$classes[] = $post->post_type . '-' . $post->post_name;
+	}
+	return $classes;
+	}
+	add_filter( 'body_class', 'ume_slug_body_class' );
+
 
