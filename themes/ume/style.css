@@ -254,278 +254,6 @@ th {
   font-style: normal; }
 
 /*--------------------------------------------------------------
-# Elements
---------------------------------------------------------------*/
-html {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  font-size: 16px;
-  font-size: 1rem; }
-
-*,
-*:before,
-*:after {
-  /* Inherit box-sizing to make it easier to change the property for components that leverage other behavior; see http://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ */
-  -webkit-box-sizing: inherit;
-          box-sizing: inherit; }
-
-body {
-  background: #fff;
-  /* Fallback for when there is no custom background color defined. */ }
-
-blockquote,
-q {
-  quotes: '' ''; }
-  blockquote:before, blockquote:after,
-  q:before,
-  q:after {
-    content: ''; }
-
-hr {
-  background-color: #ccc;
-  border: 0;
-  height: 1px;
-  margin-bottom: 1.5rem; }
-
-ul,
-ol {
-  margin: 0 0 1.5rem 3rem; }
-
-ul {
-  list-style: disc; }
-
-ol {
-  list-style: decimal; }
-
-li > ul,
-li > ol {
-  margin-bottom: 0;
-  margin-left: 1.5rem; }
-
-dt {
-  font-weight: bold; }
-
-dd {
-  margin: 0 1.5rem 1.5rem; }
-
-img {
-  height: auto;
-  /* Make sure images are scaled correctly. */
-  max-width: 100%;
-  /* Adhere to container width. */ }
-
-table {
-  margin: 0 0 1.5rem;
-  width: 100%; }
-
-/*--------------------------------------------------------------
-# Forms
---------------------------------------------------------------*/
-/* Buttons */
-button,
-input[type="button"],
-input[type="reset"],
-input[type="submit"] {
-  border: 1px solid;
-  border-color: #ccc #ccc #bbb;
-  border-radius: 3px;
-  background: #e6e6e6;
-  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.5), inset 0 15px 17px rgba(255, 255, 255, 0.5), inset 0 -5px 12px rgba(0, 0, 0, 0.05);
-          box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.5), inset 0 15px 17px rgba(255, 255, 255, 0.5), inset 0 -5px 12px rgba(0, 0, 0, 0.05);
-  color: rgba(0, 0, 0, 0.8);
-  font-size: 12px;
-  font-size: 0.75rem;
-  line-height: 1;
-  padding: .6rem 1rem .4rem;
-  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8); }
-  button:hover,
-  input[type="button"]:hover,
-  input[type="reset"]:hover,
-  input[type="submit"]:hover {
-    border-color: #ccc #bbb #aaa;
-    -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.8), inset 0 15px 17px rgba(255, 255, 255, 0.8), inset 0 -5px 12px rgba(0, 0, 0, 0.02);
-            box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.8), inset 0 15px 17px rgba(255, 255, 255, 0.8), inset 0 -5px 12px rgba(0, 0, 0, 0.02); }
-  button:active, button:focus,
-  input[type="button"]:active,
-  input[type="button"]:focus,
-  input[type="reset"]:active,
-  input[type="reset"]:focus,
-  input[type="submit"]:active,
-  input[type="submit"]:focus {
-    border-color: #aaa #bbb #bbb;
-    -webkit-box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 0.5), inset 0 2px 5px rgba(0, 0, 0, 0.15);
-            box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 0.5), inset 0 2px 5px rgba(0, 0, 0, 0.15); }
-
-/* Fields */
-input[type="text"],
-input[type="email"],
-input[type="url"],
-input[type="password"],
-input[type="search"],
-textarea {
-  color: #666;
-  border: 1px solid #ccc;
-  border-radius: 3px; }
-  input[type="text"]:focus,
-  input[type="email"]:focus,
-  input[type="url"]:focus,
-  input[type="password"]:focus,
-  input[type="search"]:focus,
-  textarea:focus {
-    color: #111; }
-
-input[type="text"],
-input[type="email"],
-input[type="url"],
-input[type="password"],
-input[type="search"] {
-  padding: 3px; }
-
-textarea {
-  padding-left: 3px;
-  width: 100%; }
-
-/*--------------------------------------------------------------
-# Navigation
---------------------------------------------------------------*/
-/* Links */
-a {
-  color: royalblue; }
-  a:visited {
-    color: purple; }
-  a:hover, a:focus, a:active {
-    color: midnightblue; }
-  a:focus {
-    outline: thin dotted; }
-  a:hover, a:active {
-    outline: 0; }
-
-/* Menus */
-.main-navigation {
-  clear: both;
-  display: block;
-  float: left;
-  width: 100%; }
-  .main-navigation ul {
-    display: none;
-    list-style: none;
-    margin: 0;
-    padding-left: 0; }
-    .main-navigation ul ul {
-      -webkit-box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
-              box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
-      float: left;
-      position: absolute;
-      top: 1.5rem;
-      left: -999rem;
-      z-index: 99999; }
-      .main-navigation ul ul ul {
-        left: -999rem;
-        top: 0; }
-      .main-navigation ul ul li:hover > ul,
-      .main-navigation ul ul li.focus > ul {
-        left: 100%; }
-      .main-navigation ul ul a {
-        width: 200px; }
-    .main-navigation ul li:hover > ul,
-    .main-navigation ul li.focus > ul {
-      left: auto; }
-  .main-navigation li {
-    float: left;
-    position: relative; }
-  .main-navigation a {
-    display: block;
-    text-decoration: none; }
-
-/* Small menu. */
-.menu-toggle,
-.main-navigation.toggled ul {
-  display: block; }
-
-@media screen and (min-width: 768px) {
-  .menu-toggle {
-    display: none; }
-  .main-navigation ul {
-    display: block; } }
-
-.site-main .comment-navigation, .site-main
-.posts-navigation, .site-main
-.post-navigation {
-  margin: 0 0 1.5rem;
-  overflow: hidden; }
-
-.comment-navigation .nav-previous,
-.posts-navigation .nav-previous,
-.post-navigation .nav-previous {
-  float: left;
-  width: 50%; }
-
-.comment-navigation .nav-next,
-.posts-navigation .nav-next,
-.post-navigation .nav-next {
-  float: right;
-  text-align: right;
-  width: 50%; }
-
-/*--------------------------------------------------------------
-# Accessibility
---------------------------------------------------------------*/
-/* Text meant only for screen readers. */
-.screen-reader-text {
-  clip: rect(1px, 1px, 1px, 1px);
-  position: absolute !important;
-  height: 1px;
-  width: 1px;
-  overflow: hidden; }
-  .screen-reader-text:focus {
-    background-color: #f1f1f1;
-    border-radius: 3px;
-    -webkit-box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
-            box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
-    clip: auto !important;
-    color: #21759b;
-    display: block;
-    font-size: 14px;
-    font-size: 0.875rem;
-    font-weight: bold;
-    height: auto;
-    left: 5px;
-    line-height: normal;
-    padding: 15px 23px 14px;
-    text-decoration: none;
-    top: 5px;
-    width: auto;
-    z-index: 100000;
-    /* Above WP toolbar. */ }
-
-/*--------------------------------------------------------------
-# Alignments
---------------------------------------------------------------*/
-.alignleft {
-  display: inline;
-  float: left;
-  margin-right: 1.5rem; }
-
-.alignright {
-  display: inline;
-  float: right;
-  margin-left: 1.5rem; }
-
-.aligncenter {
-  clear: both;
-  display: block;
-  margin-left: auto;
-  margin-right: auto; }
-
-/*--------------------------------------------------------------
-# Clearings
---------------------------------------------------------------*/
-.clearfix {
-  clear: both;
-  content: "";
-  display: table; }
-
-/*--------------------------------------------------------------
 # Widgets
 --------------------------------------------------------------*/
 .widget {
@@ -665,7 +393,6 @@ footer {
 # Page Templates
 --------------------------------------------------------------*/
 /* Front page */
-<<<<<<< HEAD
 .banner {
   background: url(../../assets/grid-lines.png), url(../../assets/background.png);
   background-size: cover, 800px, 0, cover;
@@ -681,13 +408,6 @@ footer {
   background-size: cover;
   background-position: top;
   height: 800vh; }
-=======
-@media (min-width: 1024px) {
-  .banner {
-    background: url(../../assets/grid-lines.png), url(../../assets/background.png);
-    background-size: cover, 800px, 0, cover;
-    height: 200vh; } }
->>>>>>> 13c0ea8472f5de0ba5f8f624ea4258754ae09db2
 
 .site-header {
   background: -webkit-gradient(linear, left top, left bottom, from(#F8F8FF), to(#000000));
@@ -706,15 +426,7 @@ h3.site-title {
   height: 30px;
   width: 98px;
   color: #FF008C;
-<<<<<<< HEAD
-  font-family: Futura;
-=======
-<<<<<<< HEAD
   font-family: Futura-Bk-BT;
-=======
-  font-family: Futura;
->>>>>>> 5d6f158831423d72d4291e9fe905330d1508a7de
->>>>>>> 13c0ea8472f5de0ba5f8f624ea4258754ae09db2
   font-size: 13px;
   font-weight: bold;
   line-height: 30px;
@@ -768,80 +480,116 @@ i.fa-search {
   left: 2rem;
   top: 0.3rem; }
 
-<<<<<<< HEAD
 .page-template-default .site-main {
   width: 1000px;
   margin-left: auto;
   margin-right: auto; }
 
-.page-template-default p {
-  margin: 0;
-  padding: 0; }
-
 .site {
   background: url(../../assets/background.png);
-  background-size: cover, 800px;
-  height: 100vh; }
+  background-size: cover, 800px; }
   @media (min-width: 1024px) {
     .site {
       background: url(../../assets/background.png);
-      background-size: cover, 800px;
-      height: 100vh; } }
-
-input[type='email']:focus,
-input[type='password']:focus,
-input[type='search']:focus,
-input[type='text']:focus,
-input[type='url']:focus,
-textarea:focus {
-  color: green;
-  padding: 20px; }
-
-::-webkit-input-placeholder {
-  color: green;
-  font-size: 1rem; }
-
-input[type='email'],
-input[type='password'],
-input[type='search'],
-input[type='text'],
-input[type='url'] {
-  padding: 12px;
-  opacity: 100; }
+      background-size: cover, 800px; } }
 
 .wpcf7-form {
   display: block; }
-  .wpcf7-form .parentsName {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex; }
-    .wpcf7-form .parentsName label {
-      width: 50%; }
+  .wpcf7-form .parentsName,
   .wpcf7-form .studentsName {
+    font-family: 'futura-bold';
+    text-transform: uppercase;
+    font-size: 25px;
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex; }
-    .wpcf7-form .studentsName label {
-      width: 50%; }
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-top: 3rem; }
+  .wpcf7-form ::-webkit-input-placeholder {
+    /* Chrome/Opera/Safari */
+    color: white;
+    font-size: 1rem;
+    opacity: 0.5;
+    text-transform: capitalize; }
 
 input[type='email'],
 input[type='password'],
 input[type='search'],
 input[type='text'],
 input[type='url'] {
-  padding: 12px;
-  padding: 12px 11%;
-  /* opacity: unset; */ }
+  padding: 15px 15%;
+  background: transparent;
+  border: 3px solid white;
+  width: 60%;
+  text-transform: uppercase; }
+  input[type='email']:focus,
+  input[type='password']:focus,
+  input[type='search']:focus,
+  input[type='text']:focus,
+  input[type='url']:focus {
+    outline: 0; }
+
+.site-content {
+  padding-top: 50px; }
+
+.entry-title {
+  font-family: 'futura-bold';
+  font-size: 40px;
+  text-transform: uppercase;
+  line-height: 53px;
+  padding-top: 3rem;
+  margin: 0; }
+
+.project-setup {
+  margin-top: 6rem;
+  line-height: 1.6;
+  max-width: 90%;
+  font-family: 'futura-heavy';
+  font-weight: 100; }
+
+.email {
+  margin-top: 6rem;
+  font-family: 'futura-bold';
+  text-transform: uppercase;
+  font-size: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+  -webkit-box-pack: justify;
+          justify-content: space-between;
+  margin-top: 3rem; }
+  .email input {
+    width: 65%; }
+
+.submit {
+  margin-top: 6rem;
+  margin-bottom: 12rem;
+  text-align: center; }
+
+.wpcf7-submit {
+  color: white;
+  width: 275px;
+  padding: 20px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#f5d672), to(#e77839));
+  background: linear-gradient(180deg, #f5d672, #e77839);
+  border-radius: 3px; }
+
+input[type='submit'] {
+  font-size: 25px;
+  font-family: 'futura-bk-bt' normal;
+  text-transform: uppercase; }
 
 body {
   color: #fff; }
-=======
-<<<<<<< HEAD
+
 .agriculture-games, .science-games {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
-=======
+
 .popup {
   display: none;
   height: 192px;
@@ -854,5 +602,3 @@ body {
   .popup p {
     margin: 0;
     color: white; }
->>>>>>> 5d6f158831423d72d4291e9fe905330d1508a7de
->>>>>>> 13c0ea8472f5de0ba5f8f624ea4258754ae09db2
