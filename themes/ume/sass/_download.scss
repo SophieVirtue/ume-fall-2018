@@ -1,20 +1,20 @@
-.page-template-default {
+.page-id-19 .page-template-default {
   .site-main {
     width: 1000px;
     margin-left: auto;
     margin-right: auto;
   }
-}
 
-.site {
-  background: url(../../assets/background.png);
-  background-size: cover, 800px;
-
-  @include desktop {
+  .site {
     background: url(../../assets/background.png);
     background-size: cover, 800px;
+
+    @include desktop {
+      background: url(../../assets/background.png);
+      background-size: cover, 800px;
+    }
   }
-}
+
 
 .wpcf7-form {
   display: block;
@@ -49,7 +49,7 @@ input[type='url'] {
   border: 3px solid white;
   width: 60%;
   text-transform: uppercase;
- 
+
   &:focus {
     outline: 0;
   }
@@ -112,4 +112,4 @@ input[type='submit'] {
   font-family: 'futura-bk-bt' normal;
   text-transform: uppercase;
 }
-
+}
