@@ -18,7 +18,10 @@
 
 	<body <?php body_class(); ?>>
 		<div id="page" class="hfeed site footer-relative">
+<<<<<<< HEAD
+=======
 
+>>>>>>> d6b408c2735977eb61f5229cfcfa9c8e8eeeecc9
 			<a class="skip-link screen-reader-text" href="#content"><?php echo esc_html( 'Skip to content' ); ?></a>
 
 			<header id="masthead" class="site-header" role="banner">

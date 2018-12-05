@@ -500,9 +500,12 @@ object {
   width: 100%;
   font-family: 'Futura-Bk-BT', sans-serif;
   color: white;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.62)), to(#000000));
-  background: linear-gradient(rgba(255, 255, 255, 0.62) 0%, #000000 100%);
-  position: absolute; }
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.3)), to(rgba(0, 0, 0, 0.9)));
+  background: linear-gradient(rgba(255, 255, 255, 0.3), rgba(0, 0, 0, 0.9));
+  -webkit-box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.5);
+  position: absolute;
+  bottom: 0; }
   .site-footer p {
     margin: 0;
     margin-right: 10px;
@@ -512,6 +515,9 @@ object {
     width: 28px;
     height: 28px;
     margin-left: 10px; }
+
+.footer-relative {
+  position: relative; }
 
 /*--------------------------------------------------------------
 # Page Templates
@@ -534,9 +540,8 @@ object {
   height: 800vh; }
 
 .site-header {
-  background: -webkit-gradient(linear, left top, left bottom, from(#F8F8FF), to(#000000));
-  background: linear-gradient(180deg, #F8F8FF 0%, #000000 100%);
-  opacity: 0.62;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.62)), to(black));
+  background: linear-gradient(rgba(255, 255, 255, 0.62), black);
   -webkit-box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.5);
           box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.5);
   position: absolute;
@@ -600,7 +605,8 @@ i.fa-search {
 .prizes {
   background: url(../../assets/images/grid-lines.png), url(../../assets/images/background.png);
   background-repeat: no-repeat;
-  background-size: cover, cover;
+  background-size: auto 874px, auto 1800px;
+  overflow: hidden;
   background-position: top;
   text-align: center;
   width: 100%; }
@@ -656,7 +662,7 @@ i.fa-search {
     width: 340px;
     height: auto;
     padding-top: 25px;
-    padding-bottom: 40px; }
+    padding-bottom: 120px; }
 
 .page-download {
   color: #fff;

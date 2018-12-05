@@ -7,8 +7,10 @@
     width: 100%;
     font-family: 'Futura-Bk-BT', sans-serif;
     color: white;
-    background: linear-gradient( rgba(255,255,255,0.62) 0%, #000000 100%); 
+    background: linear-gradient( rgba(255,255,255,0.3), rgba(0,0,0,0.9)); 
+    box-shadow: 0 0 4px 0 rgba(0,0,0,0.5); 
     position: absolute;
+    bottom: 0;
         p {
         margin: 0;
         margin-right: 10px;
@@ -20,4 +22,8 @@
         height: 28px;
         margin-left: 10px;
     }
+}
+
+.footer-relative {
+    position: relative;
 }
