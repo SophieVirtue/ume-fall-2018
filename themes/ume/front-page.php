@@ -9,25 +9,25 @@ get_header(); ?>
 
 <div id="primary" class="content-area">
     <main id="main" class="site-main" role="main">
-<<<<<<< HEAD
-     <section>
-=======
-    <div class="popup">
-        <p>Please play our games on a desktop or laptop</p>
+    <div class="hide-div">
+        <div class="popup">
+            <p>Please play our games on a desktop or laptop!</p>
+        </div>
     </div>
         <section>
->>>>>>> 5d6f158831423d72d4291e9fe905330d1508a7de
             <div class="banner">
             
             </div>
-
-
         <section>
             <div class="game-background">
 
             </div>
 
         </section>
+
+    
+    </section>
+
 
     </section>
 
@@ -352,14 +352,6 @@ get_header(); ?>
 
           </div>
           </section>
-
-
-
-
-    
-
-    
-	
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
