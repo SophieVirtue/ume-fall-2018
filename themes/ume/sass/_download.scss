@@ -1,20 +1,35 @@
 .page-id-19  {
   color: #fff;
-  .site-main {
-    width: 1000px;
-    margin-left: auto;
-    margin-right: auto;
-  }
+  background: url(../../assets/images/background.png);
+  background-size: cover, 800px;
 
-  .site {
+  @include desktop {
     background: url(../../assets/images/background.png);
     background-size: cover, 800px;
-
-    @include desktop {
-      background: url(../../assets/images/background.png);
-      background-size: cover, 800px;
-    }
   }
+  
+  .site-main {
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    @include tablet {
+      width: 600px;
+    }
+    @include desktop {
+      width: 800px;
+    }
+    
+  }
+
+  // .site {
+  //   background: url(../../assets/images/background.png);
+  //   background-size: cover, 800px;
+
+  //   @include desktop {
+  //     background: url(../../assets/images/background.png);
+  //     background-size: cover, 800px;
+  //   }
+  // }
 
 
 .wpcf7-form {
@@ -24,11 +39,11 @@
     font-family: 'futura-bold';
     text-transform: uppercase;
     font-size: 25px;
-    display: flex;
     justify-content: space-between;
     margin-top: 3rem;
-    label {
-      // width: 50%;
+    @include desktop {
+      display: flex;
+
     }
   }
   ::-webkit-input-placeholder {
@@ -45,11 +60,16 @@ input[type='password'],
 input[type='search'],
 input[type='text'],
 input[type='url'] {
-  padding: 15px 15%;
+  color: #fff;
+  padding: 15px 10px;
+  // padding-left: 10px;
   background: transparent;
   border: 3px solid white;
-  width: 60%;
+  width: 100%;
   text-transform: uppercase;
+  @include desktop {
+    width: 80%;
+  }
 
   &:focus {
     outline: 0;
@@ -58,37 +78,53 @@ input[type='url'] {
 
 .site-content {
   padding-top: 50px;
+  
 }
 
 .entry-title {
   font-family: 'futura-bold';
-  font-size: 40px;
+  font-size: 30px;
   text-transform: uppercase;
   line-height: 53px;
   padding-top: 3rem;
   margin: 0;
+  @include desktop {
+    font-size: 40px;
+  }
 }
 
 //p for the sentence about downloading game
 .project-setup {
-  margin-top: 6rem;
+  margin-top: 3rem;
   line-height: 1.6;
-  max-width: 90%;
   font-family: 'futura-heavy';
-  font-weight: 100;
+  font-weight: lighter;
+  @include desktop {
+    margin-top: 6rem;
+    max-width: 90%;
+  }
 }
 
 .email {
   margin-top: 6rem;
   font-family: 'futura-bold';
-  text-transform: uppercase;
   font-size: 25px;
   display: flex;
   -ms-flex-pack: justify;
   justify-content: space-between;
   margin-top: 3rem;
+  ::-webkit-input-placeholder {
+    /* Chrome/Opera/Safari */
+    text-transform: lowercase;
+  }
   input {
-    width: 65%;
+    @include desktop {
+      width: 43%;
+    }
+  }
+  input {
+    text-transform: lowercase;
+   
   }
 }
 

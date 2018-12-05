@@ -640,18 +640,23 @@ i.fa-search {
       padding-right: 21px; }
 
 .page-id-19 {
-  color: #fff; }
+  color: #fff;
+  background: url(../../assets/images/background.png);
+  background-size: cover, 800px; }
+  @media (min-width: 1024px) {
+    .page-id-19 {
+      background: url(../../assets/images/background.png);
+      background-size: cover, 800px; } }
   .page-id-19 .site-main {
-    width: 1000px;
+    width: 300px;
     margin-left: auto;
     margin-right: auto; }
-  .page-id-19 .site {
-    background: url(../../assets/images/background.png);
-    background-size: cover, 800px; }
+    @media (min-width: 600px) {
+      .page-id-19 .site-main {
+        width: 600px; } }
     @media (min-width: 1024px) {
-      .page-id-19 .site {
-        background: url(../../assets/images/background.png);
-        background-size: cover, 800px; } }
+      .page-id-19 .site-main {
+        width: 800px; } }
   .page-id-19 .wpcf7-form {
     display: block; }
     .page-id-19 .wpcf7-form .parentsName,
@@ -659,13 +664,16 @@ i.fa-search {
       font-family: 'futura-bold';
       text-transform: uppercase;
       font-size: 25px;
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
       -webkit-box-pack: justify;
           -ms-flex-pack: justify;
               justify-content: space-between;
       margin-top: 3rem; }
+      @media (min-width: 1024px) {
+        .page-id-19 .wpcf7-form .parentsName,
+        .page-id-19 .wpcf7-form .studentsName {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex; } }
     .page-id-19 .wpcf7-form ::-webkit-input-placeholder {
       /* Chrome/Opera/Safari */
       color: white;
@@ -677,11 +685,19 @@ i.fa-search {
   .page-id-19 input[type='search'],
   .page-id-19 input[type='text'],
   .page-id-19 input[type='url'] {
-    padding: 15px 15%;
+    color: #fff;
+    padding: 15px 10px;
     background: transparent;
     border: 3px solid white;
-    width: 60%;
+    width: 100%;
     text-transform: uppercase; }
+    @media (min-width: 1024px) {
+      .page-id-19 input[type='email'],
+      .page-id-19 input[type='password'],
+      .page-id-19 input[type='search'],
+      .page-id-19 input[type='text'],
+      .page-id-19 input[type='url'] {
+        width: 80%; } }
     .page-id-19 input[type='email']:focus,
     .page-id-19 input[type='password']:focus,
     .page-id-19 input[type='search']:focus,
@@ -692,21 +708,26 @@ i.fa-search {
     padding-top: 50px; }
   .page-id-19 .entry-title {
     font-family: 'futura-bold';
-    font-size: 40px;
+    font-size: 30px;
     text-transform: uppercase;
     line-height: 53px;
     padding-top: 3rem;
     margin: 0; }
+    @media (min-width: 1024px) {
+      .page-id-19 .entry-title {
+        font-size: 40px; } }
   .page-id-19 .project-setup {
-    margin-top: 6rem;
+    margin-top: 3rem;
     line-height: 1.6;
-    max-width: 90%;
     font-family: 'futura-heavy';
-    font-weight: 100; }
+    font-weight: lighter; }
+    @media (min-width: 1024px) {
+      .page-id-19 .project-setup {
+        margin-top: 6rem;
+        max-width: 90%; } }
   .page-id-19 .email {
     margin-top: 6rem;
     font-family: 'futura-bold';
-    text-transform: uppercase;
     font-size: 25px;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -715,8 +736,14 @@ i.fa-search {
     -webkit-box-pack: justify;
             justify-content: space-between;
     margin-top: 3rem; }
+    .page-id-19 .email ::-webkit-input-placeholder {
+      /* Chrome/Opera/Safari */
+      text-transform: lowercase; }
+    @media (min-width: 1024px) {
+      .page-id-19 .email input {
+        width: 43%; } }
     .page-id-19 .email input {
-      width: 65%; }
+      text-transform: lowercase; }
   .page-id-19 .submit {
     margin-top: 6rem;
     margin-bottom: 12rem;
