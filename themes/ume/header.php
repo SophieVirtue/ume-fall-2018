@@ -31,7 +31,10 @@
 				  <img src="<?php echo get_template_directory_uri();?>/images/Lightning R.png" alt="lightning-right"/>
                   </div>
                   <div class="label">
+				  <a href="<?php echo get_home_url(); ?>">
+
 				  <h3 class="site-title"> UME Arcade </h3>
+                   </a>
                    </div>
 
 			
@@ -41,12 +44,11 @@
                     <?php get_search_form(); ?>
 			    </div>
 			     <div class="hamburger-icon">
-			      <div class="hamburger-bar"></div>
-                  <div class="hamburger-bar"></div>
-                  <div class="hamburger-bar"></div>
-				 </div>
+			      
 				</div>
-             </div>
+			 </div>
+</div>
+
 
 
 				<nav id="site-navigation" class="main-navigation" role="navigation">
