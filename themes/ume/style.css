@@ -254,6 +254,127 @@ th {
   font-style: normal; }
 
 /*--------------------------------------------------------------
+# Typography
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+# Elements
+--------------------------------------------------------------*/
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 16px;
+  font-size: 1rem; }
+
+*,
+*:before,
+*:after {
+  /* Inherit box-sizing to make it easier to change the property for components that leverage other behavior; see http://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ */
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit; }
+
+/*--------------------------------------------------------------
+# Forms
+--------------------------------------------------------------*/
+/* Buttons */
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  border: 1px solid;
+  border-color: #ccc #ccc #bbb;
+  border-radius: 3px;
+  background: #e6e6e6;
+  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.5), inset 0 15px 17px rgba(255, 255, 255, 0.5), inset 0 -5px 12px rgba(0, 0, 0, 0.05);
+          box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.5), inset 0 15px 17px rgba(255, 255, 255, 0.5), inset 0 -5px 12px rgba(0, 0, 0, 0.05);
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 12px;
+  font-size: 0.75rem;
+  line-height: 1;
+  padding: .6rem 1rem .4rem;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8); }
+  button:hover,
+  input[type="button"]:hover,
+  input[type="reset"]:hover,
+  input[type="submit"]:hover {
+    border-color: #ccc #bbb #aaa;
+    -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.8), inset 0 15px 17px rgba(255, 255, 255, 0.8), inset 0 -5px 12px rgba(0, 0, 0, 0.02);
+            box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.8), inset 0 15px 17px rgba(255, 255, 255, 0.8), inset 0 -5px 12px rgba(0, 0, 0, 0.02); }
+  button:active, button:focus,
+  input[type="button"]:active,
+  input[type="button"]:focus,
+  input[type="reset"]:active,
+  input[type="reset"]:focus,
+  input[type="submit"]:active,
+  input[type="submit"]:focus {
+    border-color: #aaa #bbb #bbb;
+    -webkit-box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 0.5), inset 0 2px 5px rgba(0, 0, 0, 0.15);
+            box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 0.5), inset 0 2px 5px rgba(0, 0, 0, 0.15); }
+
+/* Fields */
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="password"],
+input[type="search"],
+textarea {
+  color: #666;
+  border: 1px solid #ccc;
+  border-radius: 3px; }
+  input[type="text"]:focus,
+  input[type="email"]:focus,
+  input[type="url"]:focus,
+  input[type="password"]:focus,
+  input[type="search"]:focus,
+  textarea:focus {
+    color: #111; }
+
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="password"],
+input[type="search"] {
+  padding: 3px; }
+
+textarea {
+  padding-left: 3px;
+  width: 100%; }
+
+/*--------------------------------------------------------------
+# Navigation
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+# Accessibility
+--------------------------------------------------------------*/
+/* Text meant only for screen readers. */
+.screen-reader-text {
+  clip: rect(1px, 1px, 1px, 1px);
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden; }
+  .screen-reader-text:focus {
+    border-radius: 3px;
+    -webkit-box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+            box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+    clip: auto !important;
+    display: block;
+    font-size: 14px;
+    font-size: 0.875rem;
+    font-weight: bold;
+    height: auto;
+    left: 5px;
+    line-height: normal;
+    padding: 15px 23px 14px;
+    text-decoration: none;
+    top: 5px;
+    width: auto;
+    z-index: 100000;
+    /* Above WP toolbar. */ }
+
+/*--------------------------------------------------------------
+# Alignments
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
 # Widgets
 --------------------------------------------------------------*/
 .widget {
@@ -474,10 +595,6 @@ i.fa-search {
   left: 2rem;
   top: 0.3rem; }
 
-<<<<<<< HEAD
-
-=======
->>>>>>> efc624a3360c023825d96562b56e61a52ed70485
 .page-template-default .prizes .site-main {
   background: url(../../assets/images/grid-lines.png), url(../../assets/images/background.png);
   background-repeat: no-repeat;
@@ -522,10 +639,6 @@ i.fa-search {
     .page-template-default .prizes .site-main .coin-winnings .times-five {
       padding-right: 21px; }
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
 .page-template-default .site-main {
   width: 1000px;
   margin-left: auto;
@@ -636,7 +749,6 @@ body {
   display: -ms-flexbox;
   display: flex;
   color: red; }
->>>>>>> efc624a3360c023825d96562b56e61a52ed70485
 
 .hide-div {
   width: 100vw;
@@ -664,304 +776,3 @@ body {
       color: white;
       font-family: 'Futura-Bk-BT';
       font-size: 18px; }
-
-<<<<<<< HEAD
-=======
->>>>>>> 1c1864971f427efe2090f0a56916ab3130cf5a57
->>>>>>> efc624a3360c023825d96562b56e61a52ed70485
-.page-template-default .site-main {
-  width: 1000px;
-  margin-left: auto;
-  margin-right: auto; }
-
-.site {
-  background: url(../../assets/background.png);
-  background-size: cover, 800px; }
-  @media (min-width: 1024px) {
-    .site {
-      background: url(../../assets/background.png);
-      background-size: cover, 800px; } }
-
-.wpcf7-form {
-  display: block; }
-  .wpcf7-form .parentsName,
-  .wpcf7-form .studentsName {
-    font-family: 'futura-bold';
-    text-transform: uppercase;
-    font-size: 25px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    margin-top: 3rem; }
-  .wpcf7-form ::-webkit-input-placeholder {
-    /* Chrome/Opera/Safari */
-    color: white;
-    font-size: 1rem;
-    opacity: 0.5;
-    text-transform: capitalize; }
-
-input[type='email'],
-input[type='password'],
-input[type='search'],
-input[type='text'],
-input[type='url'] {
-  padding: 15px 15%;
-  background: transparent;
-  border: 3px solid white;
-  width: 60%;
-  text-transform: uppercase; }
-  input[type='email']:focus,
-  input[type='password']:focus,
-  input[type='search']:focus,
-  input[type='text']:focus,
-  input[type='url']:focus {
-    outline: 0; }
-
-.site-content {
-  padding-top: 50px; }
-
-.entry-title {
-  font-family: 'futura-bold';
-  font-size: 40px;
-  text-transform: uppercase;
-  line-height: 53px;
-  padding-top: 3rem;
-  margin: 0; }
-
-.project-setup {
-  margin-top: 6rem;
-  line-height: 1.6;
-  max-width: 90%;
-  font-family: 'futura-heavy';
-  font-weight: 100; }
-
-.email {
-  margin-top: 6rem;
-  font-family: 'futura-bold';
-  text-transform: uppercase;
-  font-size: 25px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: justify;
-  -webkit-box-pack: justify;
-          justify-content: space-between;
-  margin-top: 3rem; }
-  .email input {
-    width: 65%; }
-
-.submit {
-  margin-top: 6rem;
-  margin-bottom: 12rem;
-  text-align: center; }
-
-.wpcf7-submit {
-  color: white;
-  width: 275px;
-  padding: 20px;
-  background: -webkit-gradient(linear, left top, left bottom, from(#f5d672), to(#e77839));
-  background: linear-gradient(180deg, #f5d672, #e77839);
-  border-radius: 3px; }
-
-input[type='submit'] {
-  font-size: 25px;
-  font-family: 'futura-bk-bt' normal;
-  text-transform: uppercase; }
-
-body {
-  color: #fff; }
-
-<<<<<<< HEAD
-
-=======
->>>>>>> efc624a3360c023825d96562b56e61a52ed70485
-.agriculture-games, .science-games, .fashion-games, .pet-games, .space-games, .sea-games {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  color: red; }
-
-<<<<<<< HEAD
-.agriculture-games, .science-games {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex; }
-=======
-.hide-div {
-  width: 100vw;
-  height: 100vh;
-  position: fixed;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center; }
-  .hide-div .popup {
-    display: none;
-    height: 192px;
-    width: 287px;
-    background: url(../../assets/grid-lines.png), linear-gradient(180.06deg, #3A193F 0%, #672973 2.75%, #5A3073 11.07%, #5E2D72 22.02%, #5F2C72 30.78%, #43366C 49.79%, #304371 63.66%, #294872 77.54%, #086B85 100%);
-    background-size: cover, 800px, 0, cover;
-    position: absolute;
-    left: 40%;
-    text-align: center; }
-    .hide-div .popup p {
-      color: white;
-      font-family: 'Futura-Bk-BT';
-      font-size: 18px; }
-<<<<<<< HEAD
-=======
->>>>>>> efc624a3360c023825d96562b56e61a52ed70485
-
-.page-template-default .site-main {
-  width: 1000px;
-  margin-left: auto;
-  margin-right: auto; }
-
-.site {
-  background: url(../../assets/background.png);
-  background-size: cover, 800px; }
-  @media (min-width: 1024px) {
-    .site {
-      background: url(../../assets/background.png);
-      background-size: cover, 800px; } }
-
-.wpcf7-form {
-  display: block; }
-  .wpcf7-form .parentsName,
-  .wpcf7-form .studentsName {
-    font-family: 'futura-bold';
-    text-transform: uppercase;
-    font-size: 25px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    margin-top: 3rem; }
-  .wpcf7-form ::-webkit-input-placeholder {
-    /* Chrome/Opera/Safari */
-    color: white;
-    font-size: 1rem;
-    opacity: 0.5;
-    text-transform: capitalize; }
-
-input[type='email'],
-input[type='password'],
-input[type='search'],
-input[type='text'],
-input[type='url'] {
-  padding: 15px 15%;
-  background: transparent;
-  border: 3px solid white;
-  width: 60%;
-  text-transform: uppercase; }
-  input[type='email']:focus,
-  input[type='password']:focus,
-  input[type='search']:focus,
-  input[type='text']:focus,
-  input[type='url']:focus {
-    outline: 0; }
-
-.site-content {
-  padding-top: 50px; }
-
-.entry-title {
-  font-family: 'futura-bold';
-  font-size: 40px;
-  text-transform: uppercase;
-  line-height: 53px;
-  padding-top: 3rem;
-  margin: 0; }
-
-.project-setup {
-  margin-top: 6rem;
-  line-height: 1.6;
-  max-width: 90%;
-  font-family: 'futura-heavy';
-  font-weight: 100; }
-
-.email {
-  margin-top: 6rem;
-  font-family: 'futura-bold';
-  text-transform: uppercase;
-  font-size: 25px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: justify;
-  -webkit-box-pack: justify;
-          justify-content: space-between;
-  margin-top: 3rem; }
-  .email input {
-    width: 65%; }
-
-.submit {
-  margin-top: 6rem;
-  margin-bottom: 12rem;
-  text-align: center; }
-<<<<<<< HEAD
-  .popup p {
-    margin: 0;
-    color: white; }
-
-=======
-
-.wpcf7-submit {
-  color: white;
-  width: 275px;
-  padding: 20px;
-  background: -webkit-gradient(linear, left top, left bottom, from(#f5d672), to(#e77839));
-  background: linear-gradient(180deg, #f5d672, #e77839);
-  border-radius: 3px; }
-
-input[type='submit'] {
-  font-size: 25px;
-  font-family: 'futura-bk-bt' normal;
-  text-transform: uppercase; }
-
-body {
-  color: #fff; }
-
-.agriculture-games, .science-games, .fashion-games, .pet-games, .space-games, .sea-games {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  color: red; }
-
-.hide-div {
-  width: 100vw;
-  height: 100vh;
-  position: fixed;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center; }
-  .hide-div .popup {
-    display: none;
-    height: 192px;
-    width: 287px;
-    background: url(../../assets/grid-lines.png), linear-gradient(180.06deg, #3A193F 0%, #672973 2.75%, #5A3073 11.07%, #5E2D72 22.02%, #5F2C72 30.78%, #43366C 49.79%, #304371 63.66%, #294872 77.54%, #086B85 100%);
-    background-size: cover, 800px, 0, cover;
-    position: absolute;
-    left: 40%;
-    text-align: center; }
-    .hide-div .popup p {
-      color: white;
-      font-family: 'Futura-Bk-BT';
-      font-size: 18px; }
->>>>>>> 1c1864971f427efe2090f0a56916ab3130cf5a57
->>>>>>> efc624a3360c023825d96562b56e61a52ed70485
