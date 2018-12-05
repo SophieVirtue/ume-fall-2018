@@ -485,7 +485,7 @@ object {
 .gallery-caption {
   display: block; }
 
-footer {
+.site-footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -495,18 +495,20 @@ footer {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  position: absolute;
   height: 53px;
   font-size: 10px;
-  font-family: 'Futura-Bk-BT';
+  width: 100%;
+  font-family: 'Futura-Bk-BT', sans-serif;
   color: white;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.68)), to(#000000));
-  background: linear-gradient(rgba(255, 255, 255, 0.68) 0%, #000000 100%); }
-  footer p {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.62)), to(#000000));
+  background: linear-gradient(rgba(255, 255, 255, 0.62) 0%, #000000 100%);
+  position: absolute; }
+  .site-footer p {
     margin: 0;
     margin-right: 10px;
-    color: white; }
-  footer img {
+    color: white;
+    text-transform: uppercase; }
+  .site-footer img {
     width: 28px;
     height: 28px;
     margin-left: 10px; }
@@ -603,41 +605,58 @@ i.fa-search {
   text-align: center;
   width: 100%; }
   .prizes .page-name {
-    width: 162px;
-    height: 45px;
-    padding-top: 64px; }
+    width: 167px;
+    height: auto;
+    padding-top: 54px; }
   .prizes h3 {
     text-transform: uppercase;
     font-size: 10px;
     color: white;
-    font-family: 'Futura', sans-serif;
+    font-family: 'Futura-Bk-BT', sans-serif;
     padding-bottom: 45px;
     margin: 0; }
-  .prizes .coin-winnings {
+  .prizes .coin-legend {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    width: 332px;
-    text-align: center;
-    background-color: rgba(0, 0, 0, 0.44); }
-    .prizes .coin-winnings .coin {
-      width: 23px;
-      height: 23px; }
-    .prizes .coin-winnings p {
-      text-transform: uppercase;
-      font-size: 15px;
-      color: white;
-      font-family: 'Futura', sans-serif;
-      padding: 4.5px 0; }
-    .prizes .coin-winnings .one-play {
-      padding-left: 21px; }
-    .prizes .coin-winnings .times-five {
-      padding-right: 21px; }
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+    .prizes .coin-legend .coin-winnings {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      width: 332px;
+      background-color: rgba(0, 0, 0, 0.2); }
+      .prizes .coin-legend .coin-winnings .coin {
+        width: 23px;
+        height: 23px; }
+      .prizes .coin-legend .coin-winnings p {
+        font-size: 15px;
+        color: white;
+        font-family: 'Futura-Bk-BT', sans-serif;
+        margin: 0;
+        padding: 9px 0; }
+      .prizes .coin-legend .coin-winnings .coin-action {
+        padding-right: 5px;
+        text-transform: uppercase; }
+      .prizes .coin-legend .coin-winnings .coin-amount {
+        padding-left: 5px; }
+      .prizes .coin-legend .coin-winnings .coin-space {
+        padding-right: 20px; }
+  .prizes .prize-path {
+    width: 340px;
+    height: auto;
+    padding-top: 25px;
+    padding-bottom: 40px; }
 
 .page-id-19 .page-template-default .site-main {
   width: 1000px;
