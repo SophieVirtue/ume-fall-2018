@@ -18,7 +18,6 @@ get_header(); ?>
         **/      
    $args = array( 'post_type' => 'game', 'posts_per_page' => '10');
    $game_posts = get_posts( $args ); // returns an array of posts
-   
 
 ?>
 <?php foreach ( $game_posts as $post ) : setup_postdata( $post ); ?>
