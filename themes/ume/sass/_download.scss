@@ -4,61 +4,38 @@
     margin-left: auto;
     margin-right: auto;
   }
-
-  p {
-    margin: 0;
-    padding: 0;
-  }
 }
 
 .site {
   background: url(../../assets/background.png);
   background-size: cover, 800px;
-  height: 100vh;
 
   @include desktop {
     background: url(../../assets/background.png);
     background-size: cover, 800px;
-    height: 100vh;
   }
-}
-
-input[type='email']:focus,
-input[type='password']:focus,
-input[type='search']:focus,
-input[type='text']:focus,
-input[type='url']:focus,
-textarea:focus {
-  color: green;
-  padding: 20px;
-}
-::-webkit-input-placeholder {
-  color: green;
-  font-size: 1rem;
-}
-
-input[type='email'],
-input[type='password'],
-input[type='search'],
-input[type='text'],
-input[type='url'] {
-  padding: 12px;
-  opacity: 100;
 }
 
 .wpcf7-form {
   display: block;
-  .parentsName {
+  .parentsName,
+  .studentsName {
+    font-family: 'futura-bold';
+    text-transform: uppercase;
+    font-size: 25px;
     display: flex;
+    justify-content: space-between;
+    margin-top: 3rem;
     label {
-      width: 50%;
+      // width: 50%;
     }
   }
-  .studentsName {
-    display: flex;
-    label {
-      width: 50%;
-    }
+  ::-webkit-input-placeholder {
+    /* Chrome/Opera/Safari */
+    color: white;
+    font-size: 1rem;
+    opacity: 0.5;
+    text-transform: capitalize;
   }
 }
 
@@ -67,7 +44,72 @@ input[type='password'],
 input[type='search'],
 input[type='text'],
 input[type='url'] {
-  padding: 12px;
-  padding: 12px 11%;
-  /* opacity: unset; */
+  padding: 15px 15%;
+  background: transparent;
+  border: 3px solid white;
+  width: 60%;
+  text-transform: uppercase;
+ 
+  &:focus {
+    outline: 0;
+  }
 }
+
+.site-content {
+  padding-top: 50px;
+}
+
+.entry-title {
+  font-family: 'futura-bold';
+  font-size: 40px;
+  text-transform: uppercase;
+  line-height: 53px;
+  padding-top: 3rem;
+  margin: 0;
+}
+
+//p for the sentence about downloading game
+.project-setup {
+  margin-top: 6rem;
+  line-height: 1.6;
+  max-width: 90%;
+  font-family: 'futura-heavy';
+  font-weight: 100;
+}
+
+.email {
+  margin-top: 6rem;
+  font-family: 'futura-bold';
+  text-transform: uppercase;
+  font-size: 25px;
+  display: flex;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin-top: 3rem;
+  input {
+    width: 65%;
+  }
+}
+
+.submit {
+  margin-top: 6rem;
+  margin-bottom: 12rem;
+  text-align: center;
+}
+
+//Custom Button
+
+.wpcf7-submit {
+  color: white;
+  width: 275px;
+  padding: 20px;
+  background: linear-gradient(180deg, #f5d672, #e77839);
+  border-radius: 3px;
+}
+
+input[type='submit'] {
+  font-size: 25px;
+  font-family: 'futura-bk-bt' normal;
+  text-transform: uppercase;
+}
+

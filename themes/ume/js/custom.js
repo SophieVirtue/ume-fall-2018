@@ -19,3 +19,4 @@
     }); //end of doc.ready
 })(jQuery);
  //end of jquery
+ 
