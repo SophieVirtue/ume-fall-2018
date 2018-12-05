@@ -24,10 +24,10 @@ get_header(); ?>
             </div>
 
         </section>
-<<<<<<< HEAD
+
     
     </section>
-=======
+
 
     </section>
 
@@ -352,15 +352,6 @@ get_header(); ?>
 
           </div>
           </section>
-
-
-
-
-    
->>>>>>> b26cbb33121258e1ae6626c92d5898741bcd89d9
-
-    
-	
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
