@@ -18,19 +18,12 @@ get_header(); ?>
             <div class="banner">
             
             </div>
-        <section>
+    </section>
+
+
+
+<section>
             <div class="game-background">
-
-            </div>
-
-        </section>
-
-    
-    </section>
-
-
-    </section>
-
         <?php
         //TODO get_posts of Journal Posts
         /*
@@ -352,6 +345,10 @@ get_header(); ?>
 
           </div>
           </section>
+
+            </div>
+
+</section>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->

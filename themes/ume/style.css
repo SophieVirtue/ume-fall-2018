@@ -747,8 +747,7 @@ body {
 .agriculture-games, .science-games, .fashion-games, .pet-games, .space-games, .sea-games {
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex;
-  color: red; }
+  display: flex; }
 
 .hide-div {
   width: 100vw;
