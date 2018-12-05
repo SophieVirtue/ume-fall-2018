@@ -1,0 +1,73 @@
+.page-template-default {
+  .site-main {
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  p {
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.site {
+  background: url(../../assets/background.png);
+  background-size: cover, 800px;
+  height: 100vh;
+
+  @include desktop {
+    background: url(../../assets/background.png);
+    background-size: cover, 800px;
+    height: 100vh;
+  }
+}
+
+input[type='email']:focus,
+input[type='password']:focus,
+input[type='search']:focus,
+input[type='text']:focus,
+input[type='url']:focus,
+textarea:focus {
+  color: green;
+  padding: 20px;
+}
+::-webkit-input-placeholder {
+  color: green;
+  font-size: 1rem;
+}
+
+input[type='email'],
+input[type='password'],
+input[type='search'],
+input[type='text'],
+input[type='url'] {
+  padding: 12px;
+  opacity: 100;
+}
+
+.wpcf7-form {
+  display: block;
+  .parentsName {
+    display: flex;
+    label {
+      width: 50%;
+    }
+  }
+  .studentsName {
+    display: flex;
+    label {
+      width: 50%;
+    }
+  }
+}
+
+input[type='email'],
+input[type='password'],
+input[type='search'],
+input[type='text'],
+input[type='url'] {
+  padding: 12px;
+  padding: 12px 11%;
+  /* opacity: unset; */
+}
