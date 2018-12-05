@@ -1,13 +1,20 @@
 (function($) {
     $(function() {
         const $play = $('.logo');
-
+        const $popup = $('.popup');
+        const $hidePopUp = $('.hide-div');
+        
         // popup toggle
-        $play.on('click', function() {
-            if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
-            $('.popup').toggle();
-        }
-        }) //end of popup .onclick
+        
+        if( !/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+            $play.on('click', function() {
+                $popup.toggle();
+            }); //end of popup .onclick
+            $hidePopUp.on('click', function() {
+                $popup.hide();
+            });
+        } //end of if browsertype
+        
 
         // flickity
         $('.main-carousel').flickity({
