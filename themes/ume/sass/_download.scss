@@ -1,4 +1,5 @@
-.page-id-19 .page-template-default {
+.page-id-19  {
+  color: #fff;
   .site-main {
     width: 1000px;
     margin-left: auto;
@@ -6,11 +7,11 @@
   }
 
   .site {
-    background: url(../../assets/background.png);
+    background: url(../../assets/images/background.png);
     background-size: cover, 800px;
 
     @include desktop {
-      background: url(../../assets/background.png);
+      background: url(../../assets/images/background.png);
       background-size: cover, 800px;
     }
   }

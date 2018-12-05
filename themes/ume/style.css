@@ -639,110 +639,99 @@ i.fa-search {
     .page-template-default .prizes .site-main .coin-winnings .times-five {
       padding-right: 21px; }
 
-.page-id-19 .page-template-default .site-main {
-  width: 1000px;
-  margin-left: auto;
-  margin-right: auto; }
-
-.page-id-19 .page-template-default .site {
-  background: url(../../assets/background.png);
-  background-size: cover, 800px; }
-  @media (min-width: 1024px) {
-    .page-id-19 .page-template-default .site {
-      background: url(../../assets/background.png);
-      background-size: cover, 800px; } }
-
-.page-id-19 .page-template-default .wpcf7-form {
-  display: block; }
-  .page-id-19 .page-template-default .wpcf7-form .parentsName,
-  .page-id-19 .page-template-default .wpcf7-form .studentsName {
+.page-id-19 {
+  color: #fff; }
+  .page-id-19 .site-main {
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto; }
+  .page-id-19 .site {
+    background: url(../../assets/images/background.png);
+    background-size: cover, 800px; }
+    @media (min-width: 1024px) {
+      .page-id-19 .site {
+        background: url(../../assets/images/background.png);
+        background-size: cover, 800px; } }
+  .page-id-19 .wpcf7-form {
+    display: block; }
+    .page-id-19 .wpcf7-form .parentsName,
+    .page-id-19 .wpcf7-form .studentsName {
+      font-family: 'futura-bold';
+      text-transform: uppercase;
+      font-size: 25px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      margin-top: 3rem; }
+    .page-id-19 .wpcf7-form ::-webkit-input-placeholder {
+      /* Chrome/Opera/Safari */
+      color: white;
+      font-size: 1rem;
+      opacity: 0.5;
+      text-transform: capitalize; }
+  .page-id-19 input[type='email'],
+  .page-id-19 input[type='password'],
+  .page-id-19 input[type='search'],
+  .page-id-19 input[type='text'],
+  .page-id-19 input[type='url'] {
+    padding: 15px 15%;
+    background: transparent;
+    border: 3px solid white;
+    width: 60%;
+    text-transform: uppercase; }
+    .page-id-19 input[type='email']:focus,
+    .page-id-19 input[type='password']:focus,
+    .page-id-19 input[type='search']:focus,
+    .page-id-19 input[type='text']:focus,
+    .page-id-19 input[type='url']:focus {
+      outline: 0; }
+  .page-id-19 .site-content {
+    padding-top: 50px; }
+  .page-id-19 .entry-title {
+    font-family: 'futura-bold';
+    font-size: 40px;
+    text-transform: uppercase;
+    line-height: 53px;
+    padding-top: 3rem;
+    margin: 0; }
+  .page-id-19 .project-setup {
+    margin-top: 6rem;
+    line-height: 1.6;
+    max-width: 90%;
+    font-family: 'futura-heavy';
+    font-weight: 100; }
+  .page-id-19 .email {
+    margin-top: 6rem;
     font-family: 'futura-bold';
     text-transform: uppercase;
     font-size: 25px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -ms-flex-pack: justify;
     -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
             justify-content: space-between;
     margin-top: 3rem; }
-  .page-id-19 .page-template-default .wpcf7-form ::-webkit-input-placeholder {
-    /* Chrome/Opera/Safari */
+    .page-id-19 .email input {
+      width: 65%; }
+  .page-id-19 .submit {
+    margin-top: 6rem;
+    margin-bottom: 12rem;
+    text-align: center; }
+  .page-id-19 .wpcf7-submit {
     color: white;
-    font-size: 1rem;
-    opacity: 0.5;
-    text-transform: capitalize; }
-
-.page-id-19 .page-template-default input[type='email'],
-.page-id-19 .page-template-default input[type='password'],
-.page-id-19 .page-template-default input[type='search'],
-.page-id-19 .page-template-default input[type='text'],
-.page-id-19 .page-template-default input[type='url'] {
-  padding: 15px 15%;
-  background: transparent;
-  border: 3px solid white;
-  width: 60%;
-  text-transform: uppercase; }
-  .page-id-19 .page-template-default input[type='email']:focus,
-  .page-id-19 .page-template-default input[type='password']:focus,
-  .page-id-19 .page-template-default input[type='search']:focus,
-  .page-id-19 .page-template-default input[type='text']:focus,
-  .page-id-19 .page-template-default input[type='url']:focus {
-    outline: 0; }
-
-.page-id-19 .page-template-default .site-content {
-  padding-top: 50px; }
-
-.page-id-19 .page-template-default .entry-title {
-  font-family: 'futura-bold';
-  font-size: 40px;
-  text-transform: uppercase;
-  line-height: 53px;
-  padding-top: 3rem;
-  margin: 0; }
-
-.page-id-19 .page-template-default .project-setup {
-  margin-top: 6rem;
-  line-height: 1.6;
-  max-width: 90%;
-  font-family: 'futura-heavy';
-  font-weight: 100; }
-
-.page-id-19 .page-template-default .email {
-  margin-top: 6rem;
-  font-family: 'futura-bold';
-  text-transform: uppercase;
-  font-size: 25px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: justify;
-  -webkit-box-pack: justify;
-          justify-content: space-between;
-  margin-top: 3rem; }
-  .page-id-19 .page-template-default .email input {
-    width: 65%; }
-
-.page-id-19 .page-template-default .submit {
-  margin-top: 6rem;
-  margin-bottom: 12rem;
-  text-align: center; }
-
-.page-id-19 .page-template-default .wpcf7-submit {
-  color: white;
-  width: 275px;
-  padding: 20px;
-  background: -webkit-gradient(linear, left top, left bottom, from(#f5d672), to(#e77839));
-  background: linear-gradient(180deg, #f5d672, #e77839);
-  border-radius: 3px; }
-
-.page-id-19 .page-template-default input[type='submit'] {
-  font-size: 25px;
-  font-family: 'futura-bk-bt' normal;
-  text-transform: uppercase; }
-
-body {
-  color: #fff; }
+    width: 275px;
+    padding: 20px;
+    background: -webkit-gradient(linear, left top, left bottom, from(#f5d672), to(#e77839));
+    background: linear-gradient(180deg, #f5d672, #e77839);
+    border-radius: 3px; }
+  .page-id-19 input[type='submit'] {
+    font-size: 25px;
+    font-family: 'futura-bk-bt' normal;
+    text-transform: uppercase; }
 
 .agriculture-games, .science-games, .fashion-games, .pet-games, .space-games, .sea-games {
   display: -webkit-box;
