@@ -1,8 +1,10 @@
 .site-header{
 background: linear-gradient(180deg, #F8F8FF 0%, #000000 100%);
-opacity: 0.95;
+opacity: 0.62;
 box-shadow: 0 0 4px 0 rgba(0,0,0,0.5); 
-
+position: absolute;
+height: 50px;
+width: 100%;
 }
 
 div.hamburger-bar{
@@ -16,7 +18,7 @@ h3.site-title{
     height: 30px;
     width: 98px;
     color: #FF008C;	
-    font-family: Futura;	
+    font-family: Futura-Bk-BT;	
     font-size: 13px;
     font-weight: bold;	
     line-height: 30px;

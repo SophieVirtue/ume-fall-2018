@@ -1,7 +1,46 @@
-.prizes {
+.page-template-default .prizes .site-main {
     background: url(../../assets/images/grid-lines.png), url(../../assets/images/background.png); 
     background-repeat: no-repeat;
-    background-size: 850px auto, 600px auto;
+    background-size: cover, cover;
     background-position: top; 
-    height: 90vh;
+    // overflow: hidden;
+    text-align: center;
+    width: 100%;
+    .page-name {
+        width: 162px;
+        height: auto;
+        padding-top: 64px;
+    }
+    h3 {
+        text-transform: uppercase;
+        font-size: 10px;
+        color: white;
+        font-family: 'Futura', sans-serif;
+        padding-bottom: 45px;
+    }
+    .coin-winnings {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        width: 332px;
+        text-align: center;
+        background-color: rgba(0.17, 0.17, 0.17, 0.44);
+        .coin {
+            width: 23px;
+            height: 23px;
+        }
+        p {
+            text-transform: uppercase;
+            font-size: 15px;
+            color: white;
+            font-family: 'Futura', sans-serif;
+            padding: 4.5px 0;
+        }
+        .one-play {
+            padding-left: 21px;
+        }
+        .times-five {
+            padding-right: 21px;
+        }
+    }
 }

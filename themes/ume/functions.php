@@ -86,10 +86,12 @@ add_filter( 'stylesheet_uri', 'red_starter_minified_css', 10, 2 );
 function ume_scripts() {
 	wp_enqueue_style( 'ume-style', get_stylesheet_uri() );
 	wp_enqueue_style('ume-fontawesome', "https://use.fontawesome.com/releases/v5.5.0/css/all.css" );
-
+	wp_enqueue_style('ume-flickity-css', "https://unpkg.com/flickity@2/dist/flickity.min.css" );
 
 	wp_enqueue_script( 'ume-navigation', get_template_directory_uri() . '/build/js/navigation.min.js', array(), '20151215', true );
 	wp_enqueue_script( 'ume-skip-link-focus-fix', get_template_directory_uri() . '/build/js/skip-link-focus-fix.min.js', array(), '20151215', true );
+	wp_enqueue_script( 'ume-custom', get_template_directory_uri() . '/build/js/custom.min.js', array('jquery'), '20151215', true );
+	wp_enqueue_script('ume-flickity-js', "https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js" );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
@@ -106,3 +108,5 @@ require get_template_directory() . '/inc/template-tags.php';
  * Custom functions that act independently of the theme templates.
  */
 require get_template_directory() . '/inc/extras.php';
+
+

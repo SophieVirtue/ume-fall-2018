@@ -28,7 +28,7 @@
 			<div class="main-header">
 			  <div class="left-column">
 			      <div class="logo">
-				  <img src="<?php echo get_template_directory_uri();?>/images/Lightning R.png" alt="lightning-right"/>
+				  <img src="<?php echo get_template_directory_uri();?>/assets/images/lightning-right.png" alt="lightning-right"/>
                   </div>
                   <div class="label">
 				  <h3 class="site-title"> UME Arcade </h3>
