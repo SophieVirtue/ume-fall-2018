@@ -1,4 +1,5 @@
-.page-id-19  {
+// the download page
+.page-download {
   color: #fff;
   background: url(../../assets/images/background.png);
   background-size: cover, 800px;
@@ -7,7 +8,7 @@
     background: url(../../assets/images/background.png);
     background-size: cover, 800px;
   }
-  
+
   .site-main {
     width: 300px;
     margin-left: auto;
@@ -18,7 +19,6 @@
     @include desktop {
       width: 800px;
     }
-    
   }
 
   // .site {
@@ -31,122 +31,118 @@
   //   }
   // }
 
+  .wpcf7-form {
+    display: block;
+    .parentsName,
+    .studentsName {
+      font-family: 'futura-bold';
+      text-transform: uppercase;
+      font-size: 25px;
+      justify-content: space-between;
+      margin-top: 3rem;
+      @include desktop {
+        display: flex;
+      }
+    }
+    ::-webkit-input-placeholder {
+      /* Chrome/Opera/Safari */
+      color: white;
+      font-size: 1rem;
+      opacity: 0.5;
+      text-transform: capitalize;
+    }
+  }
 
-.wpcf7-form {
-  display: block;
-  .parentsName,
-  .studentsName {
-    font-family: 'futura-bold';
+  input[type='email'],
+  input[type='password'],
+  input[type='search'],
+  input[type='text'],
+  input[type='url'] {
+    color: #fff;
+    padding: 15px 10px;
+    // padding-left: 10px;
+    background: transparent;
+    border: 3px solid white;
+    width: 100%;
     text-transform: uppercase;
+    @include desktop {
+      width: 80%;
+    }
+
+    &:focus {
+      outline: 0;
+    }
+  }
+
+  .site-content {
+    padding-top: 50px;
+  }
+
+  .entry-title {
+    font-family: 'futura-bold';
+    font-size: 30px;
+    text-transform: uppercase;
+    line-height: 53px;
+    padding-top: 3rem;
+    margin: 0;
+    @include desktop {
+      font-size: 40px;
+    }
+  }
+
+  //p for the sentence about downloading game
+  .project-setup {
+    margin-top: 3rem;
+    line-height: 1.6;
+    font-family: 'futura-heavy';
+    font-weight: lighter;
+    @include desktop {
+      margin-top: 6rem;
+      max-width: 90%;
+    }
+  }
+
+  .email {
+    margin-top: 6rem;
+    font-family: 'futura-bold';
     font-size: 25px;
+    display: flex;
+    -ms-flex-pack: justify;
     justify-content: space-between;
     margin-top: 3rem;
-    @include desktop {
-      display: flex;
-
+    ::-webkit-input-placeholder {
+      /* Chrome/Opera/Safari */
+      text-transform: lowercase;
+    }
+    input {
+      @include desktop {
+        width: 43%;
+      }
+    }
+    input {
+      text-transform: lowercase;
     }
   }
-  ::-webkit-input-placeholder {
-    /* Chrome/Opera/Safari */
-    color: white;
-    font-size: 1rem;
-    opacity: 0.5;
-    text-transform: capitalize;
-  }
-}
 
-input[type='email'],
-input[type='password'],
-input[type='search'],
-input[type='text'],
-input[type='url'] {
-  color: #fff;
-  padding: 15px 10px;
-  // padding-left: 10px;
-  background: transparent;
-  border: 3px solid white;
-  width: 100%;
-  text-transform: uppercase;
-  @include desktop {
-    width: 80%;
-  }
-
-  &:focus {
-    outline: 0;
-  }
-}
-
-.site-content {
-  padding-top: 50px;
-  
-}
-
-.entry-title {
-  font-family: 'futura-bold';
-  font-size: 30px;
-  text-transform: uppercase;
-  line-height: 53px;
-  padding-top: 3rem;
-  margin: 0;
-  @include desktop {
-    font-size: 40px;
-  }
-}
-
-//p for the sentence about downloading game
-.project-setup {
-  margin-top: 3rem;
-  line-height: 1.6;
-  font-family: 'futura-heavy';
-  font-weight: lighter;
-  @include desktop {
+  .submit {
     margin-top: 6rem;
-    max-width: 90%;
+    margin-bottom: 12rem;
+    text-align: center;
   }
-}
 
-.email {
-  margin-top: 6rem;
-  font-family: 'futura-bold';
-  font-size: 25px;
-  display: flex;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  margin-top: 3rem;
-  ::-webkit-input-placeholder {
-    /* Chrome/Opera/Safari */
-    text-transform: lowercase;
+  //Custom Button
+
+  .wpcf7-submit {
+    color: white;
+    width: 275px;
+    padding: 20px;
+    background: linear-gradient(180deg, #f5d672, #e77839);
+    border-radius: 3px;
   }
-  input {
-    @include desktop {
-      width: 43%;
-    }
+
+  input[type='submit'] {
+    font-size: 25px;
+    font-family: 'futura-bk-bt' normal;
+    text-transform: uppercase;
   }
-  input {
-    text-transform: lowercase;
-   
-  }
-}
-
-.submit {
-  margin-top: 6rem;
-  margin-bottom: 12rem;
-  text-align: center;
-}
-
-//Custom Button
-
-.wpcf7-submit {
-  color: white;
-  width: 275px;
-  padding: 20px;
-  background: linear-gradient(180deg, #f5d672, #e77839);
-  border-radius: 3px;
-}
-
-input[type='submit'] {
-  font-size: 25px;
-  font-family: 'futura-bk-bt' normal;
-  text-transform: uppercase;
-}
 }

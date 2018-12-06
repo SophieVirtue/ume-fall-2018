@@ -1,7 +1,8 @@
 .prizes {
     background: url(../../assets/images/grid-lines.png), url(../../assets/images/background.png); 
     background-repeat: no-repeat;
-    background-size: cover, cover;
+    background-size: auto 874px, auto 1800px;
+    overflow: hidden;
     background-position: top; 
     text-align: center;
     width: 100%;
@@ -55,6 +56,6 @@
         width: 340px;
         height: auto;
         padding-top: 25px;
-        padding-bottom: 40px;
+        padding-bottom: 120px;
     }
 }
