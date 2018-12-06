@@ -1043,3 +1043,6 @@ i.fa-search {
     margin: 3rem 0; }
   .game-template-default.single-game .entry-content {
     padding: 3rem 0 10rem 0; }
+
+.search .site-content, .search-results .site-content {
+  padding-top: 8rem; }
