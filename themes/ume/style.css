@@ -506,15 +506,36 @@ object {
           box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.5);
   position: absolute;
   bottom: 0; }
+  @media (min-width: 1024px) {
+    .site-footer {
+      height: 68px; } }
   .site-footer p {
     margin: 0;
     margin-right: 10px;
     color: white;
     text-transform: uppercase; }
+    @media (min-width: 600px) {
+      .site-footer p {
+        margin-right: 35px;
+        font-size: 15px; } }
+    @media (min-width: 600px) {
+      .site-footer p {
+        margin-right: 55px;
+        font-size: 18px; } }
   .site-footer img {
     width: 28px;
     height: 28px;
     margin-left: 10px; }
+    @media (min-width: 600px) {
+      .site-footer img {
+        width: 42px;
+        height: 42px;
+        margin-left: 21px; } }
+    @media (min-width: 1024px) {
+      .site-footer img {
+        width: 50px;
+        height: 50px;
+        margin-left: 33px; } }
 
 .footer-relative {
   position: relative; }
@@ -611,17 +632,17 @@ i.fa-search {
 .prizes {
   background: url(../../assets/images/grid-lines.png), url(../../assets/images/background.png);
   background-repeat: no-repeat;
-  background-size: auto 874px, auto 1800px;
+  background-size: auto 98%, auto 1800px;
   overflow: hidden;
   background-position: top;
   text-align: center;
   width: 100%; }
   @media (min-width: 600px) {
     .prizes {
-      background-size: auto 1495px, 100% 100%; } }
+      background-size: auto 97%, 100% 100%; } }
   @media (min-width: 1024px) {
     .prizes {
-      background-size: 100% 1100px, 100% 100%; } }
+      background-size: 100% 45%, 100% 100%; } }
   .prizes .prize-page-name {
     width: 167px;
     height: auto;
@@ -668,11 +689,11 @@ i.fa-search {
       -webkit-box-pack: center;
           -ms-flex-pack: center;
               justify-content: center;
-      width: 332px;
+      width: 90%;
       background-color: rgba(0, 0, 0, 0.2); }
       @media (min-width: 600px) {
         .prizes .coin-legend .coin-winnings {
-          width: 539px; } }
+          width: 75%; } }
       @media (min-width: 1024px) {
         .prizes .coin-legend .coin-winnings {
           width: 733px; } }
@@ -694,23 +715,23 @@ i.fa-search {
       .prizes .coin-legend .coin-winnings .coin-amount {
         padding-left: 5px; }
       .prizes .coin-legend .coin-winnings .coin-space {
-        padding-right: 20px; }
+        padding-right: 4.75%; }
         @media (min-width: 600px) {
           .prizes .coin-legend .coin-winnings .coin-space {
             padding-right: 80px; } }
   .prizes .prize-path {
-    width: 340px;
+    width: 90%;
     height: auto;
     padding-top: 25px;
     padding-bottom: 100px; }
     @media (min-width: 600px) {
       .prizes .prize-path {
-        width: 600px;
+        width: 85%;
         padding-top: 95px;
         padding-bottom: 130px; } }
-    @media (min-width: 600px) {
+    @media (min-width: 1024px) {
       .prizes .prize-path {
-        width: 900px;
+        width: 90%;
         padding-top: 270px;
         padding-bottom: 130px; } }
 
