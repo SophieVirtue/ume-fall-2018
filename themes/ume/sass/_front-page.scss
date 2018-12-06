@@ -89,8 +89,8 @@
     img{
         width: 400px;
         @include tablet{
-            height: 230px;
-            width: 550px;
+            height: 120px;
+            width: 600px;
             
         }
         @include desktop{

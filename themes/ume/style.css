@@ -915,8 +915,8 @@ i.fa-search {
     width: 400px; }
     @media (min-width: 600px) {
       .banner .lower-row img {
-        height: 230px;
-        width: 550px; } }
+        height: 120px;
+        width: 600px; } }
     @media (min-width: 1024px) {
       .banner .lower-row img {
         height: 270px;
