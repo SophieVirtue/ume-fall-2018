@@ -1,12 +1,28 @@
-.play-game {
-    color: #fff;
-    background: url(../../assets/images/background.png);
-    background-size: cover, 800px;
-    height: 100vh;
+.page-play-game {
+  color: #fff;
+  background: url(../../assets/images/grid-lines.png),
+    url(../../assets/images/background.png);
+  background-size: cover, 800px, 0, cover;
+  height: 120vh;
+  // height: 100vh;
+
+  // @include desktop {
+  //   background: url(../../assets/images/background.png);
+  //   background-size: cover, 800px;
+  // }
+  .site-content {
+    margin: 0 auto;
+    width: 800px;
+  }
+
+  .neon-play-game {
+      padding-top: 4rem;
+  }
+
   
-    // @include desktop {
-    //   background: url(../../assets/images/background.png);
-    //   background-size: cover, 800px;
-    // }
 }
 
+.play-game {
+    margin: 0 auto;
+    width: 90%;
+}
