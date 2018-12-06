@@ -849,6 +849,79 @@ i.fa-search {
 .drop-down {
   color: gold; }
 
+.banner .upper-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 14rem; }
+  .banner .upper-row .left-lightning {
+    padding-top: 4.8rem; }
+    @media (min-width: 600px) {
+      .banner .upper-row .left-lightning {
+        padding-top: 12rem; } }
+    @media (min-width: 1024px) {
+      .banner .upper-row .left-lightning {
+        padding-top: 17rem; } }
+    .banner .upper-row .left-lightning img {
+      width: 90px; }
+      @media (min-width: 600px) {
+        .banner .upper-row .left-lightning img {
+          width: 110px; } }
+      @media (min-width: 1024px) {
+        .banner .upper-row .left-lightning img {
+          width: 145px;
+          height: 170px; } }
+  .banner .upper-row .center-label {
+    padding-top: 8.5rem; }
+    @media (min-width: 600px) {
+      .banner .upper-row .center-label {
+        padding-top: 16.5rem; } }
+    @media (min-width: 1024px) {
+      .banner .upper-row .center-label {
+        padding-top: 19rem; } }
+    .banner .upper-row .center-label img {
+      width: 290px; }
+      @media (min-width: 600px) {
+        .banner .upper-row .center-label img {
+          width: 380px; } }
+      @media (min-width: 1024px) {
+        .banner .upper-row .center-label img {
+          width: 750px;
+          height: 130px; } }
+  .banner .upper-row .right-lightning {
+    padding-top: 4.8rem; }
+    @media (min-width: 600px) {
+      .banner .upper-row .right-lightning {
+        padding-top: 12rem; } }
+    @media (min-width: 1024px) {
+      .banner .upper-row .right-lightning {
+        padding-top: 17rem; } }
+    .banner .upper-row .right-lightning img {
+      width: 90px; }
+      @media (min-width: 600px) {
+        .banner .upper-row .right-lightning img {
+          width: 110px; } }
+      @media (min-width: 1024px) {
+        .banner .upper-row .right-lightning img {
+          width: 145px;
+          height: 170px; } }
+
+.banner .lower-row {
+  text-align: center; }
+  .banner .lower-row img {
+    width: 400px; }
+    @media (min-width: 600px) {
+      .banner .lower-row img {
+        height: 230px;
+        width: 550px; } }
+    @media (min-width: 1024px) {
+      .banner .lower-row img {
+        height: 270px;
+        width: 1024px; } }
+
 .hide-div {
   width: 100vw;
   height: 100vh;
