@@ -13,7 +13,7 @@
 	</header><!-- .entry-header -->
 
 	<p class="project-setup">To download your game, please fill in this form and we will send you a link along with instructions for installing Unity to your computer and getting your project setup.</p>
-
+		
 	<div class="entry-content">
 		<?php the_content(); ?>
 		<?php
@@ -22,5 +22,5 @@
 				'after'  => '</div>',
 			) );
 		?>
-	</div><!-- .entry-content -->
+	</div>
 </article><!-- #post-## -->
