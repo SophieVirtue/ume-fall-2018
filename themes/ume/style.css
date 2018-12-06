@@ -500,9 +500,12 @@ object {
   width: 100%;
   font-family: 'Futura-Bk-BT', sans-serif;
   color: white;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.62)), to(#000000));
-  background: linear-gradient(rgba(255, 255, 255, 0.62) 0%, #000000 100%);
-  position: absolute; }
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.3)), to(rgba(0, 0, 0, 0.9)));
+  background: linear-gradient(rgba(255, 255, 255, 0.3), rgba(0, 0, 0, 0.9));
+  -webkit-box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.5);
+  position: absolute;
+  bottom: 0; }
   .site-footer p {
     margin: 0;
     margin-right: 10px;
@@ -512,6 +515,9 @@ object {
     width: 28px;
     height: 28px;
     margin-left: 10px; }
+
+.footer-relative {
+  position: relative; }
 
 /*--------------------------------------------------------------
 # Page Templates
@@ -534,9 +540,8 @@ object {
   height: 800vh; }
 
 .site-header {
-  background: -webkit-gradient(linear, left top, left bottom, from(#F8F8FF), to(#000000));
-  background: linear-gradient(180deg, #F8F8FF 0%, #000000 100%);
-  opacity: 0.62;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.62)), to(black));
+  background: linear-gradient(rgba(255, 255, 255, 0.62), black);
   -webkit-box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.5);
           box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.5);
   position: absolute;
@@ -600,7 +605,8 @@ i.fa-search {
 .prizes {
   background: url(../../assets/images/grid-lines.png), url(../../assets/images/background.png);
   background-repeat: no-repeat;
-  background-size: cover, cover;
+  background-size: auto 874px, auto 1800px;
+  overflow: hidden;
   background-position: top;
   text-align: center;
   width: 100%; }
@@ -656,30 +662,30 @@ i.fa-search {
     width: 340px;
     height: auto;
     padding-top: 25px;
-    padding-bottom: 40px; }
+    padding-bottom: 120px; }
 
-.page-id-19 {
+.page-download {
   color: #fff;
   background: url(../../assets/images/background.png);
   background-size: cover, 800px; }
   @media (min-width: 1024px) {
-    .page-id-19 {
+    .page-download {
       background: url(../../assets/images/background.png);
       background-size: cover, 800px; } }
-  .page-id-19 .site-main {
+  .page-download .site-main {
     width: 300px;
     margin-left: auto;
     margin-right: auto; }
     @media (min-width: 600px) {
-      .page-id-19 .site-main {
+      .page-download .site-main {
         width: 600px; } }
     @media (min-width: 1024px) {
-      .page-id-19 .site-main {
+      .page-download .site-main {
         width: 800px; } }
-  .page-id-19 .wpcf7-form {
+  .page-download .wpcf7-form {
     display: block; }
-    .page-id-19 .wpcf7-form .parentsName,
-    .page-id-19 .wpcf7-form .studentsName {
+    .page-download .wpcf7-form .parentsName,
+    .page-download .wpcf7-form .studentsName {
       font-family: 'futura-bold';
       text-transform: uppercase;
       font-size: 25px;
@@ -688,22 +694,22 @@ i.fa-search {
               justify-content: space-between;
       margin-top: 3rem; }
       @media (min-width: 1024px) {
-        .page-id-19 .wpcf7-form .parentsName,
-        .page-id-19 .wpcf7-form .studentsName {
+        .page-download .wpcf7-form .parentsName,
+        .page-download .wpcf7-form .studentsName {
           display: -webkit-box;
           display: -ms-flexbox;
           display: flex; } }
-    .page-id-19 .wpcf7-form ::-webkit-input-placeholder {
+    .page-download .wpcf7-form ::-webkit-input-placeholder {
       /* Chrome/Opera/Safari */
       color: white;
       font-size: 1rem;
       opacity: 0.5;
       text-transform: capitalize; }
-  .page-id-19 input[type='email'],
-  .page-id-19 input[type='password'],
-  .page-id-19 input[type='search'],
-  .page-id-19 input[type='text'],
-  .page-id-19 input[type='url'] {
+  .page-download input[type='email'],
+  .page-download input[type='password'],
+  .page-download input[type='search'],
+  .page-download input[type='text'],
+  .page-download input[type='url'] {
     color: #fff;
     padding: 15px 10px;
     background: transparent;
@@ -711,21 +717,21 @@ i.fa-search {
     width: 100%;
     text-transform: uppercase; }
     @media (min-width: 1024px) {
-      .page-id-19 input[type='email'],
-      .page-id-19 input[type='password'],
-      .page-id-19 input[type='search'],
-      .page-id-19 input[type='text'],
-      .page-id-19 input[type='url'] {
+      .page-download input[type='email'],
+      .page-download input[type='password'],
+      .page-download input[type='search'],
+      .page-download input[type='text'],
+      .page-download input[type='url'] {
         width: 80%; } }
-    .page-id-19 input[type='email']:focus,
-    .page-id-19 input[type='password']:focus,
-    .page-id-19 input[type='search']:focus,
-    .page-id-19 input[type='text']:focus,
-    .page-id-19 input[type='url']:focus {
+    .page-download input[type='email']:focus,
+    .page-download input[type='password']:focus,
+    .page-download input[type='search']:focus,
+    .page-download input[type='text']:focus,
+    .page-download input[type='url']:focus {
       outline: 0; }
-  .page-id-19 .site-content {
+  .page-download .site-content {
     padding-top: 50px; }
-  .page-id-19 .entry-title {
+  .page-download .entry-title {
     font-family: 'futura-bold';
     font-size: 30px;
     text-transform: uppercase;
@@ -733,18 +739,18 @@ i.fa-search {
     padding-top: 3rem;
     margin: 0; }
     @media (min-width: 1024px) {
-      .page-id-19 .entry-title {
+      .page-download .entry-title {
         font-size: 40px; } }
-  .page-id-19 .project-setup {
+  .page-download .project-setup {
     margin-top: 3rem;
     line-height: 1.6;
     font-family: 'futura-heavy';
     font-weight: lighter; }
     @media (min-width: 1024px) {
-      .page-id-19 .project-setup {
+      .page-download .project-setup {
         margin-top: 6rem;
         max-width: 90%; } }
-  .page-id-19 .email {
+  .page-download .email {
     margin-top: 6rem;
     font-family: 'futura-bold';
     font-size: 25px;
@@ -755,26 +761,26 @@ i.fa-search {
     -webkit-box-pack: justify;
             justify-content: space-between;
     margin-top: 3rem; }
-    .page-id-19 .email ::-webkit-input-placeholder {
+    .page-download .email ::-webkit-input-placeholder {
       /* Chrome/Opera/Safari */
       text-transform: lowercase; }
     @media (min-width: 1024px) {
-      .page-id-19 .email input {
+      .page-download .email input {
         width: 43%; } }
-    .page-id-19 .email input {
+    .page-download .email input {
       text-transform: lowercase; }
-  .page-id-19 .submit {
+  .page-download .submit {
     margin-top: 6rem;
     margin-bottom: 12rem;
     text-align: center; }
-  .page-id-19 .wpcf7-submit {
+  .page-download .wpcf7-submit {
     color: white;
     width: 275px;
     padding: 20px;
     background: -webkit-gradient(linear, left top, left bottom, from(#f5d672), to(#e77839));
     background: linear-gradient(180deg, #f5d672, #e77839);
     border-radius: 3px; }
-  .page-id-19 input[type='submit'] {
+  .page-download input[type='submit'] {
     font-size: 25px;
     font-family: 'futura-bk-bt' normal;
     text-transform: uppercase; }
@@ -782,8 +788,7 @@ i.fa-search {
 .agriculture-games, .science-games, .fashion-games, .pet-games, .space-games, .sea-games {
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex;
-  color: red; }
+  display: flex; }
 
 .hide-div {
   width: 100vw;
@@ -816,6 +821,7 @@ i.fa-search {
   background: linear-gradient(179.96deg, #3A193F 0%, #672973 6.35%, #294872 17.54%, #0F6381 24.55%, #086B85 29.42%, #363A6A 62.11%, #5F2C72 77.35%, #6A2874 87.73%, #3F1B45 100%);
   color: white; }
   .leaderboard .leader-title {
+<<<<<<< HEAD
     width: 100%;
     text-align: center; }
     .leaderboard .leader-title img {
@@ -849,3 +855,21 @@ i.fa-search {
     .leaderboard .leader img {
       width: 157px;
       height: 111px; }
+=======
+    width: 500px; }
+
+.page-play-game {
+  color: #fff;
+  background: url(../../assets/images/grid-lines.png), url(../../assets/images/background.png);
+  background-size: cover, 800px, 0, cover;
+  height: 120vh; }
+  .page-play-game .site-content {
+    margin: 0 auto;
+    width: 800px; }
+  .page-play-game .neon-play-game {
+    padding-top: 4rem; }
+
+.play-game {
+  margin: 0 auto;
+  width: 90%; }
+>>>>>>> 7219113bee60ffaeddee89983a1a004966e0b332
