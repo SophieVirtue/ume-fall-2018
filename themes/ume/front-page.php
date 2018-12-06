@@ -23,7 +23,39 @@ get_header(); ?>
 
 
 <section>
-            <div class="game-background">
+   <div class="game-background">
+      <div class="featured-game">
+
+       <?php      
+   $args = array( 'post_type' => 'game', 'posts_per_page' => '3');
+   $game_posts = get_posts( $args ); // returns an array of posts
+?>
+        <section class="featured-game">
+        <div class="featured-games">
+<?php foreach ( $game_posts as $post ) : setup_postdata( $post ); ?>
+<div class="featured-game">
+<?php get_template_part( 'template-parts/content-front' ); ?>
+
+<div class="drop-down">
+           <?php get_template_part( 'template-parts/content-drop' ); ?>
+
+      </div>
+
+
+</div>
+   <?php /* Content from your array of post results goes here */ ?>
+<?php endforeach; wp_reset_postdata(); 
+        ?>
+
+          </div>
+          </section>
+
+
+      </div>
+
+
+        <hr>
+        
         <?php
         //TODO get_posts of Journal Posts
         /*
@@ -35,41 +67,14 @@ get_header(); ?>
         <section class="agriculture-game">
         <div class="agriculture-games">
 <?php foreach ( $game_posts as $post ) : setup_postdata( $post ); ?>
-<article class="game-entry">
 <div class="agriculture-game">
-            <?php the_post_thumbnail( 'thumbnail' ); ?>
-            
-   <h3>
-   <a href="<?php echo get_the_permalink(); ?>">
-   
-   <?php the_title(); ?> </a>
+<?php get_template_part( 'template-parts/content-front' ); ?>
 
-   </h3>
+ <div class="drop-down">
+           <?php get_template_part( 'template-parts/content-drop' ); ?>
 
-    <div class="author">
-	<h4> By: <?php echo CFS()->get ( 'game_author' ); ?> </h4>
-    </div>
-    <div class="location">
-	<h4> <?php echo CFS()->get ( 'game_location' ); ?> </h4>
-    </div>
-    <div class="program">
-	<h4> <?php echo CFS()->get ( 'game_program' ); ?> </h4>
-    </div>
-    <div class="coins">
-	<h4> Coins: <?php echo CFS()->get ( 'game_coins' ); ?> </h4>
-    </div>
-   
-   
-   <a class="read-more" href="<?php echo get_the_permalink(); ?>">
-   <button>
-   
-   
-   Read Entry 
-
-   </button>
-   </a>
+      </div>
 </div>
-</article>
    <?php /* Content from your array of post results goes here */ ?>
 <?php endforeach; wp_reset_postdata(); 
         ?>
@@ -90,41 +95,23 @@ get_header(); ?>
         <section class="science-game">
         <div class="science-games">
 <?php foreach ( $game_posts as $post ) : setup_postdata( $post ); ?>
-<article class="game-entry">
 <div class="science-game">
-            <?php the_post_thumbnail( 'thumbnail' ); ?>
+
+<?php get_template_part( 'template-parts/content-front' ); ?>
+
+ <div class="drop-down">
+           <?php get_template_part( 'template-parts/content-drop' ); ?>
+
+      </div>
+
             
-   <h3>
-   <a href="<?php echo get_the_permalink(); ?>">
    
-   <?php the_title(); ?> </a>
 
-   </h3>
+   
 
-    <div class="author">
-	<h4> By: <?php echo CFS()->get ( 'game_author' ); ?> </h4>
-    </div>
-    <div class="location">
-	<h4> <?php echo CFS()->get ( 'game_location' ); ?> </h4>
-    </div>
-    <div class="program">
-	<h4> <?php echo CFS()->get ( 'game_program' ); ?> </h4>
-    </div>
-    <div class="coins">
-	<h4> Coins: <?php echo CFS()->get ( 'game_coins' ); ?> </h4>
-    </div>
    
    
-   <a class="read-more" href="<?php echo get_the_permalink(); ?>">
-   <button>
-   
-   
-   Read Entry 
-
-   </button>
-   </a>
 </div>
-</article>
    <?php /* Content from your array of post results goes here */ ?>
 <?php endforeach; wp_reset_postdata(); 
         ?>
@@ -143,41 +130,23 @@ get_header(); ?>
         <section class="fashion-game">
         <div class="fashion-games">
 <?php foreach ( $game_posts as $post ) : setup_postdata( $post ); ?>
-<article class="game-entry">
+
+ 
+
 <div class="fashion-game">
-            <?php the_post_thumbnail( 'thumbnail' ); ?>
-            
-   <h3>
-   <a href="<?php echo get_the_permalink(); ?>">
-   
-   <?php the_title(); ?> </a>
 
-   </h3>
+<?php get_template_part( 'template-parts/content-front' ); ?>
 
-    <div class="author">
-	<h4> By: <?php echo CFS()->get ( 'game_author' ); ?> </h4>
-    </div>
-    <div class="location">
-	<h4> <?php echo CFS()->get ( 'game_location' ); ?> </h4>
-    </div>
-    <div class="program">
-	<h4> <?php echo CFS()->get ( 'game_program' ); ?> </h4>
-    </div>
-    <div class="coins">
-	<h4> Coins: <?php echo CFS()->get ( 'game_coins' ); ?> </h4>
-    </div>
-   
-   
-   <a class="read-more" href="<?php echo get_the_permalink(); ?>">
-   <button>
-   
-   
-   Read Entry 
+<div class="drop-down">
+           <?php get_template_part( 'template-parts/content-drop' ); ?>
 
-   </button>
-   </a>
+      </div>
+         
+   
+   
+   
 </div>
-</article>
+
    <?php /* Content from your array of post results goes here */ ?>
 <?php endforeach; wp_reset_postdata(); 
         ?>
@@ -198,41 +167,21 @@ get_header(); ?>
         <section class="pet-game">
         <div class="pet-games">
 <?php foreach ( $game_posts as $post ) : setup_postdata( $post ); ?>
-<article class="game-entry">
+
 <div class="pet-game">
-            <?php the_post_thumbnail( 'thumbnail' ); ?>
+
+<?php get_template_part( 'template-parts/content-front' ); ?>
+
+ <div class="drop-down">
+           <?php get_template_part( 'template-parts/content-drop' ); ?>
+
+      </div>
+           
             
-   <h3>
-   <a href="<?php echo get_the_permalink(); ?>">
    
-   <?php the_title(); ?> </a>
-
-   </h3>
-
-    <div class="author">
-	<h4> By: <?php echo CFS()->get ( 'game_author' ); ?> </h4>
-    </div>
-    <div class="location">
-	<h4> <?php echo CFS()->get ( 'game_location' ); ?> </h4>
-    </div>
-    <div class="program">
-	<h4> <?php echo CFS()->get ( 'game_program' ); ?> </h4>
-    </div>
-    <div class="coins">
-	<h4> Coins: <?php echo CFS()->get ( 'game_coins' ); ?> </h4>
-    </div>
-   
-   
-   <a class="read-more" href="<?php echo get_the_permalink(); ?>">
-   <button>
-   
-   
-   Read Entry 
-
-   </button>
-   </a>
+    
 </div>
-</article>
+
    <?php /* Content from your array of post results goes here */ ?>
 <?php endforeach; wp_reset_postdata(); 
         ?>
@@ -251,41 +200,18 @@ get_header(); ?>
         <section class="space-game">
         <div class="space-games">
 <?php foreach ( $game_posts as $post ) : setup_postdata( $post ); ?>
-<article class="game-entry">
 <div class="space-game">
-            <?php the_post_thumbnail( 'thumbnail' ); ?>
-            
-   <h3>
-   <a href="<?php echo get_the_permalink(); ?>">
-   
-   <?php the_title(); ?> </a>
+           
+<?php get_template_part( 'template-parts/content-front' ); ?>
 
-   </h3>
+ <div class="drop-down">
+           <?php get_template_part( 'template-parts/content-drop' ); ?>
 
-    <div class="author">
-	<h4> By: <?php echo CFS()->get ( 'game_author' ); ?> </h4>
-    </div>
-    <div class="location">
-	<h4> <?php echo CFS()->get ( 'game_location' ); ?> </h4>
-    </div>
-    <div class="program">
-	<h4> <?php echo CFS()->get ( 'game_program' ); ?> </h4>
-    </div>
-    <div class="coins">
-	<h4> Coins: <?php echo CFS()->get ( 'game_coins' ); ?> </h4>
-    </div>
+      </div>
    
-   
-   <a class="read-more" href="<?php echo get_the_permalink(); ?>">
-   <button>
-   
-   
-   Read Entry 
 
-   </button>
-   </a>
 </div>
-</article>
+
    <?php /* Content from your array of post results goes here */ ?>
 <?php endforeach; wp_reset_postdata(); 
         ?>
@@ -304,41 +230,14 @@ get_header(); ?>
         <section class="sea-game">
         <div class="sea-games">
 <?php foreach ( $game_posts as $post ) : setup_postdata( $post ); ?>
-<article class="game-entry">
 <div class="sea-game">
-            <?php the_post_thumbnail( 'thumbnail' ); ?>
-            
-   <h3>
-   <a href="<?php echo get_the_permalink(); ?>">
-   
-   <?php the_title(); ?> </a>
+<?php get_template_part( 'template-parts/content-front' ); ?>
+     <div class="drop-down">
+           <?php get_template_part( 'template-parts/content-drop' ); ?>
 
-   </h3>
+      </div>
 
-    <div class="author">
-	<h4> By: <?php echo CFS()->get ( 'game_author' ); ?> </h4>
-    </div>
-    <div class="location">
-	<h4> <?php echo CFS()->get ( 'game_location' ); ?> </h4>
-    </div>
-    <div class="program">
-	<h4> <?php echo CFS()->get ( 'game_program' ); ?> </h4>
-    </div>
-    <div class="coins">
-	<h4> Coins: <?php echo CFS()->get ( 'game_coins' ); ?> </h4>
-    </div>
-   
-   
-   <a class="read-more" href="<?php echo get_the_permalink(); ?>">
-   <button>
-   
-   
-   Read Entry 
-
-   </button>
-   </a>
 </div>
-</article>
    <?php /* Content from your array of post results goes here */ ?>
 <?php endforeach; wp_reset_postdata(); 
         ?>
