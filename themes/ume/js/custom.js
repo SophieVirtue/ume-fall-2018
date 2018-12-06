@@ -3,8 +3,8 @@
         const $play = $('.play');
         const $popup = $('.popup');
         const $hidePopUp = $('.hide-div');
-        const $arrow = $('.arrow');
-        // const $dropDown = $('.drop-down');
+        const $carouselArrow = $('.carousel-cell .arrow');
+        const $featureArrow = $('.featured-game .arrow');
         
         // popup toggle
         
@@ -17,11 +17,23 @@
             });
         }//end of if browsertype
 
-        $arrow.on('click', function() {
-            console.log('works?');
+        $carouselArrow.on('click', function() {
             let gameID = $(this).closest('.carousel-cell').data('id');
+            $(this).closest('section').find('.drop-down[data-id!="' + gameID + '"]').hide();
             $(this).closest('section').find('.drop-down[data-id="' + gameID + '"]').toggle();
-            // $dropDown.toggle();
+            // $(this).focus();
+        });
+
+        $('.main-carousel').blur( function() {
+            $(this).closest('section').find('.drop-down').hide();
+        });
+
+        $featureArrow.on('click', function() {
+            $(this).closest('.featured-game').find('.drop-down').toggle();
+        })
+
+        $featureArrow.blur(function(){
+            $(this).closest('.featured-game').find('.drop-down').hide();
         });
         
 
@@ -31,6 +43,8 @@
             cellAlign: 'left',
             contain: true
           }); // end of flickity
+
+
 
     }); //end of doc.ready
 })(jQuery);
