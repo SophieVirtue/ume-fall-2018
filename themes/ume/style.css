@@ -779,10 +779,19 @@ i.fa-search {
     font-family: 'futura-bk-bt' normal;
     text-transform: uppercase; }
 
-.agriculture-games, .science-games, .fashion-games, .pet-games, .space-games, .sea-games {
+.agriculture-games, .science-games, .fashion-games, .pet-games, .space-games, .sea-games, .featured-games {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
+
+.arrow-pointer img {
+  width: 10%; }
+
+.game-background {
+  color: #fff; }
+
+.drop-down {
+  color: gold; }
 
 .hide-div {
   width: 100vw;
