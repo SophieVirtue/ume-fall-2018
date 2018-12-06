@@ -924,13 +924,15 @@ i.fa-search {
       color: white;
       text-decoration: none; }
 
-.page-template-default.page-play-game {
+.game-template-default.single-game {
   color: #fff;
   background: url(../../assets/images/grid-lines.png), url(../../assets/images/background.png);
   background-size: cover, 800px, 0, cover; }
-  .page-template-default.page-play-game .site-content {
+  .game-template-default.single-game .site-content {
     text-align: center; }
-  .page-template-default.page-play-game .neon-play-game {
-    padding-top: 4rem; }
-  .page-template-default.page-play-game .play-game-container {
+  .game-template-default.single-game .neon-play-game {
+    padding-top: 8rem; }
+  .game-template-default.single-game .play-game-container {
     margin: 3rem 0; }
+  .game-template-default.single-game .entry-content {
+    padding: 5rem 0 10rem 0; }

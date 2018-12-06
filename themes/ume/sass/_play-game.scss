@@ -1,4 +1,4 @@
-.page-template-default.page-play-game {
+.game-template-default.single-game {
   color: #fff;
   background: url(../../assets/images/grid-lines.png),
     url(../../assets/images/background.png);
@@ -10,13 +10,15 @@
   }
 
   .neon-play-game {
-      padding-top: 4rem;
+      padding-top: 8rem;
   }
 
   .play-game-container {
       margin: 3rem 0;
   }
 
-
+.entry-content {
+    padding: 5rem 0 10rem 0;
+}
   
 }
