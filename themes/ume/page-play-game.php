@@ -10,7 +10,9 @@ get_header(); ?>
 	<div id="primary" class="content-area play-game">
 		<main id="main" class="site-main" role="main">
 			
-
+			
+		<img class="neon-play-game" src="<?php echo get_template_directory_uri(); ?>/assets/images/pink-neon-words/play.png" />
+		
 			<?php while ( have_posts() ) : the_post(); ?>
 
 				<?php get_template_part( 'template-parts/content', 'page' ); ?>
