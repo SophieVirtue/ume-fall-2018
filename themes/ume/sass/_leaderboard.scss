@@ -1,6 +1,31 @@
 .leaderboard {
-    color: black;
+    background: linear-gradient(179.96deg, #3A193F 0%, #672973 6.35%, #294872 17.54%, #0F6381 24.55%, #086B85 29.42%, #363A6A 62.11%, #5F2C72 77.35%, #6A2874 87.73%, #3F1B45 100%);
+    color: white;
     .leader-title{
-        width: 500px;
+        width: 100%;
+        text-align: center;
+        img {
+            width: 300px;
+            margin-top: 56px;
+        }
+    }
+    .numbers {
+        background: linear-gradient(180deg, rgb(245, 196, 35) 0%,  #ff8800 100%);
+        width: 58px;
+        height: 62px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .leader {
+        display: flex;
+        justify-content: space-between;
+        background: linear-gradient(180deg, #000000 0%, #2B164A 100%);
+        height: 168px;
+        img {
+            width: 157px;
+            height: 111px; 
+        }
     }
 }
