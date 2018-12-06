@@ -880,7 +880,6 @@ i.fa-search {
   background: linear-gradient(179.96deg, #3A193F 0%, #672973 6.35%, #294872 17.54%, #0F6381 24.55%, #086B85 29.42%, #363A6A 62.11%, #5F2C72 77.35%, #6A2874 87.73%, #3F1B45 100%);
   color: white; }
   .leaderboard .leader-title {
-<<<<<<< HEAD
     width: 100%;
     text-align: center; }
     .leaderboard .leader-title img {
@@ -914,14 +913,7 @@ i.fa-search {
     .leaderboard .leader img {
       width: 157px;
       height: 111px; }
-=======
-    width: 500px; }
 
-.play-game {
-  color: #fff;
-  background: url(../../assets/images/background.png);
-  background-size: cover, 800px;
-  height: 100vh; }
 .page-play-game {
   color: #fff;
   background: url(../../assets/images/grid-lines.png), url(../../assets/images/background.png);
@@ -936,4 +928,3 @@ i.fa-search {
 .play-game {
   margin: 0 auto;
   width: 90%; }
->>>>>>> 7219113bee60ffaeddee89983a1a004966e0b332
