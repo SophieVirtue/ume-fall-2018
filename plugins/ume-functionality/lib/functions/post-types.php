@@ -43,7 +43,7 @@ function game_post_type() {
 		'description'           => __( 'Game type.', 'text_domain' ),
 		'labels'                => $labels,
         'supports'              => array( 'title', 'editor', 'thumbnail', 'comments', 'revisions', 'custom-fields' ),
-        'taxonomies'            => array( 'category', 'post_tag' ),
+        'taxonomies'            => array( 'game_category' ),
 
 		'hierarchical'          => false,
 		'public'                => true,

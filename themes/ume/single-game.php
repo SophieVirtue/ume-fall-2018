@@ -30,12 +30,6 @@ get_header(); ?>
 	
 </article><!-- #post-## -->
 
-			
-
-		
-
-		
-
 		</main><!-- #main -->
 	</div><!-- #primary -->
 

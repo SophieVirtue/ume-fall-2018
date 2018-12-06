@@ -3,22 +3,21 @@
   background: url(../../assets/images/grid-lines.png),
     url(../../assets/images/background.png);
   background-size: cover, 800px, 0, cover;
-//   height: 120vh;
- 
+
+
   .site-content {
     text-align: center;
   }
 
   .neon-play-game {
-      padding-top: 8rem;
+    padding-top: 8rem;
   }
 
   .play-game-container {
-      margin: 3rem 0;
+    margin: 3rem 0;
   }
 
-.entry-content {
-    padding: 5rem 0 10rem 0;
-}
-  
+  .entry-content {
+    padding: 3rem 0 10rem 0;
+  }
 }
