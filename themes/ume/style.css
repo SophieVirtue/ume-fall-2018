@@ -847,7 +847,8 @@ i.fa-search {
   color: #fff; }
 
 .drop-down {
-  color: gold; }
+  color: gold;
+  display: none; }
 
 .banner .upper-row {
   display: -webkit-box;

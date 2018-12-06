@@ -20,9 +20,12 @@
     <div class="coins">
 	<h4> Coins: <?php echo CFS()->get ( 'game_coins' ); ?> </h4>
     </div>
+    <button class="play">Play</button>
+
 
     <div class="thumbnail">
             <?php the_post_thumbnail( 'thumbnail' ); ?>
             </div>
+            
 
 </article>
