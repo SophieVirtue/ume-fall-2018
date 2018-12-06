@@ -997,17 +997,13 @@ i.fa-search {
       color: white;
       text-decoration: none; }
 
-.page-play-game {
+.page-template-default.page-play-game {
   color: #fff;
   background: url(../../assets/images/grid-lines.png), url(../../assets/images/background.png);
-  background-size: cover, 800px, 0, cover;
-  height: 120vh; }
-  .page-play-game .site-content {
-    margin: 0 auto;
-    width: 800px; }
-  .page-play-game .neon-play-game {
+  background-size: cover, 800px, 0, cover; }
+  .page-template-default.page-play-game .site-content {
+    text-align: center; }
+  .page-template-default.page-play-game .neon-play-game {
     padding-top: 4rem; }
-
-.play-game {
-  margin: 0 auto;
-  width: 90%; }
+  .page-template-default.page-play-game .play-game-container {
+    margin: 3rem 0; }
