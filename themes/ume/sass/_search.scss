@@ -1,8 +1,19 @@
+.search,
+.search-results {
+  color: #fff;
+  background: url(../../assets/images/background.png);
+  background-size: cover, 800px;
 
-
-.search, .search-results {
-    .site-content {
-        padding-top: 8rem;
-
+  .site-main {
+      
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    @include tablet {
+      width: 600px;
     }
+    @include desktop {
+      width: 800px;
+    }
+  }
 }

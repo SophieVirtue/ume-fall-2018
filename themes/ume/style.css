@@ -748,6 +748,8 @@ i.fa-search {
     .page-download {
       background: url(../../assets/images/background.png);
       background-size: cover, 800px; } }
+  .page-download .site-content {
+    margin-top: 4rem; }
   .page-download .site-main {
     width: 300px;
     margin-left: auto;
@@ -1122,5 +1124,21 @@ i.fa-search {
   .game-template-default.single-game .entry-content {
     padding: 3rem 0 10rem 0; }
 
-.search .site-content, .search-results .site-content {
-  padding-top: 8rem; }
+.search,
+.search-results {
+  color: #fff;
+  background: url(../../assets/images/background.png);
+  background-size: cover, 800px; }
+  .search .site-main,
+  .search-results .site-main {
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto; }
+    @media (min-width: 600px) {
+      .search .site-main,
+      .search-results .site-main {
+        width: 600px; } }
+    @media (min-width: 1024px) {
+      .search .site-main,
+      .search-results .site-main {
+        width: 800px; } }
