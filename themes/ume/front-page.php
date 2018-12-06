@@ -65,149 +65,38 @@ get_header(); ?>
       </div>
         <hr>
         <?php   
-   $args = array( 'post_type' => 'game', 'posts_per_page' => '4', 'category_name' => 'Agriculture' );
+   $game_categories = get_terms( array(
+           'taxonomy' => 'game_category',
+           'hide_empty' => true,
+   ) );
+        foreach( $game_categories as $category ): 
+
+   $args = array( 'post_type' => 'game', 'posts_per_page' => '4', 'category_name' => $category->name );
    $game_posts = get_posts( $args ); // returns an array of posts
 ?>
-        <section class="agriculture-game">
-        <div class="agriculture-games">
+        <section class="<?php $category->slug ?>-category">
+        <h2><?php echo $category->name ?></h2>
+        <div class="<?php $category->slug ?>-games main-carousel">
 <?php foreach ( $game_posts as $post ) : setup_postdata( $post ); ?>
-<div class="agriculture-game">
-<?php get_template_part( 'template-parts/content-front' ); ?>
-
- <div class="drop-down">
-           <?php get_template_part( 'template-parts/content-drop' ); ?>
-
-      </div>
+<div class="<?php $category->slug ?>-game carousel-cell" data-id="<?php the_ID(); ?>">
+<?php 
+get_template_part( 'template-parts/content-front' );?>
 </div>
    
 <?php endforeach; wp_reset_postdata(); 
         ?>
 
           </div>
-          </section>
-
-          <hr>
-
-          <?php    
-   $args = array( 'post_type' => 'game', 'posts_per_page' => '4', 'category_name' => 'Life Sciences' );
-   $game_posts = get_posts( $args ); // returns an array of posts
-?>
-        <section class="science-game">
-        <div class="science-games">
-<?php foreach ( $game_posts as $post ) : setup_postdata( $post ); ?>
-<div class="science-game">
-
-<?php get_template_part( 'template-parts/content-front' ); ?>
-
- <div class="drop-down">
+          <?php foreach ( $game_posts as $post ) : setup_postdata( $post ); ?>
+          <div class="drop-down" data-id="<?php the_ID(); ?>">
            <?php get_template_part( 'template-parts/content-drop' ); ?>
       </div>
-</div>
-   <?php /* Content from your array of post results goes here */ ?>
-<?php endforeach; wp_reset_postdata(); 
-        ?>
-
-          </div>
-          </section>
-          <hr>
-          <?php
-            
-   $args = array( 'post_type' => 'game', 'posts_per_page' => '4', 'category_name' => 'Digital Fashion' );
-   $game_posts = get_posts( $args ); // returns an array of posts
-?>
-        <section class="fashion-game">
-        <div class="fashion-games">
-<?php foreach ( $game_posts as $post ) : setup_postdata( $post ); ?>
-
- 
-
-<div class="fashion-game">
-
-<?php get_template_part( 'template-parts/content-front' ); ?>
-
-<div class="drop-down">
-           <?php get_template_part( 'template-parts/content-drop' ); ?>
-
-      </div>
-         
-   
-   
-   
-</div>
-
-   <?php /* Content from your array of post results goes here */ ?>
-<?php endforeach; wp_reset_postdata(); 
-        ?>
-
-          </div>
-          </section>
-
-          <hr>
-
- <?php
-         
-   $args = array( 'post_type' => 'game', 'posts_per_page' => '4', 'category_name' => 'My Cutest Pet' );
-   $game_posts = get_posts( $args ); // returns an array of posts
-?>
-        <section class="pet-game">
-        <div class="pet-games">
-<?php foreach ( $game_posts as $post ) : setup_postdata( $post ); ?>
-
-<div class="pet-game">
-
-<?php get_template_part( 'template-parts/content-front' ); ?>
-
- <div class="drop-down">
-           <?php get_template_part( 'template-parts/content-drop' ); ?>
-
-      </div>   
-</div>
-
-   
-<?php endforeach; wp_reset_postdata(); 
-        ?>
-
-          </div>
-          </section>
-<hr>
-<?php
-              
-   $args = array( 'post_type' => 'game', 'posts_per_page' => '4', 'category_name' => 'Space Odyssey' );
-   $game_posts = get_posts( $args ); // returns an array of posts
-?>
-        <section class="space-game">
-        <div class="space-games">
-<?php foreach ( $game_posts as $post ) : setup_postdata( $post ); ?>
-<div class="space-game">
-           
-<?php get_template_part( 'template-parts/content-front' ); ?>
-
- <div class="drop-down">
-           <?php get_template_part( 'template-parts/content-drop' ); ?>
-      </div>
-</div>
 <?php endforeach; wp_reset_postdata(); ?>
-          </div>
           </section>
-<hr>
-<?php     
-   $args = array( 'post_type' => 'game', 'posts_per_page' => '4', 'category_name' => 'Wild Pacific' );
-   $game_posts = get_posts( $args ); 
-?>
-        <section class="sea-game">
-        <div class="sea-games">
-<?php foreach ( $game_posts as $post ) : setup_postdata( $post ); ?>
-<div class="sea-game">
-<?php get_template_part( 'template-parts/content-front' ); ?>
-     <div class="drop-down">
-           <?php get_template_part( 'template-parts/content-drop' ); ?>
-      </div>
-</div>
-<?php endforeach; wp_reset_postdata();?>
-        </div>
-          </section>
-            </div>
-</section>
+
+          <hr>
+        <?php endforeach; ?>
+
 		</main><!-- #main -->
 	</div><!-- #primary -->
 <?php get_footer(); ?>

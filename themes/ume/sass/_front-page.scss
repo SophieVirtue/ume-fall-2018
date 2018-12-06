@@ -1,9 +1,31 @@
-.agriculture-games, .science-games, .fashion-games, .pet-games, .space-games, .sea-games, .featured-games{
-    display: flex;
+// .agriculture-games, .science-games, .fashion-games, .pet-games, .space-games, .sea-games, .main-carousel .flickity-slider{
+//     // height: 500px;
+// }
+
+.flickity-viewport {
+    height: 500px;
+    z-index: 1;
+    position: relative;
 }
 
-.arrow-pointer img{
-    width: 10%;
+.flickity-slider {
+    position: relative;
+}
+
+.carousel-cell {
+    height: 300px;
+    margin: 0 50px;
+}
+
+.featured-games {
+    display: flex;
+    img {
+        width: 50px;
+    }
+}
+
+.arrow {
+    width: 30px;
 }
 
 .game-background{
@@ -13,6 +35,9 @@
 .drop-down{
     color: gold;
     display: none;
+    position: absolute;
+    z-index: 1000;
+    background: rgba( 0, 0, 0, 0.8);
 }
 
 .banner .upper-row{
