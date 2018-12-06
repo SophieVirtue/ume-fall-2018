@@ -856,20 +856,37 @@ i.fa-search {
     font-family: 'futura-bk-bt' normal;
     text-transform: uppercase; }
 
-.agriculture-games, .science-games, .fashion-games, .pet-games, .space-games, .sea-games, .featured-games {
+.flickity-viewport {
+  height: 500px;
+  z-index: 1;
+  position: relative; }
+
+.flickity-slider {
+  position: relative; }
+
+.carousel-cell {
+  height: 300px;
+  margin: 0 50px; }
+
+.featured-games {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
+  .featured-games img {
+    width: 50px; }
 
-.arrow-pointer img {
-  width: 10%; }
+.arrow {
+  width: 30px; }
 
 .game-background {
   color: #fff; }
 
 .drop-down {
   color: gold;
-  display: none; }
+  display: none;
+  position: absolute;
+  z-index: 1000;
+  background: rgba(0, 0, 0, 0.8); }
 
 .banner .upper-row {
   display: -webkit-box;
@@ -1063,4 +1080,4 @@ i.fa-search {
   .game-template-default.single-game .play-game-container {
     margin: 3rem 0; }
   .game-template-default.single-game .entry-content {
-    padding: 5rem 0 10rem 0; }
+    padding: 3rem 0 10rem 0; }
