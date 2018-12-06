@@ -12,4 +12,94 @@
 
 .drop-down{
     color: gold;
+    display: none;
+}
+
+.banner .upper-row{
+    display: flex;
+    justify-content: center;
+    padding-top: 14rem;
+       .left-lightning{
+            padding-top: 4.8rem;
+        @include tablet{
+            padding-top: 12rem;
+        }
+        @include desktop{
+            padding-top: 17rem;
+        }
+        img{
+            width: 90px;
+        @include tablet{
+            width: 110px;
+        }
+        @include desktop{
+            width: 145px;
+            height: 170px;
+        }
+        }
+          }
+       .center-label{
+           padding-top: 8.5rem;
+        @include tablet{
+            padding-top: 16.5rem;
+        }
+        @include desktop{
+            padding-top: 19rem;
+        }
+        img{
+           width: 290px; 
+         @include tablet{
+            width: 380px;
+        }
+        @include desktop{
+            width: 750px;
+            height: 130px;
+        }
+          }
+          }
+        
+          .right-lightning{
+            padding-top: 4.8rem;
+        @include tablet{
+            padding-top: 12rem;
+        }
+        @include desktop{
+            padding-top: 17rem;
+        }
+
+        img{
+            width: 90px;
+        @include tablet{
+            width: 110px;
+        }
+        @include desktop{
+            width: 145px;
+            height: 170px;
+        }
+        }
+          }
+
+
+        
+        
+
+}
+
+.banner .lower-row{
+    text-align: center;
+    img{
+        width: 400px;
+        @include tablet{
+            height: 120px;
+            width: 600px;
+            
+        }
+        @include desktop{
+            height: 270px;
+            width: 1024px;
+        }
+
+
+    }
+
 }

@@ -9,19 +9,32 @@ get_header(); ?>
 
 <div id="primary" class="content-area">
     <main id="main" class="site-main" role="main">
-    <div class="hide-div">
+    <!-- <div class="hide-div">
         <div class="popup">
             <p>Please play our games on a desktop or laptop!</p>
         </div>
-    </div>
+    </div> -->
         <section>
-            <div class="banner">
-            
-            </div>
+        <div class="banner">
+              <div class="upper-row">
+                  <div class="left-lightning">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/lightning-left.png"/>
+                  </div>
+                   <div class="center-label">
+                         <img src="<?php echo get_template_directory_uri(); ?>/assets/images/ume-academy-words.png"/>
+                   </div>
+                 <div class="right-lightning">
+                         <img src="<?php echo get_template_directory_uri(); ?>/assets/images/lightning-right.png"/>
+                   </div>  
+               </div>
+               <div class="lower-row">
+               <img src="<?php echo get_template_directory_uri(); ?>/assets/images/pink-neon-words/arcade.png"/>
+
+               </div>
+
+
+         </div>
     </section>
-
-
-
 <section>
    <div class="game-background">
       <div class="featured-game">
@@ -49,18 +62,9 @@ get_header(); ?>
 
           </div>
           </section>
-
-
       </div>
-
-
         <hr>
-        
-        <?php
-        //TODO get_posts of Journal Posts
-        /*
-        *Get the blog Journal Entries
-        **/      
+        <?php   
    $args = array( 'post_type' => 'game', 'posts_per_page' => '4', 'category_name' => 'Agriculture' );
    $game_posts = get_posts( $args ); // returns an array of posts
 ?>
@@ -75,7 +79,7 @@ get_header(); ?>
 
       </div>
 </div>
-   <?php /* Content from your array of post results goes here */ ?>
+   
 <?php endforeach; wp_reset_postdata(); 
         ?>
 
@@ -84,11 +88,7 @@ get_header(); ?>
 
           <hr>
 
-          <?php
-        //TODO get_posts of Journal Posts
-        /*
-        *Get the blog Journal Entries
-        **/      
+          <?php    
    $args = array( 'post_type' => 'game', 'posts_per_page' => '4', 'category_name' => 'Life Sciences' );
    $game_posts = get_posts( $args ); // returns an array of posts
 ?>
@@ -101,16 +101,7 @@ get_header(); ?>
 
  <div class="drop-down">
            <?php get_template_part( 'template-parts/content-drop' ); ?>
-
       </div>
-
-            
-   
-
-   
-
-   
-   
 </div>
    <?php /* Content from your array of post results goes here */ ?>
 <?php endforeach; wp_reset_postdata(); 
@@ -120,10 +111,7 @@ get_header(); ?>
           </section>
           <hr>
           <?php
-        //TODO get_posts of Journal Posts
-        /*
-        *Get the blog Journal Entries
-        **/      
+            
    $args = array( 'post_type' => 'game', 'posts_per_page' => '4', 'category_name' => 'Digital Fashion' );
    $game_posts = get_posts( $args ); // returns an array of posts
 ?>
@@ -157,10 +145,7 @@ get_header(); ?>
           <hr>
 
  <?php
-        //TODO get_posts of Journal Posts
-        /*
-        *Get the blog Journal Entries
-        **/      
+         
    $args = array( 'post_type' => 'game', 'posts_per_page' => '4', 'category_name' => 'My Cutest Pet' );
    $game_posts = get_posts( $args ); // returns an array of posts
 ?>
@@ -175,14 +160,10 @@ get_header(); ?>
  <div class="drop-down">
            <?php get_template_part( 'template-parts/content-drop' ); ?>
 
-      </div>
-           
-            
-   
-    
+      </div>   
 </div>
 
-   <?php /* Content from your array of post results goes here */ ?>
+   
 <?php endforeach; wp_reset_postdata(); 
         ?>
 
@@ -190,10 +171,7 @@ get_header(); ?>
           </section>
 <hr>
 <?php
-        //TODO get_posts of Journal Posts
-        /*
-        *Get the blog Journal Entries
-        **/      
+              
    $args = array( 'post_type' => 'game', 'posts_per_page' => '4', 'category_name' => 'Space Odyssey' );
    $game_posts = get_posts( $args ); // returns an array of posts
 ?>
@@ -206,26 +184,15 @@ get_header(); ?>
 
  <div class="drop-down">
            <?php get_template_part( 'template-parts/content-drop' ); ?>
-
       </div>
-   
-
 </div>
-
-   <?php /* Content from your array of post results goes here */ ?>
-<?php endforeach; wp_reset_postdata(); 
-        ?>
-
+<?php endforeach; wp_reset_postdata(); ?>
           </div>
           </section>
 <hr>
-<?php
-        //TODO get_posts of Journal Posts
-        /*
-        *Get the blog Journal Entries
-        **/      
+<?php     
    $args = array( 'post_type' => 'game', 'posts_per_page' => '4', 'category_name' => 'Wild Pacific' );
-   $game_posts = get_posts( $args ); // returns an array of posts
+   $game_posts = get_posts( $args ); 
 ?>
         <section class="sea-game">
         <div class="sea-games">
@@ -234,23 +201,13 @@ get_header(); ?>
 <?php get_template_part( 'template-parts/content-front' ); ?>
      <div class="drop-down">
            <?php get_template_part( 'template-parts/content-drop' ); ?>
-
       </div>
-
 </div>
-   <?php /* Content from your array of post results goes here */ ?>
-<?php endforeach; wp_reset_postdata(); 
-        ?>
-
-          </div>
+<?php endforeach; wp_reset_postdata();?>
+        </div>
           </section>
-
             </div>
-
 </section>
-
 		</main><!-- #main -->
 	</div><!-- #primary -->
-
-
 <?php get_footer(); ?>
