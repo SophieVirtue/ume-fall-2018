@@ -1,3 +1,15 @@
-.agriculture-games, .science-games, .fashion-games, .pet-games, .space-games, .sea-games{
+.agriculture-games, .science-games, .fashion-games, .pet-games, .space-games, .sea-games, .featured-games{
     display: flex;
+}
+
+.arrow-pointer img{
+    width: 10%;
+}
+
+.game-background{
+    color: $color__main-text;
+}
+
+.drop-down{
+    color: gold;
 }
