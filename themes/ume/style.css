@@ -826,9 +826,13 @@ i.fa-search {
   color: #fff;
   background: url(../../assets/images/grid-lines.png), url(../../assets/images/background.png);
   background-size: cover, 800px, 0, cover;
-  height: 150vh; }
+  height: 120vh; }
   .page-play-game .site-content {
     margin: 0 auto;
     width: 800px; }
   .page-play-game .neon-play-game {
-    padding-top: 3rem; }
+    padding-top: 4rem; }
+
+.play-game {
+  margin: 0 auto;
+  width: 90%; }

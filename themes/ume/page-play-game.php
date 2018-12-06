@@ -12,12 +12,8 @@ get_header(); ?>
 			
 			
 		<img class="neon-play-game" src="<?php echo get_template_directory_uri(); ?>/assets/images/pink-neon-words/play.png" />
-		
-			<?php while ( have_posts() ) : the_post(); ?>
 
-				<?php get_template_part( 'template-parts/content', 'page' ); ?>
-
-			<?php endwhile; // End of the loop. ?>
+			
 
 		</main><!-- #main -->
 	</div><!-- #primary -->

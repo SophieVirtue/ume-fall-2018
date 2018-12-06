@@ -3,7 +3,7 @@
   background: url(../../assets/images/grid-lines.png),
     url(../../assets/images/background.png);
   background-size: cover, 800px, 0, cover;
-  height: 150vh;
+  height: 120vh;
   // height: 100vh;
 
   // @include desktop {
@@ -16,8 +16,13 @@
   }
 
   .neon-play-game {
-      padding-top: 3rem;
+      padding-top: 4rem;
   }
 
   
+}
+
+.play-game {
+    margin: 0 auto;
+    width: 90%;
 }
