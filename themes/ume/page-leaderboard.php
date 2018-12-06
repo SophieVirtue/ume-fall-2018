@@ -43,7 +43,7 @@ get_header(); ?>
            </div>      
           <div class="leader-icon">
           <div class="leader-thumbnail">   
-            <?php the_post_thumbnail( 'thumbnail' ); ?>
+            <?php the_post_thumbnail( 'thumbnail', array( 'class' => 'img-responsive' ) ); ?>
          </div>
 </div>
          </div>
