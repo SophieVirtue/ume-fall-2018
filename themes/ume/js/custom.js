@@ -19,7 +19,8 @@
 
         $arrow.on('click', function() {
             console.log('works?');
-            $(this).parents().eq(2).find('.drop-down').toggle();
+            let gameID = $(this).closest('.carousel-cell').data('id');
+            $(this).closest('section').find('.drop-down[data-id="' + gameID + '"]').toggle();
             // $dropDown.toggle();
         });
         
