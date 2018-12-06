@@ -949,53 +949,86 @@ i.fa-search {
       font-family: 'Futura-Bk-BT';
       font-size: 18px; }
 
-.leaderboard {
-  background: linear-gradient(179.96deg, #3A193F 0%, #672973 6.35%, #294872 17.54%, #0F6381 24.55%, #086B85 29.42%, #363A6A 62.11%, #5F2C72 77.35%, #6A2874 87.73%, #3F1B45 100%);
-  color: white; }
-  .leaderboard .leader-title {
-    width: 100%;
-    text-align: center; }
-    .leaderboard .leader-title img {
-      width: 300px;
-      margin-top: 56px; }
-  .leaderboard .numbers {
-    background: -webkit-gradient(linear, left top, left bottom, from(#f5c423), to(#ff8800));
-    background: linear-gradient(180deg, #f5c423 0%, #ff8800 100%);
-    width: 58px;
-    height: 62px;
-    border-radius: 50%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    margin: 21px 0 -25px 32px;
-    position: -webkit-sticky;
-    position: sticky;
-    -webkit-box-shadow: 0px 0px 8px 8px rgba(255, 255, 255, 0.6);
-            box-shadow: 0px 0px 8px 8px rgba(255, 255, 255, 0.6); }
-  .leaderboard .leader {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    background: -webkit-gradient(linear, left top, left bottom, from(#000000), to(#2B164A));
-    background: linear-gradient(180deg, #000000 0%, #2B164A 100%);
-    height: 168px; }
-    .leaderboard .leader img {
-      width: 157px;
-      height: 111px; }
-    .leaderboard .leader a {
-      color: white;
-      text-decoration: none; }
+.leaderboard .leaderboard-title {
+  text-align: center; }
+  .leaderboard .leaderboard-title img {
+    width: 300px;
+    margin-top: 56px; }
+
+.leaderboard .remaining-player .leader-ranking {
+  background: -webkit-gradient(linear, left top, left bottom, from(#f5c423), to(#ff8800));
+  background: linear-gradient(180deg, #f5c423 0%, #ff8800 100%);
+  width: 58px;
+  height: 62px;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 21px 0 -25px 32px;
+  position: -webkit-sticky;
+  position: sticky;
+  -webkit-box-shadow: 0px 0px 8px 8px rgba(255, 255, 255, 0.6);
+          box-shadow: 0px 0px 8px 8px rgba(255, 255, 255, 0.6); }
+
+.leaderboard .remaining-player .leader-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: -webkit-gradient(linear, left top, left bottom, from(#000000), to(#2B164A));
+  background: linear-gradient(180deg, #000000 0%, #2B164A 100%);
+  height: 168px; }
+  .leaderboard .remaining-player .leader-content img {
+    width: 157px;
+    height: 111px; }
+  .leaderboard .remaining-player .leader-content a {
+    color: white;
+    text-decoration: none; }
+
+.top-players {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.top-seven {
+  padding-top: 3rem; }
+
+.board-page {
+  background: url(../../assets/images/grid-lines.png), url(../../assets/images/background.png);
+  background-repeat: no-repeat;
+  background-size: auto 874px, auto 1800px;
+  overflow: hidden;
+  background-position: top;
+  text-align: center;
+  width: 100%; }
+  @media (min-width: 600px) {
+    .board-page {
+      background-size: auto 1495px, 100% 100%; } }
+  @media (min-width: 1024px) {
+    .board-page {
+      background-size: 100% 1100px, 100% 100%; } }
+  .board-page img.leaderboard-logo {
+    width: 167px;
+    height: auto;
+    padding-top: 54px; }
+    @media (min-width: 600px) {
+      .board-page img.leaderboard-logo {
+        width: 418px;
+        padding-top: 81px; } }
+    @media (min-width: 1024px) {
+      .board-page img.leaderboard-logo {
+        width: 943px;
+        padding-top: 100px; } }
 
 .page-template-default.page-play-game {
   color: #fff;
