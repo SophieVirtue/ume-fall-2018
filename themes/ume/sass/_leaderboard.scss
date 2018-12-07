@@ -86,6 +86,10 @@
             color: #FFF6E8;
             font-family: Futura;   
             text-shadow: 0 0 18px 0 #F5A623;
+            position: relative;
+           left: 3rem;
+          top: 2rem;
+
             @include tablet{
                 font-size: 4rem;
             }
@@ -146,3 +150,7 @@
     }
 
 }
+
+.top-player:nth-of-type(1) { order: 2 };
+.top-player:nth-of-type(2) { order: 1 };
+.top-player:nth-of-type(3) { order: 3};
