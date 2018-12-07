@@ -1222,11 +1222,13 @@ object {
     .search-results-container .search-game .type-game .entry-title {
       padding: 3rem 0 0 0; }
       .search-results-container .search-game .type-game .entry-title a {
-        text-decoration: none; }
+        text-decoration: none;
+        font-family: 'Futura-Bk-BT'; }
     .search-results-container .search-game .type-game .thumbnail-image img {
       width: 220px;
       height: auto; }
     .search-results-container .search-game .type-game .author h4 {
-      margin: 1rem 0 1.5rem 0; }
+      margin: 1rem 0 1.5rem 0;
+      font-family: 'Futura-Bk-BT'; }
   .search-results-container .search-game .arrow {
     margin: 0 auto; }
