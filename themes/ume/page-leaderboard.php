@@ -26,6 +26,9 @@ get_header(); ?>
             <div class="leader-ranking">
                 <p><?php  echo $i++; ?></p>
 </div>      
+<div class="leader-thumbnail">   
+            <?php the_post_thumbnail( 'thumbnail', array( 'class' => 'img-responsive' ) ); ?>
+         </div>
             <div class="leader-content">
            <div class="leader-info">
                 <div class="leader-title">
@@ -38,13 +41,12 @@ get_header(); ?>
 	            <h4> By: <?php echo CFS()->get ( 'game_author' ); ?> </h4>
                </div>
               <div class="leader-coins">
-	            <h4> Coins: <?php echo CFS()->get ( 'game_coins' ); ?> </h4>
+              
+	            <h4> <img class="coin" src="<?php echo get_template_directory_uri();?>/assets/images/coin.png" alt="coin"/><?php echo CFS()->get ( 'game_coins' ); ?> </h4>
               </div>
            </div>      
           <div class="leader-icon">
-          <div class="leader-thumbnail">   
-            <?php the_post_thumbnail( 'thumbnail', array( 'class' => 'img-responsive' ) ); ?>
-         </div>
+          
 </div>
          </div>
          </div> <!-- end of leadernumber -->
