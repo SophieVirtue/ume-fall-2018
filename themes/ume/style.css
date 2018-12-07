@@ -496,12 +496,10 @@ object {
       -ms-flex-align: center;
           align-items: center;
   height: 53px;
-  font-size: 10px;
   width: 100%;
   font-family: 'Futura-Bk-BT', sans-serif;
-  color: white;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.3)), to(rgba(0, 0, 0, 0.9)));
-  background: linear-gradient(rgba(255, 255, 255, 0.3), rgba(0, 0, 0, 0.9));
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.25)), to(rgba(0, 0, 0, 0.7)));
+  background: linear-gradient(rgba(255, 255, 255, 0.25), rgba(0, 0, 0, 0.7));
   -webkit-box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.5);
           box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.5);
   position: absolute;
@@ -510,9 +508,10 @@ object {
     .site-footer {
       height: 68px; } }
   .site-footer p {
+    font-size: 10px;
     margin: 0;
     margin-right: 10px;
-    color: white;
+    color: #C3C3C3;
     text-transform: uppercase; }
     @media (min-width: 600px) {
       .site-footer p {
@@ -561,8 +560,8 @@ object {
   height: 800vh; }
 
 .site-header {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.62)), to(black));
-  background: linear-gradient(rgba(255, 255, 255, 0.62), black);
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.25)), to(rgba(0, 0, 0, 0.7)));
+  background: linear-gradient(rgba(255, 255, 255, 0.25), rgba(0, 0, 0, 0.7));
   -webkit-box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.5);
           box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.5);
   position: absolute;
@@ -574,6 +573,9 @@ object {
   @media (min-width: 1024px) {
     .site-header {
       height: 70px; } }
+  .site-header fieldset {
+    margin: 0;
+    border: 0; }
 
 h3.site-title {
   height: 30px;
@@ -621,6 +623,9 @@ input.search-field {
   input.search-field::placeholder {
     color: white; }
 
+.page-download input.search {
+  width: 80%; }
+
 i.fa-search {
   color: white; }
 
@@ -632,7 +637,7 @@ i.fa-search {
 .prizes {
   background: url(../../assets/images/grid-lines.png), url(../../assets/images/background.png);
   background-repeat: no-repeat;
-  background-size: auto 98%, auto 1800px;
+  background-size: auto 98%, auto 2000px;
   overflow: hidden;
   background-position: top;
   text-align: center;
@@ -743,6 +748,8 @@ i.fa-search {
     .page-download {
       background: url(../../assets/images/background.png);
       background-size: cover, 800px; } }
+  .page-download .site-content {
+    margin-top: 4rem; }
   .page-download .site-main {
     width: 300px;
     margin-left: auto;
@@ -753,6 +760,8 @@ i.fa-search {
     @media (min-width: 1024px) {
       .page-download .site-main {
         width: 800px; } }
+  .page-download .footer-relative {
+    padding-bottom: 50px; }
   .page-download .wpcf7-form {
     display: block; }
     .page-download .wpcf7-form .parentsName,
@@ -778,7 +787,6 @@ i.fa-search {
       text-transform: capitalize; }
   .page-download input[type='email'],
   .page-download input[type='password'],
-  .page-download input[type='search'],
   .page-download input[type='text'],
   .page-download input[type='url'] {
     color: #fff;
@@ -790,13 +798,11 @@ i.fa-search {
     @media (min-width: 1024px) {
       .page-download input[type='email'],
       .page-download input[type='password'],
-      .page-download input[type='search'],
       .page-download input[type='text'],
       .page-download input[type='url'] {
         width: 80%; } }
     .page-download input[type='email']:focus,
     .page-download input[type='password']:focus,
-    .page-download input[type='search']:focus,
     .page-download input[type='text']:focus,
     .page-download input[type='url']:focus {
       outline: 0; }
@@ -1108,5 +1114,21 @@ i.fa-search {
   .game-template-default.single-game .entry-content {
     padding: 3rem 0 10rem 0; }
 
-.search .site-content, .search-results .site-content {
-  padding-top: 8rem; }
+.search,
+.search-results {
+  color: #fff;
+  background: url(../../assets/images/background.png);
+  background-size: cover, 800px; }
+  .search .site-main,
+  .search-results .site-main {
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto; }
+    @media (min-width: 600px) {
+      .search .site-main,
+      .search-results .site-main {
+        width: 600px; } }
+    @media (min-width: 1024px) {
+      .search .site-main,
+      .search-results .site-main {
+        width: 800px; } }
