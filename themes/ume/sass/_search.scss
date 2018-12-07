@@ -2,7 +2,7 @@
 .search-results {
   color: #fff;
   background: url(../../assets/images/background.png);
-  background-size: cover, 800px;
+  background-size: cover, 400px;
 
   .site-main {
     padding-top: 5rem;
@@ -20,6 +20,11 @@
 .search-results-container {
     display: flex;
     flex-direction: column;
+    @include tablet {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
   .search-game {
     .type-game {
       background: url(../../assets/images/GameCardMobile.png) no-repeat;
@@ -51,4 +56,15 @@
       margin: 0 auto;
     }
   }
+}
+
+.search-results-header {
+    text-align: center;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+}
+
+.page-title {
+    text-align: center;
+    font-size: 14px;
 }
