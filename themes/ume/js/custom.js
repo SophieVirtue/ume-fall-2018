@@ -1,8 +1,7 @@
 (function($) {
     $(function() {
         const $play = $('.play');
-        const $popup = $('.popup');
-        const $hidePopUp = $('.hide-div');
+        const $popup = $('.widget-area');
         const $carouselArrow = $('.carousel-cell .arrow');
         const $featureArrow = $('.featured-game .arrow');
         
@@ -12,16 +11,12 @@
             $play.on('click', function() {
                 $popup.toggle();
             }); //end of popup .onclick
-            $hidePopUp.on('click', function() {
-                $popup.hide();
-            });
         }//end of if browsertype
 
         $carouselArrow.on('click', function() {
             let gameID = $(this).closest('.carousel-cell').data('id');
             $(this).closest('section').find('.drop-down[data-id!="' + gameID + '"]').hide();
             $(this).closest('section').find('.drop-down[data-id="' + gameID + '"]').toggle();
-            // $(this).focus();
         });
 
         $('.main-carousel').blur( function() {
