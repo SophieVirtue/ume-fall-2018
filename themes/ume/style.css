@@ -855,15 +855,16 @@ object {
     text-transform: uppercase; }
 
 .flickity-viewport {
-  height: 500px;
+  height: 325px !important;
   z-index: 1;
   position: relative; }
 
 .flickity-slider {
-  position: relative; }
+  position: relative;
+  height: 550px; }
 
 .carousel-cell {
-  height: 300px;
+  height: 325px;
   margin: 0 50px; }
 
 .featured-games {
@@ -874,7 +875,22 @@ object {
     width: 50px; }
 
 .arrow {
-  width: 30px; }
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 30px;
+  height: 30px;
+  border: none;
+  margin: 0;
+  padding: 0; }
+  .arrow img {
+    width: 30px; }
 
 .game-background {
   color: #fff; }
@@ -959,38 +975,25 @@ object {
         height: 270px;
         width: 1024px; } }
 
-.hide-div {
-  width: 100vw;
-  height: 100vh;
+.widget-area {
+  display: none;
+  height: 192px;
+  width: 287px;
+  background: url(../../assets/images/grid-lines.png), linear-gradient(180.06deg, #3A193F 0%, #672973 2.75%, #5A3073 11.07%, #5E2D72 22.02%, #5F2C72 30.78%, #43366C 49.79%, #304371 63.66%, #294872 77.54%, #086B85 100%);
+  background-size: cover, 800px, 0, cover;
   position: fixed;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center; }
-  .hide-div .popup {
-    display: none;
-    height: 192px;
-    width: 287px;
-    background: url(../../assets/grid-lines.png), linear-gradient(180.06deg, #3A193F 0%, #672973 2.75%, #5A3073 11.07%, #5E2D72 22.02%, #5F2C72 30.78%, #43366C 49.79%, #304371 63.66%, #294872 77.54%, #086B85 100%);
-    background-size: cover, 800px, 0, cover;
-    position: absolute;
-    left: 40%;
-    text-align: center; }
-    .hide-div .popup p {
-      color: white;
-      font-family: 'Futura-Bk-BT';
-      font-size: 18px; }
+  left: 40%;
+  top: 40vh;
+  text-align: center; }
+  .widget-area img {
+    width: 100px; }
+  .widget-area p {
+    color: white;
+    font-family: 'Futura-Bk-BT';
+    font-size: 18px; }
 
 .leaderboard .leaderboard-title {
   text-align: center; }
-  .leaderboard .leaderboard-title img {
-    width: 300px;
-    margin-top: 56px; }
 
 .leaderboard .remaining-player .leader-ranking {
   background: -webkit-gradient(linear, left top, left bottom, from(#f5c423), to(#ff8800));
@@ -1035,7 +1038,10 @@ object {
 .top-players {
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex; }
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
 
 .top-seven {
   padding-top: 3rem; }
@@ -1068,40 +1074,66 @@ object {
         padding-top: 100px; } }
 
 .top-player .leader-ranking p {
-  height: 127px;
-  width: 72px;
+  font-size: 3rem;
+  margin-bottom: 0;
   color: #FFF6E8;
   font-family: Futura;
-  font-size: 100px;
-  letter-spacing: 10.86px;
-  line-height: 130px;
   text-shadow: 0 0 18px 0 #F5A623; }
+  @media (min-width: 600px) {
+    .top-player .leader-ranking p {
+      font-size: 4rem; } }
+  @media (min-width: 1024px) {
+    .top-player .leader-ranking p {
+      font-size: 100px; } }
 
 .top-player .img-responsive {
-  height: 316px;
-  width: 316px;
+  width: 130px;
+  height: 130px;
   -webkit-box-shadow: 0 0 4px 0 rgba(255, 255, 255, 0.45), 0 2px 4px 0 rgba(0, 0, 0, 0.5), 0 0 22px 7px #9BC9FF;
           box-shadow: 0 0 4px 0 rgba(255, 255, 255, 0.45), 0 2px 4px 0 rgba(0, 0, 0, 0.5), 0 0 22px 7px #9BC9FF;
   border-radius: 50%; }
+  @media (min-width: 600px) {
+    .top-player .img-responsive {
+      height: 180px;
+      width: 180px; } }
+  @media (min-width: 1024px) {
+    .top-player .img-responsive {
+      height: 316px;
+      width: 316px; } }
 
 .top-player h3 {
-  height: 39px;
-  width: 201px;
+  font-weight: 900;
+  font-family: Futura-Heavy;
+  font-size: 1.3rem;
   color: #FFFFFF;
-  font-family: Futura;
-  font-size: 30px;
-  font-weight: bold;
-  line-height: 40px;
-  text-align: center; }
+  text-align: center;
+  text-transform: uppercase; }
+  @media (min-width: 600px) {
+    .top-player h3 {
+      font-size: 1.7rem; } }
 
-.top-player h4 {
-  height: 32px;
-  width: 135px;
+.top-player .leader-name h4, .top-player .leader-coins h4 {
+  font-weight: 900;
+  font-family: Futura-Bk-BT;
+  font-size: 1rem;
   color: #FFFFFF;
-  font-family: Futura;
-  font-size: 25px;
-  font-weight: 500;
-  line-height: 33px; }
+  text-align: center;
+  text-transform: uppercase; }
+  @media (min-width: 600px) {
+    .top-player .leader-name h4, .top-player .leader-coins h4 {
+      font-size: 1.3rem; } }
+
+.top-player img.coin {
+  width: 10%;
+  position: relative;
+  top: 0.3rem; }
+  @media (min-width: 1024px) {
+    .top-player img.coin {
+      top: 0.5rem; } }
+
+.top-player a {
+  color: white;
+  text-decoration: none; }
 
 .game-template-default.single-game {
   color: #fff;
