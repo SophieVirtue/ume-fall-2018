@@ -7,8 +7,8 @@
         
         // popup toggle
         
-        if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
-            $play.on('click', function() {
+        if( !/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+            $play.on('mousedown', function() {
                 $popup.toggle();
             }); //end of popup .onclick
         }//end of if browsertype
@@ -19,9 +19,17 @@
             $(this).closest('section').find('.drop-down[data-id="' + gameID + '"]').toggle();
         });
 
-        $('.main-carousel').blur( function() {
-            $(this).closest('section').find('.drop-down').hide();
-        });
+        $(document).on('mouseup', function(event) {
+       
+            console.log($(event));
+            if((!$(event.target).is('.game-dropdown') )&&
+    ($(event.target).parents('.game-dropdown').length === 0) ) {
+                console.log('document clicked');
+                $('.drop-down').hide();
+            }
+            console.log('document clicked not dropdown');
+               
+            });
 
         $featureArrow.on('click', function() {
             $(this).closest('.featured-game').find('.drop-down').toggle();
