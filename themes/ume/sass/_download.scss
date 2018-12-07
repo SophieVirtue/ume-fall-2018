@@ -3,7 +3,6 @@
   color: #fff;
   background: url(../../assets/images/background.png);
   background-size: cover, 800px;
-
   @include desktop {
     background: url(../../assets/images/background.png);
     background-size: cover, 800px;
@@ -24,6 +23,19 @@
     }
   }
 
+  .footer-relative {
+    padding-bottom: 50px;
+  }
+
+  // .site {
+  //   background: url(../../assets/images/background.png);
+  //   background-size: cover, 800px;
+
+  //   @include desktop {
+  //     background: url(../../assets/images/background.png);
+  //     background-size: cover, 800px;
+  //   }
+  // }
  
 
   .wpcf7-form {
@@ -50,7 +62,6 @@
 
   input[type='email'],
   input[type='password'],
-  input[type='search'],
   input[type='text'],
   input[type='url'] {
     color: #fff;

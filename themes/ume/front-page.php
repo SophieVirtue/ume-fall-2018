@@ -5,15 +5,14 @@
  * @package RED_Starter_Theme
  */
 
-get_header(); ?>
+get_header(); 
+get_sidebar(); ?>
 
 <div id="primary" class="content-area">
     <main id="main" class="site-main" role="main">
-    <!-- <div class="hide-div">
-        <div class="popup">
+        <!-- <div class="popup">
             <p>Please play our games on a desktop or laptop!</p>
-        </div>
-    </div> -->
+        </div> -->
         <section>
         <div class="banner">
               <div class="upper-row">

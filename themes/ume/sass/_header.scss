@@ -1,17 +1,19 @@
 .site-header{
-// background: linear-gradient(180deg, #F8F8FF 0%, #000000 100%);
-// opacity: 0.62;
-background: linear-gradient( rgba(255,255,255,0.62), rgba(0,0,0,1)); 
+background: linear-gradient( rgba(255,255,255,0.25), rgba(0,0,0,0.7)); 
 box-shadow: 0 0 4px 0 rgba(0,0,0,0.5); 
 position: absolute;
 height: 50px;
 width: 100%;
-@include tablet {
-    height: 45px;
-}
-@include desktop {
-    height: 70px;
-}
+    @include tablet {
+        height: 45px;
+    }
+    @include desktop {
+        height: 70px;
+    }
+    fieldset {
+        margin: 0;
+        border: 0;
+    }
 }
 
 
@@ -55,6 +57,10 @@ input.search-field{
     &::placeholder{
         color: white;
     }
+}
+
+.page-download input.search {
+    width: 80%;
 }
 
 i.fa-search{
