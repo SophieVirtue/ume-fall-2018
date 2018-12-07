@@ -863,15 +863,16 @@ i.fa-search {
     text-transform: uppercase; }
 
 .flickity-viewport {
-  height: 500px;
+  height: 325px !important;
   z-index: 1;
   position: relative; }
 
 .flickity-slider {
-  position: relative; }
+  position: relative;
+  height: 550px; }
 
 .carousel-cell {
-  height: 300px;
+  height: 325px;
   margin: 0 50px; }
 
 .featured-games {
@@ -882,7 +883,22 @@ i.fa-search {
     width: 50px; }
 
 .arrow {
-  width: 30px; }
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 30px;
+  height: 30px;
+  border: none;
+  margin: 0;
+  padding: 0; }
+  .arrow img {
+    width: 30px; }
 
 .game-background {
   color: #fff; }
