@@ -855,42 +855,78 @@ object {
     text-transform: uppercase; }
 
 .flickity-viewport {
-  height: 325px !important;
+  height: 278px !important;
   z-index: 1;
   position: relative; }
+  @media (min-width: 600px) {
+    .flickity-viewport {
+      height: 490px !important; } }
+  @media (min-width: 1024px) {
+    .flickity-viewport {
+      height: 483px !important; } }
 
-.flickity-slider {
-  height: 550px; }
+.flickity-page-dots {
+  display: none; }
+
+.flickity-button {
+  display: none; }
 
 .carousel-cell {
   height: 211px;
-  width: 142px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  width: 40%;
+  margin-right: 5px;
   background: url(../../assets/images/single-ambient-square.png); }
+  @media (min-width: 600px) {
+    .carousel-cell {
+      height: 375px;
+      width: 33%;
+      margin-right: 15px; } }
+  @media (min-width: 1024px) {
+    .carousel-cell {
+      height: 376px;
+      width: 20%; } }
+  .carousel-cell .content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    height: 100%; }
   .carousel-cell h3 {
     font-size: 14px; }
+    @media (min-width: 600px) {
+      .carousel-cell h3 {
+        font-size: 18px; } }
   .carousel-cell h4 {
     font-size: 12px;
     margin: 5px 0; }
+    @media (min-width: 600px) {
+      .carousel-cell h4 {
+        font-size: 15px; } }
   .carousel-cell img {
     height: 120px;
     width: 129px; }
+    @media (min-width: 600px) {
+      .carousel-cell img {
+        width: 222px;
+        height: 210px; } }
 
 .featured-games {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
+  .featured-games .featured-game {
+    background: url(../../assets/images/single-ambient-square.png); }
   .featured-games img {
-    width: 50px; }
+    height: 120px;
+    width: 129px; }
 
 .arrow {
   display: -webkit-box;
@@ -907,9 +943,17 @@ object {
   border: none;
   margin: 0;
   padding: 0; }
+  @media (min-width: 600px) {
+    .arrow {
+      width: 35px;
+      height: 35px; } }
   .arrow img {
     width: 15px;
     height: 15px; }
+    @media (min-width: 600px) {
+      .arrow img {
+        width: 35px;
+        height: 35px; } }
 
 .game-background {
   color: #fff; }
