@@ -1155,6 +1155,7 @@ object {
   background-size: cover, 800px; }
   .search .site-main,
   .search-results .site-main {
+    padding-top: 5rem;
     width: 300px;
     margin-left: auto;
     margin-right: auto; }
@@ -1165,4 +1166,30 @@ object {
     @media (min-width: 1024px) {
       .search .site-main,
       .search-results .site-main {
-        width: 800px; } }
+        width: 1000px; } }
+
+.search-results-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+  .search-results-container .search-game .type-game {
+    background: url(../../assets/images/GameCardMobile.png) no-repeat;
+    background-size: cover;
+    background-position: top;
+    text-align: center;
+    height: 450px; }
+    .search-results-container .search-game .type-game .entry-title {
+      padding: 3rem 0 0 0; }
+      .search-results-container .search-game .type-game .entry-title a {
+        text-decoration: none; }
+    .search-results-container .search-game .type-game .thumbnail-image img {
+      width: 220px;
+      height: auto; }
+    .search-results-container .search-game .type-game .author h4 {
+      margin: 1rem 0 1.5rem 0; }
+  .search-results-container .search-game .arrow {
+    margin: 0 auto; }
