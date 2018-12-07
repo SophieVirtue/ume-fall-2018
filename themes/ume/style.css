@@ -860,12 +860,30 @@ object {
   position: relative; }
 
 .flickity-slider {
-  position: relative;
   height: 550px; }
 
 .carousel-cell {
-  height: 325px;
-  margin: 0 50px; }
+  height: 211px;
+  width: 142px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: url(../../assets/images/single-ambient-square.png); }
+  .carousel-cell h3 {
+    font-size: 14px; }
+  .carousel-cell h4 {
+    font-size: 12px;
+    margin: 5px 0; }
+  .carousel-cell img {
+    height: 120px;
+    width: 129px; }
 
 .featured-games {
   display: -webkit-box;
@@ -884,13 +902,14 @@ object {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 30px;
-  height: 30px;
+  width: 15px;
+  height: 15px;
   border: none;
   margin: 0;
   padding: 0; }
   .arrow img {
-    width: 30px; }
+    width: 15px;
+    height: 15px; }
 
 .game-background {
   color: #fff; }
@@ -1078,7 +1097,10 @@ object {
   margin-bottom: 0;
   color: #FFF6E8;
   font-family: Futura;
-  text-shadow: 0 0 18px 0 #F5A623; }
+  text-shadow: 0 0 18px 0 #F5A623;
+  position: relative;
+  left: 3rem;
+  top: 2rem; }
   @media (min-width: 600px) {
     .top-player .leader-ranking p {
       font-size: 4rem; } }
@@ -1134,6 +1156,21 @@ object {
 .top-player a {
   color: white;
   text-decoration: none; }
+
+.top-player:nth-of-type(1) {
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2; }
+
+.top-player:nth-of-type(2) {
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1; }
+
+.top-player:nth-of-type(3) {
+  -webkit-box-ordinal-group: 4;
+      -ms-flex-order: 3;
+          order: 3; }
 
 .game-template-default.single-game {
   color: #fff;

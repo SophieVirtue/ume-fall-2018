@@ -9,13 +9,29 @@
 }
 
 .flickity-slider {
-    position: relative;
+    // position: relative;
     height: 550px;
 }
 
 .carousel-cell {
-    height: 325px;
-    margin: 0 50px;
+    height: 211px;
+    width: 142px;
+    // margin: 0 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: url(../../assets/images/single-ambient-square.png);
+    h3 {
+        font-size: 14px;
+    }
+    h4 {
+        font-size: 12px;
+        margin: 5px 0;
+    }
+    img {
+        height: 120px;
+        width: 129px;
+    }
 }
 
 .featured-games {
@@ -29,13 +45,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 30px;
-    height: 30px;
+    width: 15px;
+    height: 15px;
     border: none;
     margin: 0;
     padding: 0;
     img{
-        width: 30px;
+        width: 15px;
+        height: 15px;
     }
 }
 
