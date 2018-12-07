@@ -40,8 +40,18 @@ function game_category_taxonomy() {
 		'show_admin_column'          => true,
 		'show_in_nav_menus'          => true,
 		'show_tagcloud'              => true,
+
 	);
 	register_taxonomy( 'game_category', array( 'game' ), $args );
 
 }
 add_action( 'init', 'game_category_taxonomy', 0 );
+
+
+
+
+
+
+
+
+

@@ -12,13 +12,24 @@
 		<?php the_title( sprintf( '<h2 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' ); ?>
 
 		<?php if ( 'post' === get_post_type() ) : ?>
-		<div class="entry-meta">
-			<?php red_starter_posted_on(); ?> / <?php comments_number( '0 Comments', '1 Comment', '% Comments' ); ?> / <?php red_starter_posted_by(); ?>
-		</div><!-- .entry-meta -->
+		
 		<?php endif; ?>
 	</header><!-- .entry-header -->
-
-	<div class="entry-summary">
-		<?php the_excerpt(); ?>
-	</div><!-- .entry-summary -->
+	
+	
+		<div class="thumbnail-image">
+			<?php the_post_thumbnail( 'thumbnail' ); ?>
+		</div>
+    <div class="author">
+	<h4> By: <?php echo CFS()->get ( 'game_author' ); ?> </h4>
+    </div>
+    <div class="arrow">
+		
+        <img  src="<?php echo get_template_directory_uri(); ?>/assets/images/scroll-arrow.png"/>
+</div>
+    
+	
 </article><!-- #post-## -->
+
+
+

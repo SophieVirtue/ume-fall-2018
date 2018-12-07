@@ -44,7 +44,7 @@ function game_post_type() {
 		'labels'                => $labels,
         'supports'              => array( 'title', 'editor', 'thumbnail', 'comments', 'revisions', 'custom-fields' ),
         'taxonomies'            => array( 'game_category' ),
-
+		'menu_icon'             => 'dashicons-heart',
 		'hierarchical'          => false,
 		'public'                => true,
 		'show_ui'               => true,
