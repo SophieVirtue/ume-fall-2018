@@ -2,10 +2,10 @@
 .search-results {
   color: #fff;
   background: url(../../assets/images/background.png);
-  background-size: cover, 800px;
+  background-size: cover, 400px;
 
   .site-main {
-      
+    padding-top: 5rem;
     width: 300px;
     margin-left: auto;
     margin-right: auto;
@@ -13,7 +13,58 @@
       width: 600px;
     }
     @include desktop {
-      width: 800px;
+      width: 1000px;
     }
   }
+}
+.search-results-container {
+    display: flex;
+    flex-direction: column;
+    @include tablet {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+  .search-game {
+    .type-game {
+      background: url(../../assets/images/GameCardMobile.png) no-repeat;
+      background-size: cover;
+      background-position: top;
+      text-align: center;
+      height: 450px;
+      .entry-title {
+          padding: 3rem 0 0 0;
+          a {
+              text-decoration: none;
+              font-family: 'Futura-Bk-BT';
+          }
+      }
+      .thumbnail-image {
+          img {
+              width: 220px;
+              height: auto;
+          }
+      }
+      .author {
+          h4 {
+              margin: 1rem 0 1.5rem 0;
+              font-family: 'Futura-Bk-BT';
+          }
+      }
+    }
+    .arrow {
+      margin: 0 auto;
+    }
+  }
+}
+
+.search-results-header {
+    text-align: center;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+}
+
+.page-title {
+    text-align: center;
+    font-size: 14px;
 }

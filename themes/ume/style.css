@@ -855,24 +855,85 @@ object {
     text-transform: uppercase; }
 
 .flickity-viewport {
-  height: 325px !important;
+  height: 278px !important;
   z-index: 1;
   position: relative; }
+  @media (min-width: 600px) {
+    .flickity-viewport {
+      height: 490px !important; } }
+  @media (min-width: 1024px) {
+    .flickity-viewport {
+      height: 483px !important; } }
 
-.flickity-slider {
-  position: relative;
-  height: 550px; }
+.flickity-page-dots {
+  display: none; }
+
+.flickity-button {
+  display: none; }
 
 .carousel-cell {
-  height: 325px;
-  margin: 0 50px; }
+  height: 260px;
+  width: 40%;
+  margin-right: 5px; }
+  @media (min-width: 600px) {
+    .carousel-cell {
+      height: 380px;
+      width: 33%;
+      margin-right: 15px; } }
+  @media (min-width: 1024px) {
+    .carousel-cell {
+      height: 376px;
+      width: 20%; } }
+  .carousel-cell .content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    height: 100%;
+    background: url(../../assets/images/GameCardMobile.png) no-repeat;
+    background-size: cover; }
+    @media (min-width: 600px) {
+      .carousel-cell .content {
+        background: url(../../assets/images/GameCardTablet.png) no-repeat; } }
+    @media (min-width: 1024px) {
+      .carousel-cell .content {
+        background: url(../../assets/images/GameCardDesktop.png) no-repeat; } }
+  .carousel-cell h3 {
+    font-size: 14px; }
+    @media (min-width: 600px) {
+      .carousel-cell h3 {
+        font-size: 18px; } }
+  .carousel-cell h4 {
+    font-size: 12px;
+    margin: 5px 0; }
+    @media (min-width: 600px) {
+      .carousel-cell h4 {
+        font-size: 15px; } }
+  .carousel-cell img {
+    height: 120px;
+    width: 129px; }
+    @media (min-width: 600px) {
+      .carousel-cell img {
+        width: 222px;
+        height: 210px; } }
 
 .featured-games {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
+  .featured-games .featured-game {
+    background: url(../../assets/images/single-ambient-square.png); }
   .featured-games img {
-    width: 50px; }
+    height: 120px;
+    width: 129px; }
 
 .arrow {
   display: -webkit-box;
@@ -884,13 +945,22 @@ object {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 30px;
-  height: 30px;
+  width: 15px;
+  height: 15px;
   border: none;
   margin: 0;
   padding: 0; }
+  @media (min-width: 600px) {
+    .arrow {
+      width: 35px;
+      height: 35px; } }
   .arrow img {
-    width: 30px; }
+    width: 15px;
+    height: 15px; }
+    @media (min-width: 600px) {
+      .arrow img {
+        width: 35px;
+        height: 35px; } }
 
 .game-background {
   color: #fff; }
@@ -1280,9 +1350,10 @@ object {
 .search-results {
   color: #fff;
   background: url(../../assets/images/background.png);
-  background-size: cover, 800px; }
+  background-size: cover, 400px; }
   .search .site-main,
   .search-results .site-main {
+    padding-top: 5rem;
     width: 300px;
     margin-left: auto;
     margin-right: auto; }
@@ -1293,4 +1364,51 @@ object {
     @media (min-width: 1024px) {
       .search .site-main,
       .search-results .site-main {
-        width: 800px; } }
+        width: 1000px; } }
+
+.search-results-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+  @media (min-width: 600px) {
+    .search-results-container {
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+      -ms-flex-pack: distribute;
+          justify-content: space-around; } }
+  .search-results-container .search-game .type-game {
+    background: url(../../assets/images/GameCardMobile.png) no-repeat;
+    background-size: cover;
+    background-position: top;
+    text-align: center;
+    height: 450px; }
+    .search-results-container .search-game .type-game .entry-title {
+      padding: 3rem 0 0 0; }
+      .search-results-container .search-game .type-game .entry-title a {
+        text-decoration: none;
+        font-family: 'Futura-Bk-BT'; }
+    .search-results-container .search-game .type-game .thumbnail-image img {
+      width: 220px;
+      height: auto; }
+    .search-results-container .search-game .type-game .author h4 {
+      margin: 1rem 0 1.5rem 0;
+      font-family: 'Futura-Bk-BT'; }
+  .search-results-container .search-game .arrow {
+    margin: 0 auto; }
+
+.search-results-header {
+  text-align: center;
+  font-size: 1.3rem;
+  text-transform: uppercase; }
+
+.page-title {
+  text-align: center;
+  font-size: 14px; }
