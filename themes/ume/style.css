@@ -1240,7 +1240,7 @@ object {
 .search-results {
   color: #fff;
   background: url(../../assets/images/background.png);
-  background-size: cover, 800px; }
+  background-size: cover, 400px; }
   .search .site-main,
   .search-results .site-main {
     padding-top: 5rem;
@@ -1264,6 +1264,16 @@ object {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column; }
+  @media (min-width: 600px) {
+    .search-results-container {
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+      -ms-flex-pack: distribute;
+          justify-content: space-around; } }
   .search-results-container .search-game .type-game {
     background: url(../../assets/images/GameCardMobile.png) no-repeat;
     background-size: cover;
@@ -1273,11 +1283,22 @@ object {
     .search-results-container .search-game .type-game .entry-title {
       padding: 3rem 0 0 0; }
       .search-results-container .search-game .type-game .entry-title a {
-        text-decoration: none; }
+        text-decoration: none;
+        font-family: 'Futura-Bk-BT'; }
     .search-results-container .search-game .type-game .thumbnail-image img {
       width: 220px;
       height: auto; }
     .search-results-container .search-game .type-game .author h4 {
-      margin: 1rem 0 1.5rem 0; }
+      margin: 1rem 0 1.5rem 0;
+      font-family: 'Futura-Bk-BT'; }
   .search-results-container .search-game .arrow {
     margin: 0 auto; }
+
+.search-results-header {
+  text-align: center;
+  font-size: 1.3rem;
+  text-transform: uppercase; }
+
+.page-title {
+  text-align: center;
+  font-size: 14px; }
