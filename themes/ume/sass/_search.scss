@@ -10,62 +10,96 @@
     margin-left: auto;
     margin-right: auto;
     @include tablet {
-      width: 600px;
+      width: 750px;
     }
     @include desktop {
       width: 1000px;
     }
   }
-}
-.search-results-container {
+
+  .search-results-container {
     display: flex;
     flex-direction: column;
+    padding-bottom: 3rem;
     @include tablet {
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-around;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      padding-bottom: 6rem;
     }
-  .search-game {
-    .type-game {
-      background: url(../../assets/images/GameCardMobile.png) no-repeat;
-      background-size: cover;
-      background-position: top;
-      text-align: center;
-      height: 450px;
-      .entry-title {
+    @include desktop {
+      padding-bottom: 10rem;
+    }
+    .search-game {
+      .type-game {
+        background: url(../../assets/images/GameCardDesktop.png) no-repeat;
+        background-size: cover;
+        background-position: top;
+        text-align: center;
+        height: 450px;
+        @include tablet {
+          width: 235px;
+          height: auto;
+        }
+        @include desktop {
+          width: 235px;
+          height: auto;
+        }
+        .entry-title {
           padding: 3rem 0 0 0;
           a {
-              text-decoration: none;
-              font-family: 'Futura-Bk-BT';
-              color: white;
+            text-decoration: none;
+            font-family: 'Futura-Bk-BT';
+            color: white;
           }
-      }
-      .thumbnail-image {
+        }
+        .thumbnail-image {
           img {
-              width: 220px;
+            width: 220px;
+            height: auto;
+            @include tablet {
+              width: 150px;
               height: auto;
+            }
           }
-      }
-      .author {
+        }
+        .author {
           h4 {
-              margin: 1rem 0 1.5rem 0;
-              font-family: 'Futura-Bk-BT';
+            margin: 1rem 0 1.5rem 0;
+            font-family: 'Futura-Bk-BT';
+            @include desktop {
+            }
           }
+        }
       }
-    }
-    .arrow {
-      margin: 0 auto;
+      .arrow {
+        margin: 0 auto;
+        img {
+            width: 30px;
+            height: auto;
+        }
+
+        @include tablet {
+          padding-bottom: 20px;
+        }
+      }
     }
   }
-}
 
-.search-results-header {
+  .search-results-header {
     text-align: center;
     font-size: 1.3rem;
     text-transform: uppercase;
-}
+    @include tablet {
+      text-align: left;
+    }
+  }
 
-.page-title {
+  .page-title {
     text-align: center;
     font-size: 14px;
+    @include tablet {
+      text-align: left;
+    }
+  }
 }
