@@ -1,6 +1,6 @@
 .leaderboard {
     
-    .leader-thumbnail{
+    .top-three .leader-thumbnail{
         background: url(../../assets/images/first-place.png);
         border-radius: 50%;
     background-size: cover;
@@ -106,10 +106,6 @@
           top: 6rem;
           z-index: 5;
           font-weight: lighter;
-            
-            @include desktop{
-                font-size: 100px;
-            }
     }
     .leader-info{
         position: relative;
@@ -190,6 +186,10 @@
 //Separate Styles for the first three games
 .top-player:nth-of-type(1) { 
     order: 2;
+    @include desktop{
+        bottom: 6rem;
+    position: relative;
+    }
     .img-responsive{
     width: 150px;
     height: 150px;
@@ -209,25 +209,46 @@
             position: relative;
             top: 0.6rem;
         }
+        @include desktop{
+            top:-0.6rem;
+        }
     }
     .leader-name h4{
         @include tablet{
             position: relative;
             bottom: 0.4rem;
         }
+        @include desktop{
+            bottom: 1.3rem;
+        }
     }
     
     .leader-thumbnail{
         padding: 42px;
+
     @include tablet{
         padding: 50px;
     }
     @include desktop{
         padding: 87px;
+        
+
+
     }
     }
     .leader-ranking p{
-        font-size: 4rem;
+    font-size: 4rem;
+    @include desktop{
+    top: 11rem;
+    left: 8rem;
+    font-size: 6rem;
+    }
+    }
+    .leader-coins h4{
+        @include desktop{
+            bottom: 2.7rem;
+
+        }
     }
 
 
@@ -257,6 +278,11 @@
     .leader-ranking p{
         left: 3rem;
     top: 4rem;
+    @include desktop{
+    font-size: 4rem;
+    left: 5rem;
+    top: 7rem;
+    }
     }
     .leader-info{
         bottom: 1.3rem;
