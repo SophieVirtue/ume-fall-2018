@@ -1131,6 +1131,9 @@ object {
     right: 1rem; }
     @media (min-width: 600px) {
       .leaderboard .remaining-player .leader-content img.size-thumbnail {
+        width: 210px;
+        height: 150px;
+        top: 0;
         right: -2rem; } }
   .leaderboard .remaining-player .leader-content a {
     color: white;

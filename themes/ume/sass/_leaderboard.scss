@@ -59,6 +59,9 @@
             top: 1.5rem;
             right: 1rem;
             @include tablet{
+                width: 210px;
+               height: 150px;
+                top: 0;
                 right: -2rem;
             }
         
