@@ -1135,6 +1135,10 @@ object {
         height: 120px;
         top: 1rem;
         right: -1rem; } }
+  @media (min-width: 600px) and (min-width: 1024px) {
+    .leaderboard .remaining-player .leader-content img.size-thumbnail {
+      width: 190px;
+      height: 130px; } }
   .leaderboard .remaining-player .leader-content a {
     color: white;
     text-decoration: none; }
@@ -1355,8 +1359,8 @@ object {
         padding-right: 3rem; } }
     @media (min-width: 1024px) {
       .remaining-players .top-seven .remaining-player {
-        padding-left: 7rem;
-        padding-right: 7rem; } }
+        padding-left: 10rem;
+        padding-right: 10rem; } }
   .remaining-players .top-seven .leader-content {
     height: 180px; }
   .remaining-players .top-seven .leader-info {
