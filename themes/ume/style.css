@@ -1277,7 +1277,8 @@ object {
       padding: 3rem 0 0 0; }
       .search-results-container .search-game .type-game .entry-title a {
         text-decoration: none;
-        font-family: 'Futura-Bk-BT'; }
+        font-family: 'Futura-Bk-BT';
+        color: white; }
     .search-results-container .search-game .type-game .thumbnail-image img {
       width: 220px;
       height: auto; }
