@@ -1,7 +1,20 @@
 .leaderboard {
     
-    //background: linear-gradient(179.96deg, #3A193F 0%, #672973 6.35%, #294872 17.54%, #0F6381 24.55%, #086B85 29.42%, #363A6A 62.11%, #5F2C72 77.35%, #6A2874 87.73%, #3F1B45 100%);
-    //color: white;
+    .top-three .leader-thumbnail{
+        background: url(../../assets/images/first-place.png);
+        border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+    padding: 29px;
+    @include tablet{
+        padding: 41px;
+    }
+    @include desktop{
+       padding: 64px;
+    }
+    
+    }
+
     .leaderboard-title{
  
         text-align: center;
@@ -26,7 +39,7 @@
         align-items: center;
         background: linear-gradient(180deg, #000000 0%, #2B164A 100%);
         height: 168px;
-        img {
+        img.size-thumbnail {
             width: 157px;
             height: 111px; 
         }
@@ -43,6 +56,9 @@
 .top-players{
     display: flex;
     justify-content: center;
+    position: relative;
+    bottom: 7.5rem;
+
 }
 
 .top-seven{
@@ -52,21 +68,20 @@
 .board-page {
     background: url(../../assets/images/grid-lines.png), url(../../assets/images/background.png); 
     background-repeat: no-repeat;
-    background-size: auto 874px, auto 1800px;
+    background-size: auto 500px, auto 2200px;
     overflow: hidden;
     background-position: top; 
     text-align: center;
     width: 100%;
     @include tablet {
-        background-size: auto 1495px, 100% 100%;  
+       background-size: 100% 900px,100% 100%;     
     }
     @include desktop {
         background-size: 100% 1100px, 100% 100%;  
     }
      img.leaderboard-logo {
-        width: 167px;
-        height: auto;
-        padding-top: 54px;
+        width: 26rem;
+    padding-top: 5rem;
         @include tablet {
             width: 418px;
             padding-top: 81px;
@@ -81,40 +96,47 @@
 
 .top-player{
     .leader-ranking p{   
-        font-size: 3rem;
+        font-size: 2.5rem;
         margin-bottom: 0;        
             color: #FFF6E8;
-            font-family: Futura;   
-            text-shadow: 0 0 18px 0 #F5A623;
+            font-family: Futura-Bold;   
+            text-shadow: 1.2px 1.2px #F5A623;
             position: relative;
-           left: 3rem;
-          top: 2rem;
+           left: 4rem;
+          top: 6rem;
+          z-index: 5;
+          font-weight: lighter;
+    }
+    .leader-info{
+        position: relative;
+    bottom: 3rem;
 
-            @include tablet{
-                font-size: 4rem;
-            }
-            @include desktop{
-                font-size: 100px;
-            }
     }
     .img-responsive{
-    width: 130px;
-    height: 130px;
+    
+    width: 110px;
+    height: 110px;
     box-shadow: 0 0 4px 0 rgba(255,255,255,0.45), 0 2px 4px 0 rgba(0,0,0,0.5), 0 0 22px 7px #9BC9FF;
-            border-radius: 50%;
+    border-radius: 50%;
+    position: relative;
+    top: 0.2rem;
      @include tablet{
-         height: 180px;
-         width: 180px;
+        width: 140px;
+        height: 140px;
+        position: relative;
+        top: 0.15rem;
      }
      @include desktop{
-            height: 316px;
-            width: 316px; 
+            height: 220px;
+            width: 220px; 
          }
+         
+
      }
     h3{
         font-weight: 900;
     font-family: Futura-Heavy;
-    font-size: 1.3rem;
+    font-size: 1.7rem;
             color: #FFFFFF;
             text-align: center;
             text-transform: uppercase;
@@ -123,16 +145,26 @@
     }
 }
     .leader-name h4, .leader-coins h4{
-        font-weight: 900;
+        font-weight: lighter;
         font-family: Futura-Bk-BT;
-        font-size: 1rem;
+        font-size: 0.9rem;
          color: #FFFFFF;
          text-align: center;
          text-transform: uppercase;
+         position: relative;
+         bottom: 1.5rem;
+
          @include tablet{
              font-size: 1.3rem;
          }
             
+    }
+    .leader-coins h4{
+        position: relative;
+    bottom: 2.5rem;
+    @include tablet{
+        bottom: 1.7rem;
+    }
     }
     
     img.coin{
@@ -151,6 +183,158 @@
 
 }
 
-.top-player:nth-of-type(1) { order: 2 };
-.top-player:nth-of-type(2) { order: 1 };
-.top-player:nth-of-type(3) { order: 3};
+//Separate Styles for the first three games
+.top-player:nth-of-type(1) { 
+    order: 2;
+    @include desktop{
+        bottom: 6rem;
+    position: relative;
+    }
+    .img-responsive{
+    width: 150px;
+    height: 150px;
+    position: relative;
+    top: 0.15rem;
+    @include tablet{
+        width: 180px;
+        height: 180px;
+    }
+    @include desktop{
+        width: 330px;
+        height: 330px;
+    }
+    }
+    .leader-title h3{
+        @include tablet{
+            position: relative;
+            top: 0.6rem;
+        }
+        @include desktop{
+            top:-0.6rem;
+        }
+    }
+    .leader-name h4{
+        @include tablet{
+            position: relative;
+            bottom: 0.4rem;
+        }
+        @include desktop{
+            bottom: 1.3rem;
+        }
+    }
+    
+    .leader-thumbnail{
+        padding: 42px;
+
+    @include tablet{
+        padding: 50px;
+    }
+    @include desktop{
+        padding: 87px;
+        
+
+
+    }
+    }
+    .leader-ranking p{
+    font-size: 4rem;
+    @include desktop{
+    top: 11rem;
+    left: 8rem;
+    font-size: 6rem;
+    }
+    }
+    .leader-coins h4{
+        @include desktop{
+            bottom: 2.7rem;
+
+        }
+    }
+
+
+
+
+};
+.top-player:nth-of-type(2) { 
+    order: 1 ;
+    position: relative;
+    left: 2.6rem;
+
+
+
+    
+};
+.top-player:nth-of-type(3) { 
+    order: 3;
+    position: relative;
+    right: 2.6rem;
+    
+
+};
+
+.top-player:nth-of-type(2), .top-player:nth-of-type(3) {
+    padding-top: 2.56rem;
+    top: 4.1rem;
+    .leader-ranking p{
+        left: 3rem;
+    top: 4rem;
+    @include desktop{
+    font-size: 4rem;
+    left: 5rem;
+    top: 7rem;
+    }
+    }
+    .leader-info{
+        bottom: 1.3rem;
+    }
+    .leader-title h3{
+        font-size: 1.2rem;
+    }
+    .leader-name h4{
+        bottom: 0.9rem;
+    }
+    .leader-coins h4{
+        bottom: 1.8rem;
+    }
+
+
+}
+
+
+//Styling for Seven Games
+
+.remaining-players .top-seven{
+    img.coin{
+        width: 10%;
+        position:relative;
+        top: 0.3rem;
+    @include desktop{
+        top: 0.5rem;
+    }
+      
+    }
+    h3{
+        font-weight: 900;
+    font-family: Futura-Heavy;
+    font-size: 1.3rem;
+            color: #FFFFFF;
+            text-align: center;
+            text-transform: uppercase;
+    @include tablet{
+        font-size: 1.7rem;
+    }
+    }
+    .leader-name h4, .leader-coins h4{
+        font-weight: 900;
+        font-family: Futura-Bk-BT;
+        font-size: 1rem;
+         color: #FFFFFF;
+         text-align: center;
+         text-transform: uppercase;
+         @include tablet{
+             font-size: 1.3rem;
+         }
+            
+    }
+
+}

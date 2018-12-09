@@ -20,11 +20,11 @@
 }
 
 .carousel-cell {
-    height: 211px;
+    height: 260px;
     width: 40%;
     margin-right: 5px;
     @include tablet {
-        height: 375px;
+        height: 380px;
         width: 33%;
         margin-right: 15px;
     }
@@ -38,9 +38,17 @@
     align-items: center;
     justify-content: space-around;
     height: 100%;
+    background: url(../../assets/images/GameCardMobile.png) no-repeat;
+    background-size: cover;
+    @include tablet {
+        background: url(../../assets/images/GameCardTablet.png) no-repeat;
+    }
+    @include desktop {
+        background: url(../../assets/images/GameCardDesktop.png) no-repeat;
+    }
     }
     
-    background: url(../../assets/images/single-ambient-square.png);
+    
     h3 {
         font-size: 14px;
         @include tablet {
