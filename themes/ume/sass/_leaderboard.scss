@@ -32,16 +32,36 @@
         margin: 21px 0 -25px 32px;
         position: sticky;
         box-shadow: 0px 0px 8px 8px rgba( 255, 255, 255, 0.6);
+        font-size: 1.5rem;
+         font-family: Futura-Bold;
+         color: white;
+         @include tablet{
+            position: relative;
+            top: 7rem;
+            width: 90px;
+            height: 90px;
+            left: -1rem;
+         }
        }
     .leader-content {
         display: flex;
         justify-content: space-around;
         align-items: center;
         background: linear-gradient(180deg, #000000 0%, #2B164A 100%);
-        height: 168px;
+        @include tablet{ 
+            background: radial-gradient(circle at left, transparent, transparent 130px,  #2B164A 70px, #2B164A 100%);
+        }
+        
         img.size-thumbnail {
-            width: 157px;
-            height: 111px; 
+            width: 160px;
+            height: 110px;
+            position: relative;
+            top: 1.5rem;
+            right: 1rem;
+            @include tablet{
+                right: -2rem;
+            }
+        
         }
         a {
             color: white;
@@ -68,13 +88,13 @@
 .board-page {
     background: url(../../assets/images/grid-lines.png), url(../../assets/images/background.png); 
     background-repeat: no-repeat;
-    background-size: auto 500px, auto 2200px;
+    background-size: auto 500px, auto 100%;
     overflow: hidden;
     background-position: top; 
     text-align: center;
     width: 100%;
     @include tablet {
-       background-size: 100% 900px,100% 100%;     
+       background-size: 100% 600px,100% 100%;     
     }
     @include desktop {
         background-size: 100% 1100px, 100% 100%;  
@@ -304,21 +324,38 @@
 //Styling for Seven Games
 
 .remaining-players .top-seven{
+    position: relative;
+    bottom: 12rem;
+
+    .remaining-player{
+        padding-bottom: 0.7rem;
+    }
+
+    .leader-content{
+        height: 180px;
+    }
+    .leader-info{
+    padding-top: 2rem;
+    text-align: left;
+    @include tablet{
+        position: relative;
+    left: 7rem;
+    }
+    
+    }
     img.coin{
         width: 10%;
-        position:relative;
-        top: 0.3rem;
-    @include desktop{
-        top: 0.5rem;
+        position: relative;
+        top: 0.2rem;
+        padding-right: 0.5rem;
     }
       
-    }
+    
     h3{
         font-weight: 900;
-    font-family: Futura-Heavy;
-    font-size: 1.3rem;
+    font-family: Futura-Bk-Bt;
+    font-size: 1rem;
             color: #FFFFFF;
-            text-align: center;
             text-transform: uppercase;
     @include tablet{
         font-size: 1.7rem;
@@ -327,14 +364,16 @@
     .leader-name h4, .leader-coins h4{
         font-weight: 900;
         font-family: Futura-Bk-BT;
-        font-size: 1rem;
+        font-size: 0.9rem;
          color: #FFFFFF;
-         text-align: center;
          text-transform: uppercase;
+         
+         font-weight: lighter;
+        
          @include tablet{
              font-size: 1.3rem;
-         }
-            
+         }      
     }
 
+    
 }

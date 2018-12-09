@@ -1097,7 +1097,17 @@ object {
   position: -webkit-sticky;
   position: sticky;
   -webkit-box-shadow: 0px 0px 8px 8px rgba(255, 255, 255, 0.6);
-          box-shadow: 0px 0px 8px 8px rgba(255, 255, 255, 0.6); }
+          box-shadow: 0px 0px 8px 8px rgba(255, 255, 255, 0.6);
+  font-size: 1.5rem;
+  font-family: Futura-Bold;
+  color: white; }
+  @media (min-width: 600px) {
+    .leaderboard .remaining-player .leader-ranking {
+      position: relative;
+      top: 7rem;
+      width: 90px;
+      height: 90px;
+      left: -1rem; } }
 
 .leaderboard .remaining-player .leader-content {
   display: -webkit-box;
@@ -1109,11 +1119,19 @@ object {
       -ms-flex-align: center;
           align-items: center;
   background: -webkit-gradient(linear, left top, left bottom, from(#000000), to(#2B164A));
-  background: linear-gradient(180deg, #000000 0%, #2B164A 100%);
-  height: 168px; }
+  background: linear-gradient(180deg, #000000 0%, #2B164A 100%); }
+  @media (min-width: 600px) {
+    .leaderboard .remaining-player .leader-content {
+      background: radial-gradient(circle at left, transparent, transparent 130px, #2B164A 70px, #2B164A 100%); } }
   .leaderboard .remaining-player .leader-content img.size-thumbnail {
-    width: 157px;
-    height: 111px; }
+    width: 160px;
+    height: 110px;
+    position: relative;
+    top: 1.5rem;
+    right: 1rem; }
+    @media (min-width: 600px) {
+      .leaderboard .remaining-player .leader-content img.size-thumbnail {
+        right: -2rem; } }
   .leaderboard .remaining-player .leader-content a {
     color: white;
     text-decoration: none; }
@@ -1134,14 +1152,14 @@ object {
 .board-page {
   background: url(../../assets/images/grid-lines.png), url(../../assets/images/background.png);
   background-repeat: no-repeat;
-  background-size: auto 500px, auto 2200px;
+  background-size: auto 500px, auto 100%;
   overflow: hidden;
   background-position: top;
   text-align: center;
   width: 100%; }
   @media (min-width: 600px) {
     .board-page {
-      background-size: 100% 900px,100% 100%; } }
+      background-size: 100% 600px,100% 100%; } }
   @media (min-width: 1024px) {
     .board-page {
       background-size: 100% 1100px, 100% 100%; } }
@@ -1323,35 +1341,44 @@ object {
   .top-player:nth-of-type(2) .leader-coins h4, .top-player:nth-of-type(3) .leader-coins h4 {
     bottom: 1.8rem; }
 
-.remaining-players .top-seven img.coin {
-  width: 10%;
+.remaining-players .top-seven {
   position: relative;
-  top: 0.3rem; }
-  @media (min-width: 1024px) {
-    .remaining-players .top-seven img.coin {
-      top: 0.5rem; } }
-
-.remaining-players .top-seven h3 {
-  font-weight: 900;
-  font-family: Futura-Heavy;
-  font-size: 1.3rem;
-  color: #FFFFFF;
-  text-align: center;
-  text-transform: uppercase; }
-  @media (min-width: 600px) {
-    .remaining-players .top-seven h3 {
-      font-size: 1.7rem; } }
-
-.remaining-players .top-seven .leader-name h4, .remaining-players .top-seven .leader-coins h4 {
-  font-weight: 900;
-  font-family: Futura-Bk-BT;
-  font-size: 1rem;
-  color: #FFFFFF;
-  text-align: center;
-  text-transform: uppercase; }
-  @media (min-width: 600px) {
-    .remaining-players .top-seven .leader-name h4, .remaining-players .top-seven .leader-coins h4 {
-      font-size: 1.3rem; } }
+  bottom: 12rem; }
+  .remaining-players .top-seven .remaining-player {
+    padding-bottom: 0.7rem; }
+  .remaining-players .top-seven .leader-content {
+    height: 180px; }
+  .remaining-players .top-seven .leader-info {
+    padding-top: 2rem;
+    text-align: left; }
+    @media (min-width: 600px) {
+      .remaining-players .top-seven .leader-info {
+        position: relative;
+        left: 7rem; } }
+  .remaining-players .top-seven img.coin {
+    width: 10%;
+    position: relative;
+    top: 0.2rem;
+    padding-right: 0.5rem; }
+  .remaining-players .top-seven h3 {
+    font-weight: 900;
+    font-family: Futura-Bk-Bt;
+    font-size: 1rem;
+    color: #FFFFFF;
+    text-transform: uppercase; }
+    @media (min-width: 600px) {
+      .remaining-players .top-seven h3 {
+        font-size: 1.7rem; } }
+  .remaining-players .top-seven .leader-name h4, .remaining-players .top-seven .leader-coins h4 {
+    font-weight: 900;
+    font-family: Futura-Bk-BT;
+    font-size: 0.9rem;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    font-weight: lighter; }
+    @media (min-width: 600px) {
+      .remaining-players .top-seven .leader-name h4, .remaining-players .top-seven .leader-coins h4 {
+        font-size: 1.3rem; } }
 
 .game-template-default.single-game {
   color: #fff;

@@ -67,10 +67,14 @@ get_header(); ?>
              ?>
 
          <div class="remaining-player">
-
+            
+             
+            
             <div class="leader-ranking">
                 <p><?php  echo $i++; ?></p>
             </div>
+            
+
 
          <div class="leader-content">
            <div class="leader-info">
