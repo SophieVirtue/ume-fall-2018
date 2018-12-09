@@ -59,10 +59,10 @@
             top: 1.5rem;
             right: 1rem;
             @include tablet{
-                width: 210px;
-               height: 150px;
-                top: 0;
-                right: -2rem;
+                width: 160px;
+               height: 120px;
+                top: 1rem;
+                right: -1rem;
             }
         
         }
@@ -332,6 +332,15 @@
 
     .remaining-player{
         padding-bottom: 0.7rem;
+        @include tablet{
+            padding-left: 3rem;
+    padding-right: 3rem;
+        }
+        @include desktop{
+            padding-left: 7rem;
+    padding-right: 7rem;
+        }
+        
     }
 
     .leader-content{
@@ -342,7 +351,7 @@
     text-align: left;
     @include tablet{
         position: relative;
-    left: 7rem;
+    left: 8rem;
     }
     
     }
@@ -361,7 +370,7 @@
             color: #FFFFFF;
             text-transform: uppercase;
     @include tablet{
-        font-size: 1.7rem;
+        font-size: 1.3rem;
     }
     }
     .leader-name h4, .leader-coins h4{
@@ -374,7 +383,7 @@
          font-weight: lighter;
         
          @include tablet{
-             font-size: 1.3rem;
+             font-size: 1.1rem;
          }      
     }
 
