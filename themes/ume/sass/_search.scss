@@ -75,8 +75,8 @@
       .arrow {
         margin: 0 auto;
         img {
-            width: 30px;
-            height: auto;
+          width: 30px;
+          height: auto;
         }
 
         @include tablet {
@@ -98,8 +98,16 @@
   .page-title {
     text-align: center;
     font-size: 14px;
+    span {
+        background: #17447F;
+        padding: 10px;
+        border-radius: 5px;
+        text-transform: uppercase;
+        margin-left: 20px;
+    }
     @include tablet {
       text-align: left;
     }
   }
+
 }
