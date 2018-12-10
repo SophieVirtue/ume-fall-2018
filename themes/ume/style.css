@@ -1395,6 +1395,15 @@ object {
       .remaining-players .top-seven .leader-name h4, .remaining-players .top-seven .leader-coins h4 {
         font-size: 1.1rem; } }
 
+.prize-bar {
+  border: 5px solid white;
+  width: 100px; }
+
+.inner-bar {
+  background: red;
+  width: 90px;
+  height: 5px; }
+
 .game-template-default.single-game {
   color: #fff;
   background: url(../../assets/images/grid-lines.png), url(../../assets/images/background.png);
