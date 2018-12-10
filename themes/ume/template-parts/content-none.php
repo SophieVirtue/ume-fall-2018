@@ -19,7 +19,7 @@
 
 		<?php elseif ( is_search() ) : ?>
 
-			<p><?php echo esc_html( 'Sorry, but nothing matched your search terms. Please try again with some different keywords.' ); ?></p>
+			<p><?php echo esc_html( 'Sorry, but nothing matched your search terms. Please try to search by game title or author.' ); ?></p>
 			<?php get_search_form(); ?>
 
 		<?php else : ?>

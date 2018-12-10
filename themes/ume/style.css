@@ -970,7 +970,8 @@ object {
   display: none;
   position: absolute;
   z-index: 1000;
-  background: rgba(0, 0, 0, 0.8); }
+  background: rgba(0, 0, 0, 0.8);
+  width: 100%; }
 
 .banner .upper-row {
   display: -webkit-box;
@@ -1525,7 +1526,17 @@ object {
   .search-results .page-title {
     text-align: center;
     font-size: 14px; }
+    .search .page-title span,
+    .search-results .page-title span {
+      background: #17447F;
+      padding: 10px;
+      border-radius: 5px;
+      text-transform: uppercase;
+      margin-left: 20px; }
     @media (min-width: 600px) {
       .search .page-title,
       .search-results .page-title {
         text-align: left; } }
+
+.search-no-results form {
+  display: none; }

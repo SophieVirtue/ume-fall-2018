@@ -23,8 +23,8 @@ get_header(); ?>
 
 	<div class="entry-content">
         
-     <iframe class="UnityFrame" scrolling="no" src="<?php $link = CFS()->get('game_play'); echo $link['url']?>" kwframeid="1" style="top: -4px; left: -4px; width: 960px; height: 480px;"></iframe>
-
+     <iframe class="UnityFrame" scrolling="no" src="<?php $link = CFS()->get('play_game'); echo $link['url']?>" kwframeid="1" style="top: -4px; left: -4px; width: 960px; height: 480px;"></iframe>
+<!-- heyyyy -->
 	</div><!-- .entry-content -->
 
 	
