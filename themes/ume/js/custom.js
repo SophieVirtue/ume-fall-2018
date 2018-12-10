@@ -48,7 +48,7 @@
             wrapAround: true
           }); // end of flickity
 
-
+       
 
 
     }); //end of doc.ready

@@ -22,7 +22,11 @@ get_header(); ?>
 					<div class="search-game">
 						<?php get_template_part( 'template-parts/content', 'search' ); ?>
 
-					
+						 <div class="drop-down">
+           <?php get_template_part( 'template-parts/content-drop' ); ?>
+    </div><!-- end of featured game drop down -->
+
+						
 						<!-- ADD get template part 'content-drop and add here with class search-drop-down' -->
 					
 					  

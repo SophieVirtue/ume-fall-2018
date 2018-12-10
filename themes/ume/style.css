@@ -1527,3 +1527,6 @@ object {
       .search .page-title,
       .search-results .page-title {
         text-align: left; } }
+
+.search-no-results form {
+  display: none; }
