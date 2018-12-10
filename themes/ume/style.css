@@ -970,7 +970,8 @@ object {
   display: none;
   position: absolute;
   z-index: 1000;
-  background: rgba(0, 0, 0, 0.8); }
+  background: rgba(0, 0, 0, 0.8);
+  width: 100%; }
 
 .banner .upper-row {
   display: -webkit-box;
@@ -1394,6 +1395,15 @@ object {
     @media (min-width: 600px) {
       .remaining-players .top-seven .leader-name h4, .remaining-players .top-seven .leader-coins h4 {
         font-size: 1.1rem; } }
+
+.prize-bar {
+  border: 5px solid white;
+  width: 100px; }
+
+.inner-bar {
+  background: red;
+  width: 90px;
+  height: 5px; }
 
 .game-template-default.single-game {
   color: #fff;

@@ -91,6 +91,7 @@ function ume_scripts() {
 	wp_enqueue_script( 'ume-navigation', get_template_directory_uri() . '/build/js/navigation.min.js', array(), '20151215', true );
 	wp_enqueue_script( 'ume-skip-link-focus-fix', get_template_directory_uri() . '/build/js/skip-link-focus-fix.min.js', array(), '20151215', true );
 	wp_enqueue_script( 'ume-custom', get_template_directory_uri() . '/build/js/custom.min.js', array('jquery'), '20151215', true );
+	wp_enqueue_script( 'ume-main', get_template_directory_uri() . '/build/js/main.min.js', array('jquery'), '20151215', true );
 	wp_enqueue_script('ume-flickity-js', "https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js" );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
@@ -108,6 +109,7 @@ require get_template_directory() . '/inc/template-tags.php';
  * Custom functions that act independently of the theme templates.
  */
 require get_template_directory() . '/inc/extras.php';
+require get_template_directory() . '/inc/rest-api.php';
 
 //Page Slug Body Class
 function ume_slug_body_class( $classes ) {
@@ -141,5 +143,7 @@ function ume_search_query( $query ) {
   }
   
 //   add_filter( 'pre_get_posts', 'ume_search_query');
+
+
 
 
