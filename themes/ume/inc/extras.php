@@ -26,8 +26,8 @@ add_filter( 'body_class', 'red_starter_body_classes' );
 // Alter search posts per page
 
 function ume_posts_per_page($query) {
-    if ( $query->is_search ) {
-        $query->set( 'posts_per_page', '8' );
+	if ( $query->is_search ) {
+		$query->set( 'posts_per_page', '8' );
     }
     return $query;
 }

@@ -1,10 +1,10 @@
 // the download page
 .page-download {
   color: #fff;
-  background: url(../../assets/images/background.png);
+  background: url(../../assets/images/background.jpg);
   background-size: cover, 800px;
   @include desktop {
-    background: url(../../assets/images/background.png);
+    background: url(../../assets/images/background.jpg);
     background-size: cover, 800px;
   }
 
@@ -27,15 +27,6 @@
     padding-bottom: 50px;
   }
 
-  // .site {
-  //   background: url(../../assets/images/background.png);
-  //   background-size: cover, 800px;
-
-  //   @include desktop {
-  //     background: url(../../assets/images/background.png);
-  //     background-size: cover, 800px;
-  //   }
-  // }
  
 
   .wpcf7-form {
