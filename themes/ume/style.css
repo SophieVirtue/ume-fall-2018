@@ -970,7 +970,8 @@ object {
   display: none;
   position: absolute;
   z-index: 1000;
-  background: rgba(0, 0, 0, 0.8); }
+  background: rgba(0, 0, 0, 0.8);
+  width: 100%; }
 
 .banner .upper-row {
   display: -webkit-box;
