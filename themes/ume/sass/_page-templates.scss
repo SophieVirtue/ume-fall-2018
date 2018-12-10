@@ -6,20 +6,14 @@
 
 .banner {
   background: url(../../assets/images/grid-lines.png),
-    url(../../assets/images/background.png);
+    url(../../assets/images/background.jpg);
   background-size: cover, 800px, 0, cover;
   height: 200vh;
 
-  @include desktop {
-    background: url(../../assets/images/grid-lines.png),
-      url(../../assets/images/background.png);
-    background-size: cover, 800px, 0, cover;
-    height: 200vh;
-  }
 }
 
 .game-background {
-  background: url(../../assets/images/background.png);
+  background: url(../../assets/images/background.jpg);
   background-size: cover;
   background-position: top;
   height: 800vh;

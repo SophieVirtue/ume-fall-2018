@@ -544,17 +544,12 @@ object {
 --------------------------------------------------------------*/
 /* Front page */
 .banner {
-  background: url(../../assets/images/grid-lines.png), url(../../assets/images/background.png);
+  background: url(../../assets/images/grid-lines.png), url(../../assets/images/background.jpg);
   background-size: cover, 800px, 0, cover;
   height: 200vh; }
-  @media (min-width: 1024px) {
-    .banner {
-      background: url(../../assets/images/grid-lines.png), url(../../assets/images/background.png);
-      background-size: cover, 800px, 0, cover;
-      height: 200vh; } }
 
 .game-background {
-  background: url(../../assets/images/background.png);
+  background: url(../../assets/images/background.jpg);
   background-size: cover;
   background-position: top;
   height: 800vh; }
@@ -627,7 +622,7 @@ object {
     top: 0.3rem; }
 
 .prizes {
-  background: url(../../assets/images/grid-lines.png), url(../../assets/images/background.png);
+  background: url(../../assets/images/grid-lines.png), url(../../assets/images/background.jpg);
   background-repeat: no-repeat;
   background-size: auto 98%, auto 2000px;
   overflow: hidden;
@@ -734,11 +729,11 @@ object {
 
 .page-download {
   color: #fff;
-  background: url(../../assets/images/background.png);
+  background: url(../../assets/images/background.jpg);
   background-size: cover, 800px; }
   @media (min-width: 1024px) {
     .page-download {
-      background: url(../../assets/images/background.png);
+      background: url(../../assets/images/background.jpg);
       background-size: cover, 800px; } }
   .page-download .site-content {
     margin-top: 4rem; }
@@ -1158,7 +1153,7 @@ object {
   padding-top: 3rem; }
 
 .board-page {
-  background: url(../../assets/images/grid-lines.png), url(../../assets/images/background.png);
+  background: url(../../assets/images/grid-lines.png), url(../../assets/images/background.jpg);
   background-repeat: no-repeat;
   background-size: auto 500px, auto 100%;
   overflow: hidden;
@@ -1407,7 +1402,7 @@ object {
 
 .game-template-default.single-game {
   color: #fff;
-  background: url(../../assets/images/grid-lines.png), url(../../assets/images/background.png);
+  background: url(../../assets/images/grid-lines.png), url(../../assets/images/background.jpg);
   background-size: cover, 800px, 0, cover; }
   .game-template-default.single-game .site-content {
     text-align: center; }
@@ -1421,7 +1416,7 @@ object {
 .search,
 .search-results {
   color: #fff;
-  background: url(../../assets/images/background.png);
+  background: url(../../assets/images/background.jpg);
   background-size: cover, 400px; }
   .search .site-main,
   .search-results .site-main {
