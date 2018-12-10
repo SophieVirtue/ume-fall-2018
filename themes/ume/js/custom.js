@@ -7,7 +7,7 @@
         
         // popup toggle
         
-        if( !/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+        if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
             $play.on('mousedown', function() {
                 $popup.toggle();
             }); //end of popup .onclick

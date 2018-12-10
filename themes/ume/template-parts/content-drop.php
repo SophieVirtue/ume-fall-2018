@@ -3,7 +3,7 @@
    <div class="title">    
    <h3>
    
-   <?php the_title(); ?> 
+   <?php the_title( printf( '<a href="%s" rel="bookmark">', esc_url( get_permalink() ) ) ); ?> </a>
 
    </h3>
    </div>
@@ -20,7 +20,12 @@
     <div class="coins">
 	<h4> Coins: <?php echo CFS()->get ( 'game_coins' ); ?> </h4>
     </div>
-    <button class="play">Play</button>
+    <button class="play">
+        <!-- <a href="<?php //esc_url( get_permalink() ) ?>">
+            Play
+        </a> -->
+        <?php printf( '<a href="%s" rel="bookmark">Play</a>', esc_url( get_permalink() ) ); ?>
+    </button>
 
 
     <div class="thumbnail">
