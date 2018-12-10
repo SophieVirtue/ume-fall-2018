@@ -31,8 +31,7 @@ function ume_posts_per_page($query) {
     }
     return $query;
 }
-<<<<<<< HEAD
-add_filter( 'pre_get_posts','pd_search_posts_per_page' );
+add_filter( 'pre_get_posts','ume_posts_per_page' );
 
 //LeaderBoard Prize Updates
 
@@ -80,8 +79,5 @@ else{
 }
 
 }
-=======
-add_filter( 'pre_get_posts','ume_posts_per_page' );
->>>>>>> 86e5710a1fca3e0ace1734fc667ab27d2f8fabb9
 
 

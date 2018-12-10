@@ -1,5 +1,12 @@
 <?php 
 
+/** 
+* Custom API Endpoint
+*
+* @package UME
+*
+*/
+
 add_action( 'rest_api_init', 'ume_rest_route' );
 
 

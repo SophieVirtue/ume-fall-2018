@@ -92,11 +92,19 @@ function ume_scripts() {
 	wp_enqueue_script( 'ume-skip-link-focus-fix', get_template_directory_uri() . '/build/js/skip-link-focus-fix.min.js', array(), '20151215', true );
 	wp_enqueue_script( 'ume-custom', get_template_directory_uri() . '/build/js/custom.min.js', array('jquery'), '20151215', true );
 	wp_enqueue_script( 'ume-main', get_template_directory_uri() . '/build/js/main.min.js', array('jquery'), '20151215', true );
+	wp_enqueue_script( 'ume-api', get_template_directory_uri() . '/build/js/api.min.js', array('jquery'), '20151215', true );
 	wp_enqueue_script('ume-flickity-js', "https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js" );
+
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}
+
+	wp_localize_script( 'ume-api', 'ume_vars', array(
+		'rest_url' => esc_url_raw( rest_url() ),
+		'post_id' => get_the_ID(),
+		'nonce' => wp_create_nonce( 'wp_rest' ),
+	) );
 }
 add_action( 'wp_enqueue_scripts', 'ume_scripts' );
 
