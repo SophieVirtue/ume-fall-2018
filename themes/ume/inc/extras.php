@@ -31,11 +31,6 @@ function ume_posts_per_page($query) {
     }
     return $query;
 }
-<<<<<<< HEAD
-=======
-add_filter( 'pre_get_posts','ume_posts_per_page' );
->>>>>>> 4f1958d6d5986ff8cee8820beb30f8d86a31202e
-
 add_filter( 'pre_get_posts','ume_posts_per_page' );
 
 //LeaderBoard Prizes
@@ -84,7 +79,6 @@ else{
 }
 
 }
-<<<<<<< HEAD
 
 //Front Page Prizes
 
@@ -136,7 +130,5 @@ return $gems;
 }
 
 
-=======
->>>>>>> 4f1958d6d5986ff8cee8820beb30f8d86a31202e
 
 
