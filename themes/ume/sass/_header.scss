@@ -164,6 +164,32 @@
     }
     .side-nav {
         width: 0;
+        position: fixed;
+        height: 100%;
+        left: 0;
+        bottom: 0;
+        background: url(../../assets/images/background.jpg); 
+        background-repeat: no-repeat;
+        background-size: auto 2000px;
+        overflow: hidden;
+        background-position: top;
+        a {
+            display: flex;
+            flex-direction: column;
+            color: white;
+            text-transform: uppercase;
+            font-family: 'Futura-Bk-BT', sans-serif;
+            font-size: 20px;
+            text-align: center;
+            padding-bottom: 20px;
+            letter-spacing: 1px;
+        }
+        .btn-close {
+            font-size: 36px;
+            text-align: right;
+            padding-bottom: 240px;
+            padding-right: 10px;
+        }
         @include tablet {
             display: none;
         }

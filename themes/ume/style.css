@@ -740,7 +740,36 @@ object {
         left: 2rem;
         top: 0.75rem; } }
   .site-header .side-nav {
-    width: 0; }
+    width: 0;
+    position: fixed;
+    height: 100%;
+    left: 0;
+    bottom: 0;
+    background: url(../../assets/images/background.jpg);
+    background-repeat: no-repeat;
+    background-size: auto 2000px;
+    overflow: hidden;
+    background-position: top; }
+    .site-header .side-nav a {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      color: white;
+      text-transform: uppercase;
+      font-family: 'Futura-Bk-BT', sans-serif;
+      font-size: 20px;
+      text-align: center;
+      padding-bottom: 20px;
+      letter-spacing: 1px; }
+    .site-header .side-nav .btn-close {
+      font-size: 36px;
+      text-align: right;
+      padding-bottom: 240px;
+      padding-right: 10px; }
     @media (min-width: 600px) {
       .site-header .side-nav {
         display: none; } }
