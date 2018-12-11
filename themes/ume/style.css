@@ -1104,7 +1104,7 @@ object {
         padding-top: 11rem; } }
     @media (min-width: 1024px) {
       .banner .upper-row .left-lightning {
-        padding-top: 12rem; } }
+        padding-top: 15rem; } }
     .banner .upper-row .left-lightning img {
       width: 30px; }
       @media (min-width: 600px) {
@@ -1136,7 +1136,7 @@ object {
         padding-top: 11rem; } }
     @media (min-width: 1024px) {
       .banner .upper-row .right-lightning {
-        padding-top: 12rem; } }
+        padding-top: 15rem; } }
     .banner .upper-row .right-lightning img {
       width: 30px; }
       @media (min-width: 600px) {
