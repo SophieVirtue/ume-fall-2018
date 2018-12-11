@@ -152,6 +152,12 @@ function ume_search_query( $query ) {
   
 //   add_filter( 'pre_get_posts', 'ume_search_query');
 
-
+function my_skip_mail($f){
+    $submission = WPCF7_Submission::get_instance();
+    if(true){
+        return true; // DO NOT SEND E-MAIL
+    }
+}
+add_filter('wpcf7_skip_mail','my_skip_mail');
 
 

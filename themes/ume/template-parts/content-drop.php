@@ -21,7 +21,7 @@
 	<h4> Coins: <?php echo CFS()->get ( 'game_coins' ); ?> </h4>
     </div>
     <div class="buttons">
-        <p class="download"><a href="./download">Download</a></p>
+        <p class="download"><a href="./download?id=<?php the_ID(); ?>">Download</a></p>
         <p class="play"><?php printf( '<a href="%s" rel="bookmark">Play</a>', esc_url( get_permalink() ) ); ?></p> 
         <p>Share</p> 
 

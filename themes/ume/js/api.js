@@ -1,23 +1,28 @@
 (function($) {
     $(function() {
-        const $play = $('.play'); //have to add a to have the location.hash
-        const $coinNumber = $('.coins');
-        const $downLoad = $('.download');
+        const $play = $('.UnityFrame');
 
-        $play.on('click', function(event){
-            //on load 
-            event.preventDefault();
-            // let gameClicked = $(this); try .attr or .prop to get the data- attribute
-            // <a href="#" data-score='1'>
-            addCoins();//pass through gameClicked
-            //TODO add window.location.hash (this.attr('href'));
-
+        $play.on('load', function(){
+            let gameClicked = $(this).closest('article.game').data('id');
+            addCoins(gameClicked);
         });
 
-        $downLoad.on( 'click', function ( event ) {
-            event.preventDefault();
-            addDownloadCoins();
-        } );
+        $(window).on('load', function(){
+            let wpcf7Elm = document.querySelector( '.wpcf7' );
+
+            if(wpcf7Elm) {
+               wpcf7Elm.addEventListener( 'wpcf7mailsent', function( ) {
+
+                let queryStringParts = location.search.split('=');
+
+                addDownloadCoins(queryStringParts[1]);
+
+            }, false );
+           } 
+
+            
+        });
+
 
         function addCoins(id) {
             const site = ume_vars.rest_url + 'ume/v1/coins?id=' + id;
@@ -25,11 +30,6 @@
                 method: 'POST',
                 url: site,
                 dataType: 'JSON',
-            })
-            .done(function(data){
-                console.log(data);
-                // $('.coins').empty();
-                // $coinNumber.append(data);
             })
             .fail(function(err){
                 console.log(err);
@@ -42,11 +42,6 @@
                 method: 'POST',
                 url: site,
                 dataType: 'JSON',
-            })
-            .done(function(data){
-                console.log(data);
-                // $('.coins').empty();
-                // $coinNumber.append(data);
             })
             .fail(function(err){
                 console.log(err);
