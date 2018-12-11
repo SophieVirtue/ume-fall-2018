@@ -4,6 +4,7 @@
         const $popup = $('.widget-area');
         const $carouselArrow = $('.carousel-cell .arrow');
         const $featureArrow = $('.featured-game .arrow');
+        const $share = $('.share');
         
         // popup toggle
         
@@ -38,7 +39,21 @@
         $featureArrow.blur(function(){
             $(this).closest('.featured-game').find('.drop-down').hide();
         });
-        
+
+
+        $share.on('click', function(event) {
+            event.preventDefault();
+            console.log('whooooo are you');
+            // copyToClipboard();
+        });
+
+        // function copyToClipboard(element) {
+        //     $("body").append($share);
+        //     $share.val($(element).html()).select();
+        //     document.execCommand("copy");
+        //     console.log('who who who who');
+        //     // $temp.remove();
+        //    }
 
         // flickity
         $('.main-carousel').flickity({
@@ -48,8 +63,19 @@
             wrapAround: true
           }); // end of flickity
 
-       
+        
+        // hamburger menu
+        const $openSlideMenu = $('.btn-open');
+        const $closeSlideMenu = $('.btn-close');
 
+        $openSlideMenu.on('click', function() {
+            document.getElementById('side-menu').style.width = '100%';
+        })
+
+        $closeSlideMenu.on('click', function() {
+            document.getElementById('side-menu').style.width = '0%';
+        }) // end of hamburger menu
+ 
 
     }); //end of doc.ready
 })(jQuery);

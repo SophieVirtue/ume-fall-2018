@@ -1,5 +1,5 @@
 .site-header{
-    background: linear-gradient( rgba(255,255,255,0.5), rgba(0,0,0,0.8)); 
+    background: linear-gradient( rgba(255,255,255,.9), rgba(0,0,0,1)); 
     box-shadow: 0 0 4px 0 rgba(0,0,0,0.5); 
     position: absolute;
     height: 50px;
@@ -173,6 +173,7 @@
         background-size: auto 2000px;
         overflow: hidden;
         background-position: top;
+        z-index: 100;
         a {
             display: flex;
             flex-direction: column;
