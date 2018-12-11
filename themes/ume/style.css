@@ -543,25 +543,29 @@ object {
 # Page Templates
 --------------------------------------------------------------*/
 /* Front page */
-.banner {
-  background: url(../../assets/images/grid-lines.png), url(../../assets/images/background.jpg);
-  background-size: cover, 800px, 0, cover;
-  height: 200vh; }
-
-.game-background {
+.page-arcade {
   background: url(../../assets/images/background.jpg);
-  background-size: cover;
-  background-position: top;
-  height: 800vh; }
+  background-size: contain; }
+
+.grid-banner-container {
+  background: url(../../assets/images/grid-lines.png) no-repeat;
+  background-size: contain;
+  height: 100vh; }
+  @media (min-width: 600px) {
+    .grid-banner-container {
+      background-size: cover;
+      height: 155vh; } }
 
 .site-header {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.25)), to(rgba(0, 0, 0, 0.7)));
-  background: linear-gradient(rgba(255, 255, 255, 0.25), rgba(0, 0, 0, 0.7));
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.5)), to(rgba(0, 0, 0, 0.8)));
+  background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.8));
   -webkit-box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.5);
           box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.5);
   position: absolute;
   height: 50px;
-  width: 100%; }
+  width: 100%;
+  position: fixed;
+  top: 0; }
   @media (min-width: 600px) {
     .site-header {
       height: 45px; } }
@@ -570,16 +574,24 @@ object {
       height: 70px; } }
   .site-header fieldset {
     margin: 0;
-    border: 0; }
-  .site-header .site-title {
-    height: 30px;
-    width: 98px;
-    color: #FF008C;
-    font-family: Futura-Bk-BT;
-    font-size: 13px;
-    font-weight: bold;
-    line-height: 30px;
-    text-transform: uppercase; }
+    border: 0;
+    padding: 0; }
+  .site-header a {
+    text-decoration: none; }
+    .site-header a .site-title {
+      color: #FF008C;
+      font-family: 'Futura-Heavy', sans-serif;
+      font-size: 13px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin: 0; }
+      @media (min-width: 600px) {
+        .site-header a .site-title {
+          font-size: 22px;
+          padding-left: 7px; } }
+      @media (min-width: 1024px) {
+        .site-header a .site-title {
+          font-size: 27px; } }
   .site-header .main-header {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -587,39 +599,149 @@ object {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center; }
+    height: 50px; }
+    @media (min-width: 600px) {
+      .site-header .main-header {
+        height: 45px; } }
+    @media (min-width: 1024px) {
+      .site-header .main-header {
+        height: 70px; } }
   .site-header .lightning {
     height: auto;
-    width: 15px;
-    padding-left: 7px;
-    padding-right: 10px; }
+    width: 30px;
+    padding-left: 7px; }
+    @media (min-width: 600px) {
+      .site-header .lightning {
+        width: 40px; } }
+    @media (min-width: 1024px) {
+      .site-header .lightning {
+        width: 50px; } }
   .site-header .left-column, .site-header .right-column {
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex; }
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+  .site-header .main-navigation a {
+    float: right;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    font-size: 17px;
+    font-family: 'Futura-Bk-BT', sans-serif;
+    color: white;
+    text-transform: uppercase;
+    padding: 0 19px; }
+    @media (min-width: 1024px) {
+      .site-header .main-navigation a {
+        font-size: 25px; } }
+  .site-header .main-navigation .leader-nav {
+    border-right: 2px solid white;
+    padding-left: 0; }
+  .site-header .main-navigation h3 {
+    margin: 0; }
   .site-header .search-form {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex; }
+    @media (min-width: 600px) {
+      .site-header .search-form {
+        -webkit-box-ordinal-group: 3;
+            -ms-flex-order: 2;
+                order: 2; } }
   .site-header input.search-field {
     text-align: center;
-    background-color: transparent; }
+    background-color: transparent;
+    width: 110px;
+    height: 14px;
+    border-width: 2px;
+    border-color: white; }
+    @media (min-width: 600px) {
+      .site-header input.search-field {
+        height: 22px;
+        width: 158px; } }
+    @media (min-width: 1024px) {
+      .site-header input.search-field {
+        height: 40px;
+        width: 210px; } }
     .site-header input.search-field::-webkit-input-placeholder {
-      color: white; }
+      color: white;
+      font-size: 11px;
+      text-transform: uppercase; }
     .site-header input.search-field::-ms-input-placeholder {
-      color: white; }
+      color: white;
+      font-size: 11px;
+      text-transform: uppercase; }
     .site-header input.search-field::placeholder {
-      color: white; }
+      color: white;
+      font-size: 11px;
+      text-transform: uppercase; }
+      @media (min-width: 600px) {
+        .site-header input.search-field::-webkit-input-placeholder {
+          font-size: 13px; }
+        .site-header input.search-field::-ms-input-placeholder {
+          font-size: 13px; }
+        .site-header input.search-field::placeholder {
+          font-size: 13px; } }
+      @media (min-width: 1024px) {
+        .site-header input.search-field::-webkit-input-placeholder {
+          font-size: 18px; }
+        .site-header input.search-field::-ms-input-placeholder {
+          font-size: 18px; }
+        .site-header input.search-field::placeholder {
+          font-size: 18px; } }
+  .site-header i.fa-bars {
+    color: white;
+    font-size: 25px;
+    padding: 0 16px; }
+    @media (min-width: 600px) {
+      .site-header i.fa-bars {
+        display: none; } }
   .site-header .page-download input.search {
     width: 80%; }
+  .site-header .mobile-hidden-nav {
+    display: none; }
+    @media (min-width: 600px) {
+      .site-header .mobile-hidden-nav {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-ordinal-group: 2;
+            -ms-flex-order: 1;
+                order: 1;
+        height: 22px; } }
+    @media (min-width: 1024px) {
+      .site-header .mobile-hidden-nav {
+        height: 37px; } }
   .site-header i.fa-search {
-    color: white; }
+    color: white;
+    font-size: 12px; }
+    @media (min-width: 600px) {
+      .site-header i.fa-search {
+        font-size: 18px; } }
+    @media (min-width: 1024px) {
+      .site-header i.fa-search {
+        font-size: 24px; } }
   .site-header .search-submit {
     position: relative;
-    left: 2rem;
-    top: 0.3rem; }
+    left: 1rem;
+    top: 0.2rem; }
+    @media (min-width: 600px) {
+      .site-header .search-submit {
+        left: 1.5rem;
+        top: 0.4rem; } }
+    @media (min-width: 1024px) {
+      .site-header .search-submit {
+        left: 2rem;
+        top: 0.75rem; } }
+  .site-header .side-nav {
+    width: 0; }
+    @media (min-width: 600px) {
+      .site-header .side-nav {
+        display: none; } }
+  .site-header .submit-text {
+    padding-right: 12px; }
 
 .prizes {
   background: url(../../assets/images/grid-lines.png), url(../../assets/images/background.jpg);
@@ -974,55 +1096,53 @@ object {
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
-          justify-content: center;
-  padding-top: 14rem; }
+          justify-content: center; }
   .banner .upper-row .left-lightning {
-    padding-top: 4.8rem; }
+    padding-top: 5rem; }
     @media (min-width: 600px) {
       .banner .upper-row .left-lightning {
-        padding-top: 12rem; } }
+        padding-top: 11rem; } }
     @media (min-width: 1024px) {
       .banner .upper-row .left-lightning {
         padding-top: 17rem; } }
     .banner .upper-row .left-lightning img {
-      width: 90px; }
+      width: 30px; }
       @media (min-width: 600px) {
         .banner .upper-row .left-lightning img {
-          width: 110px; } }
+          width: 60px; } }
       @media (min-width: 1024px) {
         .banner .upper-row .left-lightning img {
           width: 145px;
           height: 170px; } }
   .banner .upper-row .center-label {
-    padding-top: 8.5rem; }
+    padding-top: 5.5rem; }
     @media (min-width: 600px) {
       .banner .upper-row .center-label {
-        padding-top: 16.5rem; } }
+        padding-top: 12rem; } }
     @media (min-width: 1024px) {
       .banner .upper-row .center-label {
-        padding-top: 19rem; } }
+        padding-top: 13rem; } }
     .banner .upper-row .center-label img {
-      width: 290px; }
+      width: 210px; }
       @media (min-width: 600px) {
         .banner .upper-row .center-label img {
           width: 380px; } }
       @media (min-width: 1024px) {
         .banner .upper-row .center-label img {
-          width: 750px;
-          height: 130px; } }
+          width: 500px; } }
   .banner .upper-row .right-lightning {
-    padding-top: 4.8rem; }
+    padding-top: 5rem; }
     @media (min-width: 600px) {
       .banner .upper-row .right-lightning {
-        padding-top: 12rem; } }
+        padding-top: 11rem; } }
     @media (min-width: 1024px) {
       .banner .upper-row .right-lightning {
         padding-top: 17rem; } }
     .banner .upper-row .right-lightning img {
-      width: 90px; }
+      width: 30px; }
       @media (min-width: 600px) {
         .banner .upper-row .right-lightning img {
-          width: 110px; } }
+          width: 60px; } }
       @media (min-width: 1024px) {
         .banner .upper-row .right-lightning img {
           width: 145px;
@@ -1031,15 +1151,18 @@ object {
 .banner .lower-row {
   text-align: center; }
   .banner .lower-row img {
-    width: 400px; }
+    width: 300px; }
     @media (min-width: 600px) {
       .banner .lower-row img {
         height: 120px;
-        width: 600px; } }
+        width: 550px; } }
     @media (min-width: 1024px) {
       .banner .lower-row img {
         height: 270px;
         width: 1024px; } }
+
+img.gem {
+  width: 50px; }
 
 .widget-area {
   display: none;

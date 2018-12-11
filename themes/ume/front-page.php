@@ -13,7 +13,7 @@ get_sidebar(); ?>
         <!-- <div class="popup">
             <p>Please play our games on a desktop or laptop!</p>
         </div> -->
-        <section>
+        <section class="grid-banner-container">
         <div class="banner">
               <div class="upper-row">
                   <div class="left-lightning">
@@ -34,7 +34,7 @@ get_sidebar(); ?>
 
          </div>
     </section>
-<section>
+<section class="main-section-container">
    <div class="game-background">
 
        <!-- beginning of featured games  -->

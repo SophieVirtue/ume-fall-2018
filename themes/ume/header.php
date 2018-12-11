@@ -26,23 +26,32 @@
 				</div><!-- .site-branding -->
 				<div class="main-header">
 			  		<div class="left-column">
-			      		<div class="logo">
-				  			<img class="lightning" src="<?php echo get_template_directory_uri();?>/assets/images/lightning-right.png" alt="lightning-right"/>
-                  		</div>
-                  		<div class="label">
-				  			<a href="<?php echo get_home_url(); ?>">
-								<h3 class="site-title"> UME Arcade </h3>
-                   			</a>
-                   		</div>
+				  		<img class="lightning" src="<?php echo get_template_directory_uri();?>/assets/images/lightning-right.png" alt="lightning-right"/>
+				  		<a href="<?php echo get_home_url(); ?>">
+							<h3 class="site-title"> UME Arcade </h3>
+                   		</a>
               		</div>
 			  		<div class="right-column">
 			    		<div class="search-form">
                     		<?php get_search_form(); ?>
 			    		</div>
-			     		<div class="hamburger-icon"></div>
+						<nav id="site-navigation" class="main-navigation" role="navigation">
+							<div class="mobile-hidden-nav">
+								<a class="leader-nav" href="./leaderboard"><h3 class="main-nav">Leaderboard</h3></a>
+								<a href="./prizes"><h3 class="main-nav">Prizes</h3></a>	
+							</div>
+							<span class="open-slide">
+								<a href="#" onclick="openSlideMenu()"><i class="fas fa-bars"></i></a>
+							</span>
+						</nav>
+						<div id="side-menu" class="side-nav">
+							<a href="#" class="btn-close" onclick="closeSlideMenu()">&times;</a>
+							<a href="./prizes">Prizes</a>
+							<a href="./leaderboard">Leaderboard</a>
+							<a href="<?php echo get_home_url(); ?>">UME Academy</a>
+						</div>
 			 		</div>
 				</div>
-				<nav id="site-navigation" class="main-navigation" role="navigation"></nav>
 			</header><!-- #masthead -->
 
 			<div id="content" class="site-content">
