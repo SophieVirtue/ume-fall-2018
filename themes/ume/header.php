@@ -41,11 +41,11 @@
 								<a href="./prizes"><h3 class="main-nav">Prizes</h3></a>	
 							</div>
 							<span class="open-slide">
-								<a href="#" onclick="openSlideMenu()"><i class="fas fa-bars"></i></a>
+								<a href="#" class="btn-open"><i class="fas fa-bars"></i></a>
 							</span>
 						</nav>
 						<div id="side-menu" class="side-nav">
-							<a href="#" class="btn-close" onclick="closeSlideMenu()">&times;</a>
+							<a href="#" class="btn-close">&times;</a>
 							<a href="./prizes">Prizes</a>
 							<a href="./leaderboard">Leaderboard</a>
 							<a href="<?php echo get_home_url(); ?>">UME Academy</a>

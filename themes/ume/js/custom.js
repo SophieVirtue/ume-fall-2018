@@ -44,8 +44,19 @@
             wrapAround: true
           }); // end of flickity
 
-       
+        
+        // hamburger menu
+        const $openSlideMenu = $('.btn-open');
+        const $closeSlideMenu = $('.btn-close');
 
+        $openSlideMenu.on('click', function() {
+            document.getElementById('side-menu').style.width = '100%';
+        })
+
+        $closeSlideMenu.on('click', function() {
+            document.getElementById('side-menu').style.width = '0%';
+        }) // end of hamburger menu
+ 
 
     }); //end of doc.ready
 })(jQuery);

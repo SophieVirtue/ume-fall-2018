@@ -561,8 +561,8 @@ object {
       height: 178vh; } }
 
 .site-header {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.5)), to(rgba(0, 0, 0, 0.8)));
-  background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.8));
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.9)), to(black));
+  background: linear-gradient(rgba(255, 255, 255, 0.9), black);
   -webkit-box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.5);
           box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.5);
   position: absolute;
@@ -749,7 +749,8 @@ object {
     background-repeat: no-repeat;
     background-size: auto 2000px;
     overflow: hidden;
-    background-position: top; }
+    background-position: top;
+    z-index: 100; }
     .site-header .side-nav a {
       display: -webkit-box;
       display: -ms-flexbox;
