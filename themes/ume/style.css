@@ -497,6 +497,7 @@ object {
           align-items: center;
   height: 53px;
   width: 100%;
+  z-index: 5000;
   font-family: 'Futura-Bk-BT', sans-serif;
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.25)), to(rgba(0, 0, 0, 0.7)));
   background: linear-gradient(rgba(255, 255, 255, 0.25), rgba(0, 0, 0, 0.7));
@@ -1211,6 +1212,17 @@ img.gem {
     color: white;
     font-family: 'Futura-Bk-BT';
     font-size: 18px; }
+
+.hidden-copy {
+  border: 0;
+  clip: rect(1px, 1px, 1px, 1px);
+  -webkit-clip-path: inset(50%);
+          clip-path: inset(50%);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute; }
 
 .leaderboard .top-three .leader-thumbnail {
   background: url(../../assets/images/first-place.png);
