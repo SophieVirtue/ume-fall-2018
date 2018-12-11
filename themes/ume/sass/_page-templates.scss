@@ -15,8 +15,12 @@
   background-size: contain;
   height: 100vh;
   @include tablet {
-    background-size: cover;
+    background-size: contain;
     height: 155vh;
+  }
+  @include desktop {
+    background-size: contain;
+    height: 178vh;
   }
 }
 

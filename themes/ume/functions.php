@@ -136,21 +136,36 @@ add_filter( 'body_class', 'ume_slug_body_class' );
 function ume_search_query( $query ) {
 	if ( $query->is_search ) {
 	  
-	// 	$meta_query_args = array(
-	// 	array(
-	// 	  'key' => 'game_author',
-	// 	  'value' => $query->query_vars['s'] = '',
-	// 	  'compare' => 'LIKE',
-	// 	),
+		$meta_query_args = array(
+		array(
+		  'key' => 'game_author',
+		  'value' => $query->query_vars['s'] = '',
+		  'compare' => 'LIKE',
+		),
 
-	//   );
-	//   $query->set('meta_query', $meta_query_args);
+	  );
+	  $query->set('meta_query', $meta_query_args);
 	  $query->set('meta_key', 'game_author');
 	  $query->set('meta_value', get_search_query());
 	};
   }
+
+    add_filter( 'pre_get_posts', 'ume_search_query');
+
+
+
+
+//   $args = array(
+// 	'meta_query' => array(
+// 		array(
+// 			'key' => 'game_author',
+// 			'value' => '',
+// 			'compare' => '=',
+// 		)
+// 	)
+//  );
+//  $query = new WP_Query($args);
   
-//   add_filter( 'pre_get_posts', 'ume_search_query');
 
 function my_skip_mail($f){
     $submission = WPCF7_Submission::get_instance();
