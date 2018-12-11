@@ -21,14 +21,10 @@
 
         $(document).on('mouseup', function(event) {
        
-            console.log($(event));
             if((!$(event.target).is('.game-dropdown') )&&
     ($(event.target).parents('.game-dropdown').length === 0) ) {
-                console.log('document clicked');
                 $('.drop-down').hide();
-            }
-            console.log('document clicked not dropdown');
-               
+            }               
             });
 
         $featureArrow.on('click', function() {
