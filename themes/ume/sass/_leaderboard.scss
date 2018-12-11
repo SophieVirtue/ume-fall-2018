@@ -5,7 +5,7 @@
         border-radius: 50%;
     background-size: cover;
     background-position: center;
-    padding: 29px;
+    padding: 24px;
     @include tablet{
         padding: 41px;
     }
@@ -78,9 +78,6 @@
     }
 }
 }
-
-
-
 .top-players{
     display: flex;
     justify-content: center;
@@ -88,11 +85,9 @@
     bottom: 7.5rem;
 
 }
-
 .top-seven{
     padding-top: 3rem;
 }
-
 .board-page {
     background: url(../../assets/images/grid-lines.png), url(../../assets/images/background.jpg); 
     background-repeat: no-repeat;
@@ -108,7 +103,7 @@
         background-size: 100% 1100px, 100% 100%;  
     }
      img.leaderboard-logo {
-        width: 26rem;
+        width: 19rem;
     padding-top: 5rem;
         @include tablet {
             width: 418px;
@@ -121,29 +116,30 @@
     }
     
 }
-
 .top-player{
     .leader-ranking p{   
-        font-size: 2.5rem;
+        font-size: 2rem;
         margin-bottom: 0;        
             color: #FFF6E8;
             font-family: Futura-Bold;   
             text-shadow: 1.2px 1.2px #F5A623;
             position: relative;
-           left: 4rem;
-          top: 6rem;
+           left: 2.5rem;
+          top: 3.4rem;
           z-index: 5;
           font-weight: lighter;
+          @include tablet{
+            left: 3rem;
+            top: 3.7rem;
+          }
     }
     .leader-info{
-        position: relative;
-    bottom: 3rem;
-
+    position: relative;
+    bottom: 2rem;
     }
     .img-responsive{
-    
-    width: 110px;
-    height: 110px;
+    width: 85px;
+    height: 85px;
     box-shadow: 0 0 4px 0 rgba(255,255,255,0.45), 0 2px 4px 0 rgba(0,0,0,0.5), 0 0 22px 7px #9BC9FF;
     border-radius: 50%;
     position: relative;
@@ -157,14 +153,12 @@
      @include desktop{
             height: 220px;
             width: 220px; 
-         }
-         
-
+     }
      }
     h3{
         font-weight: 900;
     font-family: Futura-Heavy;
-    font-size: 1.7rem;
+    font-size: 1.3rem;
             color: #FFFFFF;
             text-align: center;
             text-transform: uppercase;
@@ -180,16 +174,15 @@
          text-align: center;
          text-transform: uppercase;
          position: relative;
-         bottom: 1.5rem;
+         bottom: 1.2rem;
 
          @include tablet{
              font-size: 1.3rem;
-         }
-            
+         }    
     }
     .leader-coins h4{
         position: relative;
-    bottom: 2.5rem;
+    bottom: 2.2rem;
     @include tablet{
         bottom: 1.7rem;
     }
@@ -208,9 +201,7 @@
         color: white;
         text-decoration: none;
     }
-
 }
-
 //Separate Styles for the first three games
 .top-player:nth-of-type(1) { 
     order: 2;
@@ -219,8 +210,8 @@
     position: relative;
     }
     .img-responsive{
-    width: 150px;
-    height: 150px;
+    width: 125px;
+    height: 125px;
     position: relative;
     top: 0.15rem;
     @include tablet{
@@ -247,25 +238,22 @@
             bottom: 0.4rem;
         }
         @include desktop{
-            bottom: 1.3rem;
+            bottom: 1.6rem;
         }
-    }
-    
+    }   
     .leader-thumbnail{
-        padding: 42px;
-
+        padding: 34px;
     @include tablet{
         padding: 50px;
     }
     @include desktop{
         padding: 87px;
-        
-
-
     }
     }
     .leader-ranking p{
-    font-size: 4rem;
+    font-size: 3.5rem;
+    top: 5rem;
+    left: 3rem;
     @include desktop{
     top: 11rem;
     left: 8rem;
@@ -274,38 +262,37 @@
     }
     .leader-coins h4{
         @include desktop{
-            bottom: 2.7rem;
-
+            bottom: 3.3rem;
         }
     }
-
-
-
-
+    img.coin{
+        @include desktop{
+        top: 1rem;
+        }
+    }
 };
 .top-player:nth-of-type(2) { 
     order: 1 ;
     position: relative;
     left: 2.6rem;
-
-
-
-    
+    padding-right: 0.5rem;
 };
 .top-player:nth-of-type(3) { 
     order: 3;
     position: relative;
     right: 2.6rem;
-    
-
+    padding-left: 0.5rem;
 };
-
 .top-player:nth-of-type(2), .top-player:nth-of-type(3) {
     padding-top: 2.56rem;
     top: 4.1rem;
-    .leader-ranking p{
-        left: 3rem;
-    top: 4rem;
+    img.coin{
+        top: 0.1rem;
+        @include desktop{
+            top: 0.6rem;
+        }
+    }
+    .leader-ranking p{  
     @include desktop{
     font-size: 4rem;
     left: 5rem;
@@ -314,27 +301,33 @@
     }
     .leader-info{
         bottom: 1.3rem;
+        @include tablet{
+        bottom: 0.7rem;
+        }
     }
     .leader-title h3{
-        font-size: 1.2rem;
+        font-size: 1rem;
+        @include tablet{
+            font-size: 1.3rem;
+        }
     }
     .leader-name h4{
         bottom: 0.9rem;
+        @include tablet{
+            bottom: 0.7rem;
+        }
     }
     .leader-coins h4{
-        bottom: 1.8rem;
+        bottom: 1.5rem;
+        @include tablet{
+            bottom: 1.7rem;
+        }
     }
-
-
 }
-
-
 //Styling for Seven Games
-
 .remaining-players .top-seven{
     position: relative;
     bottom: 12rem;
-
     .remaining-player{
         padding-bottom: 0.7rem;
         @include tablet{
@@ -344,36 +337,33 @@
         @include desktop{
             padding-left: 10rem;
     padding-right: 10rem;
-        }
-        
+        }     
     }
-
     .leader-content{
         height: 180px;
     }
     .leader-info{
     padding-top: 2rem;
+    padding-left: 1rem;
     text-align: left;
     @include tablet{
         position: relative;
-    left: 8rem;
-    }
-    
+    left: 6rem;
+    } 
     }
     img.coin{
         width: 10%;
         position: relative;
         top: 0.2rem;
         padding-right: 0.5rem;
-    }
-      
-    
+    }    
     h3{
         font-weight: 900;
     font-family: Futura-Bk-Bt;
-    font-size: 1rem;
-            color: #FFFFFF;
-            text-transform: uppercase;
+    font-size: 1.2rem;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    margin: 0.15rem 0.5rem;
     @include tablet{
         font-size: 1.3rem;
     }
@@ -381,28 +371,24 @@
     .leader-name h4, .leader-coins h4{
         font-weight: 900;
         font-family: Futura-Bk-BT;
-        font-size: 0.9rem;
+        font-size: 0.7rem;
          color: #FFFFFF;
          text-transform: uppercase;
-         
-         font-weight: lighter;
-        
+         margin: 0.15rem 0.5rem;
+         font-weight: lighter;      
          @include tablet{
-             font-size: 1.1rem;
+             font-size: 0.9rem;
          }      
-    }
-
-    
+    }  
 }
 //Prize Bar
-
 .prize-bar{
-    border: 5px solid white;
+    border: 1px solid white;
     width: 100px;
+    margin: 0.5rem 0.5rem;
 }
-
 .inner-bar{
-    background: red;
+    background: #E725E7;
     width: 90px;
     height: 5px;
 }
