@@ -570,7 +570,8 @@ object {
   height: 50px;
   width: 100%;
   position: fixed;
-  top: 0; }
+  top: 0;
+  z-index: 100; }
   @media (min-width: 600px) {
     .site-header {
       height: 45px; } }
@@ -750,8 +751,7 @@ object {
     background-repeat: no-repeat;
     background-size: auto 2000px;
     overflow: hidden;
-    background-position: top;
-    z-index: 100; }
+    background-position: top; }
     .site-header .side-nav a {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -938,7 +938,9 @@ object {
     background: transparent;
     border: 3px solid white;
     width: 100%;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    position: relative;
+    z-index: 1; }
     @media (min-width: 1024px) {
       .page-download input[type='email'],
       .page-download input[type='password'],
@@ -1191,6 +1193,16 @@ object {
     @media (min-width: 1024px) {
       .banner .lower-row img {
         width: 900px; } }
+
+.white-rainbow img {
+  width: 100%;
+  padding-top: 40%; }
+  @media (min-width: 600px) {
+    .white-rainbow img {
+      padding-top: 40%; } }
+  @media (min-width: 1024px) {
+    .white-rainbow img {
+      padding-top: 40%; } }
 
 img.gem {
   width: 50px; }
