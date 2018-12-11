@@ -153,7 +153,6 @@
       }
       @include desktop {
         width: 700px;
-        
       }
     }
   }
@@ -184,11 +183,22 @@
     width: 300px;
     @include tablet {
       width: 550px;
-
     }
     @include desktop {
       width: 900px;
-   
+    }
+  }
+}
+
+.white-rainbow {
+  img {
+    width: 100%;
+    padding-top: 40%;
+    @include tablet {
+        padding-top: 40%;
+    }
+    @include desktop {
+        padding-top: 40%;
     }
   }
 }
