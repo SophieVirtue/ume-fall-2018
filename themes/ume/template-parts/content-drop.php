@@ -3,7 +3,7 @@
    <div class="title">    
    <h3>
    
-   <?php the_title( printf( '<a href="%s" rel="bookmark">', esc_url( get_permalink() ) )); ?> </a>
+   <?php the_title( printf( '<a href="%s" rel="bookmark" class="play">', esc_url( get_permalink() ) )); ?> </a>
 
    </h3>
    </div>
@@ -28,7 +28,7 @@
     </div>
     
     <div class="thumbnail">
-        <?php the_post_thumbnail( 'thumbnail', printf( '<a href="%s" rel="bookmark">', esc_url( get_permalink() ) )); ?></a>
+        <?php the_post_thumbnail( 'thumbnail', printf( '<a href="%s" rel="bookmark" class="play">', esc_url( get_permalink() ) )); ?></a>
     </div>
     
     <div class="gems">

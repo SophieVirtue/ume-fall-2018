@@ -8,9 +8,13 @@
         // popup toggle
         
         if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
-            $play.on('mousedown', function() {
+            $play.on('click', function(event) {
+                event.preventDefault();
                 $popup.toggle();
             }); //end of popup .onclick
+            $(document).on( 'mouseup', function() {
+                $popup.hide();
+            } );
         }//end of if browsertype
 
         $carouselArrow.on('click', function() {
