@@ -131,6 +131,7 @@
           @include tablet{
             left: 3rem;
             top: 3.7rem;
+            font-size: 2.5rem;
           }
     }
     .leader-info{
@@ -286,6 +287,12 @@
 .top-player:nth-of-type(2), .top-player:nth-of-type(3) {
     padding-top: 2.56rem;
     top: 4.1rem;
+    @include tablet{
+        padding-top: 1.56rem;
+    }
+    @include desktop{
+        padding-top: 2.56rem;
+    }
     img.coin{
         top: 0.1rem;
         @include desktop{

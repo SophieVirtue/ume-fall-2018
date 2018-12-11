@@ -31,10 +31,6 @@ function ume_posts_per_page($query) {
     }
     return $query;
 }
-<<<<<<< HEAD
-=======
-
->>>>>>> 3a61ae79567e04f54170ab96c0a4f820cda375fc
 
 add_filter( 'pre_get_posts','ume_posts_per_page' );
 
