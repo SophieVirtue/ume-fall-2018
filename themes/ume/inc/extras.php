@@ -26,11 +26,15 @@ add_filter( 'body_class', 'red_starter_body_classes' );
 // Alter search posts per page
 
 function ume_posts_per_page($query) {
-    if ( $query->is_search ) {
-        $query->set( 'posts_per_page', '8' );
+	if ( $query->is_search ) {
+		$query->set( 'posts_per_page', '8' );
     }
     return $query;
 }
+<<<<<<< HEAD
+=======
+add_filter( 'pre_get_posts','ume_posts_per_page' );
+>>>>>>> 4f1958d6d5986ff8cee8820beb30f8d86a31202e
 
 add_filter( 'pre_get_posts','ume_posts_per_page' );
 
@@ -80,6 +84,7 @@ else{
 }
 
 }
+<<<<<<< HEAD
 
 //Front Page Prizes
 
@@ -131,5 +136,7 @@ return $gems;
 }
 
 
+=======
+>>>>>>> 4f1958d6d5986ff8cee8820beb30f8d86a31202e
 
 

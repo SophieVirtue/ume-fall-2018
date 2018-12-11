@@ -1,9 +1,11 @@
 .site-header{
-background: linear-gradient( rgba(255,255,255,0.25), rgba(0,0,0,0.7)); 
-box-shadow: 0 0 4px 0 rgba(0,0,0,0.5); 
-position: absolute;
-height: 50px;
-width: 100%;
+    background: linear-gradient( rgba(255,255,255,0.5), rgba(0,0,0,0.8)); 
+    box-shadow: 0 0 4px 0 rgba(0,0,0,0.5); 
+    position: absolute;
+    height: 50px;
+    width: 100%;
+    position: fixed;
+    top: 0;
     @include tablet {
         height: 45px;
     }
@@ -13,50 +15,160 @@ width: 100%;
     fieldset {
         margin: 0;
         border: 0;
+        padding: 0;
     }
-    .site-title{
-        height: 30px;
-        width: 98px;
-        color: #FF008C;	
-        font-family: Futura-Bk-BT;	
-        font-size: 13px;
-        font-weight: bold;	
-        line-height: 30px;
-        text-transform: uppercase;
+    a {
+        text-decoration: none;
+        .site-title{
+            color: #FF008C;	
+            font-family: 'Futura-Heavy', sans-serif;	
+            font-size: 13px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin: 0;
+            @include tablet {
+                font-size: 22px;
+                padding-left: 7px;
+            }
+            @include desktop {
+                font-size: 27px;
+            }
+        }
     }
     .main-header{
         display: flex;
         justify-content: space-between;
-        align-items: center;
+        height: 50px;
+        @include tablet {
+            height: 45px;
+        }
+        @include desktop {
+            height: 70px;
+        }
     }
     .lightning{
         height: auto;
-        width: 15px;
+        width: 30px;
         padding-left: 7px;
-        padding-right: 10px;
+        @include tablet {
+            width: 40px;
+        }
+        @include desktop {
+            width: 50px;
+        }
     }
     .left-column, .right-column{
         display: flex;
+        align-items: center;
+    }
+    .main-navigation {
+        a {
+        float: right;
+        display: block;
+        text-align: center;
+        text-decoration: none;
+        font-size: 17px;
+        font-family: 'Futura-Bk-BT', sans-serif;
+        color: white;
+        text-transform: uppercase;
+        padding: 0 19px;
+        @include desktop {
+            font-size: 25px;
+        }
+        }
+        .leader-nav {
+            border-right: 2px solid white;
+            padding-left: 0;
+        }
+        h3 {
+            margin: 0;
+        }
     }
     .search-form{
-        display:flex
+        display: flex;
+        @include tablet {
+            order: 2;
+        }
     }
     input.search-field{
         text-align: center;
         background-color: transparent;
+        width: 110px;
+        height: 14px;
+        border-width: 2px;
+        border-color: white;
+        @include tablet {
+            height: 22px;
+            width: 158px;
+        }
+        @include desktop {
+            height: 40px;
+            width: 210px; 
+        }
         &::placeholder{
             color: white;
+            font-size: 11px;
+            text-transform: uppercase;
+            @include tablet {
+                font-size: 13px;
+            }
+            @include desktop {
+                font-size: 18px;
+            }
+        }
+    }
+    i.fa-bars {
+        color: white;
+        font-size: 25px;
+        padding: 0 16px;
+        @include tablet {
+            display: none;
         }
     }
     .page-download input.search {
         width: 80%;
     }
+    .mobile-hidden-nav {
+        display: none;
+        @include tablet {
+            display: flex;
+            order: 1;
+            height: 22px;
+        }
+        @include desktop {
+            height: 37px;
+        }
+    }
     i.fa-search{
         color: white;
+        font-size: 12px;
+        @include tablet {
+            font-size: 18px;
+        }
+        @include desktop {
+            font-size: 24px;
+        }
     }
     .search-submit{
         position: relative;
-        left: 2rem;
-        top: 0.3rem;
+        left: 1rem;
+        top: 0.2rem;
+        @include tablet {
+            left: 1.5rem;
+            top: 0.4rem;
+        }
+        @include desktop {
+            left: 2rem;
+            top: 0.75rem;
+        }
+    }
+    .side-nav {
+        width: 0;
+        @include tablet {
+            display: none;
+        }
+    }
+    .submit-text {
+        padding-right: 12px;
     }
 }
