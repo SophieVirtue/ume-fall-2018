@@ -1,38 +1,37 @@
-
 .flickity-viewport {
-   height: 278px !important; 
-    z-index: 1;
-    position: relative;
-    @include tablet {
-        height: 490px !important;
-    }
-    @include desktop {
-        height: 483px !important;
-    }
+  height: 278px !important;
+  z-index: 1;
+  position: relative;
+  @include tablet {
+    height: 490px !important;
+  }
+  @include desktop {
+    height: 483px !important;
+  }
 }
 
 .flickity-page-dots {
-    display: none;
-  }
+  display: none;
+}
 
-  .flickity-button {
-    display: none;
+.flickity-button {
+  display: none;
 }
 
 .carousel-cell {
-    height: 260px;
-    width: 40%;
-    margin-right: 5px;
-    @include tablet {
-        height: 380px;
-        width: 33%;
-        margin-right: 15px;
-    }
-    @include desktop {
-        height: 376px;
-        width: 20%;
-    }
-    .content {
+  height: 260px;
+  width: 40%;
+  margin-right: 5px;
+  @include tablet {
+    height: 380px;
+    width: 33%;
+    margin-right: 15px;
+  }
+  @include desktop {
+    height: 376px;
+    width: 20%;
+  }
+  .content {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -41,166 +40,161 @@
     background: url(../../assets/images/GameCardMobile.png) no-repeat;
     background-size: cover;
     @include tablet {
-        background: url(../../assets/images/GameCardTablet.png) no-repeat;
+      background: url(../../assets/images/GameCardTablet.png) no-repeat;
     }
     @include desktop {
-        background: url(../../assets/images/GameCardDesktop.png) no-repeat;
+      background: url(../../assets/images/GameCardDesktop.png) no-repeat;
     }
+  }
+
+  h3 {
+    font-size: 14px;
+    @include tablet {
+      font-size: 18px;
     }
-    
-    
-    h3 {
-        font-size: 14px;
-        @include tablet {
-            font-size: 18px;
-        }
+  }
+  h4 {
+    font-size: 12px;
+    margin: 5px 0;
+    @include tablet {
+      font-size: 15px;
     }
-    h4 {
-        font-size: 12px;
-        margin: 5px 0;
-        @include tablet {
-            font-size: 15px;
-        }
+  }
+  img {
+    height: 120px;
+    width: 129px;
+    @include tablet {
+      width: 222px;
+      height: 210px;
     }
-    img {
-        height: 120px;
-        width: 129px;
-        @include tablet {
-            width: 222px;
-            height: 210px;
-        }
-    }
+  }
 }
 
 .featured-games {
-    display: flex;
-    .featured-game {
-        background: url(../../assets/images/single-ambient-square.png);
-    }
-    img {
-        height: 120px;
-        width: 129px;
-        }
+  display: flex;
+  .featured-game {
+    background: url(../../assets/images/single-ambient-square.png);
+  }
+  img {
+    height: 120px;
+    width: 129px;
+  }
 }
 
 .arrow {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 15px;
+  height: 15px;
+  border: none;
+  margin: 0;
+  padding: 0;
+  @include tablet {
+    width: 35px;
+    height: 35px;
+  }
+  img {
     width: 15px;
     height: 15px;
-    border: none;
-    margin: 0;
-    padding: 0;
     @include tablet {
-        width: 35px;
-        height: 35px;
+      width: 35px;
+      height: 35px;
     }
-    img{
-        width: 15px;
-        height: 15px;
-        @include tablet {
-            width: 35px;
-            height: 35px;
-        }
+  }
+}
+
+.game-background {
+  color: $color__main-text;
+}
+
+.drop-down {
+  color: gold;
+  display: none;
+  position: absolute;
+  z-index: 1000;
+  background: rgba(0, 0, 0, 0.8);
+  width: 100%;
+}
+
+.banner .upper-row {
+  display: flex;
+  justify-content: center;
+  .left-lightning {
+    padding-top: 5rem;
+    @include tablet {
+      padding-top: 11rem;
     }
-}
-
-.game-background{
-    color: $color__main-text;
-}
-
-.drop-down{
-    color: gold;
-    display: none;
-    position: absolute;
-    z-index: 1000;
-    background: rgba( 0, 0, 0, 0.8);
-    width: 100%;
-}
-
-.banner .upper-row{
-    display: flex;
-    justify-content: center;
-    padding-top: 14rem;
-       .left-lightning{
-            padding-top: 4.8rem;
-        @include tablet{
-            padding-top: 12rem;
-        }
-        @include desktop{
-            padding-top: 17rem;
-        }
-        img{
-            width: 90px;
-        @include tablet{
-            width: 110px;
-        }
-        @include desktop{
-            width: 145px;
-            height: 170px;
-        }
-        }
-          }
-       .center-label{
-           padding-top: 8.5rem;
-        @include tablet{
-            padding-top: 16.5rem;
-        }
-        @include desktop{
-            padding-top: 19rem;
-        }
-        img{
-           width: 290px; 
-         @include tablet{
-            width: 380px;
-        }
-        @include desktop{
-            width: 750px;
-            height: 130px;
-        }
-          }
-          }
-        
-          .right-lightning{
-            padding-top: 4.8rem;
-            @include tablet{
-                padding-top: 12rem;
-            }
-            @include desktop{
-            padding-top: 17rem;
-            }
-            img{
-            width: 90px;
-            @include tablet{
-               width: 110px;
-              }
-              @include desktop{
-                  width: 145px;
-                  height: 170px;
-              }
-            }
-        }
-}
-
-.banner .lower-row{
-    text-align: center;
-    img{
-        width: 400px;
-        @include tablet{
-            height: 120px;
-            width: 600px;
-            
-        }
-        @include desktop{
-            height: 270px;
-            width: 1024px;
-        }
+    @include desktop {
+      padding-top: 15rem;
     }
+    img {
+      width: 30px;
+      @include tablet {
+        width: 60px;
+      }
+      @include desktop {
+        width: 80px;
+      }
+    }
+  }
+  .center-label {
+    padding-top: 5.5rem;
+    @include tablet {
+      padding-top: 12rem;
+    }
+    @include desktop {
+      padding-top: 16rem;
+    }
+    img {
+      width: 210px;
+      @include tablet {
+        width: 380px;
+      }
+      @include desktop {
+        width: 500px;
+        // height: 110px;
+      }
+    }
+  }
+
+  .right-lightning {
+    padding-top: 5rem;
+    @include tablet {
+      padding-top: 11rem;
+    }
+    @include desktop {
+      padding-top: 15rem;
+    }
+    img {
+      width: 30px;
+      @include tablet {
+        width: 60px;
+      }
+      @include desktop {
+        width: 80px;
+      }
+    }
+  }
+}
+
+.banner .lower-row {
+  text-align: center;
+  img {
+    width: 300px;
+    @include tablet {
+      width: 550px;
+      height: 120px;
+    }
+    @include desktop {
+      width: 700px;
+    //   height: 120px;
+    }
+  }
 }
 
 //Styling for Gems
 
-img.gem{
-    width: 50px;
+img.gem {
+  width: 50px;
 }
