@@ -31,6 +31,7 @@ function ume_posts_per_page($query) {
     }
     return $query;
 }
+
 add_filter( 'pre_get_posts','ume_posts_per_page' );
 
 //LeaderBoard Prizes

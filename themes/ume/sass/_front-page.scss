@@ -134,8 +134,7 @@
         width: 60px;
       }
       @include desktop {
-        width: 145px;
-        height: 170px;
+        width: 80px;
       }
     }
   }
@@ -145,7 +144,7 @@
       padding-top: 12rem;
     }
     @include desktop {
-      padding-top: 13rem;
+      padding-top: 18rem;
     }
     img {
       width: 210px;
@@ -173,8 +172,7 @@
         width: 60px;
       }
       @include desktop {
-        width: 145px;
-        height: 170px;
+        width: 80px;
       }
     }
   }
@@ -185,18 +183,18 @@
   img {
     width: 300px;
     @include tablet {
-      height: 120px;
       width: 550px;
+      height: 120px;
     }
     @include desktop {
-      height: 270px;
-      width: 1024px;
+      width: 700px;
+    //   height: 120px;
     }
   }
 }
 
 //Styling for Gems
 
-img.gem{
-    width: 50px;
+img.gem {
+  width: 50px;
 }
