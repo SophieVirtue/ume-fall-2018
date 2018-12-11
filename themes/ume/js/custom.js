@@ -4,6 +4,7 @@
         const $popup = $('.widget-area');
         const $carouselArrow = $('.carousel-cell .arrow');
         const $featureArrow = $('.featured-game .arrow');
+        const $share = $('.share');
         
         // popup toggle
         
@@ -38,7 +39,21 @@
         $featureArrow.blur(function(){
             $(this).closest('.featured-game').find('.drop-down').hide();
         });
-        
+
+
+        $share.on('click', function(event) {
+            event.preventDefault();
+            console.log('whooooo are you');
+            // copyToClipboard();
+        });
+
+        // function copyToClipboard(element) {
+        //     $("body").append($share);
+        //     $share.val($(element).html()).select();
+        //     document.execCommand("copy");
+        //     console.log('who who who who');
+        //     // $temp.remove();
+        //    }
 
         // flickity
         $('.main-carousel').flickity({
