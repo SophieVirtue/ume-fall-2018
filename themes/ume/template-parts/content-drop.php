@@ -34,6 +34,12 @@
     <div class="thumbnail">
         <?php the_post_thumbnail( 'thumbnail', printf( '<a href="%s" rel="bookmark">', esc_url( get_permalink() ) )); ?></a>
     </div>
-            
+    
+    <div class="gems">
+        <h4>Prizes Earned <?php $gems =  ume_get_icons ( CFS()->get ( 'game_coins' ))?>
+            <?php foreach($gems as $gem): 
+                echo $gem;
+            endforeach; ?> </h4>
+</div>
 
 </article>

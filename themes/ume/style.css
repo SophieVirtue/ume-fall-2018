@@ -1046,6 +1046,9 @@ object {
         height: 270px;
         width: 1024px; } }
 
+img.gem {
+  width: 50px; }
+
 .widget-area {
   display: none;
   height: 192px;

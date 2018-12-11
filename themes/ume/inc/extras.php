@@ -31,48 +31,48 @@ function ume_posts_per_page($query) {
     }
     return $query;
 }
-<<<<<<< HEAD
-add_filter( 'pre_get_posts','pd_search_posts_per_page' );
 
-//LeaderBoard Prize Updates
+add_filter( 'pre_get_posts','ume_posts_per_page' );
+
+//LeaderBoard Prizes
 
 
 function ume_get_prizes ($game_coins) {
 
-	if ($game_coins >= 140) {
+	if ($game_coins >= 500) {
 	return 12;
 	}
-else if ($game_coins >= 130) {
+else if ($game_coins >= 300) {
 	 return 11;
 }
-else if ($game_coins >= 120) {
+else if ($game_coins >= 250) {
 	 return 10;
 }
-else if ($game_coins >= 110) {
+else if ($game_coins >= 200) {
 	return 9;
 }
-else if ($game_coins >= 100) {
+else if ($game_coins >= 150) {
 	return 8;
 }
-else if ($game_coins >= 90) {
+else if ($game_coins >= 100) {
 	return 7;
 }
-else if ($game_coins >= 80) {
+else if ($game_coins >= 75) {
 	return 6;
 }
-else if ($game_coins >= 70) {
+else if ($game_coins >= 50) {
 	return 5;
 }
-else if ($game_coins >= 60) {
+else if ($game_coins >= 30) {
 	return 4;
 }
-else if ($game_coins >= 50) {
+else if ($game_coins >= 20) {
 	return 3;
 }
-else if ($game_coins >= 40) {
+else if ($game_coins >= 10) {
 	return 2;
 }
-else if ($game_coins >= 30) {
+else if ($game_coins >= 5) {
 	return 1;
 }
 else{
@@ -80,8 +80,56 @@ else{
 }
 
 }
-=======
-add_filter( 'pre_get_posts','ume_posts_per_page' );
->>>>>>> 86e5710a1fca3e0ace1734fc667ab27d2f8fabb9
+
+//Front Page Prizes
+
+
+function ume_get_icons ($game_coins) {
+
+	$gems = array();
+
+	if ($game_coins >= 5) {
+	$gems[0]= '<img class="gem" src="'.get_template_directory_uri().'/assets/images/gems/diamond.png">';
+	}
+
+ if ($game_coins >= 10) {
+	$gems[1]= '<img class="gem" src="'.get_template_directory_uri().'/assets/images/gems/blue-diamond.png">';
+}
+ if ($game_coins >= 20) {
+	$gems[2]= '<img class="gem" src="'.get_template_directory_uri().'/assets/images/gems/pink.png">';
+}
+ if ($game_coins >= 30) {
+    $gems[3]= '<img class="gem" src="'.get_template_directory_uri().'/assets/images/gems/mystery-box-gems/gold-star.png">';
+}
+ if ($game_coins >= 50) {
+	$gems[4]= '<img class="gem" src="'.get_template_directory_uri().'/assets/images/gems/purple.png">';
+}
+ if ($game_coins >= 75) {
+	$gems[5]= '<img class="gem" src="'.get_template_directory_uri().'/assets/images/gems/orange.png">';
+}
+ if ($game_coins >= 100) {
+    $gems[6]= '<img class="gem" src="'.get_template_directory_uri().'/assets/images/gems/light-blue.png">';
+}
+ if ($game_coins >= 150) {
+	$gems[7]= '<img class="gem" src="'.get_template_directory_uri().'/assets/images/gems/mystery-box-gems/heart.png">';
+}
+ if ($game_coins >= 200) {
+	$gems[8]= '<img class="gem" src="'.get_template_directory_uri().'/assets/images/gems/red.png">';
+}
+ if ($game_coins >= 250) {
+	$gems[9]= '<img class="gem" src="'.get_template_directory_uri().'/assets/images/gems/yellow.png">';
+}
+if ($game_coins >= 300) {
+	$gems[10]= '<img class="gem" src="'.get_template_directory_uri().'/assets/images/gems/green-jewel.png">';
+}
+ if ($game_coins >= 500) {
+    $gems[11]= '<img class="gem" src="'.get_template_directory_uri().'/assets/images/gems/mystery-box-gems/raindrop.png">';
+}
+
+
+return $gems;
+}
+
+
 
 
