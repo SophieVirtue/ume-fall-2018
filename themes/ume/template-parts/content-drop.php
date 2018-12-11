@@ -1,4 +1,4 @@
-<article class="game-dropdown">
+<article class="game-dropdown"  data-id="<?php the_ID(); ?>">
             
    <div class="title">    
    <h3>
