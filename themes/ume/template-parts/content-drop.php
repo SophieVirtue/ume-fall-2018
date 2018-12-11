@@ -20,17 +20,13 @@
     <div class="coins">
 	<h4> Coins: <?php echo CFS()->get ( 'game_coins' ); ?> </h4>
     </div>
+    <div class="buttons">
+        <p class="download"><a href="./download">Download</a></p>
+        <p class="play"><?php printf( '<a href="%s" rel="bookmark">Play</a>', esc_url( get_permalink() ) ); ?></p> 
+        <p>Share</p> 
 
-    <button class="download">
-       <a href="./download">Download</a>
-    </button>
-    <button class="play">
-        <?php printf( '<a href="%s" rel="bookmark">Play</a>', esc_url( get_permalink() ) ); ?>
-    </button>
-    <button class="share">
-        Share
-    </button>
-
+    </div>
+    
     <div class="thumbnail">
         <?php the_post_thumbnail( 'thumbnail', printf( '<a href="%s" rel="bookmark">', esc_url( get_permalink() ) )); ?></a>
     </div>

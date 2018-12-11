@@ -1,6 +1,6 @@
 (function($) {
     $(function() {
-        const $play = $('.play a'); //have to add a to have the location.hash
+        const $play = $('.play'); //have to add a to have the location.hash
 
         $play.on('click', function(event){
             event.preventDefault();
@@ -11,8 +11,8 @@
 
         });
 
-        function addCoins() {
-            const site = ume_vars.rest_url + 'ume/v1/coins?id=126';// + id; (pass thriugh addCoins)
+        function addCoins(id) {
+            const site = ume_vars.rest_url + 'ume/v1/coins?id=126' + id;
             $.ajax({
                 method: 'POST',
                 url: site,
@@ -20,6 +20,7 @@
             })
             .done(function(data){
                 console.log(data);
+                // $('.coins').append(data);
             })
             .fail(function(err){
                 console.log(err);
