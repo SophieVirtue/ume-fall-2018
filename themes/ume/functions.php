@@ -166,13 +166,3 @@ function ume_search_query( $query ) {
 //  );
 //  $query = new WP_Query($args);
   
-
-function my_skip_mail($f){
-    $submission = WPCF7_Submission::get_instance();
-    if(true){
-        return true; // DO NOT SEND E-MAIL
-    }
-}
-add_filter('wpcf7_skip_mail','my_skip_mail');
-
-
