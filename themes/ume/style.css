@@ -1104,7 +1104,7 @@ object {
         padding-top: 11rem; } }
     @media (min-width: 1024px) {
       .banner .upper-row .left-lightning {
-        padding-top: 17rem; } }
+        padding-top: 12rem; } }
     .banner .upper-row .left-lightning img {
       width: 30px; }
       @media (min-width: 600px) {
@@ -1112,8 +1112,7 @@ object {
           width: 60px; } }
       @media (min-width: 1024px) {
         .banner .upper-row .left-lightning img {
-          width: 145px;
-          height: 170px; } }
+          width: 80px; } }
   .banner .upper-row .center-label {
     padding-top: 5.5rem; }
     @media (min-width: 600px) {
@@ -1121,7 +1120,7 @@ object {
         padding-top: 12rem; } }
     @media (min-width: 1024px) {
       .banner .upper-row .center-label {
-        padding-top: 13rem; } }
+        padding-top: 16rem; } }
     .banner .upper-row .center-label img {
       width: 210px; }
       @media (min-width: 600px) {
@@ -1137,7 +1136,7 @@ object {
         padding-top: 11rem; } }
     @media (min-width: 1024px) {
       .banner .upper-row .right-lightning {
-        padding-top: 17rem; } }
+        padding-top: 12rem; } }
     .banner .upper-row .right-lightning img {
       width: 30px; }
       @media (min-width: 600px) {
@@ -1145,8 +1144,7 @@ object {
           width: 60px; } }
       @media (min-width: 1024px) {
         .banner .upper-row .right-lightning img {
-          width: 145px;
-          height: 170px; } }
+          width: 80px; } }
 
 .banner .lower-row {
   text-align: center; }
@@ -1154,12 +1152,11 @@ object {
     width: 300px; }
     @media (min-width: 600px) {
       .banner .lower-row img {
-        height: 120px;
-        width: 550px; } }
+        width: 550px;
+        height: 120px; } }
     @media (min-width: 1024px) {
       .banner .lower-row img {
-        height: 270px;
-        width: 1024px; } }
+        width: 700px; } }
 
 img.gem {
   width: 50px; }
