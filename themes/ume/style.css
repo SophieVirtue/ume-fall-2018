@@ -1202,7 +1202,8 @@ img.gem {
   position: fixed;
   left: 40%;
   top: 40vh;
-  text-align: center; }
+  text-align: center;
+  z-index: 5000; }
   .widget-area img {
     width: 100px; }
   .widget-area p {
