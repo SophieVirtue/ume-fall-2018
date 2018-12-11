@@ -1190,6 +1190,16 @@ object {
       .banner .lower-row img {
         width: 900px; } }
 
+.white-rainbow img {
+  width: 100%;
+  padding-top: 40%; }
+  @media (min-width: 600px) {
+    .white-rainbow img {
+      padding-top: 40%; } }
+  @media (min-width: 1024px) {
+    .white-rainbow img {
+      padding-top: 40%; } }
+
 img.gem {
   width: 50px; }
 
