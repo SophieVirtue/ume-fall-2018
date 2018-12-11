@@ -553,8 +553,12 @@ object {
   height: 100vh; }
   @media (min-width: 600px) {
     .grid-banner-container {
-      background-size: cover;
+      background-size: contain;
       height: 155vh; } }
+  @media (min-width: 1024px) {
+    .grid-banner-container {
+      background-size: contain;
+      height: 178vh; } }
 
 .site-header {
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.5)), to(rgba(0, 0, 0, 0.8)));
@@ -1104,7 +1108,7 @@ object {
         padding-top: 11rem; } }
     @media (min-width: 1024px) {
       .banner .upper-row .left-lightning {
-        padding-top: 15rem; } }
+        padding-top: 17rem; } }
     .banner .upper-row .left-lightning img {
       width: 30px; }
       @media (min-width: 600px) {
@@ -1120,7 +1124,7 @@ object {
         padding-top: 12rem; } }
     @media (min-width: 1024px) {
       .banner .upper-row .center-label {
-        padding-top: 16rem; } }
+        padding-top: 18rem; } }
     .banner .upper-row .center-label img {
       width: 210px; }
       @media (min-width: 600px) {
@@ -1136,7 +1140,7 @@ object {
         padding-top: 11rem; } }
     @media (min-width: 1024px) {
       .banner .upper-row .right-lightning {
-        padding-top: 15rem; } }
+        padding-top: 17rem; } }
     .banner .upper-row .right-lightning img {
       width: 30px; }
       @media (min-width: 600px) {
