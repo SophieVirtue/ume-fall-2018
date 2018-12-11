@@ -45,11 +45,7 @@ get_sidebar(); ?>
         <div class="featured-games">
 <?php foreach ( $game_posts as $post ) : setup_postdata( $post ); ?>
 <div class="featured-game">
-<?php get_template_part( 'template-parts/content-front' ); ?>
-
-    <div class="drop-down">
-           <?php get_template_part( 'template-parts/content-drop' ); ?>
-    </div><!-- end of featured game drop down -->
+    <?php get_template_part( 'template-parts/content-front' ); ?>
 </div><!-- end of featured games -->
    <?php /* Content from your array of post results goes here */ ?>
 <?php endforeach; wp_reset_postdata(); 
@@ -68,7 +64,7 @@ get_sidebar(); ?>
    ) );
         foreach( $game_categories as $category ): 
 
-   $args = array( 'post_type' => 'game', 'posts_per_page' => '4', 'category_name' => $category->name );
+   $args = array( 'post_type' => 'game', 'posts_per_page' => '-1', 'category_name' => $category->name );
    $game_posts = get_posts( $args ); // returns an array of posts
 ?>
         <section class="<?php $category->slug ?>-category">

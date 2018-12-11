@@ -1203,7 +1203,8 @@ img.gem {
   position: fixed;
   left: 40%;
   top: 40vh;
-  text-align: center; }
+  text-align: center;
+  z-index: 5000; }
   .widget-area img {
     width: 100px; }
   .widget-area p {
@@ -1630,7 +1631,8 @@ img.gem {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    padding-bottom: 3rem; }
+    padding-bottom: 3rem;
+    height: 100vh; }
     @media (min-width: 600px) {
       .search .search-results-container,
       .search-results .search-results-container {
