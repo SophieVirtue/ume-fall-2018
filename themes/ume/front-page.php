@@ -14,28 +14,26 @@ get_sidebar(); ?>
             <p>Please play our games on a desktop or laptop!</p>
         </div> -->
         <section class="grid-banner-container">
-        <div class="banner">
-              <div class="upper-row">
-                  <div class="left-lightning">
+            <div class="banner">
+                <div class="upper-row">
+                    <div class="left-lightning">
                         <img src="<?php echo get_template_directory_uri(); ?>/assets/images/lightning-left.png"/>
-                  </div>
-                   <div class="center-label">
-                         <img src="<?php echo get_template_directory_uri(); ?>/assets/images/ume-academy-words.png"/>
-                   </div>
-                 <div class="right-lightning">
-                         <img src="<?php echo get_template_directory_uri(); ?>/assets/images/lightning-right.png"/>
-                   </div>  
-               </div>
-               <div class="lower-row">
-               <img src="<?php echo get_template_directory_uri(); ?>/assets/images/pink-neon-words/arcade.png"/>
+                    </div>
+                    <div class="center-label">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/ume-academy-words.png"/>
+                    </div>
+                    <div class="right-lightning">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/lightning-right.png"/>
+                    </div>  
+                </div>
+                <div class="lower-row">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/pink-neon-words/arcade.png"/>
+                </div>
+            </div>
+        </section>
 
-               </div>
-
-
-         </div>
-    </section>
-<section class="main-section-container">
-   <div class="game-background">
+        <section class="main-section-container">
+            <div class="game-background">
 
        <!-- beginning of featured games  -->
 

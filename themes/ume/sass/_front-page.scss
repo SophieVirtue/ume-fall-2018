@@ -126,7 +126,7 @@
       padding-top: 11rem;
     }
     @include desktop {
-      padding-top: 17rem;
+      padding-top: 21rem;
     }
     img {
       width: 30px;
@@ -134,7 +134,7 @@
         width: 60px;
       }
       @include desktop {
-        width: 80px;
+        width: 100px;
       }
     }
   }
@@ -144,7 +144,7 @@
       padding-top: 12rem;
     }
     @include desktop {
-      padding-top: 18rem;
+      padding-top: 22rem;
     }
     img {
       width: 210px;
@@ -152,8 +152,8 @@
         width: 380px;
       }
       @include desktop {
-        width: 500px;
-        // height: 110px;
+        width: 700px;
+        
       }
     }
   }
@@ -164,7 +164,7 @@
       padding-top: 11rem;
     }
     @include desktop {
-      padding-top: 17rem;
+      padding-top: 21rem;
     }
     img {
       width: 30px;
@@ -172,7 +172,7 @@
         width: 60px;
       }
       @include desktop {
-        width: 80px;
+        width: 100px;
       }
     }
   }
@@ -184,11 +184,11 @@
     width: 300px;
     @include tablet {
       width: 550px;
-      height: 120px;
+
     }
     @include desktop {
-      width: 700px;
-    //   height: 120px;
+      width: 900px;
+   
     }
   }
 }

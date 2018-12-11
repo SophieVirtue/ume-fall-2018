@@ -18,7 +18,7 @@
 	
 	
 		<div class="thumbnail-image">
-			<?php the_post_thumbnail( 'thumbnail' ); ?>
+		<?php the_post_thumbnail( 'thumbnail', printf( '<a href="%s" rel="bookmark">', esc_url( get_permalink() ) )); ?></a>
 		</div>
     <div class="author">
 	<h4> By: <?php echo CFS()->get ( 'game_author' ); ?> </h4>

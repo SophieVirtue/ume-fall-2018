@@ -1108,7 +1108,7 @@ object {
         padding-top: 11rem; } }
     @media (min-width: 1024px) {
       .banner .upper-row .left-lightning {
-        padding-top: 17rem; } }
+        padding-top: 21rem; } }
     .banner .upper-row .left-lightning img {
       width: 30px; }
       @media (min-width: 600px) {
@@ -1116,7 +1116,7 @@ object {
           width: 60px; } }
       @media (min-width: 1024px) {
         .banner .upper-row .left-lightning img {
-          width: 80px; } }
+          width: 100px; } }
   .banner .upper-row .center-label {
     padding-top: 5.5rem; }
     @media (min-width: 600px) {
@@ -1124,7 +1124,7 @@ object {
         padding-top: 12rem; } }
     @media (min-width: 1024px) {
       .banner .upper-row .center-label {
-        padding-top: 18rem; } }
+        padding-top: 22rem; } }
     .banner .upper-row .center-label img {
       width: 210px; }
       @media (min-width: 600px) {
@@ -1132,7 +1132,7 @@ object {
           width: 380px; } }
       @media (min-width: 1024px) {
         .banner .upper-row .center-label img {
-          width: 500px; } }
+          width: 700px; } }
   .banner .upper-row .right-lightning {
     padding-top: 5rem; }
     @media (min-width: 600px) {
@@ -1140,7 +1140,7 @@ object {
         padding-top: 11rem; } }
     @media (min-width: 1024px) {
       .banner .upper-row .right-lightning {
-        padding-top: 17rem; } }
+        padding-top: 21rem; } }
     .banner .upper-row .right-lightning img {
       width: 30px; }
       @media (min-width: 600px) {
@@ -1148,7 +1148,7 @@ object {
           width: 60px; } }
       @media (min-width: 1024px) {
         .banner .upper-row .right-lightning img {
-          width: 80px; } }
+          width: 100px; } }
 
 .banner .lower-row {
   text-align: center; }
@@ -1156,11 +1156,10 @@ object {
     width: 300px; }
     @media (min-width: 600px) {
       .banner .lower-row img {
-        width: 550px;
-        height: 120px; } }
+        width: 550px; } }
     @media (min-width: 1024px) {
       .banner .lower-row img {
-        width: 700px; } }
+        width: 900px; } }
 
 img.gem {
   width: 50px; }
