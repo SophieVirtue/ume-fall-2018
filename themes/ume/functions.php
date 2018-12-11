@@ -91,11 +91,20 @@ function ume_scripts() {
 	wp_enqueue_script( 'ume-navigation', get_template_directory_uri() . '/build/js/navigation.min.js', array(), '20151215', true );
 	wp_enqueue_script( 'ume-skip-link-focus-fix', get_template_directory_uri() . '/build/js/skip-link-focus-fix.min.js', array(), '20151215', true );
 	wp_enqueue_script( 'ume-custom', get_template_directory_uri() . '/build/js/custom.min.js', array('jquery'), '20151215', true );
+	wp_enqueue_script( 'ume-main', get_template_directory_uri() . '/build/js/main.min.js', array('jquery'), '20151215', true );
+	wp_enqueue_script( 'ume-api', get_template_directory_uri() . '/build/js/api.min.js', array('jquery'), '20151215', true );
 	wp_enqueue_script('ume-flickity-js', "https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js" );
+
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}
+
+	wp_localize_script( 'ume-api', 'ume_vars', array(
+		'rest_url' => esc_url_raw( rest_url() ),
+		'post_id' => get_the_ID(),
+		'nonce' => wp_create_nonce( 'wp_rest' ),
+	) );
 }
 add_action( 'wp_enqueue_scripts', 'ume_scripts' );
 
@@ -108,6 +117,7 @@ require get_template_directory() . '/inc/template-tags.php';
  * Custom functions that act independently of the theme templates.
  */
 require get_template_directory() . '/inc/extras.php';
+require get_template_directory() . '/inc/rest-api.php';
 
 //Page Slug Body Class
 function ume_slug_body_class( $classes ) {
@@ -117,6 +127,31 @@ function ume_slug_body_class( $classes ) {
 	}
 	return $classes;
 	}
-	add_filter( 'body_class', 'ume_slug_body_class' );
+add_filter( 'body_class', 'ume_slug_body_class' );
+
+
+
+
+// TODO update search query to include post_meta
+function ume_search_query( $query ) {
+	if ( $query->is_search ) {
+	  
+	// 	$meta_query_args = array(
+	// 	array(
+	// 	  'key' => 'game_author',
+	// 	  'value' => $query->query_vars['s'] = '',
+	// 	  'compare' => 'LIKE',
+	// 	),
+
+	//   );
+	//   $query->set('meta_query', $meta_query_args);
+	  $query->set('meta_key', 'game_author');
+	  $query->set('meta_value', get_search_query());
+	};
+  }
+  
+//   add_filter( 'pre_get_posts', 'ume_search_query');
+
+
 
 

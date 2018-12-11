@@ -38,7 +38,7 @@ get_header(); ?>
             </h3>
                </div>
                <div class="leader-name">
-	            <h4> By: <?php echo CFS()->get ( 'game_author' ); ?> </h4>
+	            <h4> By <?php echo CFS()->get ( 'game_author' ); ?> </h4>
                </div>
               <div class="leader-coins">
               
@@ -67,10 +67,14 @@ get_header(); ?>
              ?>
 
          <div class="remaining-player">
-
+            
+             
+            
             <div class="leader-ranking">
                 <p><?php  echo $i++; ?></p>
             </div>
+            
+
 
          <div class="leader-content">
            <div class="leader-info">
@@ -83,10 +87,18 @@ get_header(); ?>
                <div class="leader-name">
 	            <h4> By: <?php echo CFS()->get ( 'game_author' ); ?> </h4>
                </div>
-              <div class="leader-coins">
-	            <h4> Coins: <?php echo CFS()->get ( 'game_coins' ); ?> </h4>
-              </div>
-        </div>
+               <div class="leader-coins">
+               <div class="prize-bar">
+               <div class="inner-bar"
+               style="width: <?php echo ume_get_prizes( CFS()->get ( 'game_coins' ))*90*0.0833 ?>px">
+               </div>
+               </div>
+
+              <h4 class="leader-prizes">  <?php echo ume_get_prizes( CFS()->get ( 'game_coins' )).'/12 prizes achieved'; ?> </h4>
+              <h4> <img class="coin" src="<?php echo get_template_directory_uri();?>/assets/images/coin.png" alt="coin"/><?php echo CFS()->get ( 'game_coins' ); ?> </h4>
+            </div>
+         </div>      
+              
         
           <div class="leader-icon">
           <div class="leader-thumbnail">   

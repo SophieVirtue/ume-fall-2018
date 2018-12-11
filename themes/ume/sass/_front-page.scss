@@ -1,41 +1,108 @@
-// .agriculture-games, .science-games, .fashion-games, .pet-games, .space-games, .sea-games, .main-carousel .flickity-slider{
-//     // height: 500px;
-// }
 
 .flickity-viewport {
-   height: 325px !important; 
+   height: 278px !important; 
     z-index: 1;
     position: relative;
+    @include tablet {
+        height: 490px !important;
+    }
+    @include desktop {
+        height: 483px !important;
+    }
 }
 
-.flickity-slider {
-    position: relative;
-    height: 550px;
+.flickity-page-dots {
+    display: none;
+  }
+
+  .flickity-button {
+    display: none;
 }
 
 .carousel-cell {
-    height: 325px;
-    margin: 0 50px;
+    height: 260px;
+    width: 40%;
+    margin-right: 5px;
+    @include tablet {
+        height: 380px;
+        width: 33%;
+        margin-right: 15px;
+    }
+    @include desktop {
+        height: 376px;
+        width: 20%;
+    }
+    .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 100%;
+    background: url(../../assets/images/GameCardMobile.png) no-repeat;
+    background-size: cover;
+    @include tablet {
+        background: url(../../assets/images/GameCardTablet.png) no-repeat;
+    }
+    @include desktop {
+        background: url(../../assets/images/GameCardDesktop.png) no-repeat;
+    }
+    }
+    
+    
+    h3 {
+        font-size: 14px;
+        @include tablet {
+            font-size: 18px;
+        }
+    }
+    h4 {
+        font-size: 12px;
+        margin: 5px 0;
+        @include tablet {
+            font-size: 15px;
+        }
+    }
+    img {
+        height: 120px;
+        width: 129px;
+        @include tablet {
+            width: 222px;
+            height: 210px;
+        }
+    }
 }
 
 .featured-games {
     display: flex;
-    img {
-        width: 50px;
+    .featured-game {
+        background: url(../../assets/images/single-ambient-square.png);
     }
+    img {
+        height: 120px;
+        width: 129px;
+        }
 }
 
 .arrow {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 30px;
-    height: 30px;
+    width: 15px;
+    height: 15px;
     border: none;
     margin: 0;
     padding: 0;
+    @include tablet {
+        width: 35px;
+        height: 35px;
+    }
     img{
-        width: 30px;
+        width: 15px;
+        height: 15px;
+        @include tablet {
+            width: 35px;
+            height: 35px;
+        }
     }
 }
 
@@ -49,6 +116,7 @@
     position: absolute;
     z-index: 1000;
     background: rgba( 0, 0, 0, 0.8);
+    width: 100%;
 }
 
 .banner .upper-row{
@@ -96,29 +164,23 @@
         
           .right-lightning{
             padding-top: 4.8rem;
-        @include tablet{
-            padding-top: 12rem;
-        }
-        @include desktop{
+            @include tablet{
+                padding-top: 12rem;
+            }
+            @include desktop{
             padding-top: 17rem;
-        }
-
-        img{
+            }
+            img{
             width: 90px;
-        @include tablet{
-            width: 110px;
+            @include tablet{
+               width: 110px;
+              }
+              @include desktop{
+                  width: 145px;
+                  height: 170px;
+              }
+            }
         }
-        @include desktop{
-            width: 145px;
-            height: 170px;
-        }
-        }
-          }
-
-
-        
-        
-
 }
 
 .banner .lower-row{
@@ -134,8 +196,5 @@
             height: 270px;
             width: 1024px;
         }
-
-
     }
-
 }
