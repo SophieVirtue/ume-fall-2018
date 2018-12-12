@@ -19,7 +19,7 @@
       width: 600px;
     }
     @include desktop {
-      width: 800px;
+      width: 80%
     }
   }
 
@@ -37,7 +37,7 @@
       text-transform: uppercase;
       font-size: 25px;
       justify-content: space-between;
-      margin-top: 3rem;
+      margin-top: 2rem;
       @include desktop {
         display: flex;
       }
@@ -52,9 +52,7 @@
   }
 
   input[type='email'],
-  input[type='password'],
-  input[type='text'],
-  input[type='url'] {
+  input[type='text'] {
     color: #fff;
     padding: 15px 10px;
     background: transparent;
@@ -80,7 +78,7 @@
     font-size: 30px;
     text-transform: uppercase;
     line-height: 53px;
-    padding-top: 3rem;
+    padding-top: 1rem;
     margin: 0;
     @include desktop {
       font-size: 40px;
@@ -94,15 +92,16 @@
     font-family: 'futura-heavy';
     font-weight: lighter;
     @include desktop {
-      margin-top: 6rem;
+      margin-top: 2rem;
       max-width: 90%;
     }
   }
 
   .email {
-    margin-top: 6rem;
+    margin-top: 2rem;
     font-family: 'futura-bold';
     font-size: 25px;
+    text-transform: uppercase;
     display: flex;
     -ms-flex-pack: justify;
     justify-content: space-between;
@@ -111,13 +110,13 @@
       /* Chrome/Opera/Safari */
       text-transform: lowercase;
     }
-    input {
-      @include desktop {
-        width: 43%;
-      }
+    label {
+      width: 100%;
     }
     input {
-      text-transform: lowercase;
+      @include desktop {
+        width: 40%;
+      }
     }
   }
 
