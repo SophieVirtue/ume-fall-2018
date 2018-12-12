@@ -660,7 +660,7 @@ main {
     font-family: 'Futura-Bk-BT', sans-serif;
     color: white;
     text-transform: uppercase;
-    padding: 0 19px; }
+    padding: 0 16px; }
     @media (min-width: 1024px) {
       .site-header .main-navigation a {
         font-size: 25px; } }
@@ -721,8 +721,7 @@ main {
           font-size: 18px; } }
   .site-header i.fa-bars {
     color: white;
-    font-size: 25px;
-    padding: 0 16px; }
+    font-size: 25px; }
     @media (min-width: 600px) {
       .site-header i.fa-bars {
         display: none; } }
@@ -797,8 +796,9 @@ main {
     @media (min-width: 600px) {
       .site-header .side-nav {
         display: none; } }
-  .site-header .submit-text {
-    padding-right: 12px; }
+  @media (min-width: 600px) {
+    .site-header .submit-text {
+      padding-right: 12px; } }
 
 .prizes {
   background: url(../../assets/images/grid-lines.png), url(../../assets/images/background.jpg);
@@ -807,6 +807,9 @@ main {
   overflow: hidden;
   background-position: top;
   text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 100%; }
   @media (min-width: 600px) {
     .prizes {
@@ -832,7 +835,8 @@ main {
     color: white;
     font-family: 'Futura-Bk-BT', sans-serif;
     padding-bottom: 45px;
-    margin: 0; }
+    margin: 0;
+    letter-spacing: 1px; }
     @media (min-width: 600px) {
       .prizes h3 {
         font-size: 15px;
@@ -847,7 +851,8 @@ main {
     display: flex;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
-            justify-content: center; }
+            justify-content: center;
+    width: 90%; }
     .prizes .coin-legend .coin-winnings {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -860,7 +865,7 @@ main {
       -webkit-box-pack: center;
           -ms-flex-pack: center;
               justify-content: center;
-      width: 90%;
+      width: 100%;
       background-color: rgba(0, 0, 0, 0.2); }
       @media (min-width: 600px) {
         .prizes .coin-legend .coin-winnings {
@@ -871,10 +876,18 @@ main {
       .prizes .coin-legend .coin-winnings .coin {
         width: 23px;
         height: 23px; }
+        @media (min-width: 600px) {
+          .prizes .coin-legend .coin-winnings .coin {
+            width: 30px;
+            height: 30px; } }
+        @media (min-width: 1024px) {
+          .prizes .coin-legend .coin-winnings .coin {
+            width: 40px;
+            height: 40px; } }
       .prizes .coin-legend .coin-winnings p {
         font-size: 15px;
         color: white;
-        font-family: 'Futura-Md-BT', sans-serif;
+        font-family: 'Futura-Bk-BT', sans-serif;
         margin: 0;
         padding: 9px 0; }
         @media (min-width: 1024px) {
@@ -891,19 +904,16 @@ main {
           .prizes .coin-legend .coin-winnings .coin-space {
             padding-right: 80px; } }
   .prizes .prize-path {
-    width: 90%;
+    width: 100%;
     height: auto;
-    padding-top: 25px;
-    padding-bottom: 100px; }
+    padding-bottom: 90px; }
     @media (min-width: 600px) {
       .prizes .prize-path {
-        width: 85%;
-        padding-top: 95px;
-        padding-bottom: 130px; } }
+        width: 95%;
+        padding-bottom: 90px; } }
     @media (min-width: 1024px) {
       .prizes .prize-path {
-        width: 90%;
-        padding-top: 270px;
+        padding-top: 100px;
         padding-bottom: 130px; } }
 
 .page-download {
@@ -1074,14 +1084,14 @@ main {
     -ms-flex-pack: distribute;
         justify-content: space-around;
     height: 100%;
-    background: url(../../assets/images/GameCardMobile.png) no-repeat;
+    background: url(../../assets/images/game-card-mobile.png) no-repeat;
     background-size: cover; }
     @media (min-width: 600px) {
       .carousel-cell .content {
-        background: url(../../assets/images/GameCardTablet.png) no-repeat; } }
+        background: url(../../assets/images/game-card-tablet.png) no-repeat; } }
     @media (min-width: 1024px) {
       .carousel-cell .content {
-        background: url(../../assets/images/GameCardDesktop.png) no-repeat; } }
+        background: url(../../assets/images/game-card-desktop.png) no-repeat; } }
   .carousel-cell h3 {
     font-size: 14px; }
     @media (min-width: 600px) {
@@ -1744,7 +1754,7 @@ img.gem {
         padding-bottom: 10rem; } }
     .search .search-results-container .search-game .type-game,
     .search-results .search-results-container .search-game .type-game {
-      background: url(../../assets/images/GameCardDesktop.png) no-repeat;
+      background: url(../../assets/images/game-card-desktop.png) no-repeat;
       background-size: cover;
       background-position: top;
       text-align: center;

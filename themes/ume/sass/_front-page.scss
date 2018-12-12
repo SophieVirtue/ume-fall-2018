@@ -37,13 +37,13 @@
     align-items: center;
     justify-content: space-around;
     height: 100%;
-    background: url(../../assets/images/GameCardMobile.png) no-repeat;
+    background: url(../../assets/images/game-card-mobile.png) no-repeat;
     background-size: cover;
     @include tablet {
-      background: url(../../assets/images/GameCardTablet.png) no-repeat;
+      background: url(../../assets/images/game-card-tablet.png) no-repeat;
     }
     @include desktop {
-      background: url(../../assets/images/GameCardDesktop.png) no-repeat;
+      background: url(../../assets/images/game-card-desktop.png) no-repeat;
     }
   }
 

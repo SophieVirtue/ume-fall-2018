@@ -5,6 +5,7 @@
     overflow: hidden;
     background-position: top; 
     text-align: center;
+    align-items: center;
     width: 100%;
     @include tablet {
         background-size: auto 97%, 100% 100%;  
@@ -32,6 +33,7 @@
         font-family: 'Futura-Bk-BT', sans-serif;
         padding-bottom: 45px;
         margin: 0;
+        letter-spacing: 1px;
         @include tablet {
             font-size: 15px;
             padding-bottom: 55px; 
@@ -44,12 +46,13 @@
     .coin-legend {
         display: flex;
         justify-content: center;
+        width: 90%;
         .coin-winnings {
             display: flex;
             flex-wrap: wrap;
             align-items: center;
             justify-content: center;
-            width: 90%;
+            width: 100%;
             background-color: rgba(0.17, 0.17, 0.17, 0.2);
             @include tablet {
                 width: 75%;
@@ -60,11 +63,19 @@
             .coin {
                 width: 23px;
                 height: 23px;
+                @include tablet {
+                    width: 30px;
+                    height: 30px;
+                }
+                @include desktop {
+                    width: 40px;
+                    height: 40px;
+                }
             }
             p {
                 font-size: 15px;
                 color: white;
-                font-family: 'Futura-Md-BT', sans-serif;
+                font-family: 'Futura-Bk-BT', sans-serif;
                 margin: 0;
                 padding: 9px 0;
                 @include desktop {
@@ -87,18 +98,15 @@
         }
     }
     .prize-path {
-        width: 90%;
+        width: 100%;
         height: auto;
-        padding-top: 25px;
-        padding-bottom: 100px;
+        padding-bottom: 90px;
         @include tablet {
-            width: 85%;
-            padding-top: 95px;
-            padding-bottom: 130px;
+            width: 95%;
+            padding-bottom: 90px;
         }
         @include desktop {
-            width: 90%;
-            padding-top: 270px;
+            padding-top: 100px;
             padding-bottom: 130px;
         }
     }
