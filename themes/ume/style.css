@@ -1204,6 +1204,39 @@ object {
 img.gem {
   width: 50px; }
 
+.rainbow-game-container {
+  position: relative; }
+  .rainbow-game-container .game-background {
+    position: absolute;
+    top: 50%;
+    width: 100%; }
+    .rainbow-game-container .game-background .featured-game-section {
+      width: 100%; }
+      .rainbow-game-container .game-background .featured-game-section .featured-games {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: space-evenly;
+            -ms-flex-pack: space-evenly;
+                justify-content: space-evenly;
+        position: relative; }
+        .rainbow-game-container .game-background .featured-game-section .featured-games .featured-game:first-child {
+          -webkit-transform: rotate(-25deg);
+                  transform: rotate(-25deg);
+          position: absolute;
+          left: 20%; }
+        .rainbow-game-container .game-background .featured-game-section .featured-games .featured-game:nth-child(2) {
+          position: absolute;
+          top: 10%; }
+        .rainbow-game-container .game-background .featured-game-section .featured-games .featured-game:last-child {
+          -webkit-transform: rotate(25deg);
+                  transform: rotate(25deg);
+          position: absolute;
+          right: 20%; }
+
+.-category:last-of-type .drop-down {
+  position: static; }
+
 .widget-area {
   display: none;
   height: 192px;

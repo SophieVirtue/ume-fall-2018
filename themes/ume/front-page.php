@@ -13,6 +13,7 @@ get_sidebar(); ?>
         <!-- <div class="popup">
             <p>Please play our games on a desktop or laptop!</p>
         </div> -->
+
         <section class="grid-banner-container">
             <div class="banner">
                 <div class="upper-row">
@@ -29,32 +30,34 @@ get_sidebar(); ?>
                 <div class="lower-row">
                     <img src="<?php echo get_template_directory_uri(); ?>/assets/images/pink-neon-words/arcade.png"/>
                 </div>
-                <div class="white-rainbow">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/scroll-wheel.png"/>
+                <div class="rainbow-game-container">
+                    <div class="white-rainbow">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/scroll-wheel.png"/>
+                    </div>
+                    
+                    <!-- beginning of featured games  -->
+                    <div class="game-background">
+    
+                    <?php      
+                    $args = array( 'post_type' => 'game', 'posts_per_page' => '3');
+                    $game_posts = get_posts( $args ); // returns an array of posts
+                    ?>
+                    <section class="featured-game-section">
+                        <div class="featured-games">
+                            <?php foreach ( $game_posts as $post ) : setup_postdata( $post ); ?>
+                                <div class="featured-game">
+                                    <?php get_template_part( 'template-parts/content-front' ); ?>
+                                </div><!-- end of featured games -->
+                                <?php /* Content from your array of post results goes here */ ?>
+                            <?php endforeach; wp_reset_postdata(); ?>
+                        </div>
+                    </section>
+                    </div>
                 </div>
-            </div>
         </section>
 
         <section class="main-section-container">
-            <div class="game-background">
 
-       <!-- beginning of featured games  -->
-
-       <?php      
-   $args = array( 'post_type' => 'game', 'posts_per_page' => '3');
-   $game_posts = get_posts( $args ); // returns an array of posts
-?>
-<section class="featured-game-section">
-        <div class="featured-games">
-<?php foreach ( $game_posts as $post ) : setup_postdata( $post ); ?>
-<div class="featured-game">
-    <?php get_template_part( 'template-parts/content-front' ); ?>
-</div><!-- end of featured games -->
-   <?php /* Content from your array of post results goes here */ ?>
-<?php endforeach; wp_reset_postdata(); 
-        ?>
-</div>
-</section><!-- end of featured games section -->
         <hr>
 
         <!-- end of featured games -->
@@ -94,6 +97,7 @@ get_sidebar(); ?>
           <hr>
         <?php endforeach; ?>
         <!-- end of game categories -->
+        </section><!-- end of featured games section -->
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
