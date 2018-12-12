@@ -17,13 +17,29 @@
     <div class="program">
 	<h4> <?php echo CFS()->get ( 'game_program' ); ?> </h4>
     </div>
+    <div class="design-button">
+    <?php $game_design = CFS()->get ( 'game_design' ); ?>
+    <?php if (is_array($game_design)) : ?>
+
+    <button>
+    <a href="<?php echo get_permalink($game_design[0]); ?>">
+        View Design Process
+        </a>
+</button>
+     
+<?php endif; ?>
+
+</div>
     <div class="coins">
 	<h4> Coins: <?php echo CFS()->get ( 'game_coins' ); ?> </h4>
     </div>
     <div class="buttons">
         <p class="download"><a href="./download?id=<?php the_ID(); ?>">Download</a></p>
         <p class="play"><?php printf( '<a href="%s" rel="bookmark">Play</a>', esc_url( get_permalink() ) ); ?></p> 
-        <p class="share"><?php printf( '<a href="%s" rel="bookmark">Share</a>', esc_url( get_permalink() ) ); ?></p> 
+        <p class="share">
+        <?php printf( '<a href="%s" rel="bookmark">Share</a>', esc_url( get_permalink() ) ); ?>
+        <input type="text" class="hidden-copy" value="<?php echo get_the_permalink() ?>">
+        </p> 
 
     </div>
     

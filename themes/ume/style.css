@@ -497,6 +497,7 @@ object {
           align-items: center;
   height: 53px;
   width: 100%;
+  z-index: 5000;
   font-family: 'Futura-Bk-BT', sans-serif;
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.25)), to(rgba(0, 0, 0, 0.7)));
   background: linear-gradient(rgba(255, 255, 255, 0.25), rgba(0, 0, 0, 0.7));
@@ -539,6 +540,21 @@ object {
 .footer-relative {
   position: relative; }
 
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 100vh;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+
+.main-section-container {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1; }
+
 /*--------------------------------------------------------------
 # Page Templates
 --------------------------------------------------------------*/
@@ -569,7 +585,8 @@ object {
   height: 50px;
   width: 100%;
   position: fixed;
-  top: 0; }
+  top: 0;
+  z-index: 100; }
   @media (min-width: 600px) {
     .site-header {
       height: 45px; } }
@@ -749,8 +766,7 @@ object {
     background-repeat: no-repeat;
     background-size: auto 2000px;
     overflow: hidden;
-    background-position: top;
-    z-index: 100; }
+    background-position: top; }
     .site-header .side-nav a {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -937,7 +953,9 @@ object {
     background: transparent;
     border: 3px solid white;
     width: 100%;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    position: relative;
+    z-index: 1; }
     @media (min-width: 1024px) {
       .page-download input[type='email'],
       .page-download input[type='password'],
@@ -1254,6 +1272,17 @@ img.gem {
     color: white;
     font-family: 'Futura-Bk-BT';
     font-size: 18px; }
+
+.hidden-copy {
+  border: 0;
+  clip: rect(1px, 1px, 1px, 1px);
+  -webkit-clip-path: inset(50%);
+          clip-path: inset(50%);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute; }
 
 .leaderboard .top-three .leader-thumbnail {
   background: url(../../assets/images/first-place.png);
@@ -1640,11 +1669,24 @@ img.gem {
   .game-template-default.single-game .site-content {
     text-align: center; }
   .game-template-default.single-game .neon-play-game {
-    padding-top: 8rem; }
-  .game-template-default.single-game .play-game-container {
-    margin: 3rem 0; }
+    padding-top: 5rem; }
   .game-template-default.single-game .entry-content {
-    padding: 3rem 0 10rem 0; }
+    padding: 0 0 35rem 0;
+    position: relative;
+    text-align: center; }
+  .game-template-default.single-game .game-wrapper {
+    margin: 0 auto;
+    width: 966px; }
+  .game-template-default.single-game p {
+    padding-top: 4rem; }
+  .game-template-default.single-game iframe {
+    border: none;
+    top: -4px;
+    left: -4px;
+    width: 966px;
+    height: 480px;
+    position: absolute;
+    margin: 0 auto; }
 
 .search,
 .search-results {

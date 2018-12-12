@@ -20,12 +20,11 @@ get_header(); ?>
 		</div>
     
     </header><!-- .entry-header -->
+		<div class="entry-content game-wrapper">
+	 		<p>Oops!  There is no link for this game...</p>
+     		<iframe class="UnityFrame" scrolling="no" src="<?php $link = CFS()->get('play_game'); echo $link['url']?>" kwframeid="1"></iframe>
+		</div><!-- .entry-content -->
 
-	<div class="entry-content">
-        
-     <iframe class="UnityFrame" scrolling="no" src="<?php $link = CFS()->get('play_game'); echo $link['url']?>" kwframeid="1" style="top: -4px; left: -4px; width: 960px; height: 480px;"></iframe>
-
-	</div><!-- .entry-content -->
 
 	
 </article><!-- #post-## -->
