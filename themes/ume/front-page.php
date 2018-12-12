@@ -29,6 +29,9 @@ get_sidebar(); ?>
                 <div class="lower-row">
                     <img src="<?php echo get_template_directory_uri(); ?>/assets/images/pink-neon-words/arcade.png"/>
                 </div>
+                <div class="white-rainbow">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/scroll-wheel.png"/>
+                </div>
             </div>
         </section>
 

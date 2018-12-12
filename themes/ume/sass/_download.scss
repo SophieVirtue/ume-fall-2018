@@ -57,15 +57,15 @@
   input[type='url'] {
     color: #fff;
     padding: 15px 10px;
-    // padding-left: 10px;
     background: transparent;
     border: 3px solid white;
     width: 100%;
     text-transform: uppercase;
+    position: relative;
+    z-index: 1;
     @include desktop {
       width: 80%;
     }
-
     &:focus {
       outline: 0;
     }

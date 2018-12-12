@@ -36,7 +36,10 @@
     <div class="buttons">
         <p class="download"><a href="./download?id=<?php the_ID(); ?>">Download</a></p>
         <p class="play"><?php printf( '<a href="%s" rel="bookmark">Play</a>', esc_url( get_permalink() ) ); ?></p> 
-        <p>Share</p> 
+        <p class="share">
+        <?php printf( '<a href="%s" rel="bookmark">Share</a>', esc_url( get_permalink() ) ); ?>
+        <input type="text" class="hidden-copy" value="<?php echo get_the_permalink() ?>">
+        </p> 
 
     </div>
     

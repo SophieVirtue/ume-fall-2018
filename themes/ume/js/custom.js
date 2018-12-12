@@ -4,6 +4,7 @@
         const $popup = $('.widget-area');
         const $carouselArrow = $('.carousel-cell .arrow');
         const $featureArrow = $('.featured-game .arrow');
+        const $share = $('.share a');
         
         // popup toggle
         
@@ -38,7 +39,14 @@
         $featureArrow.blur(function(){
             $(this).closest('.featured-game').find('.drop-down').hide();
         });
-        
+
+
+        $share.on('click', function(event) {
+            event.preventDefault();
+            $(this).next('.hidden-copy').focus().select();
+            document.execCommand('copy');
+        });
+
 
         // flickity
         $('.main-carousel').flickity({
