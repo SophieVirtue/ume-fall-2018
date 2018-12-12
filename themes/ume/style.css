@@ -1791,25 +1791,42 @@ main {
 .work-section, .character-section, .obstacles-section, .important-section {
   text-align: center; }
 
-<<<<<<< HEAD
+.single-design .entry-header a {
+  color: #fff;
+  text-decoration: none;
+  font-family: Futura-Bk-Bt;
+  text-transform: uppercase;
+  padding-left: 1rem; }
+
+.work-folder {
+  background: url(../../assets/images/set-up-file.png); }
+
+.character-folder {
+  background: url(../../assets/images/character-file.png); }
+
+.obstacles-folder {
+  background: url(../../assets/images/cutest-pet-file.png); }
+
+.important-folder {
+  background: url(../../assets/images/agriculture-file.png); }
+
 .design-folder {
-  background: url(../../assets/images/set-up-file.png);
   background-repeat: no-repeat;
   background-size: 90% 50%;
   background-position: left top;
   height: 626px;
-  width: 390px; }
+  width: auto; }
 
 .design-section {
-  color: white;
+  color: #fff;
   background: rgba(0, 0, 0, 0.6);
   margin-left: 2rem;
   margin-right: 2rem; }
 
 .design-title {
-  color: white;
+  color: #fff;
   width: 112px;
-  font-size: 1rem;
+  font-size: 0.85rem;
   font-family: Futura-Bk-Bt;
   text-transform: uppercase;
   padding-top: 1.5rem;
@@ -1823,19 +1840,29 @@ main {
 
 .design-image img {
   width: 271px;
+  height: 190px;
   padding-top: 1rem; }
 
-.design-image {
-  border-bottom: 3px solid white; }
+.character-image img {
+  height: 210px; }
+
+.important-image img {
+  height: 220px; }
+
+.work-image img {
+  height: 210px; }
+
+.design-border {
+  border-bottom: 1px solid #fff;
+  padding-top: 2rem;
+  margin-left: 6rem;
+  margin-right: 6rem; }
 
 .work-folder, .obstacles-folder {
   margin-bottom: 20rem; }
 
 .important-folder {
   margin-bottom: 10rem; }
-=======
-img.work-flow-image, img.character-image, img.obstacles-image, img.important-image {
-  width: 280px; }
 
 .drop-down {
   display: none;
@@ -1850,7 +1877,7 @@ img.work-flow-image, img.character-image, img.obstacles-image, img.important-ima
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     display: grid;
-    grid-template-areas: "title prizes" "img img" "img img" "img img" "meta program" "coins coins" "buttons design";
+    grid-template-areas: "title prizes" "img img" "img img" "img img" "meta program" "coins coins" "buttons design";
     color: white;
     padding: 10px; }
     .drop-down .game-dropdown .buttons {
@@ -1929,4 +1956,3 @@ img.gem {
                   transform: rotate(25deg);
           position: absolute;
           right: 20%; }
->>>>>>> 813efd20fa10984085e3ef8e8329f4f9216702a8

@@ -10,22 +10,42 @@
     text-align: center;
 }
 
+.single-design .entry-header a{
+    color: #fff;
+    text-decoration: none;
+    font-family: Futura-Bk-Bt;
+    text-transform: uppercase;
+    padding-left: 1rem;
+}
+
+
+
 
 //Draft Code
-.design-folder{
+.work-folder{
     background: url(../../assets/images/set-up-file.png);
+}
+.character-folder{
+    background: url(../../assets/images/character-file.png);
+}
+.obstacles-folder{
+    background: url(../../assets/images/cutest-pet-file.png);
+}
+.important-folder{
+    background: url(../../assets/images/agriculture-file.png);
+}
+.design-folder{ 
     background-repeat: no-repeat;
     background-size: 90% 50%;
     background-position: left top;
     height: 626px;
-    width: 390px;
+    width: auto;
 }
- 
-    
+
 
 
 .design-section {
-    color: white;
+    color: #fff;
     background: rgba(0,0,0,0.6);
     margin-left: 2rem;
     margin-right: 2rem;
@@ -34,9 +54,9 @@
 
 
 .design-title{
-    color: white;
+    color: #fff;
     width: 112px;
-    font-size: 1rem;
+    font-size: 0.85rem;
     font-family: Futura-Bk-Bt;
     text-transform: uppercase;
     padding-top: 1.5rem;
@@ -52,14 +72,30 @@
 
 .design-image img{
     width: 271px;
+    height: 190px;
     padding-top: 1rem;
-
 }
 
-.design-image{
-    border-bottom: 3px solid white;
-    
+.character-image img{
+    height: 210px;
 }
+
+.important-image img{
+    height: 220px;
+}
+
+.work-image img{
+    height: 210px;
+}
+
+.design-border{
+    border-bottom: 1px solid #fff;
+    padding-top: 2rem;
+    margin-left: 6rem;
+    margin-right: 6rem;
+}
+
+
 
 //Separate Sections
 .work-folder, .obstacles-folder{
@@ -69,4 +105,7 @@
 .important-folder{
     margin-bottom: 10rem;
 }
+
+
+
 

@@ -24,6 +24,8 @@
 	      	<div class="work-image design-image">
               <img class="work-flow-image" src="<?php echo CFS()->get ( 'work_flow_image' )?>">
 			  </div>
+			  <div class="design-border">
+              </div>
           <div class="work-text design-text">
 		         <?php echo CFS()->get ( 'work_flow_text' );?>
 			   </div>
@@ -40,6 +42,8 @@
              <div class="character-image design-image">
 			 <img class="character-image" src="<?php echo CFS()->get ( 'character_image' )?>">
 			 </div>
+			 <div class="design-border">
+              </div>
 			 <div class="character-text design-text">
 	      	<?php echo CFS()->get ( 'character_text' );?>
 			  </div>
@@ -56,7 +60,9 @@
 		<div class="obstacles-section design-section">
           <div class="obstacles-image design-image">
           <img class="obstacles-image" src="<?php echo CFS()->get ( 'obstacles_image' )?>">
-          </div>
+		  </div>
+		  <div class="design-border">
+</div>
         <div class="obstacles-text design-text">
 		<?php echo CFS()->get ( 'obstacles_text' );?>
 		</div>	
@@ -73,7 +79,8 @@
 		 <div class="important-image design-image">
 	    <img class="important-image" src="<?php echo CFS()->get ( 'important_image' )?>">
 		</div>
-
+		<div class="design-border">
+        </div>
          <div class="important-text design-text">
 		<?php echo CFS()->get ( 'important_text' );?>
 		</div>
