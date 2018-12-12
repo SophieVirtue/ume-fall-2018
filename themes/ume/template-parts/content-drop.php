@@ -38,7 +38,7 @@
         <p class="download">
             <a href="./download?id=<?php the_ID(); ?>"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/download-icon.png"/></a>
         </p>
-        <p class="play">
+        <p class="play-game">
             <a href="<?php echo esc_url( get_the_permalink()); ?>" class="play">
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/images/play-button.png" alt="">
             </a>
