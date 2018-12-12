@@ -48,3 +48,13 @@
 .footer-relative {
     position: relative;
 }
+
+main {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+.main-section-container {
+flex: 1;
+}
