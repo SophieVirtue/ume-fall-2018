@@ -1828,5 +1828,44 @@ img.gem {
 .work-section, .character-section, .obstacles-section, .important-section {
   text-align: center; }
 
-img.work-flow-image, img.character-image, img.obstacles-image, img.important-image {
-  width: 280px; }
+.design-folder {
+  background: url(../../assets/images/set-up-file.png);
+  background-repeat: no-repeat;
+  background-size: 90% 50%;
+  background-position: left top;
+  height: 626px;
+  width: 390px; }
+
+.design-section {
+  color: white;
+  background: rgba(0, 0, 0, 0.6);
+  margin-left: 2rem;
+  margin-right: 2rem; }
+
+.design-title {
+  color: white;
+  width: 112px;
+  font-size: 1rem;
+  font-family: Futura-Bk-Bt;
+  text-transform: uppercase;
+  padding-top: 1.5rem;
+  padding-left: 1rem; }
+
+.design-text {
+  text-align: left;
+  margin-right: 1rem;
+  font-weight: lighter;
+  line-height: 1.5rem; }
+
+.design-image img {
+  width: 271px;
+  padding-top: 1rem; }
+
+.design-image {
+  border-bottom: 3px solid white; }
+
+.work-folder, .obstacles-folder {
+  margin-bottom: 20rem; }
+
+.important-folder {
+  margin-bottom: 10rem; }
