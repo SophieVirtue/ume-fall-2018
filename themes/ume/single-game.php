@@ -21,7 +21,7 @@ get_header(); ?>
     
     </header><!-- .entry-header -->
 		<div class="entry-content game-wrapper">
-	 		<p>Oops!  There is no link for this game...</p>
+	 		<p>We appreciate your patience as the game loads!</p>
      		<iframe class="UnityFrame" scrolling="no" src="<?php $link = CFS()->get('play_game'); echo $link['url']?>" kwframeid="1"></iframe>
 		</div><!-- .entry-content -->
 

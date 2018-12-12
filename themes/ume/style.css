@@ -899,7 +899,7 @@ main {
       .prizes .coin-legend .coin-winnings .coin-amount {
         padding-left: 5px; }
       .prizes .coin-legend .coin-winnings .coin-space {
-        padding-right: 4.75%; }
+        padding-right: 20px; }
         @media (min-width: 600px) {
           .prizes .coin-legend .coin-winnings .coin-space {
             padding-right: 80px; } }
@@ -935,7 +935,7 @@ main {
         width: 600px; } }
     @media (min-width: 1024px) {
       .page-download .site-main {
-        width: 800px; } }
+        width: 80%; } }
   .page-download .footer-relative {
     padding-bottom: 50px; }
   .page-download .wpcf7-form {
@@ -948,7 +948,7 @@ main {
       -webkit-box-pack: justify;
           -ms-flex-pack: justify;
               justify-content: space-between;
-      margin-top: 3rem; }
+      margin-top: 2rem; }
       @media (min-width: 1024px) {
         .page-download .wpcf7-form .parentsName,
         .page-download .wpcf7-form .studentsName {
@@ -962,9 +962,7 @@ main {
       opacity: 0.5;
       text-transform: capitalize; }
   .page-download input[type='email'],
-  .page-download input[type='password'],
-  .page-download input[type='text'],
-  .page-download input[type='url'] {
+  .page-download input[type='text'] {
     color: #fff;
     padding: 15px 10px;
     background: transparent;
@@ -975,14 +973,10 @@ main {
     z-index: 1; }
     @media (min-width: 1024px) {
       .page-download input[type='email'],
-      .page-download input[type='password'],
-      .page-download input[type='text'],
-      .page-download input[type='url'] {
+      .page-download input[type='text'] {
         width: 80%; } }
     .page-download input[type='email']:focus,
-    .page-download input[type='password']:focus,
-    .page-download input[type='text']:focus,
-    .page-download input[type='url']:focus {
+    .page-download input[type='text']:focus {
       outline: 0; }
   .page-download .site-content {
     padding-top: 50px; }
@@ -991,7 +985,7 @@ main {
     font-size: 30px;
     text-transform: uppercase;
     line-height: 53px;
-    padding-top: 3rem;
+    padding-top: 1rem;
     margin: 0; }
     @media (min-width: 1024px) {
       .page-download .entry-title {
@@ -1003,12 +997,13 @@ main {
     font-weight: lighter; }
     @media (min-width: 1024px) {
       .page-download .project-setup {
-        margin-top: 6rem;
+        margin-top: 2rem;
         max-width: 90%; } }
   .page-download .email {
-    margin-top: 6rem;
+    margin-top: 2rem;
     font-family: 'futura-bold';
     font-size: 25px;
+    text-transform: uppercase;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1019,11 +1014,11 @@ main {
     .page-download .email ::-webkit-input-placeholder {
       /* Chrome/Opera/Safari */
       text-transform: lowercase; }
+    .page-download .email label {
+      width: 100%; }
     @media (min-width: 1024px) {
       .page-download .email input {
-        width: 43%; } }
-    .page-download .email input {
-      text-transform: lowercase; }
+        width: 40%; } }
   .page-download .submit {
     margin-top: 6rem;
     margin-bottom: 12rem;
@@ -1688,14 +1683,16 @@ img.gem {
   .game-template-default.single-game .neon-play-game {
     padding-top: 5rem; }
   .game-template-default.single-game .entry-content {
-    padding: 0 0 35rem 0;
+    padding: 0 0 32rem 0;
     position: relative;
     text-align: center; }
   .game-template-default.single-game .game-wrapper {
     margin: 0 auto;
     width: 966px; }
   .game-template-default.single-game p {
-    padding-top: 4rem; }
+    padding-top: 4rem;
+    font-family: 'Futura-Bk-BT', sans-serif;
+    font-size: 20px; }
   .game-template-default.single-game iframe {
     border: none;
     top: -4px;
