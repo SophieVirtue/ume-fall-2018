@@ -4,7 +4,7 @@
         const $popup = $('.widget-area');
         const $carouselArrow = $('.carousel-cell .arrow');
         const $featureArrow = $('.featured-game .arrow');
-        const $share = $('.share');
+        const $share = $('.share a');
         
         // popup toggle
         
@@ -43,17 +43,10 @@
 
         $share.on('click', function(event) {
             event.preventDefault();
-            console.log('whooooo are you');
-            // copyToClipboard();
+            $(this).next('.hidden-copy').focus().select();
+            document.execCommand('copy');
         });
 
-        // function copyToClipboard(element) {
-        //     $("body").append($share);
-        //     $share.val($(element).html()).select();
-        //     document.execCommand("copy");
-        //     console.log('who who who who');
-        //     // $temp.remove();
-        //    }
 
         // flickity
         $('.main-carousel').flickity({
