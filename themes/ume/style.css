@@ -253,6 +253,13 @@ th {
   font-weight: normal;
   font-style: normal; }
 
+@font-face {
+  font-family: 'Futura-Md-BT';
+  src: url("../../assets/fonts/FuturaBT-Medium.eot");
+  src: url("../../assets/fonts/FuturaBT-Medium.eot?#iefix") format("embedded-opentype"), url("../../assets/fonts/FuturaBT-Medium.woff2") format("woff2"), url("../../assets/fonts/FuturaBT-Medium.woff") format("woff"), url("../../assets/fonts/FuturaBT-Medium.ttf") format("truetype"), url("../../assets/fonts/FuturaBT-Medium.svg#FuturaBT-Medium") format("svg");
+  font-weight: 500;
+  font-style: normal; }
+
 /*--------------------------------------------------------------
 # Typography
 --------------------------------------------------------------*/
@@ -653,7 +660,7 @@ main {
     font-family: 'Futura-Bk-BT', sans-serif;
     color: white;
     text-transform: uppercase;
-    padding: 0 19px; }
+    padding: 0 16px; }
     @media (min-width: 1024px) {
       .site-header .main-navigation a {
         font-size: 25px; } }
@@ -714,8 +721,7 @@ main {
           font-size: 18px; } }
   .site-header i.fa-bars {
     color: white;
-    font-size: 25px;
-    padding: 0 16px; }
+    font-size: 25px; }
     @media (min-width: 600px) {
       .site-header i.fa-bars {
         display: none; } }
@@ -790,8 +796,9 @@ main {
     @media (min-width: 600px) {
       .site-header .side-nav {
         display: none; } }
-  .site-header .submit-text {
-    padding-right: 12px; }
+  @media (min-width: 600px) {
+    .site-header .submit-text {
+      padding-right: 12px; } }
 
 .prizes {
   background: url(../../assets/images/grid-lines.png), url(../../assets/images/background.jpg);
@@ -800,6 +807,9 @@ main {
   overflow: hidden;
   background-position: top;
   text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 100%; }
   @media (min-width: 600px) {
     .prizes {
@@ -825,7 +835,8 @@ main {
     color: white;
     font-family: 'Futura-Bk-BT', sans-serif;
     padding-bottom: 45px;
-    margin: 0; }
+    margin: 0;
+    letter-spacing: 1px; }
     @media (min-width: 600px) {
       .prizes h3 {
         font-size: 15px;
@@ -840,7 +851,8 @@ main {
     display: flex;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
-            justify-content: center; }
+            justify-content: center;
+    width: 90%; }
     .prizes .coin-legend .coin-winnings {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -853,7 +865,7 @@ main {
       -webkit-box-pack: center;
           -ms-flex-pack: center;
               justify-content: center;
-      width: 90%;
+      width: 100%;
       background-color: rgba(0, 0, 0, 0.2); }
       @media (min-width: 600px) {
         .prizes .coin-legend .coin-winnings {
@@ -864,6 +876,14 @@ main {
       .prizes .coin-legend .coin-winnings .coin {
         width: 23px;
         height: 23px; }
+        @media (min-width: 600px) {
+          .prizes .coin-legend .coin-winnings .coin {
+            width: 30px;
+            height: 30px; } }
+        @media (min-width: 1024px) {
+          .prizes .coin-legend .coin-winnings .coin {
+            width: 40px;
+            height: 40px; } }
       .prizes .coin-legend .coin-winnings p {
         font-size: 15px;
         color: white;
@@ -879,24 +899,21 @@ main {
       .prizes .coin-legend .coin-winnings .coin-amount {
         padding-left: 5px; }
       .prizes .coin-legend .coin-winnings .coin-space {
-        padding-right: 4.75%; }
+        padding-right: 20px; }
         @media (min-width: 600px) {
           .prizes .coin-legend .coin-winnings .coin-space {
             padding-right: 80px; } }
   .prizes .prize-path {
-    width: 90%;
+    width: 100%;
     height: auto;
-    padding-top: 25px;
-    padding-bottom: 100px; }
+    padding-bottom: 90px; }
     @media (min-width: 600px) {
       .prizes .prize-path {
-        width: 85%;
-        padding-top: 95px;
-        padding-bottom: 130px; } }
+        width: 95%;
+        padding-bottom: 90px; } }
     @media (min-width: 1024px) {
       .prizes .prize-path {
-        width: 90%;
-        padding-top: 270px;
+        padding-top: 100px;
         padding-bottom: 130px; } }
 
 .page-download {
@@ -918,7 +935,7 @@ main {
         width: 600px; } }
     @media (min-width: 1024px) {
       .page-download .site-main {
-        width: 800px; } }
+        width: 80%; } }
   .page-download .footer-relative {
     padding-bottom: 50px; }
   .page-download .wpcf7-form {
@@ -931,7 +948,7 @@ main {
       -webkit-box-pack: justify;
           -ms-flex-pack: justify;
               justify-content: space-between;
-      margin-top: 3rem; }
+      margin-top: 2rem; }
       @media (min-width: 1024px) {
         .page-download .wpcf7-form .parentsName,
         .page-download .wpcf7-form .studentsName {
@@ -945,9 +962,7 @@ main {
       opacity: 0.5;
       text-transform: capitalize; }
   .page-download input[type='email'],
-  .page-download input[type='password'],
-  .page-download input[type='text'],
-  .page-download input[type='url'] {
+  .page-download input[type='text'] {
     color: #fff;
     padding: 15px 10px;
     background: transparent;
@@ -958,14 +973,10 @@ main {
     z-index: 1; }
     @media (min-width: 1024px) {
       .page-download input[type='email'],
-      .page-download input[type='password'],
-      .page-download input[type='text'],
-      .page-download input[type='url'] {
+      .page-download input[type='text'] {
         width: 80%; } }
     .page-download input[type='email']:focus,
-    .page-download input[type='password']:focus,
-    .page-download input[type='text']:focus,
-    .page-download input[type='url']:focus {
+    .page-download input[type='text']:focus {
       outline: 0; }
   .page-download .site-content {
     padding-top: 50px; }
@@ -974,7 +985,7 @@ main {
     font-size: 30px;
     text-transform: uppercase;
     line-height: 53px;
-    padding-top: 3rem;
+    padding-top: 1rem;
     margin: 0; }
     @media (min-width: 1024px) {
       .page-download .entry-title {
@@ -986,12 +997,13 @@ main {
     font-weight: lighter; }
     @media (min-width: 1024px) {
       .page-download .project-setup {
-        margin-top: 6rem;
+        margin-top: 2rem;
         max-width: 90%; } }
   .page-download .email {
-    margin-top: 6rem;
+    margin-top: 2rem;
     font-family: 'futura-bold';
     font-size: 25px;
+    text-transform: uppercase;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1002,11 +1014,11 @@ main {
     .page-download .email ::-webkit-input-placeholder {
       /* Chrome/Opera/Safari */
       text-transform: lowercase; }
+    .page-download .email label {
+      width: 100%; }
     @media (min-width: 1024px) {
       .page-download .email input {
-        width: 43%; } }
-    .page-download .email input {
-      text-transform: lowercase; }
+        width: 40%; } }
   .page-download .submit {
     margin-top: 6rem;
     margin-bottom: 12rem;
@@ -1067,14 +1079,14 @@ main {
     -ms-flex-pack: distribute;
         justify-content: space-around;
     height: 100%;
-    background: url(../../assets/images/GameCardMobile.png) no-repeat;
+    background: url(../../assets/images/game-card-mobile.png) no-repeat;
     background-size: cover; }
     @media (min-width: 600px) {
       .carousel-cell .content {
-        background: url(../../assets/images/GameCardTablet.png) no-repeat; } }
+        background: url(../../assets/images/game-card-tablet.png) no-repeat; } }
     @media (min-width: 1024px) {
       .carousel-cell .content {
-        background: url(../../assets/images/GameCardDesktop.png) no-repeat; } }
+        background: url(../../assets/images/game-card-desktop.png) no-repeat; } }
   .carousel-cell h3 {
     font-size: 14px; }
     @media (min-width: 600px) {
@@ -1133,14 +1145,6 @@ main {
 
 .game-background {
   color: #fff; }
-
-.drop-down {
-  color: gold;
-  display: none;
-  position: absolute;
-  z-index: 1000;
-  background: rgba(0, 0, 0, 0.8);
-  width: 100%; }
 
 .banner .upper-row {
   display: -webkit-box;
@@ -1218,42 +1222,6 @@ main {
   @media (min-width: 1024px) {
     .white-rainbow img {
       padding-top: 40%; } }
-
-img.gem {
-  width: 50px; }
-
-.rainbow-game-container {
-  position: relative; }
-  .rainbow-game-container .game-background {
-    position: absolute;
-    top: 50%;
-    width: 100%; }
-    .rainbow-game-container .game-background .featured-game-section {
-      width: 100%; }
-      .rainbow-game-container .game-background .featured-game-section .featured-games {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-pack: space-evenly;
-            -ms-flex-pack: space-evenly;
-                justify-content: space-evenly;
-        position: relative; }
-        .rainbow-game-container .game-background .featured-game-section .featured-games .featured-game:first-child {
-          -webkit-transform: rotate(-25deg);
-                  transform: rotate(-25deg);
-          position: absolute;
-          left: 20%; }
-        .rainbow-game-container .game-background .featured-game-section .featured-games .featured-game:nth-child(2) {
-          position: absolute;
-          top: 10%; }
-        .rainbow-game-container .game-background .featured-game-section .featured-games .featured-game:last-child {
-          -webkit-transform: rotate(25deg);
-                  transform: rotate(25deg);
-          position: absolute;
-          right: 20%; }
-
-.-category:last-of-type .drop-down {
-  position: static; }
 
 .widget-area {
   display: none;
@@ -1671,14 +1639,16 @@ img.gem {
   .game-template-default.single-game .neon-play-game {
     padding-top: 5rem; }
   .game-template-default.single-game .entry-content {
-    padding: 0 0 35rem 0;
+    padding: 0 0 32rem 0;
     position: relative;
     text-align: center; }
   .game-template-default.single-game .game-wrapper {
     margin: 0 auto;
     width: 966px; }
   .game-template-default.single-game p {
-    padding-top: 4rem; }
+    padding-top: 4rem;
+    font-family: 'Futura-Bk-BT', sans-serif;
+    font-size: 20px; }
   .game-template-default.single-game iframe {
     border: none;
     top: -4px;
@@ -1737,7 +1707,7 @@ img.gem {
         padding-bottom: 10rem; } }
     .search .search-results-container .search-game .type-game,
     .search-results .search-results-container .search-game .type-game {
-      background: url(../../assets/images/GameCardDesktop.png) no-repeat;
+      background: url(../../assets/images/game-card-desktop.png) no-repeat;
       background-size: cover;
       background-position: top;
       text-align: center;
@@ -1811,3 +1781,152 @@ img.gem {
 
 .search-no-results form {
   display: none; }
+
+.single-design .site-main {
+  background: url(../../assets/images/background.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: top; }
+
+.work-section, .character-section, .obstacles-section, .important-section {
+  text-align: center; }
+
+<<<<<<< HEAD
+.design-folder {
+  background: url(../../assets/images/set-up-file.png);
+  background-repeat: no-repeat;
+  background-size: 90% 50%;
+  background-position: left top;
+  height: 626px;
+  width: 390px; }
+
+.design-section {
+  color: white;
+  background: rgba(0, 0, 0, 0.6);
+  margin-left: 2rem;
+  margin-right: 2rem; }
+
+.design-title {
+  color: white;
+  width: 112px;
+  font-size: 1rem;
+  font-family: Futura-Bk-Bt;
+  text-transform: uppercase;
+  padding-top: 1.5rem;
+  padding-left: 1rem; }
+
+.design-text {
+  text-align: left;
+  margin-right: 1rem;
+  font-weight: lighter;
+  line-height: 1.5rem; }
+
+.design-image img {
+  width: 271px;
+  padding-top: 1rem; }
+
+.design-image {
+  border-bottom: 3px solid white; }
+
+.work-folder, .obstacles-folder {
+  margin-bottom: 20rem; }
+
+.important-folder {
+  margin-bottom: 10rem; }
+=======
+img.work-flow-image, img.character-image, img.obstacles-image, img.important-image {
+  width: 280px; }
+
+.drop-down {
+  display: none;
+  position: absolute;
+  z-index: 1000;
+  background: url(../../assets/images/drop-down.png) no-repeat, rgba(0, 0, 0, 0.8);
+  background-size: cover;
+  width: 100%; }
+  .drop-down img {
+    width: 100%; }
+  .drop-down .game-dropdown {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    display: grid;
+    grid-template-areas: "title prizes" "img img" "img img" "img img" "meta program" "coins coins" "buttons design";
+    color: white;
+    padding: 10px; }
+    .drop-down .game-dropdown .buttons {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: end;
+          -ms-flex-align: end;
+              align-items: flex-end; }
+      .drop-down .game-dropdown .buttons img {
+        width: 20px; }
+
+.-category:last-of-type .drop-down {
+  position: static; }
+
+.title {
+  grid-area: title; }
+
+.meta {
+  grid-area: meta; }
+
+.program {
+  grid-area: program; }
+
+.design {
+  grid-area: design; }
+
+.coins {
+  grid-area: coins; }
+
+.buttons {
+  grid-area: buttons; }
+  .buttons .play-game,
+  .buttons .download {
+    display: none; }
+    @media (min-width: 1024px) {
+      .buttons .play-game,
+      .buttons .download {
+        display: block; } }
+
+.thumbnail {
+  grid-area: img; }
+
+.gem {
+  grid-area: prizes; }
+
+img.gem {
+  width: 50px; }
+
+.rainbow-game-container {
+  position: relative; }
+  .rainbow-game-container .game-background {
+    position: absolute;
+    top: 50%;
+    width: 100%; }
+    .rainbow-game-container .game-background .featured-game-section {
+      width: 100%; }
+      .rainbow-game-container .game-background .featured-game-section .featured-games {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: space-evenly;
+            -ms-flex-pack: space-evenly;
+                justify-content: space-evenly;
+        position: relative; }
+        .rainbow-game-container .game-background .featured-game-section .featured-games .featured-game:first-child {
+          -webkit-transform: rotate(-25deg);
+                  transform: rotate(-25deg);
+          position: absolute;
+          left: 20%; }
+        .rainbow-game-container .game-background .featured-game-section .featured-games .featured-game:nth-child(2) {
+          position: absolute;
+          top: 10%; }
+        .rainbow-game-container .game-background .featured-game-section .featured-games .featured-game:last-child {
+          -webkit-transform: rotate(25deg);
+                  transform: rotate(25deg);
+          position: absolute;
+          right: 20%; }
+>>>>>>> 813efd20fa10984085e3ef8e8329f4f9216702a8

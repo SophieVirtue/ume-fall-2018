@@ -72,7 +72,7 @@
         font-family: 'Futura-Bk-BT', sans-serif;
         color: white;
         text-transform: uppercase;
-        padding: 0 19px;
+        padding: 0 16px;
         @include desktop {
             font-size: 25px;
         }
@@ -121,7 +121,6 @@
     i.fa-bars {
         color: white;
         font-size: 25px;
-        padding: 0 16px;
         @include tablet {
             display: none;
         }
@@ -195,7 +194,9 @@
             display: none;
         }
     }
-    .submit-text {
-        padding-right: 12px;
+    @include tablet {
+        .submit-text {
+            padding-right: 12px;
+        }
     }
 }
