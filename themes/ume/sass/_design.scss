@@ -1,0 +1,15 @@
+.single-design .site-main{
+    background:  url(../../assets/images/background.jpg); 
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: top; 
+}
+
+.work-section, .character-section, .obstacles-section, .important-section{
+    text-align: center;
+}
+
+img.work-flow-image, img.character-image, img.obstacles-image, img.important-image{
+    width: 280px;
+}
+
