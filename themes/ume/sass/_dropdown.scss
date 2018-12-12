@@ -1,0 +1,20 @@
+.drop-down {
+    color: gold;
+    display: none;
+    position: absolute;
+    z-index: 1000;
+    background: rgba(0, 0, 0, 0.8);
+    width: 100%;
+  }
+
+  .-category:last-of-type{
+    .drop-down {
+        position: static;
+    }
+}
+
+  //Styling for Gems
+
+img.gem {
+    width: 50px;
+  }

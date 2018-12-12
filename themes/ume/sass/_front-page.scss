@@ -108,15 +108,6 @@
   color: $color__main-text;
 }
 
-.drop-down {
-  color: gold;
-  display: none;
-  position: absolute;
-  z-index: 1000;
-  background: rgba(0, 0, 0, 0.8);
-  width: 100%;
-}
-
 .banner .upper-row {
   display: flex;
   justify-content: center;
@@ -201,51 +192,4 @@
       padding-top: 40%;
     }
   }
-}
-
-//Styling for Gems
-
-img.gem {
-  width: 50px;
-}
-
-//3 Featured games slanted infront of the the rainbow
-
-.rainbow-game-container {
-  position: relative;
-  .game-background {
-    position: absolute;
-    top: 50%;
-    width: 100%;
-    .featured-game-section {
-      width: 100%;
-      .featured-games {
-        display: flex;
-        justify-content: space-evenly;
-        position: relative;
-        .featured-game {
-          &:first-child {
-            transform: rotate(-25deg);
-            position: absolute;
-            left: 20%;
-          }
-          &:nth-child(2) {
-            position: absolute;
-            top: 10%;
-          }
-          &:last-child {
-            transform: rotate(25deg);
-            position: absolute;
-            right: 20%;
-          }
-        }
-      }
-    }
-  }
-}
-
-.-category:last-of-type{
-    .drop-down {
-        position: static;
-    }
 }
