@@ -3,8 +3,9 @@
    <div class="title">    
    <h3>
    
-   <?php the_title( printf( '<a href="%s" rel="bookmark" class="play">', esc_url( get_permalink() ) )); ?> </a>
-
+    <a href="<?php echo esc_url( get_the_permalink()); ?>" class="play">
+        <?php echo get_the_title(); ?>
+    </a>
    </h3>
    </div>
 
@@ -44,8 +45,10 @@
     </div>
     
     <div class="thumbnail">
-        <?php the_post_thumbnail( 'thumbnail', printf( '<a href="%s" rel="bookmark" class="play">', esc_url( get_permalink() ) )); ?></a>
-    </div>
+    <a href="<?php echo esc_url( get_the_permalink()); ?>" class="play">
+        <?php the_post_thumbnail( 'thumbnail');?>
+    </a>
+   </div>
     
     <div class="gems">
         <h4>Prizes Earned <?php $gems =  ume_get_icons ( CFS()->get ( 'game_coins' ))?>
