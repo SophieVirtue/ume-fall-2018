@@ -1609,11 +1609,24 @@ img.gem {
   .game-template-default.single-game .site-content {
     text-align: center; }
   .game-template-default.single-game .neon-play-game {
-    padding-top: 8rem; }
-  .game-template-default.single-game .play-game-container {
-    margin: 3rem 0; }
+    padding-top: 5rem; }
   .game-template-default.single-game .entry-content {
-    padding: 3rem 0 10rem 0; }
+    padding: 0 0 35rem 0;
+    position: relative;
+    text-align: center; }
+  .game-template-default.single-game .game-wrapper {
+    margin: 0 auto;
+    width: 966px; }
+  .game-template-default.single-game p {
+    padding-top: 4rem; }
+  .game-template-default.single-game iframe {
+    border: none;
+    top: -4px;
+    left: -4px;
+    width: 966px;
+    height: 480px;
+    position: absolute;
+    margin: 0 auto; }
 
 .search,
 .search-results {
