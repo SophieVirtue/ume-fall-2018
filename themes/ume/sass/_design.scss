@@ -36,10 +36,11 @@
 }
 .design-folder{ 
     background-repeat: no-repeat;
-    background-size: 90% 50%;
+    background-size: 90% 300px;
     background-position: left top;
-    height: 626px;
+    height: auto;
     width: auto;
+    margin-bottom: 5rem;
 }
 
 
@@ -49,6 +50,10 @@
     background: rgba(0,0,0,0.6);
     margin-left: 2rem;
     margin-right: 2rem;
+    @include tablet{
+        display: flex;
+    }
+    
 }
 	
 
@@ -61,19 +66,36 @@
     text-transform: uppercase;
     padding-top: 1.5rem;
     padding-left: 1rem;
+    @include tablet{
+    font-size: 1.1rem;
+    padding-left: 2rem;
+    width: 150px;
+
+    }
 }
 
 .design-text{
     text-align: left;
     margin-right: 1rem;
-    font-weight: lighter;
-    line-height: 1.5rem;
+    line-height: 1.25rem;
+    @include tablet{
+    margin-left: 1rem;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+    }
 }
 
 .design-image img{
     width: 271px;
     height: 190px;
     padding-top: 1rem;
+    @include tablet{
+    padding-bottom: 2rem;
+    padding-right: 1rem;
+    height: 100%;
+    padding-top: 3rem;
+
+    }
 }
 
 .character-image img{
@@ -84,8 +106,18 @@
     height: 220px;
 }
 
+
 .work-image img{
     height: 210px;
+    @include tablet{
+        height: 350px;
+    }
+}
+
+.obstacles-image img{
+    @include tablet{
+        height: 400px;
+    }
 }
 
 .design-border{
@@ -95,16 +127,29 @@
     margin-right: 6rem;
 }
 
-
-
-//Separate Sections
-.work-folder, .obstacles-folder{
-    margin-bottom: 20rem;
+//Mobile and Tablet Flex
+.design-image {
+    @include tablet{
+        order: 3;
+    }
 }
 
-.important-folder{
-    margin-bottom: 10rem;
+.design-border {
+    @include tablet{
+    order: 2;
+    border-right: 1px solid #fff;
+    margin-top: 7rem;
+    margin-bottom: 7rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    }
 }
+
+
+
+
+
+
 
 
 
