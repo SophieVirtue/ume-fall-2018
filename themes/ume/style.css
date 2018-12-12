@@ -1151,14 +1151,6 @@ main {
 .game-background {
   color: #fff; }
 
-.drop-down {
-  color: gold;
-  display: none;
-  position: absolute;
-  z-index: 1000;
-  background: rgba(0, 0, 0, 0.8);
-  width: 100%; }
-
 .banner .upper-row {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1235,42 +1227,6 @@ main {
   @media (min-width: 1024px) {
     .white-rainbow img {
       padding-top: 40%; } }
-
-img.gem {
-  width: 50px; }
-
-.rainbow-game-container {
-  position: relative; }
-  .rainbow-game-container .game-background {
-    position: absolute;
-    top: 50%;
-    width: 100%; }
-    .rainbow-game-container .game-background .featured-game-section {
-      width: 100%; }
-      .rainbow-game-container .game-background .featured-game-section .featured-games {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-pack: space-evenly;
-            -ms-flex-pack: space-evenly;
-                justify-content: space-evenly;
-        position: relative; }
-        .rainbow-game-container .game-background .featured-game-section .featured-games .featured-game:first-child {
-          -webkit-transform: rotate(-25deg);
-                  transform: rotate(-25deg);
-          position: absolute;
-          left: 20%; }
-        .rainbow-game-container .game-background .featured-game-section .featured-games .featured-game:nth-child(2) {
-          position: absolute;
-          top: 10%; }
-        .rainbow-game-container .game-background .featured-game-section .featured-games .featured-game:last-child {
-          -webkit-transform: rotate(25deg);
-                  transform: rotate(25deg);
-          position: absolute;
-          right: 20%; }
-
-.-category:last-of-type .drop-down {
-  position: static; }
 
 .widget-area {
   display: none;
@@ -1840,3 +1796,96 @@ img.gem {
 
 img.work-flow-image, img.character-image, img.obstacles-image, img.important-image {
   width: 280px; }
+
+.drop-down {
+  display: none;
+  position: absolute;
+  z-index: 1000;
+  background: url(../../assets/images/drop-down.png) no-repeat, rgba(0, 0, 0, 0.8);
+  background-size: cover;
+  width: 100%; }
+  .drop-down img {
+    width: 100%; }
+  .drop-down .game-dropdown {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    display: grid;
+    grid-template-areas: "title prizes" "img img" "img img" "img img" "meta program" "coins coins" "buttons design";
+    color: white;
+    padding: 10px; }
+    .drop-down .game-dropdown .buttons {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: end;
+          -ms-flex-align: end;
+              align-items: flex-end; }
+      .drop-down .game-dropdown .buttons img {
+        width: 20px; }
+
+.-category:last-of-type .drop-down {
+  position: static; }
+
+.title {
+  grid-area: title; }
+
+.meta {
+  grid-area: meta; }
+
+.program {
+  grid-area: program; }
+
+.design {
+  grid-area: design; }
+
+.coins {
+  grid-area: coins; }
+
+.buttons {
+  grid-area: buttons; }
+  .buttons .play-game,
+  .buttons .download {
+    display: none; }
+    @media (min-width: 1024px) {
+      .buttons .play-game,
+      .buttons .download {
+        display: block; } }
+
+.thumbnail {
+  grid-area: img; }
+
+.gem {
+  grid-area: prizes; }
+
+img.gem {
+  width: 50px; }
+
+.rainbow-game-container {
+  position: relative; }
+  .rainbow-game-container .game-background {
+    position: absolute;
+    top: 50%;
+    width: 100%; }
+    .rainbow-game-container .game-background .featured-game-section {
+      width: 100%; }
+      .rainbow-game-container .game-background .featured-game-section .featured-games {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: space-evenly;
+            -ms-flex-pack: space-evenly;
+                justify-content: space-evenly;
+        position: relative; }
+        .rainbow-game-container .game-background .featured-game-section .featured-games .featured-game:first-child {
+          -webkit-transform: rotate(-25deg);
+                  transform: rotate(-25deg);
+          position: absolute;
+          left: 20%; }
+        .rainbow-game-container .game-background .featured-game-section .featured-games .featured-game:nth-child(2) {
+          position: absolute;
+          top: 10%; }
+        .rainbow-game-container .game-background .featured-game-section .featured-games .featured-game:last-child {
+          -webkit-transform: rotate(25deg);
+                  transform: rotate(25deg);
+          position: absolute;
+          right: 20%; }

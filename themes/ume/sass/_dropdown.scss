@@ -1,17 +1,75 @@
 .drop-down {
-    color: gold;
     display: none;
     position: absolute;
     z-index: 1000;
-    background: rgba(0, 0, 0, 0.8);
+    background: url(../../assets/images/drop-down.png) no-repeat, rgba(0, 0, 0, 0.8);
+    background-size: cover;
     width: 100%;
+    img {
+        width: 100%;
+    }
+    .game-dropdown {
+        flex-wrap: wrap;
+        display: grid;
+        grid-template-areas:
+        "title prizes"
+        "img img"
+        "img img"
+        "img img"
+        "meta program"
+        "coins coins"
+        "buttons design";
+        color: white;
+        padding: 10px;
+        .buttons {
+        display: flex;
+        align-items: flex-end;
+        img {
+            width: 20px;
+        }
+        }
+    }
   }
 
   .-category:last-of-type{
     .drop-down {
         position: static;
     }
+    
 }
+
+// grid template areas
+    .title {
+        grid-area: title;
+    }
+    .meta {
+        grid-area: meta;
+    }
+    .program {
+        grid-area: program;
+    }
+    .design {
+        grid-area: design;
+    }
+    .coins {
+        grid-area: coins;
+    }
+    .buttons {
+        grid-area: buttons;
+        .play-game, 
+        .download {
+            display:none;
+            @include desktop {
+                display: block;
+            }
+        }
+    }
+    .thumbnail {
+        grid-area: img;
+    }
+    .gem {
+        grid-area: prizes;
+    }
 
   //Styling for Gems
 
