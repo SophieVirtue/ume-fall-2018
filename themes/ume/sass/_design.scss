@@ -10,29 +10,49 @@
     text-align: center;
 }
 
-.single-design .entry-header a{
+.single-design .entry-header{
+    @include desktop{
+    padding-left: 5rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    }
+
+
+a{
     color: #fff;
     text-decoration: none;
     font-family: Futura-Bk-Bt;
     text-transform: uppercase;
     padding-left: 1rem;
 }
-
+}
 
 
 
 //Draft Code
 .work-folder{
     background: url(../../assets/images/set-up-file.png);
+    @include desktop{
+    background: url(../../assets/images/set-up-file.png),url(../../assets/images/ambient-squares.png);
+}
 }
 .character-folder{
     background: url(../../assets/images/character-file.png);
+    @include desktop{
+        background: url(../../assets/images/character-file.png),url(../../assets/images/ambient-squares.png);
+    }
 }
 .obstacles-folder{
     background: url(../../assets/images/cutest-pet-file.png);
+    @include desktop{
+        background: url(../../assets/images/cutest-pet-file.png),url(../../assets/images/ambient-squares.png);
+    }
 }
 .important-folder{
     background: url(../../assets/images/agriculture-file.png);
+    @include desktop{
+        background: url(../../assets/images/agriculture-file.png),url(../../assets/images/ambient-squares.png);
+    }
 }
 .design-folder{ 
     background-repeat: no-repeat;
@@ -41,6 +61,10 @@
     height: auto;
     width: auto;
     margin-bottom: 5rem;
+    @include desktop{
+    background-size: 87% 300px, 100% 350px;
+    background-position: center top;
+    }
 }
 
 
@@ -53,10 +77,13 @@
     @include tablet{
         display: flex;
     }
+    @include desktop{
+    justify-content: center;
+    margin-left: 10rem;
+    margin-right: 4rem;
+    }
     
 }
-	
-
 
 .design-title{
     color: #fff;
@@ -65,11 +92,17 @@
     font-family: Futura-Bk-Bt;
     text-transform: uppercase;
     padding-top: 1.5rem;
-    padding-left: 1rem;
+    padding-left: 1.5rem;
     @include tablet{
     font-size: 1.1rem;
     padding-left: 2rem;
     width: 150px;
+    @include desktop{
+    font-size: 1.1rem;
+    padding-left: 9rem;
+    width: 300px;
+
+    }
 
     }
 }
@@ -138,8 +171,8 @@
     @include tablet{
     order: 2;
     border-right: 1px solid #fff;
-    margin-top: 7rem;
-    margin-bottom: 7rem;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
     margin-left: 1rem;
     margin-right: 1rem;
     }

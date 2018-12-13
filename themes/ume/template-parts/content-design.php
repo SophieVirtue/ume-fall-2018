@@ -51,7 +51,9 @@
 </div>
 
    
+
    <div class="obstacles-folder design-folder">
+
    <h3 class="obstacles-title design-title">
 	   <?php
         $props = CFS()->get_field_info( 'obstacles_text' );
