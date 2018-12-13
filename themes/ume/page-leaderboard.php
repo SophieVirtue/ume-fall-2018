@@ -85,7 +85,7 @@ get_header(); ?>
             </h3>
                </div>
                <div class="leader-name">
-	            <h4> By: <?php echo CFS()->get ( 'game_author' ); ?> </h4>
+	            <h4 class="leader-name-top-7"> By: <?php echo CFS()->get ( 'game_author' ); ?> </h4>
                </div>
                <div class="leader-coins">
                <h4 class="leader-prizes">  <?php echo ume_get_prizes( CFS()->get ( 'game_coins' )).'/12 prizes achieved'; ?> </h4>
@@ -96,7 +96,7 @@ get_header(); ?>
                </div>
                </div>
 
-              <h4> <img class="coin" src="<?php echo get_template_directory_uri();?>/assets/images/coin.png" alt="coin"/><?php echo CFS()->get ( 'game_coins' ); ?> </h4>
+              <h4 class="coin-amount-top-7"> <img class="coin" src="<?php echo get_template_directory_uri();?>/assets/images/coin.png" alt="coin"/><?php echo CFS()->get ( 'game_coins' ); ?> </h4>
             </div>
          </div>      
               
