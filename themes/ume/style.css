@@ -684,7 +684,9 @@ main {
     width: 110px;
     height: 14px;
     border-width: 2px;
-    border-color: white; }
+    border-color: white;
+    color: white;
+    font-family: 'Futura-Bk-BT', sans-serif; }
     @media (min-width: 600px) {
       .site-header input.search-field {
         height: 22px;
@@ -1645,7 +1647,7 @@ main {
   .game-template-default.single-game .game-wrapper {
     margin: 0 auto;
     width: 966px; }
-  .game-template-default.single-game p {
+  .game-template-default.single-game .loading-message {
     padding-top: 4rem;
     font-family: 'Futura-Bk-BT', sans-serif;
     font-size: 20px; }
@@ -1666,65 +1668,67 @@ main {
   .search .site-main,
   .search-results .site-main {
     padding-top: 5rem;
-    width: 300px;
+    padding-bottom: 5rem;
+    width: 331px;
     margin-left: auto;
     margin-right: auto; }
     @media (min-width: 600px) {
       .search .site-main,
       .search-results .site-main {
-        width: 750px; } }
+        width: 550px; } }
     @media (min-width: 1024px) {
       .search .site-main,
       .search-results .site-main {
-        width: 1000px; } }
+        width: 1128px; } }
   .search .search-results-container,
   .search-results .search-results-container {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    padding-bottom: 3rem;
-    height: 100vh; }
-    @media (min-width: 600px) {
-      .search .search-results-container,
-      .search-results .search-results-container {
-        -webkit-box-orient: horizontal;
-        -webkit-box-direction: normal;
-            -ms-flex-direction: row;
-                flex-direction: row;
-        -ms-flex-wrap: wrap;
-            flex-wrap: wrap;
-        -webkit-box-pack: justify;
-            -ms-flex-pack: justify;
-                justify-content: space-between;
-        padding-bottom: 6rem; } }
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding-bottom: 3rem; }
     @media (min-width: 1024px) {
       .search .search-results-container,
       .search-results .search-results-container {
-        padding-bottom: 10rem; } }
+        -webkit-box-pack: left;
+            -ms-flex-pack: left;
+                justify-content: left; } }
+    @media (min-width: 1024px) {
+      .search .search-results-container .search-game,
+      .search-results .search-results-container .search-game {
+        padding-right: 28px; } }
     .search .search-results-container .search-game .type-game,
     .search-results .search-results-container .search-game .type-game {
       background: url(../../assets/images/game-card-desktop.png) no-repeat;
       background-size: cover;
       background-position: top;
       text-align: center;
-      height: 450px; }
+      margin: 0 auto;
+      height: 232px;
+      width: 156px; }
       @media (min-width: 600px) {
         .search .search-results-container .search-game .type-game,
         .search-results .search-results-container .search-game .type-game {
-          width: 235px;
-          height: auto; } }
-      @media (min-width: 1024px) {
-        .search .search-results-container .search-game .type-game,
-        .search-results .search-results-container .search-game .type-game {
-          width: 235px;
-          height: auto; } }
+          width: 254px;
+          height: 376.95px; } }
       .search .search-results-container .search-game .type-game .entry-title,
       .search-results .search-results-container .search-game .type-game .entry-title {
-        padding: 3rem 0 0 0; }
+        font-size: 14px;
+        padding-top: 1rem; }
+        @media (min-width: 600px) {
+          .search .search-results-container .search-game .type-game .entry-title,
+          .search-results .search-results-container .search-game .type-game .entry-title {
+            font-size: 18px;
+            padding-top: 2rem;
+            padding-bottom: 0.5rem; } }
         .search .search-results-container .search-game .type-game .entry-title a,
         .search-results .search-results-container .search-game .type-game .entry-title a {
           text-decoration: none;
@@ -1732,24 +1736,34 @@ main {
           color: white; }
       .search .search-results-container .search-game .type-game .thumbnail-image img,
       .search-results .search-results-container .search-game .type-game .thumbnail-image img {
-        width: 220px;
+        width: 125px;
         height: auto; }
         @media (min-width: 600px) {
           .search .search-results-container .search-game .type-game .thumbnail-image img,
           .search-results .search-results-container .search-game .type-game .thumbnail-image img {
-            width: 150px;
+            width: 224px;
             height: auto; } }
       .search .search-results-container .search-game .type-game .author h4,
       .search-results .search-results-container .search-game .type-game .author h4 {
-        margin: 1rem 0 1.5rem 0;
-        font-family: 'Futura-Bk-BT'; }
+        margin-bottom: 1rem;
+        font-family: 'Futura-Bk-BT';
+        font-size: 12px;
+        margin-top: 0; }
+        @media (min-width: 600px) {
+          .search .search-results-container .search-game .type-game .author h4,
+          .search-results .search-results-container .search-game .type-game .author h4 {
+            font-size: 15px; } }
     .search .search-results-container .search-game .arrow,
     .search-results .search-results-container .search-game .arrow {
       margin: 0 auto; }
       .search .search-results-container .search-game .arrow img,
       .search-results .search-results-container .search-game .arrow img {
-        width: 30px;
+        width: 20px;
         height: auto; }
+        @media (min-width: 600px) {
+          .search .search-results-container .search-game .arrow img,
+          .search-results .search-results-container .search-game .arrow img {
+            width: 35px; } }
       @media (min-width: 600px) {
         .search .search-results-container .search-game .arrow,
         .search-results .search-results-container .search-game .arrow {
@@ -1762,11 +1776,20 @@ main {
     @media (min-width: 600px) {
       .search .search-results-header,
       .search-results .search-results-header {
-        text-align: left; } }
+        text-align: left;
+        margin-bottom: 0; } }
+    @media (min-width: 1024px) {
+      .search .search-results-header,
+      .search-results .search-results-header {
+        margin-top: 2rem; } }
   .search .page-title,
   .search-results .page-title {
     text-align: center;
     font-size: 14px; }
+    @media (min-width: 1024px) {
+      .search .page-title,
+      .search-results .page-title {
+        padding-bottom: 1rem; } }
     .search .page-title span,
     .search-results .page-title span {
       background: #17447F;
@@ -1791,12 +1814,17 @@ main {
 .work-section, .character-section, .obstacles-section, .important-section {
   text-align: center; }
 
+<<<<<<< HEAD
 @media (min-width: 1024px) {
   .single-design .entry-header {
     padding-left: 5rem;
     padding-top: 3rem;
     padding-bottom: 3rem; } }
 
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> ed4f89fe4bb1e5fe57f9e8fd0b5be1d9dd2e3931
 .single-design .entry-header a {
   color: #fff;
   text-decoration: none;
@@ -1828,6 +1856,7 @@ main {
     .important-folder {
       background: url(../../assets/images/agriculture-file.png), url(../../assets/images/ambient-squares.png); } }
 
+>>>>>>> 9ebf415bfeb50f4176c6098eb9af3861bbbbebe3
 .design-folder {
   background-repeat: no-repeat;
   background-size: 90% 300px;
@@ -1904,6 +1933,15 @@ main {
 .important-image img {
   height: 220px; }
 
+<<<<<<< HEAD
+<<<<<<< HEAD
+.important-folder {
+  margin-bottom: 10rem; }
+=======
+=======
+.important-folder {
+  margin-bottom: 10rem; }
+>>>>>>> 8d13e5bc9381608de6b4f0cb14675c32cc387de3
 .work-image img {
   height: 210px; }
   @media (min-width: 600px) {
@@ -1936,6 +1974,7 @@ main {
     margin-bottom: 4rem;
     margin-left: 1rem;
     margin-right: 1rem; } }
+>>>>>>> 9ebf415bfeb50f4176c6098eb9af3861bbbbebe3
 
 .drop-down {
   display: none;
@@ -1952,7 +1991,10 @@ main {
     display: grid;
     grid-template-areas: "title prizes" "img img" "img img" "img img" "meta program" "coins coins" "buttons design";
     color: white;
-    padding: 10px; }
+    height: 453px;
+    padding: 10px 30px;
+    font-size: 14px;
+    text-transform: uppercase; }
     .drop-down .game-dropdown .buttons {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -1962,43 +2004,118 @@ main {
               align-items: flex-end; }
       .drop-down .game-dropdown .buttons img {
         width: 20px; }
+    .drop-down .game-dropdown h4 {
+      margin: 0; }
+  .drop-down .title {
+    grid-area: title;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    max-width: 160px; }
+    .drop-down .title h3 {
+      font-size: 20px;
+      display: inline-block;
+      margin: 0; }
+      .drop-down .title h3 a {
+        color: white;
+        text-decoration: none; }
+  .drop-down .meta {
+    grid-area: meta; }
+  .drop-down .program {
+    text-align: end;
+    grid-area: program; }
+    .drop-down .program a {
+      color: #78F7FA; }
+  .drop-down .design {
+    grid-area: design;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    text-align: center; }
+    .drop-down .design a {
+      background: -webkit-gradient(linear, left top, left bottom, from(#f5d672), to(#e77839));
+      background: linear-gradient(180deg, #f5d672, #e77839);
+      padding: 10px;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      font-size: 11px; }
+  .drop-down .coins {
+    grid-area: coins; }
+    .drop-down .coins h4 {
+      margin: 0;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center; }
+      .drop-down .coins h4 img {
+        width: 20px; }
+  .drop-down .buttons {
+    grid-area: buttons;
+    height: 40px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 50%; }
+    .drop-down .buttons p {
+      margin: 0; }
+    .drop-down .buttons .play-game,
+    .drop-down .buttons .download {
+      display: none; }
+      @media (min-width: 1024px) {
+        .drop-down .buttons .play-game,
+        .drop-down .buttons .download {
+          display: block; } }
+  .drop-down .thumbnail {
+    grid-area: img;
+    text-align: center; }
+    .drop-down .thumbnail img {
+      height: auto;
+      max-height: 255px;
+      width: 100%;
+      max-width: 320px; }
+  .drop-down .gem {
+    grid-area: prizes;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    font-weight: lighter; }
+    .drop-down .gem div img {
+      display: inline-block;
+      width: 30px;
+      height: 30px;
+      margin: 5px; }
 
 .-category:last-of-type .drop-down {
   position: static; }
-
-.title {
-  grid-area: title; }
-
-.meta {
-  grid-area: meta; }
-
-.program {
-  grid-area: program; }
-
-.design {
-  grid-area: design; }
-
-.coins {
-  grid-area: coins; }
-
-.buttons {
-  grid-area: buttons; }
-  .buttons .play-game,
-  .buttons .download {
-    display: none; }
-    @media (min-width: 1024px) {
-      .buttons .play-game,
-      .buttons .download {
-        display: block; } }
-
-.thumbnail {
-  grid-area: img; }
-
-.gem {
-  grid-area: prizes; }
-
-img.gem {
-  width: 50px; }
 
 .rainbow-game-container {
   position: relative; }

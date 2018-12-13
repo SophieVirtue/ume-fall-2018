@@ -3,51 +3,52 @@
   color: #fff;
   background: url(../../assets/images/background.jpg);
   background-size: cover, 400px;
-
   .site-main {
     padding-top: 5rem;
-    width: 300px;
+    padding-bottom: 5rem;
+    width: 331px;
     margin-left: auto;
     margin-right: auto;
     @include tablet {
-      width: 750px;
+      width: 550px;
     }
     @include desktop {
-      width: 1000px;
+      width: 1128px;
     }
   }
-
   .search-results-container {
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
     padding-bottom: 3rem;
-    height: 100vh;
-    @include tablet {
-      flex-direction: row;
-      flex-wrap: wrap;
-      justify-content: space-between;
-      padding-bottom: 6rem;
-    }
     @include desktop {
-      padding-bottom: 10rem;
+      justify-content: left;
     }
     .search-game {
+      @include desktop {
+        padding-right: 28px;
+      }
       .type-game {
         background: url(../../assets/images/game-card-desktop.png) no-repeat;
         background-size: cover;
         background-position: top;
         text-align: center;
-        height: 450px;
+        margin: 0 auto;
+        height: 232px;
+        width: 156px;
         @include tablet {
-          width: 235px;
-          height: auto;
-        }
-        @include desktop {
-          width: 235px;
-          height: auto;
+          width: 254px;
+          height: 376.95px;
         }
         .entry-title {
-          padding: 3rem 0 0 0;
+          font-size: 14px;
+          padding-top: 1rem;
+          @include tablet {
+            font-size: 18px;
+            padding-top: 2rem;
+            padding-bottom: 0.5rem;
+          }
           a {
             text-decoration: none;
             font-family: 'Futura-Bk-BT';
@@ -56,18 +57,23 @@
         }
         .thumbnail-image {
           img {
-            width: 220px;
+            width: 125px;
             height: auto;
             @include tablet {
-              width: 150px;
+              width: 224px;
               height: auto;
             }
           }
         }
         .author {
           h4 {
-            margin: 1rem 0 1.5rem 0;
+            margin-bottom: 1rem;
             font-family: 'Futura-Bk-BT';
+            font-size: 12px;
+            margin-top: 0;
+            @include tablet {
+              font-size: 15px;
+            }
             @include desktop {
             }
           }
@@ -76,8 +82,11 @@
       .arrow {
         margin: 0 auto;
         img {
-          width: 30px;
+          width: 20px;
           height: auto;
+          @include tablet {
+            width: 35px;
+          }
         }
 
         @include tablet {
@@ -86,19 +95,24 @@
       }
     }
   }
-
   .search-results-header {
     text-align: center;
     font-size: 1.3rem;
     text-transform: uppercase;
     @include tablet {
       text-align: left;
+      margin-bottom: 0;
+    }
+    @include desktop {
+      margin-top: 2rem;
     }
   }
-
   .page-title {
     text-align: center;
     font-size: 14px;
+    @include desktop {
+      padding-bottom: 1rem;
+    }
     span {
         background: #17447F;
         padding: 10px;
@@ -110,9 +124,7 @@
       text-align: left;
     }
   }
-
 }
-
 .search-no-results {
   form {
     display: none;
