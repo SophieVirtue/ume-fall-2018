@@ -4,7 +4,7 @@
   position: relative;
   .game-background {
     position: absolute;
-    top: 20%;
+    top: 25%;
     width: 100%;
     text-align: center;
     .featured-game-section {
@@ -21,8 +21,8 @@
           width: 135px;
           @include tablet {
             // background-size: cover;
-            width: 180px;
-            height: 235px;
+            // width: 180px;
+            // height: 235px;
           }
           @include desktop {
             // height: 320px;
@@ -30,38 +30,88 @@
           }
           &:first-child {
             transform: rotate(-25deg);
+            transition: transform 0.35s ease-in-out, top 0.35s ease-in-out,
+              width 0.35s ease-in-out, height 0.35s ease-in-out;
             position: absolute;
             left: 10%;
+
             // width: 40%;
             &:hover {
+              background-size: cover;
+              height: 240px;
+              width: 165px;
               z-index: 5;
-              transform: rotate(-20deg);
+              top: -30px;
+              transform: rotate(-10deg);
             }
             @include tablet {
-              // left: 20%;
+              top: 80px;
+              background-size: contain;
+              height: 300px;
+              width: 200px;
+              &:hover {
+                background-size: cover;
+                // height: 240px;
+                // width: 165px;
+                z-index: 5;
+                top: -30px;
+                transform: rotate(-10deg);
+              }
             }
           }
           &:nth-child(2) {
-            
-            
-            height: 250px;
+            background-size: cover;
+            height: 240px;
+            width: 165px;
             top: -25px;
             z-index: 3;
             position: absolute;
+            transition: top 0.35s ease-in-out;
             &:hover {
               z-index: 5;
+              top: -60px;
+            }
+            h3 {
+              margin-bottom: 15px;
+            }
+            a {
+              img {
+                width: 120px;
+                height: 120px;
+              }
+            }
+            @include tablet {
+              height: 300px;
+              width: 200px;
             }
           }
           &:last-child {
             transform: rotate(25deg);
+            transition: transform 0.35s ease-in-out, top 0.35s ease-in-out,
+              width 0.35s ease-in-out, height 0.35s ease-in-out;
             position: absolute;
             right: 10%;
             &:hover {
+              background-size: cover;
+              height: 240px;
+              width: 165px;
               z-index: 5;
-              transform: rotate(20deg);
+              top: -30px;
+              transform: rotate(10deg);
             }
             @include tablet {
-              right: 20%;
+              top: 80px;
+              background-size: contain;
+              height: 300px;
+              width: 200px;
+              &:hover {
+                background-size: cover;
+                // height: 240px;
+                // width: 165px;
+                z-index: 5;
+                top: -30px;
+                transform: rotate(-10deg);
+              }
             }
           }
           button {
@@ -80,7 +130,7 @@
       a {
         color: white;
         text-decoration: none;
-        font-size: 1rem;
+        font-size: 14px;
       }
     }
     .play {
