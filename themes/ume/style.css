@@ -1814,34 +1814,12 @@ main {
 .work-section, .character-section, .obstacles-section, .important-section {
   text-align: center; }
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-
-=======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> 0b692630df0748af39a0c32edebc6d84baced84c
->>>>>>> f1876c37cdbc996697ba99d37c3afb1e209c1b8e
 @media (min-width: 1024px) {
   .single-design .entry-header {
     padding-left: 5rem;
     padding-top: 3rem;
     padding-bottom: 3rem; } }
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-
-=======
-=======
-<<<<<<< HEAD
-=======
->>>>>>> ed4f89fe4bb1e5fe57f9e8fd0b5be1d9dd2e3931
->>>>>>> 4a9a691b3f2513e01be04641d6f83a01ec5a9619
->>>>>>> 0b692630df0748af39a0c32edebc6d84baced84c
->>>>>>> f1876c37cdbc996697ba99d37c3afb1e209c1b8e
 .single-design .entry-header a {
   color: #fff;
   text-decoration: none;
@@ -1873,13 +1851,6 @@ main {
     .important-folder {
       background: url(../../assets/images/agriculture-file.png), url(../../assets/images/ambient-squares.png); } }
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-
-=======
->>>>>>> 0b692630df0748af39a0c32edebc6d84baced84c
->>>>>>> f1876c37cdbc996697ba99d37c3afb1e209c1b8e
 .design-folder {
   background-repeat: no-repeat;
   background-size: 90% 300px;
@@ -1917,7 +1888,7 @@ main {
   font-family: Futura-Bk-Bt;
   text-transform: uppercase;
   padding-top: 1.5rem;
-  padding-left: 1.5rem; }
+  padding-left: 1.1rem; }
   @media (min-width: 600px) {
     .design-title {
       font-size: 1.1rem;
@@ -1949,39 +1920,6 @@ main {
       padding-right: 1rem;
       padding-top: 3rem; } }
 
-<<<<<<< HEAD
-=======
-.character-image img {
-  height: 210px; }
-
-.important-image img {
-  height: 220px; }
-
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-.important-folder {
-  margin-bottom: 10rem; }
-<<<<<<< HEAD
-=======
-=======
-=======
-.important-folder {
-  margin-bottom: 10rem; }
->>>>>>> 8d13e5bc9381608de6b4f0cb14675c32cc387de3
-=======
->>>>>>> 0b692630df0748af39a0c32edebc6d84baced84c
-.work-image img {
-  height: 210px; }
-  @media (min-width: 600px) {
-    .work-image img {
-      height: 350px; } }
-
-@media (min-width: 600px) {
-  .obstacles-image img {
-    height: 400px; } }
-
->>>>>>> f1876c37cdbc996697ba99d37c3afb1e209c1b8e
 .design-border {
   border-bottom: 1px solid #fff;
   padding-top: 2rem;
@@ -2000,19 +1938,7 @@ main {
         -ms-flex-order: 2;
             order: 2;
     border-right: 1px solid #fff;
-<<<<<<< HEAD
     margin: 4rem 1rem; } }
-=======
-    margin-top: 4rem;
-    margin-bottom: 4rem;
-    margin-left: 1rem;
-    margin-right: 1rem; } }
-<<<<<<< HEAD
->>>>>>> 9ebf415bfeb50f4176c6098eb9af3861bbbbebe3
->>>>>>> 4a9a691b3f2513e01be04641d6f83a01ec5a9619
-=======
->>>>>>> 0b692630df0748af39a0c32edebc6d84baced84c
->>>>>>> f1876c37cdbc996697ba99d37c3afb1e209c1b8e
 
 .drop-down {
   display: none;
@@ -2027,7 +1953,7 @@ main {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     display: grid;
-    grid-template-areas: "title prizes" "img img" "img img" "img img" "meta program" "coins coins" "buttons design";
+    grid-template-areas: "title prizes" "img img" "img img" "img img" "meta program" "coins coins" "buttons design";
     color: white;
     height: 453px;
     padding: 10px 30px;
@@ -2035,7 +1961,7 @@ main {
     text-transform: uppercase; }
     @media (min-width: 600px) {
       .drop-down .game-dropdown {
-        grid-template-areas: "title img" "meta img" "program img" "design img" "coins img" "buttons prizes"; } }
+        grid-template-areas: "title img" "meta img" "program img" "design img" "coins img" "buttons prizes"; } }
     .drop-down .game-dropdown .buttons {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -2175,7 +2101,6 @@ main {
             -ms-flex-pack: space-evenly;
                 justify-content: space-evenly;
         position: relative; }
-<<<<<<< HEAD
         .rainbow-game-container .game-background .featured-game-section .featured-games .featured-game {
           background: url(../../assets/images/game-card-desktop.png) no-repeat;
           background-size: contain;
@@ -2231,18 +2156,3 @@ main {
 .rainbow-game-container .featured-game .author h4 {
   margin: 0;
   padding-bottom: 7px; }
-=======
-        .rainbow-game-container .game-background .featured-game-section .featured-games .featured-game:first-child {
-          -webkit-transform: rotate(-25deg);
-                  transform: rotate(-25deg);
-          position: absolute;
-          left: 20%; }
-        .rainbow-game-container .game-background .featured-game-section .featured-games .featured-game:nth-child(2) {
-          position: absolute;
-          top: 10%; }
-        .rainbow-game-container .game-background .featured-game-section .featured-games .featured-game:last-child {
-          -webkit-transform: rotate(25deg);
-                  transform: rotate(25deg);
-          position: absolute;
-          right: 20%; }
-
