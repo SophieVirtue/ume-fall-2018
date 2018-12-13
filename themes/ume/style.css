@@ -581,7 +581,7 @@ main {
   @media (min-width: 1024px) {
     .grid-banner-container {
       background-size: contain;
-      height: 178vh; } }
+      height: 224vh; } }
 
 .site-header {
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.9)), to(black));
@@ -1791,47 +1791,125 @@ main {
 .work-section, .character-section, .obstacles-section, .important-section {
   text-align: center; }
 
+<<<<<<< HEAD
+=======
+.single-design .entry-header a {
+  color: #fff;
+  text-decoration: none;
+  font-family: Futura-Bk-Bt;
+  text-transform: uppercase;
+  padding-left: 1rem; }
+
+.work-folder {
+  background: url(../../assets/images/set-up-file.png); }
+
+.character-folder {
+  background: url(../../assets/images/character-file.png); }
+
+.obstacles-folder {
+  background: url(../../assets/images/cutest-pet-file.png); }
+
+.important-folder {
+  background: url(../../assets/images/agriculture-file.png); }
+
+>>>>>>> 9ebf415bfeb50f4176c6098eb9af3861bbbbebe3
 .design-folder {
-  background: url(../../assets/images/set-up-file.png);
   background-repeat: no-repeat;
-  background-size: 90% 50%;
+  background-size: 90% 300px;
   background-position: left top;
-  height: 626px;
-  width: 390px; }
+  height: auto;
+  width: auto;
+  margin-bottom: 5rem; }
 
 .design-section {
-  color: white;
+  color: #fff;
   background: rgba(0, 0, 0, 0.6);
   margin-left: 2rem;
   margin-right: 2rem; }
+  @media (min-width: 600px) {
+    .design-section {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex; } }
 
 .design-title {
-  color: white;
+  color: #fff;
   width: 112px;
-  font-size: 1rem;
+  font-size: 0.85rem;
   font-family: Futura-Bk-Bt;
   text-transform: uppercase;
   padding-top: 1.5rem;
   padding-left: 1rem; }
+  @media (min-width: 600px) {
+    .design-title {
+      font-size: 1.1rem;
+      padding-left: 2rem;
+      width: 150px; } }
 
 .design-text {
   text-align: left;
   margin-right: 1rem;
-  font-weight: lighter;
-  line-height: 1.5rem; }
+  line-height: 1.25rem; }
+  @media (min-width: 600px) {
+    .design-text {
+      margin-left: 1rem;
+      padding-top: 2rem;
+      padding-bottom: 1rem; } }
 
 .design-image img {
   width: 271px;
+  height: 190px;
   padding-top: 1rem; }
+  @media (min-width: 600px) {
+    .design-image img {
+      padding-bottom: 2rem;
+      padding-right: 1rem;
+      height: 100%;
+      padding-top: 3rem; } }
 
-.design-image {
-  border-bottom: 3px solid white; }
+.character-image img {
+  height: 210px; }
 
-.work-folder, .obstacles-folder {
-  margin-bottom: 20rem; }
+.important-image img {
+  height: 220px; }
 
+<<<<<<< HEAD
 .important-folder {
   margin-bottom: 10rem; }
+=======
+.work-image img {
+  height: 210px; }
+  @media (min-width: 600px) {
+    .work-image img {
+      height: 350px; } }
+
+@media (min-width: 600px) {
+  .obstacles-image img {
+    height: 400px; } }
+
+.design-border {
+  border-bottom: 1px solid #fff;
+  padding-top: 2rem;
+  margin-left: 6rem;
+  margin-right: 6rem; }
+
+@media (min-width: 600px) {
+  .design-image {
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3; } }
+
+@media (min-width: 600px) {
+  .design-border {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    border-right: 1px solid #fff;
+    margin-top: 7rem;
+    margin-bottom: 7rem;
+    margin-left: 1rem;
+    margin-right: 1rem; } }
+>>>>>>> 9ebf415bfeb50f4176c6098eb9af3861bbbbebe3
 
 .drop-down {
   display: none;
@@ -1846,7 +1924,7 @@ main {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     display: grid;
-    grid-template-areas: "title prizes" "img img" "img img" "img img" "meta program" "coins coins" "buttons design";
+    grid-template-areas: "title prizes" "img img" "img img" "img img" "meta program" "coins coins" "buttons design";
     color: white;
     height: 453px;
     padding: 10px 30px;

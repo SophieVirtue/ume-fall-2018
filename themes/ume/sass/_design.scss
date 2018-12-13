@@ -10,63 +10,147 @@
     text-align: center;
 }
 
+.single-design .entry-header a{
+    color: #fff;
+    text-decoration: none;
+    font-family: Futura-Bk-Bt;
+    text-transform: uppercase;
+    padding-left: 1rem;
+}
+
+
+
 
 //Draft Code
-.design-folder{
+.work-folder{
     background: url(../../assets/images/set-up-file.png);
-    background-repeat: no-repeat;
-    background-size: 90% 50%;
-    background-position: left top;
-    height: 626px;
-    width: 390px;
 }
- 
-    
+.character-folder{
+    background: url(../../assets/images/character-file.png);
+}
+.obstacles-folder{
+    background: url(../../assets/images/cutest-pet-file.png);
+}
+.important-folder{
+    background: url(../../assets/images/agriculture-file.png);
+}
+.design-folder{ 
+    background-repeat: no-repeat;
+    background-size: 90% 300px;
+    background-position: left top;
+    height: auto;
+    width: auto;
+    margin-bottom: 5rem;
+}
+
 
 
 .design-section {
-    color: white;
+    color: #fff;
     background: rgba(0,0,0,0.6);
     margin-left: 2rem;
     margin-right: 2rem;
+    @include tablet{
+        display: flex;
+    }
+    
 }
 	
 
 
 .design-title{
-    color: white;
+    color: #fff;
     width: 112px;
-    font-size: 1rem;
+    font-size: 0.85rem;
     font-family: Futura-Bk-Bt;
     text-transform: uppercase;
     padding-top: 1.5rem;
     padding-left: 1rem;
+    @include tablet{
+    font-size: 1.1rem;
+    padding-left: 2rem;
+    width: 150px;
+
+    }
 }
 
 .design-text{
     text-align: left;
     margin-right: 1rem;
-    font-weight: lighter;
-    line-height: 1.5rem;
+    line-height: 1.25rem;
+    @include tablet{
+    margin-left: 1rem;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+    }
 }
 
 .design-image img{
     width: 271px;
+    height: 190px;
     padding-top: 1rem;
+    @include tablet{
+    padding-bottom: 2rem;
+    padding-right: 1rem;
+    height: 100%;
+    padding-top: 3rem;
 
+    }
 }
 
-.design-image{
-    border-bottom: 3px solid white;
-    
+.character-image img{
+    height: 210px;
 }
 
-//Separate Sections
-.work-folder, .obstacles-folder{
-    margin-bottom: 20rem;
+.important-image img{
+    height: 220px;
 }
 
-.important-folder{
-    margin-bottom: 10rem;
+
+.work-image img{
+    height: 210px;
+    @include tablet{
+        height: 350px;
+    }
 }
+
+.obstacles-image img{
+    @include tablet{
+        height: 400px;
+    }
+}
+
+.design-border{
+    border-bottom: 1px solid #fff;
+    padding-top: 2rem;
+    margin-left: 6rem;
+    margin-right: 6rem;
+}
+
+//Mobile and Tablet Flex
+.design-image {
+    @include tablet{
+        order: 3;
+    }
+}
+
+.design-border {
+    @include tablet{
+    order: 2;
+    border-right: 1px solid #fff;
+    margin-top: 7rem;
+    margin-bottom: 7rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    }
+}
+
+
+
+
+
+
+
+
+
 
