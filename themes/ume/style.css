@@ -1814,6 +1814,20 @@ main {
 .work-section, .character-section, .obstacles-section, .important-section {
   text-align: center; }
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+@media (min-width: 1024px) {
+  .single-design .entry-header {
+    padding-left: 5rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem; } }
+
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> ed4f89fe4bb1e5fe57f9e8fd0b5be1d9dd2e3931
+>>>>>>> 4a9a691b3f2513e01be04641d6f83a01ec5a9619
 .single-design .entry-header a {
   color: #fff;
   text-decoration: none;
@@ -1823,15 +1837,27 @@ main {
 
 .work-folder {
   background: url(../../assets/images/set-up-file.png); }
+  @media (min-width: 1024px) {
+    .work-folder {
+      background: url(../../assets/images/set-up-file.png), url(../../assets/images/ambient-squares.png); } }
 
 .character-folder {
   background: url(../../assets/images/character-file.png); }
+  @media (min-width: 1024px) {
+    .character-folder {
+      background: url(../../assets/images/character-file.png), url(../../assets/images/ambient-squares.png); } }
 
 .obstacles-folder {
   background: url(../../assets/images/cutest-pet-file.png); }
+  @media (min-width: 1024px) {
+    .obstacles-folder {
+      background: url(../../assets/images/cutest-pet-file.png), url(../../assets/images/ambient-squares.png); } }
 
 .important-folder {
   background: url(../../assets/images/agriculture-file.png); }
+  @media (min-width: 1024px) {
+    .important-folder {
+      background: url(../../assets/images/agriculture-file.png), url(../../assets/images/ambient-squares.png); } }
 
 .design-folder {
   background-repeat: no-repeat;
@@ -1840,6 +1866,10 @@ main {
   height: auto;
   width: auto;
   margin-bottom: 5rem; }
+  @media (min-width: 1024px) {
+    .design-folder {
+      background-size: 87% 300px, 100% 350px;
+      background-position: center top; } }
 
 .design-section {
   color: #fff;
@@ -1851,6 +1881,13 @@ main {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex; } }
+  @media (min-width: 1024px) {
+    .design-section {
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      margin-left: 10rem;
+      margin-right: 4rem; } }
 
 .design-title {
   color: #fff;
@@ -1859,12 +1896,17 @@ main {
   font-family: Futura-Bk-Bt;
   text-transform: uppercase;
   padding-top: 1.5rem;
-  padding-left: 1rem; }
+  padding-left: 1.5rem; }
   @media (min-width: 600px) {
     .design-title {
       font-size: 1.1rem;
       padding-left: 2rem;
       width: 150px; } }
+  @media (min-width: 600px) and (min-width: 1024px) {
+    .design-title {
+      font-size: 1.1rem;
+      padding-left: 9rem;
+      width: 300px; } }
 
 .design-text {
   text-align: left;
@@ -1921,8 +1963,8 @@ main {
         -ms-flex-order: 2;
             order: 2;
     border-right: 1px solid #fff;
-    margin-top: 7rem;
-    margin-bottom: 7rem;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
     margin-left: 1rem;
     margin-right: 1rem; } }
 
