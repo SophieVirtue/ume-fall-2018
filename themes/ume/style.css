@@ -1814,26 +1814,12 @@ main {
 .work-section, .character-section, .obstacles-section, .important-section {
   text-align: center; }
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-
->>>>>>> 8a04c43e2272b9b92ec6b3e6c40f82ab1544ad73
->>>>>>> 4564e7742902a98c63d6722a7ed82cbcd5aa279e
 @media (min-width: 1024px) {
   .single-design .entry-header {
     padding-left: 5rem;
     padding-top: 3rem;
     padding-bottom: 3rem; } }
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-
->>>>>>> 8a04c43e2272b9b92ec6b3e6c40f82ab1544ad73
->>>>>>> 4564e7742902a98c63d6722a7ed82cbcd5aa279e
 .single-design .entry-header a {
   color: #fff;
   text-decoration: none;
@@ -1865,13 +1851,7 @@ main {
     .important-folder {
       background: url(../../assets/images/agriculture-file.png), url(../../assets/images/ambient-squares.png); } }
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
 
->>>>>>> 8a04c43e2272b9b92ec6b3e6c40f82ab1544ad73
->>>>>>> 4564e7742902a98c63d6722a7ed82cbcd5aa279e
 .design-folder {
   background-repeat: no-repeat;
   background-size: 90% 300px;
@@ -1941,23 +1921,16 @@ main {
       padding-right: 1rem;
       padding-top: 3rem; } }
 
-<<<<<<< HEAD
-=======
+
 .character-image img {
   height: 210px; }
 
 .important-image img {
   height: 220px; }
 
-<<<<<<< HEAD
 .important-folder {
   margin-bottom: 10rem; }
 
-.important-folder {
-  margin-bottom: 10rem; }
-
-=======
->>>>>>> 4564e7742902a98c63d6722a7ed82cbcd5aa279e
 .work-image img {
   height: 210px; }
   @media (min-width: 600px) {
@@ -1968,7 +1941,6 @@ main {
   .obstacles-image img {
     height: 400px; } }
 
->>>>>>> 8a04c43e2272b9b92ec6b3e6c40f82ab1544ad73
 .design-border {
   border-bottom: 1px solid #fff;
   padding-top: 2rem;
@@ -1987,22 +1959,12 @@ main {
         -ms-flex-order: 2;
             order: 2;
     border-right: 1px solid #fff;
-<<<<<<< HEAD
-    margin: 4rem 1rem; } }
-=======
-
     margin: 4rem 1rem; } }
 /* 
     margin-top: 4rem;
     margin-bottom: 4rem;
     margin-left: 1rem;
-<<<<<<< HEAD
-    margin-right: 1rem; } }
-=======
     margin-right: 1rem; } } */
-
->>>>>>> 8a04c43e2272b9b92ec6b3e6c40f82ab1544ad73
->>>>>>> 4564e7742902a98c63d6722a7ed82cbcd5aa279e
 
 .drop-down {
   display: none;
@@ -2017,7 +1979,6 @@ main {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     display: grid;
-<<<<<<< HEAD
     grid-template-areas: "title prizes"
  "img img"
  "img img"
@@ -2025,9 +1986,7 @@ main {
  "meta program"
  "coins coins"
  "buttons design";
-=======
     grid-template-areas: "title prizes" "img img" "img img" "img img" "meta program" "coins coins" "buttons design";
->>>>>>> 4564e7742902a98c63d6722a7ed82cbcd5aa279e
     color: white;
     height: 453px;
     padding: 10px 30px;
@@ -2035,16 +1994,13 @@ main {
     text-transform: uppercase; }
     @media (min-width: 600px) {
       .drop-down .game-dropdown {
-<<<<<<< HEAD
         grid-template-areas: "title img"
  "meta img"
  "program img"
  "design img"
  "coins img"
  "buttons prizes"; } }
-=======
         grid-template-areas: "title img" "meta img" "program img" "design img" "coins img" "buttons prizes"; } }
->>>>>>> 4564e7742902a98c63d6722a7ed82cbcd5aa279e
     .drop-down .game-dropdown .buttons {
       display: -webkit-box;
       display: -ms-flexbox;
