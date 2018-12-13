@@ -2039,29 +2039,14 @@ main {
     text-transform: uppercase; }
     @media (min-width: 600px) {
       .drop-down .game-dropdown {
-<<<<<<< HEAD
         padding: 15px;
         padding-left: 45px;
         padding-top: 10%;
         font-size: 18px;
-        grid-template-areas: "title img" "meta img" "program img" "design img" "coins img" "buttons prizes";
+        grid-template-areas: "title img" "meta img" "program img" "design img" "coins img" "buttons prizes";
         grid-template-rows: 13% 13% 13% 13% 13% 20%; }
         .drop-down .game-dropdown h4 {
           margin: 0; } }
-=======
-        grid-template-areas: "title img" "meta img" "program img" "design img" "coins img" "buttons prizes"; } }
-    .drop-down .game-dropdown .buttons {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-align: end;
-          -ms-flex-align: end;
-              align-items: flex-end; }
-      .drop-down .game-dropdown .buttons img {
-        width: 20px; }
-    .drop-down .game-dropdown h4 {
-      margin: 0; }
->>>>>>> 7878dad5b99516a3110f31a7e8cb2eb047d2c7bb
   .drop-down .title {
     grid-area: title;
     display: -webkit-box;
