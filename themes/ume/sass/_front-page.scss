@@ -36,7 +36,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    height: 100%;
+    height: 258px;
     background: url(../../assets/images/game-card-mobile.png) no-repeat;
     background-size: cover;
     @include tablet {
@@ -47,27 +47,8 @@
     }
   }
 
-  h3 {
-    font-size: 14px;
-    @include tablet {
-      font-size: 18px;
-    }
-  }
-  h4 {
-    font-size: 12px;
-    margin: 5px 0;
-    @include tablet {
-      font-size: 15px;
-    }
-  }
-  img {
-    height: 120px;
-    width: 129px;
-    @include tablet {
-      width: 222px;
-      height: 210px;
-    }
-  }
+  
+  
 }
 
 .featured-games {
@@ -85,23 +66,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 15px;
-  height: 15px;
   border: none;
   margin: 0;
   padding: 0;
-  @include tablet {
-    width: 35px;
-    height: 35px;
-  }
-  img {
-    width: 15px;
-    height: 15px;
-    @include tablet {
-      width: 35px;
-      height: 35px;
-    }
-  }
 }
 
 .game-background {
@@ -192,4 +159,129 @@
       padding-top: 40%;
     }
   }
+}
+
+//Styling of Folder for Category Games
+
+//Draft Code
+
+.category-folder:nth-of-type(1){
+  background: url(../../assets/images/agriculture-file.png);
+  background-repeat: no-repeat;
+  background-size: 100% 365px;
+  padding-top: 1rem;
+  @include desktop{
+  background-position-y: -1rem;
+  background-size: 80% 480px;
+}
+}
+
+.category-folder:nth-of-type(2){
+  background: url(../../assets/images/set-up-file.png);
+  background-repeat: no-repeat;
+  background-size: 100% 365px;
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+  @include desktop{
+  background-position-y: -1rem;
+  background-size: 80% 480px;
+}
+}
+
+.category-folder:nth-of-type(3){
+  background: url(../../assets/images/character-file.png);
+  background-repeat: no-repeat;
+  background-size: 100% 365px;
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+  @include desktop{
+  background-position-y: -1rem;
+  background-size: 80% 480px;
+}
+}
+
+.category-folder:nth-of-type(4){
+  background: url(../../assets/images/cutest-pet-file.png);
+  background-repeat: no-repeat;
+  background-size: 100% 365px;
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+  @include desktop{
+  background-position-y: -1rem;
+  background-size: 80% 480px;
+}
+}
+.category-folder:nth-of-type(5){
+  background: url(../../assets/images/space-file.png);
+  background-repeat: no-repeat;
+  background-size: 100% 365px;
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+  @include desktop{
+  background-position-y: -1rem;
+  background-size: 80% 480px;
+}
+}
+
+.category-folder:nth-of-type(6){
+  background: url(../../assets/images/wild-p-file.png);
+  background-repeat: no-repeat;
+  background-size: 100% 365px;
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+  @include desktop{
+  background-position-y: -1rem;
+  background-size: 80% 480px;
+}
+}
+
+.category {
+  padding-left: 1.5rem;
+  h2{
+  font-size: 0.79rem;
+  text-transform: uppercase;
+  padding-right: 18rem;
+  padding-left: 0rem;
+  color: white;
+  font-family: Futura-Bk-Bt;
+  text-transform: uppercase;
+  @include desktop{
+    font-size: 1.4rem;
+    padding-left: 4rem;
+
+  }
+}
+}
+
+.carousel-cell{ 
+  .arrow img{
+    width: 23px;
+    padding-bottom: 1rem;
+  }
+  h3{
+    padding-top: 1rem;
+    padding-left: 1rem;
+    font-family: Futura-Bk-Bt;
+    font-size: 0.9rem;
+    a{
+      text-decoration: none;
+      color: #fff;
+    }
+  }
+  h4{
+    font-family: Futura-Bk-Bt;
+    font-size: 0.85rem;
+    color: #fff;
+    margin-top: 0.5rem;
+    margin-bottom: 0.25rem;
+  }
+    img {
+       height: auto;
+       width: 129px;
+      @include tablet {
+        height: 120px;
+        width: 180px;
+        height: auto;
+      }
+    }
 }

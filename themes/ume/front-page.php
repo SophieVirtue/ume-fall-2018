@@ -46,7 +46,7 @@ get_sidebar(); ?>
                         <div class="featured-games">
                             <?php foreach ( $game_posts as $post ) : setup_postdata( $post ); ?>
                                 <div class="featured-game">
-                                    <?php get_template_part( 'template-parts/content-front' ); ?>
+                                    <?php get_template_part( 'template-parts/content-featured' ); ?>
                                 </div><!-- end of featured games -->
                                 <?php /* Content from your array of post results goes here */ ?>
                             <?php endforeach; wp_reset_postdata(); ?>
@@ -58,7 +58,6 @@ get_sidebar(); ?>
 
         <section class="main-section-container">
 
-        <hr>
 
         <!-- end of featured games -->
 
@@ -73,14 +72,15 @@ get_sidebar(); ?>
    $args = array( 'post_type' => 'game', 'posts_per_page' => '-1', 'category_name' => $category->name );
    $game_posts = get_posts( $args ); // returns an array of posts
 ?>
-        <section class="<?php $category->slug ?>-category">
+        <div class="category-folder">
+        <section class="<?php $category->slug ?>category">
         <h2><?php echo $category->name ?></h2>
         <div class="<?php $category->slug ?>-games main-carousel">
 <?php foreach ( $game_posts as $post ) : setup_postdata( $post ); ?>
 <div class="<?php $category->slug ?>-game carousel-cell" data-id="<?php the_ID(); ?>">
-    <div class="content"><?php 
+      <div class="content"><?php 
         get_template_part( 'template-parts/content-front' );?>
-    </div><!-- end of category-content div -->
+      </div><!-- end of category-content div -->
 </div>
    
 <?php endforeach; wp_reset_postdata(); 
@@ -93,11 +93,12 @@ get_sidebar(); ?>
       </div>
 <?php endforeach; wp_reset_postdata(); ?>
           </section>
+          </div>
 
-          <hr>
         <?php endforeach; ?>
         <!-- end of game categories -->
-        </section><!-- end of featured games section -->
+        </section>
+        <!-- end of featured games section -->
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
