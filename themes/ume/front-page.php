@@ -73,19 +73,21 @@ get_sidebar(); ?>
    $args = array( 'post_type' => 'game', 'posts_per_page' => '-1', 'category_name' => $category->name );
    $game_posts = get_posts( $args ); // returns an array of posts
 ?>
+         <div class="category-folder">
         <section class="<?php $category->slug ?>-category">
         <h2><?php echo $category->name ?></h2>
         <div class="<?php $category->slug ?>-games main-carousel">
 <?php foreach ( $game_posts as $post ) : setup_postdata( $post ); ?>
 <div class="<?php $category->slug ?>-game carousel-cell" data-id="<?php the_ID(); ?>">
-    <div class="content"><?php 
+      <div class="content"><?php 
         get_template_part( 'template-parts/content-front' );?>
-    </div><!-- end of category-content div -->
+      </div><!-- end of category-content div -->
 </div>
    
 <?php endforeach; wp_reset_postdata(); 
         ?>
 
+    </div>
     </div>
           <?php foreach ( $game_posts as $post ) : setup_postdata( $post ); ?>
           <div class="drop-down" data-id="<?php the_ID(); ?>">
