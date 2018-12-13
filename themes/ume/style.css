@@ -1947,6 +1947,10 @@ main {
   background: url(../../assets/images/drop-down.png) no-repeat, rgba(0, 0, 0, 0.8);
   background-size: cover;
   width: 100%; }
+  @media (min-width: 600px) {
+    .drop-down {
+      background: url(../../assets/images/drop-down-tablet.png) no-repeat, rgba(0, 0, 0, 0.8);
+      background-size: cover; } }
   .drop-down img {
     width: 100%; }
   .drop-down .game-dropdown {
@@ -1955,24 +1959,20 @@ main {
     display: grid;
     grid-template-areas: "title prizes" "img img" "img img" "img img" "meta program" "coins coins" "buttons design";
     color: white;
-    height: 453px;
+    min-height: 453px;
     padding: 10px 30px;
     font-size: 14px;
     text-transform: uppercase; }
     @media (min-width: 600px) {
       .drop-down .game-dropdown {
-        grid-template-areas: "title img" "meta img" "program img" "design img" "coins img" "buttons prizes"; } }
-    .drop-down .game-dropdown .buttons {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-align: end;
-          -ms-flex-align: end;
-              align-items: flex-end; }
-      .drop-down .game-dropdown .buttons img {
-        width: 20px; }
-    .drop-down .game-dropdown h4 {
-      margin: 0; }
+        padding: 15px;
+        padding-left: 45px;
+        padding-top: 10%;
+        font-size: 18px;
+        grid-template-areas: "title img" "meta img" "program img" "design img" "coins img" "buttons prizes";
+        grid-template-rows: 13% 13% 13% 13% 13% 20%; }
+        .drop-down .game-dropdown h4 {
+          margin: 0; } }
   .drop-down .title {
     grid-area: title;
     display: -webkit-box;
@@ -1984,10 +1984,16 @@ main {
         -ms-flex-align: center;
             align-items: center;
     max-width: 160px; }
+    @media (min-width: 600px) {
+      .drop-down .title {
+        min-width: 280px; } }
     .drop-down .title h3 {
       font-size: 20px;
       display: inline-block;
       margin: 0; }
+      @media (min-width: 600px) {
+        .drop-down .title h3 {
+          font-size: 30px; } }
       .drop-down .title h3 a {
         color: white;
         text-decoration: none; }
@@ -1996,6 +2002,9 @@ main {
   .drop-down .program {
     text-align: end;
     grid-area: program; }
+    @media (min-width: 600px) {
+      .drop-down .program {
+        text-align: start; } }
     .drop-down .program a {
       color: #78F7FA; }
   .drop-down .design {
@@ -2008,8 +2017,12 @@ main {
             align-items: center;
     -webkit-box-pack: end;
         -ms-flex-pack: end;
-            justify-content: flex-end;
-    text-align: center; }
+            justify-content: flex-end; }
+    @media (min-width: 600px) {
+      .drop-down .design {
+        -webkit-box-pack: start;
+            -ms-flex-pack: start;
+                justify-content: flex-start; } }
     .drop-down .design a {
       background: -webkit-gradient(linear, left top, left bottom, from(#f5d672), to(#e77839));
       background: linear-gradient(180deg, #f5d672, #e77839);
@@ -2018,6 +2031,11 @@ main {
       text-decoration: none;
       border-radius: 5px;
       font-size: 11px; }
+      @media (min-width: 600px) {
+        .drop-down .design a {
+          font-size: 15px;
+          border-radius: 2px;
+          padding: 15px 30px; } }
   .drop-down .coins {
     grid-area: coins; }
     .drop-down .coins h4 {
@@ -2028,8 +2046,14 @@ main {
       -webkit-box-align: center;
           -ms-flex-align: center;
               align-items: center; }
+      @media (min-width: 600px) {
+        .drop-down .coins h4 {
+          height: 100%; } }
       .drop-down .coins h4 img {
         width: 20px; }
+        @media (min-width: 600px) {
+          .drop-down .coins h4 img {
+            width: 25px; } }
   .drop-down .buttons {
     grid-area: buttons;
     height: 40px;
@@ -2040,8 +2064,23 @@ main {
         -ms-flex-align: center;
             align-items: center;
     width: 50%; }
+    @media (min-width: 600px) {
+      .drop-down .buttons {
+        -webkit-box-align: end;
+            -ms-flex-align: end;
+                align-items: flex-end;
+        width: 100%;
+        height: 100%; } }
     .drop-down .buttons p {
       margin: 0; }
+    .drop-down .buttons h4 {
+      margin: 0; }
+    .drop-down .buttons img {
+      width: 20px; }
+      @media (min-width: 600px) {
+        .drop-down .buttons img {
+          width: 25px;
+          margin: 10px; } }
     .drop-down .buttons .play-game,
     .drop-down .buttons .download {
       display: none; }
@@ -2052,11 +2091,27 @@ main {
   .drop-down .thumbnail {
     grid-area: img;
     text-align: center; }
+    @media (min-width: 600px) {
+      .drop-down .thumbnail {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        min-width: 280px; } }
     .drop-down .thumbnail img {
       height: auto;
-      max-height: 255px;
+      min-height: 256px;
       width: 100%;
       max-width: 320px; }
+      @media (min-width: 600px) {
+        .drop-down .thumbnail img {
+          min-width: 256px;
+          min-height: 245px; } }
   .drop-down .gem {
     grid-area: prizes;
     display: -webkit-box;
@@ -2075,11 +2130,26 @@ main {
         -ms-flex-pack: center;
             justify-content: center;
     font-weight: lighter; }
-    .drop-down .gem div img {
-      display: inline-block;
-      width: 30px;
-      height: 30px;
-      margin: 5px; }
+    @media (min-width: 600px) {
+      .drop-down .gem {
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        -webkit-box-align: end;
+            -ms-flex-align: end;
+                align-items: flex-end; }
+        .drop-down .gem h4 {
+          margin: 0;
+          margin-bottom: 12px; } }
+    .drop-down .gem div {
+      border: none; }
+      .drop-down .gem div img {
+        display: inline-block;
+        width: 30px;
+        height: 30px;
+        margin: 5px;
+        border: none; }
 
 .-category:last-of-type .drop-down {
   position: static; }
