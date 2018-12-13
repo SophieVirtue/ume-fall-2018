@@ -2169,7 +2169,10 @@ main {
                 top: -100px; } }
             .rainbow-game-container .game-background .featured-game-section .featured-games .featured-game:nth-child(2):hover {
               z-index: 5;
-              top: -160px; }
+              top: -60px; }
+              @media (min-width: 1024px) {
+                .rainbow-game-container .game-background .featured-game-section .featured-games .featured-game:nth-child(2):hover {
+                  top: -160px; } }
             @media (min-width: 600px) {
               .rainbow-game-container .game-background .featured-game-section .featured-games .featured-game:nth-child(2) {
                 height: 300px;
@@ -2244,7 +2247,7 @@ main {
   margin: 0;
   padding-bottom: 7px; }
 
-.rainbow-game-container .featured-game:first-child button, .rainbow-game-container .featured-game:last-child button {
+.rainbow-game-container .featured-game:first-child .arrow, .rainbow-game-container .featured-game:last-child .arrow {
   margin: 0 auto; }
 
 .rainbow-game-container .featured-game:first-child:hover .play img, .rainbow-game-container .featured-game:last-child:hover .play img {
@@ -2267,9 +2270,12 @@ main {
       width: 220px;
       height: 220px; } }
 
-.rainbow-game-container .featured-game:nth-child(2) a img {
-  width: 120px;
-  height: 120px; }
+.rainbow-game-container .featured-game:nth-child(2) .author h4 {
+  margin: 0;
+  padding-bottom: 7px; }
+  @media (min-width: 1024px) {
+    .rainbow-game-container .featured-game:nth-child(2) .author h4 {
+      padding: 1rem 0; } }
 
 .rainbow-game-container .featured-game:first-child h3 a, .rainbow-game-container .featured-game:nth-child(2) h3 a, .rainbow-game-container .featured-game:last-child h3 a {
   color: white;
@@ -2287,5 +2293,6 @@ main {
   margin: 0;
   padding-bottom: 7px; }
 
-.rainbow-game-container .featured-game:first-child button, .rainbow-game-container .featured-game:nth-child(2) button, .rainbow-game-container .featured-game:last-child button {
-  margin: 0 auto; }
+.rainbow-game-container .featured-game:first-child .play-button .play, .rainbow-game-container .featured-game:nth-child(2) .play-button .play, .rainbow-game-container .featured-game:last-child .play-button .play {
+  margin: 0 auto;
+  width: 20px; }

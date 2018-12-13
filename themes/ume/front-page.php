@@ -46,7 +46,7 @@ get_sidebar(); ?>
                         <div class="featured-games">
                             <?php foreach ( $game_posts as $post ) : setup_postdata( $post ); ?>
                                 <div class="featured-game">
-                                    <?php get_template_part( 'template-parts/content-front' ); ?>
+                                    <?php get_template_part( 'template-parts/content-featured' ); ?>
                                 </div><!-- end of featured games -->
                                 <?php /* Content from your array of post results goes here */ ?>
                             <?php endforeach; wp_reset_postdata(); ?>
