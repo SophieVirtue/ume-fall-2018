@@ -684,7 +684,9 @@ main {
     width: 110px;
     height: 14px;
     border-width: 2px;
-    border-color: white; }
+    border-color: white;
+    color: white;
+    font-family: 'Futura-Bk-BT', sans-serif; }
     @media (min-width: 600px) {
       .site-header input.search-field {
         height: 22px;
@@ -1645,7 +1647,7 @@ main {
   .game-template-default.single-game .game-wrapper {
     margin: 0 auto;
     width: 966px; }
-  .game-template-default.single-game p {
+  .game-template-default.single-game .loading-message {
     padding-top: 4rem;
     font-family: 'Futura-Bk-BT', sans-serif;
     font-size: 20px; }
@@ -1666,65 +1668,67 @@ main {
   .search .site-main,
   .search-results .site-main {
     padding-top: 5rem;
-    width: 300px;
+    padding-bottom: 5rem;
+    width: 331px;
     margin-left: auto;
     margin-right: auto; }
     @media (min-width: 600px) {
       .search .site-main,
       .search-results .site-main {
-        width: 750px; } }
+        width: 550px; } }
     @media (min-width: 1024px) {
       .search .site-main,
       .search-results .site-main {
-        width: 1000px; } }
+        width: 1128px; } }
   .search .search-results-container,
   .search-results .search-results-container {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    padding-bottom: 3rem;
-    height: 100vh; }
-    @media (min-width: 600px) {
-      .search .search-results-container,
-      .search-results .search-results-container {
-        -webkit-box-orient: horizontal;
-        -webkit-box-direction: normal;
-            -ms-flex-direction: row;
-                flex-direction: row;
-        -ms-flex-wrap: wrap;
-            flex-wrap: wrap;
-        -webkit-box-pack: justify;
-            -ms-flex-pack: justify;
-                justify-content: space-between;
-        padding-bottom: 6rem; } }
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding-bottom: 3rem; }
     @media (min-width: 1024px) {
       .search .search-results-container,
       .search-results .search-results-container {
-        padding-bottom: 10rem; } }
+        -webkit-box-pack: left;
+            -ms-flex-pack: left;
+                justify-content: left; } }
+    @media (min-width: 1024px) {
+      .search .search-results-container .search-game,
+      .search-results .search-results-container .search-game {
+        padding-right: 28px; } }
     .search .search-results-container .search-game .type-game,
     .search-results .search-results-container .search-game .type-game {
       background: url(../../assets/images/game-card-desktop.png) no-repeat;
       background-size: cover;
       background-position: top;
       text-align: center;
-      height: 450px; }
+      margin: 0 auto;
+      height: 232px;
+      width: 156px; }
       @media (min-width: 600px) {
         .search .search-results-container .search-game .type-game,
         .search-results .search-results-container .search-game .type-game {
-          width: 235px;
-          height: auto; } }
-      @media (min-width: 1024px) {
-        .search .search-results-container .search-game .type-game,
-        .search-results .search-results-container .search-game .type-game {
-          width: 235px;
-          height: auto; } }
+          width: 254px;
+          height: 376.95px; } }
       .search .search-results-container .search-game .type-game .entry-title,
       .search-results .search-results-container .search-game .type-game .entry-title {
-        padding: 3rem 0 0 0; }
+        font-size: 14px;
+        padding-top: 1rem; }
+        @media (min-width: 600px) {
+          .search .search-results-container .search-game .type-game .entry-title,
+          .search-results .search-results-container .search-game .type-game .entry-title {
+            font-size: 18px;
+            padding-top: 2rem;
+            padding-bottom: 0.5rem; } }
         .search .search-results-container .search-game .type-game .entry-title a,
         .search-results .search-results-container .search-game .type-game .entry-title a {
           text-decoration: none;
@@ -1732,24 +1736,34 @@ main {
           color: white; }
       .search .search-results-container .search-game .type-game .thumbnail-image img,
       .search-results .search-results-container .search-game .type-game .thumbnail-image img {
-        width: 220px;
+        width: 125px;
         height: auto; }
         @media (min-width: 600px) {
           .search .search-results-container .search-game .type-game .thumbnail-image img,
           .search-results .search-results-container .search-game .type-game .thumbnail-image img {
-            width: 150px;
+            width: 224px;
             height: auto; } }
       .search .search-results-container .search-game .type-game .author h4,
       .search-results .search-results-container .search-game .type-game .author h4 {
-        margin: 1rem 0 1.5rem 0;
-        font-family: 'Futura-Bk-BT'; }
+        margin-bottom: 1rem;
+        font-family: 'Futura-Bk-BT';
+        font-size: 12px;
+        margin-top: 0; }
+        @media (min-width: 600px) {
+          .search .search-results-container .search-game .type-game .author h4,
+          .search-results .search-results-container .search-game .type-game .author h4 {
+            font-size: 15px; } }
     .search .search-results-container .search-game .arrow,
     .search-results .search-results-container .search-game .arrow {
       margin: 0 auto; }
       .search .search-results-container .search-game .arrow img,
       .search-results .search-results-container .search-game .arrow img {
-        width: 30px;
+        width: 20px;
         height: auto; }
+        @media (min-width: 600px) {
+          .search .search-results-container .search-game .arrow img,
+          .search-results .search-results-container .search-game .arrow img {
+            width: 35px; } }
       @media (min-width: 600px) {
         .search .search-results-container .search-game .arrow,
         .search-results .search-results-container .search-game .arrow {
@@ -1762,11 +1776,20 @@ main {
     @media (min-width: 600px) {
       .search .search-results-header,
       .search-results .search-results-header {
-        text-align: left; } }
+        text-align: left;
+        margin-bottom: 0; } }
+    @media (min-width: 1024px) {
+      .search .search-results-header,
+      .search-results .search-results-header {
+        margin-top: 2rem; } }
   .search .page-title,
   .search-results .page-title {
     text-align: center;
     font-size: 14px; }
+    @media (min-width: 1024px) {
+      .search .page-title,
+      .search-results .page-title {
+        padding-bottom: 1rem; } }
     .search .page-title span,
     .search-results .page-title span {
       background: #17447F;
@@ -1791,7 +1814,6 @@ main {
 .work-section, .character-section, .obstacles-section, .important-section {
   text-align: center; }
 
-<<<<<<< HEAD
 .design-folder {
   background: url(../../assets/images/set-up-file.png);
   background-repeat: no-repeat;
@@ -1833,9 +1855,6 @@ main {
 
 .important-folder {
   margin-bottom: 10rem; }
-=======
-img.work-flow-image, img.character-image, img.obstacles-image, img.important-image {
-  width: 280px; }
 
 .drop-down {
   display: none;
@@ -1850,7 +1869,7 @@ img.work-flow-image, img.character-image, img.obstacles-image, img.important-ima
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     display: grid;
-    grid-template-areas: "title prizes" "img img" "img img" "img img" "meta program" "coins coins" "buttons design";
+    grid-template-areas: "title prizes" "img img" "img img" "img img" "meta program" "coins coins" "buttons design";
     color: white;
     padding: 10px; }
     .drop-down .game-dropdown .buttons {
@@ -1929,4 +1948,3 @@ img.gem {
                   transform: rotate(25deg);
           position: absolute;
           right: 20%; }
->>>>>>> 813efd20fa10984085e3ef8e8329f4f9216702a8
