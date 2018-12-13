@@ -1814,28 +1814,12 @@ main {
 .work-section, .character-section, .obstacles-section, .important-section {
   text-align: center; }
 
-<<<<<<< HEAD
-
-=======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> 0b692630df0748af39a0c32edebc6d84baced84c
 @media (min-width: 1024px) {
   .single-design .entry-header {
     padding-left: 5rem;
     padding-top: 3rem;
     padding-bottom: 3rem; } }
 
-<<<<<<< HEAD
-
-=======
-=======
-<<<<<<< HEAD
-=======
->>>>>>> ed4f89fe4bb1e5fe57f9e8fd0b5be1d9dd2e3931
->>>>>>> 4a9a691b3f2513e01be04641d6f83a01ec5a9619
->>>>>>> 0b692630df0748af39a0c32edebc6d84baced84c
 .single-design .entry-header a {
   color: #fff;
   text-decoration: none;
@@ -1867,10 +1851,6 @@ main {
     .important-folder {
       background: url(../../assets/images/agriculture-file.png), url(../../assets/images/ambient-squares.png); } }
 
-<<<<<<< HEAD
-
-=======
->>>>>>> 0b692630df0748af39a0c32edebc6d84baced84c
 .design-folder {
   background-repeat: no-repeat;
   background-size: 90% 300px;
@@ -1947,20 +1927,6 @@ main {
 .important-image img {
   height: 220px; }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-.important-folder {
-  margin-bottom: 10rem; }
-<<<<<<< HEAD
-=======
-=======
-=======
-.important-folder {
-  margin-bottom: 10rem; }
->>>>>>> 8d13e5bc9381608de6b4f0cb14675c32cc387de3
-=======
->>>>>>> 0b692630df0748af39a0c32edebc6d84baced84c
 .work-image img {
   height: 210px; }
   @media (min-width: 600px) {
@@ -1993,11 +1959,6 @@ main {
     margin-bottom: 4rem;
     margin-left: 1rem;
     margin-right: 1rem; } }
-<<<<<<< HEAD
->>>>>>> 9ebf415bfeb50f4176c6098eb9af3861bbbbebe3
->>>>>>> 4a9a691b3f2513e01be04641d6f83a01ec5a9619
-=======
->>>>>>> 0b692630df0748af39a0c32edebc6d84baced84c
 
 .drop-down {
   display: none;
@@ -2160,7 +2121,6 @@ main {
             -ms-flex-pack: space-evenly;
                 justify-content: space-evenly;
         position: relative; }
-<<<<<<< HEAD
         .rainbow-game-container .game-background .featured-game-section .featured-games .featured-game {
           background: url(../../assets/images/game-card-desktop.png) no-repeat;
           background-size: contain;
@@ -2216,18 +2176,3 @@ main {
 .rainbow-game-container .featured-game .author h4 {
   margin: 0;
   padding-bottom: 7px; }
-=======
-        .rainbow-game-container .game-background .featured-game-section .featured-games .featured-game:first-child {
-          -webkit-transform: rotate(-25deg);
-                  transform: rotate(-25deg);
-          position: absolute;
-          left: 20%; }
-        .rainbow-game-container .game-background .featured-game-section .featured-games .featured-game:nth-child(2) {
-          position: absolute;
-          top: 10%; }
-        .rainbow-game-container .game-background .featured-game-section .featured-games .featured-game:last-child {
-          -webkit-transform: rotate(25deg);
-                  transform: rotate(25deg);
-          position: absolute;
-          right: 20%; }
-
