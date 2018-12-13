@@ -20,13 +20,116 @@
         "coins coins"
         "buttons design";
         color: white;
-        padding: 10px;
+        height: 453px;
+        padding: 10px 30px;
+        font-size: 14px;
+        text-transform: uppercase;
         .buttons {
         display: flex;
         align-items: flex-end;
         img {
             width: 20px;
         }
+        }
+        h4 {
+            margin: 0;
+        }
+    }
+    // grid template areas
+    .title {
+        grid-area: title;
+        display: flex;
+        flex-wrap:wrap;
+        align-items: center;
+        max-width: 160px;
+        h3 {
+            font-size: 20px;
+            display: inline-block;
+            margin: 0;
+            a {
+            color: white;
+            text-decoration: none;
+            }
+        }
+    }
+    .meta {
+        grid-area: meta;
+    }
+    .program {
+        text-align: end;
+        grid-area: program;
+        a {
+            color: #78F7FA;
+        }
+    }
+    .design {
+        grid-area: design;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        text-align: center;
+        a {
+            background: linear-gradient(180deg, #f5d672, #e77839);
+            padding: 10px;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 11px;
+        }
+    }
+    .coins {
+        grid-area: coins;
+        h4 {
+            margin: 0;
+            display: flex;
+            align-items: center;
+            img {
+            width: 20px;
+            }
+        }
+    }
+    .buttons {
+        grid-area: buttons;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        width: 50%;
+        p {
+            margin: 0;
+        }
+        .play-game, 
+        .download {
+            display:none;
+            @include desktop {
+                display: block;
+            }
+        }
+    }
+    .thumbnail {
+        grid-area: img;
+        text-align: center;
+        img {
+            height: auto;
+            max-height: 255px;
+            width: 100%;
+            max-width: 320px;
+        }
+    }
+    .gem {
+        grid-area: prizes;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: center;
+        font-weight: lighter;
+        div {
+            img {
+            display: inline-block; 
+            width: 30px;
+            height: 30px;
+            margin: 5px;
+            }
         }
     }
   }
@@ -38,41 +141,3 @@
     
 }
 
-// grid template areas
-    .title {
-        grid-area: title;
-    }
-    .meta {
-        grid-area: meta;
-    }
-    .program {
-        grid-area: program;
-    }
-    .design {
-        grid-area: design;
-    }
-    .coins {
-        grid-area: coins;
-    }
-    .buttons {
-        grid-area: buttons;
-        .play-game, 
-        .download {
-            display:none;
-            @include desktop {
-                display: block;
-            }
-        }
-    }
-    .thumbnail {
-        grid-area: img;
-    }
-    .gem {
-        grid-area: prizes;
-    }
-
-  //Styling for Gems
-
-img.gem {
-    width: 50px;
-  }
