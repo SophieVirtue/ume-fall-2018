@@ -19,23 +19,13 @@
           background-position: top;
           height: 200px;
           width: 135px;
-          @include tablet {
-            // background-size: cover;
-            // width: 180px;
-            // height: 235px;
-          }
-          @include desktop {
-            // height: 320px;
-            // width: 15%;
-          }
+
           &:first-child {
             transform: rotate(-25deg);
             transition: transform 0.35s ease-in-out, top 0.35s ease-in-out,
               width 0.35s ease-in-out, height 0.35s ease-in-out;
             position: absolute;
             left: 10%;
-
-            // width: 40%;
             &:hover {
               background-size: cover;
               height: 240px;
@@ -47,15 +37,29 @@
             @include tablet {
               top: 80px;
               background-size: contain;
-              height: 300px;
+              height: 230px;
               width: 200px;
               &:hover {
+                height: 270px;
+                width: 180px;
                 background-size: cover;
-                // height: 240px;
-                // width: 165px;
                 z-index: 5;
-                top: -30px;
-                transform: rotate(-10deg);
+                top: 10px;
+                transform: rotate(-15deg);
+              }
+            }
+            @include desktop {
+              top: 80px;
+              background-size: contain;
+              height: 330px;
+              width: 300px;
+              &:hover {
+                height: 440px;
+                width: 300px;
+                background-size: cover;
+                z-index: 5;
+                top: 10px;
+                transform: rotate(-15deg);
               }
             }
           }
@@ -84,6 +88,10 @@
               height: 300px;
               width: 200px;
             }
+            @include desktop {
+              height: 440px;
+              width: 300px;
+            }
           }
           &:last-child {
             transform: rotate(25deg);
@@ -102,20 +110,31 @@
             @include tablet {
               top: 80px;
               background-size: contain;
-              height: 300px;
+              height: 230px;
               width: 200px;
               &:hover {
+                height: 270px;
+                width: 180px;
                 background-size: cover;
-                // height: 240px;
-                // width: 165px;
                 z-index: 5;
-                top: -30px;
-                transform: rotate(-10deg);
+                top: 10px;
+                transform: rotate(15deg);
               }
             }
-          }
-          button {
-            margin: 0 auto;
+            @include desktop {
+              top: 80px;
+              background-size: contain;
+              height: 330px;
+              width: 300px;
+              &:hover {
+                height: 440px;
+                width: 300px;
+                background-size: cover;
+                z-index: 5;
+                top: 10px;
+                transform: rotate(15deg);
+              }
+            }
           }
         }
       }
@@ -143,6 +162,187 @@
       h4 {
         margin: 0;
         padding-bottom: 7px;
+      }
+    }
+    button {
+      margin: 0 auto;
+    }
+    &:first-child {
+      h3 {
+        a {
+          color: white;
+          text-decoration: none;
+          font-size: 14px;
+        }
+      }
+      .play {
+        img {
+          width: 100px;
+          height: 100px;
+        }
+      }
+      .author {
+        h4 {
+          margin: 0;
+          padding-bottom: 7px;
+        }
+      }
+
+      transform: rotate(-25deg);
+      transition: transform 0.35s ease-in-out, top 0.35s ease-in-out,
+        width 0.35s ease-in-out, height 0.35s ease-in-out;
+      position: absolute;
+      left: 10%;
+      &:hover {
+        background-size: cover;
+        height: 240px;
+        width: 165px;
+        z-index: 5;
+        top: -30px;
+        transform: rotate(-10deg);
+      }
+      @include tablet {
+        top: 80px;
+        background-size: contain;
+        height: 230px;
+        width: 200px;
+        &:hover {
+          height: 270px;
+          width: 180px;
+          background-size: cover;
+          z-index: 5;
+          top: 10px;
+          transform: rotate(-15deg);
+        }
+      }
+      @include desktop {
+        top: 80px;
+        background-size: contain;
+        height: 330px;
+        width: 300px;
+        &:hover {
+          height: 440px;
+          width: 300px;
+          background-size: cover;
+          z-index: 5;
+          top: 10px;
+          transform: rotate(-15deg);
+        }
+      }
+    }
+    &:nth-child(2) {
+      h3 {
+        margin-bottom: 6px;
+        a {
+          color: white;
+          text-decoration: none;
+          font-size: 14px;
+        }
+      }
+      .play {
+        img {
+          width: 100px;
+          height: 100px;
+        }
+      }
+      .author {
+        h4 {
+          margin: 0;
+          padding-bottom: 7px;
+        }
+      }
+
+      background-size: cover;
+      height: 240px;
+      width: 165px;
+      top: -25px;
+      z-index: 3;
+      position: absolute;
+      transition: top 0.35s ease-in-out;
+      &:hover {
+        z-index: 5;
+        top: -60px;
+      }
+      h3 {
+        margin-bottom: 15px;
+      }
+      a {
+        img {
+          width: 120px;
+          height: 120px;
+        }
+      }
+      @include tablet {
+        height: 300px;
+        width: 200px;
+      }
+      @include desktop {
+        height: 440px;
+        width: 300px;
+      }
+    }
+    &:last-child {
+      h3 {
+        margin-bottom: 6px;
+        a {
+          color: white;
+          text-decoration: none;
+          font-size: 14px;
+        }
+      }
+      .play {
+        img {
+          width: 100px;
+          height: 100px;
+        }
+      }
+      .author {
+        h4 {
+          margin: 0;
+          padding-bottom: 7px;
+        }
+      }
+
+      transform: rotate(25deg);
+      transition: transform 0.35s ease-in-out, top 0.35s ease-in-out,
+        width 0.35s ease-in-out, height 0.35s ease-in-out;
+      position: absolute;
+      right: 10%;
+      &:hover {
+        background-size: cover;
+        height: 240px;
+        width: 165px;
+        z-index: 5;
+        top: -30px;
+        transform: rotate(10deg);
+      }
+      @include tablet {
+        top: 80px;
+        background-size: contain;
+        height: 230px;
+        width: 200px;
+        &:hover {
+          height: 270px;
+          width: 180px;
+          background-size: cover;
+          z-index: 5;
+          top: 10px;
+          transform: rotate(15deg);
+        }
+      }
+      @include desktop {
+        top: 80px;
+        background-size: contain;
+        height: 330px;
+        width: 300px;
+        &:hover {
+          height: 440px;
+          width: 300px;
+          background-size: cover;
+          z-index: 5;
+          top: 10px;
+          transform: rotate(15deg);
+        }
       }
     }
   }
