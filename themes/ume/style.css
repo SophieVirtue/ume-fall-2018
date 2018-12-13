@@ -1814,8 +1814,6 @@ main {
 .work-section, .character-section, .obstacles-section, .important-section {
   text-align: center; }
 
-<<<<<<< HEAD
-=======
 .single-design .entry-header a {
   color: #fff;
   text-decoration: none;
@@ -1835,7 +1833,6 @@ main {
 .important-folder {
   background: url(../../assets/images/agriculture-file.png); }
 
->>>>>>> 9ebf415bfeb50f4176c6098eb9af3861bbbbebe3
 .design-folder {
   background-repeat: no-repeat;
   background-size: 90% 300px;
@@ -1896,15 +1893,6 @@ main {
 .important-image img {
   height: 220px; }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-.important-folder {
-  margin-bottom: 10rem; }
-=======
-=======
-.important-folder {
-  margin-bottom: 10rem; }
->>>>>>> 8d13e5bc9381608de6b4f0cb14675c32cc387de3
 .work-image img {
   height: 210px; }
   @media (min-width: 600px) {
@@ -1937,7 +1925,6 @@ main {
     margin-bottom: 7rem;
     margin-left: 1rem;
     margin-right: 1rem; } }
->>>>>>> 9ebf415bfeb50f4176c6098eb9af3861bbbbebe3
 
 .drop-down {
   display: none;
@@ -1952,12 +1939,15 @@ main {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     display: grid;
-    grid-template-areas: "title prizes" "img img" "img img" "img img" "meta program" "coins coins" "buttons design";
+    grid-template-areas: "title prizes" "img img" "img img" "img img" "meta program" "coins coins" "buttons design";
     color: white;
     height: 453px;
     padding: 10px 30px;
     font-size: 14px;
     text-transform: uppercase; }
+    @media (min-width: 600px) {
+      .drop-down .game-dropdown {
+        grid-template-areas: "title img" "meta img" "program img" "design img" "coins img" "buttons prizes"; } }
     .drop-down .game-dropdown .buttons {
       display: -webkit-box;
       display: -ms-flexbox;
