@@ -2233,13 +2233,13 @@ main {
     .rainbow-game-container .featured-game:first-child h3, .rainbow-game-container .featured-game:last-child h3 {
       margin: 30px 0; } }
 
-.rainbow-game-container .featured-game:first-child .play img, .rainbow-game-container .featured-game:last-child .play img {
+.rainbow-game-container .featured-game:first-child .play-thumbnail-featured img, .rainbow-game-container .featured-game:last-child .play-thumbnail-featured img {
   width: 100px;
   height: 100px;
   -webkit-transition: width 0.35s ease-in-out, height 0.35s ease-in-out;
   transition: width 0.35s ease-in-out, height 0.35s ease-in-out; }
   @media (min-width: 1024px) {
-    .rainbow-game-container .featured-game:first-child .play img, .rainbow-game-container .featured-game:last-child .play img {
+    .rainbow-game-container .featured-game:first-child .play-thumbnail-featured img, .rainbow-game-container .featured-game:last-child .play-thumbnail-featured img {
       width: 200px;
       height: 200px; } }
 
@@ -2247,14 +2247,14 @@ main {
   margin: 0;
   padding-bottom: 7px; }
 
-.rainbow-game-container .featured-game:first-child .arrow, .rainbow-game-container .featured-game:last-child .arrow {
+.rainbow-game-container .featured-game:first-child .play-button-featured, .rainbow-game-container .featured-game:last-child .play-button-featured {
   margin: 0 auto; }
 
-.rainbow-game-container .featured-game:first-child:hover .play img, .rainbow-game-container .featured-game:last-child:hover .play img {
+.rainbow-game-container .featured-game:first-child:hover .play-thumbnail-featured img, .rainbow-game-container .featured-game:last-child:hover .play-thumbnail-featured img {
   width: 125px;
   height: 125px; }
   @media (min-width: 1024px) {
-    .rainbow-game-container .featured-game:first-child:hover .play img, .rainbow-game-container .featured-game:last-child:hover .play img {
+    .rainbow-game-container .featured-game:first-child:hover .play-thumbnail-featured img, .rainbow-game-container .featured-game:last-child:hover .play-thumbnail-featured img {
       width: 220px;
       height: 220px; } }
 
@@ -2262,11 +2262,11 @@ main {
   .rainbow-game-container .featured-game:nth-child(2) h3 {
     margin: 2rem 0; } }
 
-.rainbow-game-container .featured-game:nth-child(2) .play img {
+.rainbow-game-container .featured-game:nth-child(2) .play-thumbnail-featured img {
   width: 135px;
   height: 135px; }
   @media (min-width: 1024px) {
-    .rainbow-game-container .featured-game:nth-child(2) .play img {
+    .rainbow-game-container .featured-game:nth-child(2) .play-thumbnail-featured img {
       width: 220px;
       height: 220px; } }
 
@@ -2278,21 +2278,37 @@ main {
       padding: 1rem 0; } }
 
 .rainbow-game-container .featured-game:first-child h3 a, .rainbow-game-container .featured-game:nth-child(2) h3 a, .rainbow-game-container .featured-game:last-child h3 a {
+  font-family: 'futura-bk', sans-serif;
+  font-weight: 400;
   color: white;
   text-decoration: none;
-  font-size: 14px; }
+  font-size: 14px;
+  text-transform: uppercase; }
   @media (min-width: 1024px) {
     .rainbow-game-container .featured-game:first-child h3 a, .rainbow-game-container .featured-game:nth-child(2) h3 a, .rainbow-game-container .featured-game:last-child h3 a {
-      font-size: 1.5rem; } }
+      font-size: 1.3rem; } }
 
-.rainbow-game-container .featured-game:first-child .play img, .rainbow-game-container .featured-game:nth-child(2) .play img, .rainbow-game-container .featured-game:last-child .play img {
+.rainbow-game-container .featured-game:first-child .play-thumbnail-featured img, .rainbow-game-container .featured-game:nth-child(2) .play-thumbnail-featured img, .rainbow-game-container .featured-game:last-child .play-thumbnail-featured img {
   -webkit-transition: width 0.35s ease-in-out, height 0.35s ease-in-out;
   transition: width 0.35s ease-in-out, height 0.35s ease-in-out; }
 
 .rainbow-game-container .featured-game:first-child .author h4, .rainbow-game-container .featured-game:nth-child(2) .author h4, .rainbow-game-container .featured-game:last-child .author h4 {
   margin: 0;
-  padding-bottom: 7px; }
+  padding-bottom: 7px;
+  font-family: 'futura-bk', sans-serif;
+  font-weight: 400;
+  color: white;
+  font-size: 14px;
+  text-transform: uppercase; }
+  @media (min-width: 1024px) {
+    .rainbow-game-container .featured-game:first-child .author h4, .rainbow-game-container .featured-game:nth-child(2) .author h4, .rainbow-game-container .featured-game:last-child .author h4 {
+      font-size: 1rem; } }
 
-.rainbow-game-container .featured-game:first-child .play-button .play, .rainbow-game-container .featured-game:nth-child(2) .play-button .play, .rainbow-game-container .featured-game:last-child .play-button .play {
+.rainbow-game-container .featured-game:first-child .play-button-featured img, .rainbow-game-container .featured-game:nth-child(2) .play-button-featured img, .rainbow-game-container .featured-game:last-child .play-button-featured img {
   margin: 0 auto;
-  width: 20px; }
+  width: 15px;
+  height: 15px; }
+  @media (min-width: 600px) {
+    .rainbow-game-container .featured-game:first-child .play-button-featured img, .rainbow-game-container .featured-game:nth-child(2) .play-button-featured img, .rainbow-game-container .featured-game:last-child .play-button-featured img {
+      width: 30px;
+      height: 30px; } }
