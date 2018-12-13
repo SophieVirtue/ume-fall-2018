@@ -58,7 +58,6 @@ get_sidebar(); ?>
 
         <section class="main-section-container">
 
-        <hr>
 
         <!-- end of featured games -->
 
@@ -73,8 +72,8 @@ get_sidebar(); ?>
    $args = array( 'post_type' => 'game', 'posts_per_page' => '-1', 'category_name' => $category->name );
    $game_posts = get_posts( $args ); // returns an array of posts
 ?>
-         <div class="category-folder">
-        <section class="<?php $category->slug ?>-category">
+        <div class="category-folder">
+        <section class="<?php $category->slug ?>category">
         <h2><?php echo $category->name ?></h2>
         <div class="<?php $category->slug ?>-games main-carousel">
 <?php foreach ( $game_posts as $post ) : setup_postdata( $post ); ?>
@@ -88,18 +87,18 @@ get_sidebar(); ?>
         ?>
 
     </div>
-    </div>
           <?php foreach ( $game_posts as $post ) : setup_postdata( $post ); ?>
           <div class="drop-down" data-id="<?php the_ID(); ?>">
            <?php get_template_part( 'template-parts/content-drop' ); ?>
       </div>
 <?php endforeach; wp_reset_postdata(); ?>
           </section>
+          </div>
 
-          <hr>
         <?php endforeach; ?>
         <!-- end of game categories -->
-        </section><!-- end of featured games section -->
+        </section>
+        <!-- end of featured games section -->
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
