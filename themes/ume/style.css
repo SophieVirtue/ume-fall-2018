@@ -1814,11 +1814,13 @@ main {
 .work-section, .character-section, .obstacles-section, .important-section {
   text-align: center; }
 
+
 @media (min-width: 1024px) {
   .single-design .entry-header {
     padding-left: 5rem;
     padding-top: 3rem;
     padding-bottom: 3rem; } }
+
 
 .single-design .entry-header a {
   color: #fff;
@@ -1850,6 +1852,7 @@ main {
   @media (min-width: 1024px) {
     .important-folder {
       background: url(../../assets/images/agriculture-file.png), url(../../assets/images/ambient-squares.png); } }
+
 
 .design-folder {
   background-repeat: no-repeat;
@@ -1912,13 +1915,12 @@ main {
 
 .design-image img {
   width: 271px;
-  height: 190px;
+  height: auto;
   padding-top: 1rem; }
   @media (min-width: 600px) {
     .design-image img {
       padding-bottom: 2rem;
       padding-right: 1rem;
-      height: 100%;
       padding-top: 3rem; } }
 
 .character-image img {
@@ -1955,10 +1957,14 @@ main {
         -ms-flex-order: 2;
             order: 2;
     border-right: 1px solid #fff;
+
+    margin: 4rem 1rem; } }
+/* 
     margin-top: 4rem;
     margin-bottom: 4rem;
     margin-left: 1rem;
-    margin-right: 1rem; } }
+    margin-right: 1rem; } } */
+
 
 .drop-down {
   display: none;
