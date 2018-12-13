@@ -92,7 +92,7 @@ a{
     font-family: Futura-Bk-Bt;
     text-transform: uppercase;
     padding-top: 1.5rem;
-    padding-left: 1.5rem;
+    padding-left: 1.1rem;
     @include tablet{
     font-size: 1.1rem;
     padding-left: 2rem;
@@ -120,36 +120,12 @@ a{
 
 .design-image img{
     width: 271px;
-    height: 190px;
+    height: auto;
     padding-top: 1rem;
     @include tablet{
     padding-bottom: 2rem;
     padding-right: 1rem;
-    height: 100%;
     padding-top: 3rem;
-
-    }
-}
-
-.character-image img{
-    height: 210px;
-}
-
-.important-image img{
-    height: 220px;
-}
-
-
-.work-image img{
-    height: 210px;
-    @include tablet{
-        height: 350px;
-    }
-}
-
-.obstacles-image img{
-    @include tablet{
-        height: 400px;
     }
 }
 
@@ -160,7 +136,6 @@ a{
     margin-right: 6rem;
 }
 
-//Mobile and Tablet Flex
 .design-image {
     @include tablet{
         order: 3;
@@ -171,19 +146,6 @@ a{
     @include tablet{
     order: 2;
     border-right: 1px solid #fff;
-    margin-top: 4rem;
-    margin-bottom: 4rem;
-    margin-left: 1rem;
-    margin-right: 1rem;
+    margin: 4rem 1rem;
     }
 }
-
-
-
-
-
-
-
-
-
-
