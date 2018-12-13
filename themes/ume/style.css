@@ -1851,7 +1851,6 @@ main {
     .important-folder {
       background: url(../../assets/images/agriculture-file.png), url(../../assets/images/ambient-squares.png); } }
 
-
 .design-folder {
   background-repeat: no-repeat;
   background-size: 90% 300px;
@@ -1921,26 +1920,6 @@ main {
       padding-right: 1rem;
       padding-top: 3rem; } }
 
-
-.character-image img {
-  height: 210px; }
-
-.important-image img {
-  height: 220px; }
-
-.important-folder {
-  margin-bottom: 10rem; }
-
-.work-image img {
-  height: 210px; }
-  @media (min-width: 600px) {
-    .work-image img {
-      height: 350px; } }
-
-@media (min-width: 600px) {
-  .obstacles-image img {
-    height: 400px; } }
-
 .design-border {
   border-bottom: 1px solid #fff;
   padding-top: 2rem;
@@ -1960,11 +1939,6 @@ main {
             order: 2;
     border-right: 1px solid #fff;
     margin: 4rem 1rem; } }
-/* 
-    margin-top: 4rem;
-    margin-bottom: 4rem;
-    margin-left: 1rem;
-    margin-right: 1rem; } } */
 
 .drop-down {
   display: none;
@@ -1979,14 +1953,7 @@ main {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     display: grid;
-    grid-template-areas: "title prizes"
- "img img"
- "img img"
- "img img"
- "meta program"
- "coins coins"
- "buttons design";
-    grid-template-areas: "title prizes" "img img" "img img" "img img" "meta program" "coins coins" "buttons design";
+    grid-template-areas: "title prizes" "img img" "img img" "img img" "meta program" "coins coins" "buttons design";
     color: white;
     height: 453px;
     padding: 10px 30px;
@@ -1994,13 +1961,7 @@ main {
     text-transform: uppercase; }
     @media (min-width: 600px) {
       .drop-down .game-dropdown {
-        grid-template-areas: "title img"
- "meta img"
- "program img"
- "design img"
- "coins img"
- "buttons prizes"; } }
-        grid-template-areas: "title img" "meta img" "program img" "design img" "coins img" "buttons prizes"; } }
+        grid-template-areas: "title img" "meta img" "program img" "design img" "coins img" "buttons prizes"; } }
     .drop-down .game-dropdown .buttons {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -2149,10 +2110,10 @@ main {
           .rainbow-game-container .game-background .featured-game-section .featured-games .featured-game:first-child {
             -webkit-transform: rotate(-25deg);
                     transform: rotate(-25deg);
-            -webkit-transition: top 0.35s ease-in-out, width 0.35s ease-in-out, height 0.35s ease-in-out, -webkit-transform 0.35s ease-in-out;
-            transition: top 0.35s ease-in-out, width 0.35s ease-in-out, height 0.35s ease-in-out, -webkit-transform 0.35s ease-in-out;
-            transition: transform 0.35s ease-in-out, top 0.35s ease-in-out, width 0.35s ease-in-out, height 0.35s ease-in-out;
-            transition: transform 0.35s ease-in-out, top 0.35s ease-in-out, width 0.35s ease-in-out, height 0.35s ease-in-out, -webkit-transform 0.35s ease-in-out;
+            -webkit-transition: top 0.35s ease-in-out, width 0.35s ease-in-out, height 0.35s ease-in-out, -webkit-transform 0.35s ease-in-out;
+            transition: top 0.35s ease-in-out, width 0.35s ease-in-out, height 0.35s ease-in-out, -webkit-transform 0.35s ease-in-out;
+            transition: transform 0.35s ease-in-out, top 0.35s ease-in-out, width 0.35s ease-in-out, height 0.35s ease-in-out;
+            transition: transform 0.35s ease-in-out, top 0.35s ease-in-out, width 0.35s ease-in-out, height 0.35s ease-in-out, -webkit-transform 0.35s ease-in-out;
             position: absolute;
             left: 10%; }
             .rainbow-game-container .game-background .featured-game-section .featured-games .featured-game:first-child:hover {
@@ -2199,10 +2160,10 @@ main {
           .rainbow-game-container .game-background .featured-game-section .featured-games .featured-game:last-child {
             -webkit-transform: rotate(25deg);
                     transform: rotate(25deg);
-            -webkit-transition: top 0.35s ease-in-out, width 0.35s ease-in-out, height 0.35s ease-in-out, -webkit-transform 0.35s ease-in-out;
-            transition: top 0.35s ease-in-out, width 0.35s ease-in-out, height 0.35s ease-in-out, -webkit-transform 0.35s ease-in-out;
-            transition: transform 0.35s ease-in-out, top 0.35s ease-in-out, width 0.35s ease-in-out, height 0.35s ease-in-out;
-            transition: transform 0.35s ease-in-out, top 0.35s ease-in-out, width 0.35s ease-in-out, height 0.35s ease-in-out, -webkit-transform 0.35s ease-in-out;
+            -webkit-transition: top 0.35s ease-in-out, width 0.35s ease-in-out, height 0.35s ease-in-out, -webkit-transform 0.35s ease-in-out;
+            transition: top 0.35s ease-in-out, width 0.35s ease-in-out, height 0.35s ease-in-out, -webkit-transform 0.35s ease-in-out;
+            transition: transform 0.35s ease-in-out, top 0.35s ease-in-out, width 0.35s ease-in-out, height 0.35s ease-in-out;
+            transition: transform 0.35s ease-in-out, top 0.35s ease-in-out, width 0.35s ease-in-out, height 0.35s ease-in-out, -webkit-transform 0.35s ease-in-out;
             position: absolute;
             right: 10%; }
             .rainbow-game-container .game-background .featured-game-section .featured-games .featured-game:last-child:hover {
@@ -2242,18 +2203,3 @@ main {
 .rainbow-game-container .featured-game .author h4 {
   margin: 0;
   padding-bottom: 7px; }
-
-        .rainbow-game-container .game-background .featured-game-section .featured-games .featured-game:first-child {
-          -webkit-transform: rotate(-25deg);
-                  transform: rotate(-25deg);
-          position: absolute;
-          left: 20%; }
-        .rainbow-game-container .game-background .featured-game-section .featured-games .featured-game:nth-child(2) {
-          position: absolute;
-          top: 10%; }
-        .rainbow-game-container .game-background .featured-game-section .featured-games .featured-game:last-child {
-          -webkit-transform: rotate(25deg);
-                  transform: rotate(25deg);
-          position: absolute;
-          right: 20%; }
-
