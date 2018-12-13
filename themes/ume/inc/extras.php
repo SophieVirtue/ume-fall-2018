@@ -114,6 +114,9 @@ if ($game_coins >= 300) {
     $gems[11]= '<img class="gem" src="'.get_template_directory_uri().'/assets/images/gems/mystery-box-gems/raindrop.png">';
 }
 
+if(count($gems) > 3) {
+	$gems = array_slice($gems, -3, 3, true);
+}
 
 return $gems;
 }
