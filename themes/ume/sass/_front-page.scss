@@ -41,6 +41,7 @@
     background-size: cover;
     @include tablet {
       background: url(../../assets/images/game-card-tablet.png) no-repeat;
+      height: auto;
     }
     @include desktop {
       background: url(../../assets/images/game-card-desktop.png) no-repeat;
@@ -170,8 +171,12 @@
   background-repeat: no-repeat;
   background-size: 100% 365px;
   padding-top: 1rem;
+  @include tablet{
+    margin-top: 7rem;
+    background-position-y: -0.5rem;
+    background-size: 100% 410px;
+  }
   @include desktop{
-  background-position-y: -1rem;
   background-size: 80% 480px;
 }
 }
@@ -182,8 +187,11 @@
   background-size: 100% 365px;
   padding-top: 1rem;
   padding-bottom: 2rem;
+  @include tablet{
+    background-position-y: -0.5rem;
+    background-size: 100% 410px;
+    }
   @include desktop{
-  background-position-y: -1rem;
   background-size: 80% 480px;
 }
 }
@@ -194,8 +202,11 @@
   background-size: 100% 365px;
   padding-top: 1rem;
   padding-bottom: 2rem;
+  @include tablet{
+    background-position-y: -0.5rem;
+    background-size: 100% 410px;
+    }
   @include desktop{
-  background-position-y: -1rem;
   background-size: 80% 480px;
 }
 }
@@ -206,8 +217,11 @@
   background-size: 100% 365px;
   padding-top: 1rem;
   padding-bottom: 2rem;
+  @include tablet{
+    background-position-y: -0.5rem;
+    background-size: 100% 410px;
+    }
   @include desktop{
-  background-position-y: -1rem;
   background-size: 80% 480px;
 }
 }
@@ -217,8 +231,10 @@
   background-size: 100% 365px;
   padding-top: 1rem;
   padding-bottom: 2rem;
+  @include tablet{
+    background-position-y: -0.5rem;
+    background-size: 100% 410px;    }
   @include desktop{
-  background-position-y: -1rem;
   background-size: 80% 480px;
 }
 }
@@ -229,8 +245,11 @@
   background-size: 100% 365px;
   padding-top: 1rem;
   padding-bottom: 2rem;
+  @include tablet{
+    background-position-y: -0.5rem;
+    background-size: 100% 410px;
+  }
   @include desktop{
-  background-position-y: -1rem;
   background-size: 80% 480px;
 }
 }
@@ -241,14 +260,15 @@
   font-size: 0.79rem;
   text-transform: uppercase;
   padding-right: 18rem;
-  padding-left: 0rem;
+  padding-left: 0;
   color: white;
   font-family: Futura-Bk-Bt;
   text-transform: uppercase;
+  @include tablet{
+    padding-left: 1rem;
+  }
   @include desktop{
     font-size: 1.4rem;
-    padding-left: 4rem;
-
   }
 }
 }

@@ -12,4 +12,9 @@
     </div>
     <div class="arrow">
             <img  src="<?php echo get_template_directory_uri(); ?>/assets/images/down-arrow.png"/>
+<<<<<<< HEAD
 </div>
+=======
+</div>
+    
+>>>>>>> 559d4ee8d1a583d3faeb3ecf336fa28c2013521e
