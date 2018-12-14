@@ -1960,7 +1960,7 @@ main {
             height: auto; } }
       .search .search-results-container .search-game .type-game .author h4,
       .search-results .search-results-container .search-game .type-game .author h4 {
-        margin-bottom: 1rem;
+        margin-bottom: 0.5rem;
         font-family: 'Futura-Bk-BT';
         font-size: 12px;
         margin-top: 0; }
@@ -2025,6 +2025,8 @@ main {
   background-repeat: no-repeat;
   background-size: 100% 100%;
   background-position: top; }
+  .single-design .site-main li {
+    font-size: 13px; }
 
 .work-section, .character-section, .obstacles-section, .important-section {
   text-align: center; }
@@ -2035,12 +2037,22 @@ main {
     padding-top: 3rem;
     padding-bottom: 3rem; } }
 
+.single-design .entry-header h2.entry-title {
+  padding-top: 4rem; }
+  @media (min-width: 600px) {
+    .single-design .entry-header h2.entry-title {
+      margin-bottom: 30px; } }
+
 .single-design .entry-header a {
   color: #fff;
   text-decoration: none;
   font-family: Futura-Bk-Bt;
   text-transform: uppercase;
   padding-left: 1rem; }
+
+.design {
+  margin: 0 auto;
+  padding-bottom: 5rem; }
 
 .work-folder {
   background: url(../../assets/images/set-up-file.png); }
@@ -2068,33 +2080,40 @@ main {
 
 .design-folder {
   background-repeat: no-repeat;
-  background-size: 90% 300px;
+  background-size: 338px 300px;
   background-position: left top;
-  height: auto;
-  width: auto;
-  margin-bottom: 5rem; }
+  margin-bottom: 2rem; }
+  @media (min-width: 600px) {
+    .design-folder {
+      background-size: 550px 300px; } }
   @media (min-width: 1024px) {
     .design-folder {
-      background-size: 87% 300px, 100% 350px;
-      background-position: center top; } }
+      background-size: 780px 380px, 1000px 380px;
+      background-position: center top;
+      margin-bottom: 5rem; } }
 
 .design-section {
   color: #fff;
   background: rgba(0, 0, 0, 0.6);
+  width: 322px;
   margin-left: 2rem;
-  margin-right: 2rem; }
+  margin-right: 1.3rem;
+  padding-bottom: 0.1rem; }
   @media (min-width: 600px) {
     .design-section {
       display: -webkit-box;
       display: -ms-flexbox;
-      display: flex; } }
+      display: flex;
+      width: 600px; } }
   @media (min-width: 1024px) {
     .design-section {
       -webkit-box-pack: center;
           -ms-flex-pack: center;
               justify-content: center;
       margin-left: 10rem;
-      margin-right: 4rem; } }
+      margin-right: 4rem;
+      width: 770px;
+      min-height: 340px; } }
 
 .design-title {
   color: #fff;
@@ -2103,30 +2122,36 @@ main {
   font-family: Futura-Bk-Bt;
   text-transform: uppercase;
   padding-top: 1.5rem;
-  padding-left: 1.1rem; }
+  padding-left: 1.1rem;
+  height: 60px; }
   @media (min-width: 600px) {
     .design-title {
       font-size: 1.1rem;
       padding-left: 2rem;
-      width: 150px; } }
+      width: 150px;
+      height: 70px; } }
   @media (min-width: 600px) and (min-width: 1024px) {
     .design-title {
       font-size: 1.1rem;
-      padding-left: 9rem;
-      width: 300px; } }
+      padding-left: 10rem;
+      width: 320px; } }
 
 .design-text {
   text-align: left;
-  margin-right: 1rem;
+  margin: 0 1rem;
   line-height: 1.25rem; }
   @media (min-width: 600px) {
     .design-text {
       margin-left: 1rem;
       padding-top: 2rem;
       padding-bottom: 1rem; } }
+  .design-text h3 {
+    display: none; }
+  .design-text p {
+    font-size: 0.9rem; }
 
 .design-image img {
-  width: 271px;
+  width: 250px;
   height: auto;
   padding-top: 1rem; }
   @media (min-width: 600px) {
@@ -2134,18 +2159,23 @@ main {
       padding-bottom: 2rem;
       padding-right: 1rem;
       padding-top: 3rem; } }
+  @media (min-width: 1024px) {
+    .design-image img {
+      width: 350px; } }
 
 .design-border {
   border-bottom: 1px solid #fff;
-  padding-top: 2rem;
+  padding-top: 1rem;
   margin-left: 6rem;
   margin-right: 6rem; }
 
-@media (min-width: 600px) {
-  .design-image {
-    -webkit-box-ordinal-group: 4;
-        -ms-flex-order: 3;
-            order: 3; } }
+.design-image {
+  height: 220px; }
+  @media (min-width: 600px) {
+    .design-image {
+      -webkit-box-ordinal-group: 4;
+          -ms-flex-order: 3;
+              order: 3; } }
 
 @media (min-width: 600px) {
   .design-border {
@@ -2564,10 +2594,17 @@ main {
           .rainbow-game-container .game-background .featured-game-section .featured-games .featured-game:last-child {
             -webkit-transform: rotate(25deg);
                     transform: rotate(25deg);
+<<<<<<< HEAD
             -webkit-transition: top 0.45s ease-in-out, width 0.75s ease-in-out, height 0.75s ease-in-out, -webkit-transform 0.45s ease-in-out;
             transition: top 0.45s ease-in-out, width 0.75s ease-in-out, height 0.75s ease-in-out, -webkit-transform 0.45s ease-in-out;
             transition: transform 0.45s ease-in-out, top 0.45s ease-in-out, width 0.75s ease-in-out, height 0.75s ease-in-out;
             transition: transform 0.45s ease-in-out, top 0.45s ease-in-out, width 0.75s ease-in-out, height 0.75s ease-in-out, -webkit-transform 0.45s ease-in-out;
+=======
+            -webkit-transition: top 0.65s ease-in-out, width 0.75s ease-in-out, height 0.75s ease-in-out, -webkit-transform 0.65s ease-in-out;
+            transition: top 0.65s ease-in-out, width 0.75s ease-in-out, height 0.75s ease-in-out, -webkit-transform 0.65s ease-in-out;
+            transition: transform 0.65s ease-in-out, top 0.65s ease-in-out, width 0.75s ease-in-out, height 0.75s ease-in-out;
+            transition: transform 0.65s ease-in-out, top 0.65s ease-in-out, width 0.75s ease-in-out, height 0.75s ease-in-out, -webkit-transform 0.65s ease-in-out;
+>>>>>>> 761b98c6521f39dce20faaa8b5df2bfa7dfe2e14
             position: absolute;
             right: 10%; }
             .rainbow-game-container .game-background .featured-game-section .featured-games .featured-game:last-child:hover {
@@ -2671,22 +2708,22 @@ main {
   -webkit-transition: width 0.35s ease-in-out, height 0.35s ease-in-out;
   transition: width 0.35s ease-in-out, height 0.35s ease-in-out; }
 
-@media (min-width: 600px) {
-  .rainbow-game-container .featured-game:first-child .author h4, .rainbow-game-container .featured-game:nth-child(2) .author h4, .rainbow-game-container .featured-game:last-child .author h4 {
-    padding-top: 0.5rem;
-    font-family: Futura-Bk-Bt;
-    font-weight: 200; } }
-
-.rainbow-game-container .featured-game:first-child .author h4 .author-transform, .rainbow-game-container .featured-game:nth-child(2) .author h4 .author-transform, .rainbow-game-container .featured-game:last-child .author h4 .author-transform {
-  margin: 0;
-  padding-bottom: 7px;
+.rainbow-game-container .featured-game:first-child .author h4, .rainbow-game-container .featured-game:nth-child(2) .author h4, .rainbow-game-container .featured-game:last-child .author h4 {
   font-family: Futura-Bk-Bt;
-  font-weight: 400;
-  color: white;
-  font-size: 14px; }
-  @media (min-width: 1024px) {
-    .rainbow-game-container .featured-game:first-child .author h4 .author-transform, .rainbow-game-container .featured-game:nth-child(2) .author h4 .author-transform, .rainbow-game-container .featured-game:last-child .author h4 .author-transform {
-      font-size: 1rem; } }
+  font-weight: 200; }
+  @media (min-width: 600px) {
+    .rainbow-game-container .featured-game:first-child .author h4, .rainbow-game-container .featured-game:nth-child(2) .author h4, .rainbow-game-container .featured-game:last-child .author h4 {
+      padding-top: 0.5rem; } }
+  .rainbow-game-container .featured-game:first-child .author h4 .author-transform, .rainbow-game-container .featured-game:nth-child(2) .author h4 .author-transform, .rainbow-game-container .featured-game:last-child .author h4 .author-transform {
+    margin: 0;
+    padding-bottom: 7px;
+    font-family: Futura-Bk-Bt;
+    font-weight: 400;
+    color: white;
+    font-size: 14px; }
+    @media (min-width: 1024px) {
+      .rainbow-game-container .featured-game:first-child .author h4 .author-transform, .rainbow-game-container .featured-game:nth-child(2) .author h4 .author-transform, .rainbow-game-container .featured-game:last-child .author h4 .author-transform {
+        font-size: 1rem; } }
 
 .rainbow-game-container .featured-game:first-child .play-button-featured img, .rainbow-game-container .featured-game:nth-child(2) .play-button-featured img, .rainbow-game-container .featured-game:last-child .play-button-featured img {
   margin: 0 auto;
