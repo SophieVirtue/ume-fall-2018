@@ -2321,7 +2321,8 @@ main {
         -webkit-box-align: end;
             -ms-flex-align: end;
                 align-items: flex-end;
-        width: 100%;
+        border-top: 1px solid white;
+        width: 98%;
         height: 100%; } }
     @media (min-width: 1024px) {
       .drop-down .buttons {
@@ -2364,7 +2365,8 @@ main {
         -webkit-box-align: center;
             -ms-flex-align: center;
                 align-items: center;
-        min-width: 280px; } }
+        min-width: 280px;
+        border-left: 1px solid white; } }
     @media (min-width: 1024px) {
       .drop-down .thumbnail {
         height: 400px;
@@ -2412,7 +2414,9 @@ main {
                 flex-direction: row;
         -webkit-box-align: end;
             -ms-flex-align: end;
-                align-items: flex-end; }
+                align-items: flex-end;
+        border-left: 1px solid white;
+        border-top: 1px solid white; }
         .drop-down .gem h4 {
           margin: 0;
           margin-bottom: 12px; } }
@@ -2651,8 +2655,7 @@ main {
   font-family: 'futura-bk', sans-serif;
   font-weight: 400;
   color: white;
-  font-size: 14px;
-  text-transform: uppercase; }
+  font-size: 14px; }
   @media (min-width: 1024px) {
     .rainbow-game-container .featured-game:first-child .author h4 .author-transform, .rainbow-game-container .featured-game:nth-child(2) .author h4 .author-transform, .rainbow-game-container .featured-game:last-child .author h4 .author-transform {
       font-size: 1rem; } }

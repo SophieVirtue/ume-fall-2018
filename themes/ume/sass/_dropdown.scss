@@ -173,8 +173,8 @@
         width: 50%;
         @include tablet {
             align-items: flex-end;
-            // border-top: 1px solid white;
-            width: 100%;
+            border-top: 1px solid white;
+            width: 98%;
             height: 100%;
         }
         @include desktop {
@@ -223,6 +223,7 @@
             justify-content: center;
             align-items: center;
             min-width: 280px;
+            border-left: 1px solid white;
         }
         @include desktop {
             height: 400px;
@@ -233,7 +234,6 @@
             height: auto;
             min-height: 256px;
             width: 100%;
-            // max-width: 320px;
             @include tablet {
                 min-width: 256px;
                 min-height: 245px;
@@ -241,7 +241,6 @@
             @include desktop {
                 height: 300px;
                 width: 500px;
-                // max-width: none;
             }
         }
     }
@@ -256,8 +255,10 @@
         @include tablet {
             flex-direction: row;
             align-items: flex-end;
-            // border-left: 1px solid white;
-            // border-top: 1px solid white;
+            border-left: 1px solid white;
+            border-top: 1px solid white;
+            // width: 98%;
+            // margin-left: 2%;
             h4 {
                 margin: 0;
                 margin-bottom: 12px;
