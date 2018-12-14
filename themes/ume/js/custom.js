@@ -13,7 +13,8 @@
                 event.preventDefault();
                 $popup.toggle();
             }); //end of popup .onclick
-            $(document).on( 'mouseup', function() {
+            $(document).on( 'mouseup', function(event) {
+                event.preventDefault();
                 $popup.hide();
             } );
         }//end of if browsertype
