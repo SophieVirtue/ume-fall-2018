@@ -5,13 +5,16 @@
     background: url(../../assets/images/drop-down.png) no-repeat, rgba(0, 0, 0, 0.8);
     background-size: 100% 100%;
     width: 100%;
+    margin-left: -1.5rem;
     @include tablet {
         background: url(../../assets/images/drop-down-tablet.png) no-repeat, rgba(0, 0, 0, 0.8);
         background-size: 100% 100%;
+        margin-left: -1.5rem;
     }
     @include desktop {
         background: url(../../assets/images/drop-down-desktop.png) no-repeat, rgba(0, 0, 0, 0.8);
         background-size: 100% 100%;
+        margin-left: -9.5rem;
     }
     img {
         width: 100%;

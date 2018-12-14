@@ -2161,15 +2161,18 @@ main {
   z-index: 1000;
   background: url(../../assets/images/drop-down.png) no-repeat, rgba(0, 0, 0, 0.8);
   background-size: 100% 100%;
-  width: 100%; }
+  width: 100%;
+  margin-left: -1.5rem; }
   @media (min-width: 600px) {
     .drop-down {
       background: url(../../assets/images/drop-down-tablet.png) no-repeat, rgba(0, 0, 0, 0.8);
-      background-size: 100% 100%; } }
+      background-size: 100% 100%;
+      margin-left: -1.5rem; } }
   @media (min-width: 1024px) {
     .drop-down {
       background: url(../../assets/images/drop-down-desktop.png) no-repeat, rgba(0, 0, 0, 0.8);
-      background-size: 100% 100%; } }
+      background-size: 100% 100%;
+      margin-left: -9.5rem; } }
   .drop-down img {
     width: 100%; }
   .drop-down .game-dropdown {
