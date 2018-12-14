@@ -13,8 +13,5 @@
     <div class="arrow">
             <img  src="<?php echo get_template_directory_uri(); ?>/assets/images/down-arrow.png"/>
 </div>
-<<<<<<< HEAD
     
     
-=======
->>>>>>> d74c86da749063f2e72697904a9974127fd824e2
