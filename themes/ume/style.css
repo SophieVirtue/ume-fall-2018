@@ -2019,19 +2019,23 @@ main {
   position: absolute;
   z-index: 1000;
   background: url(../../assets/images/drop-down.png) no-repeat, rgba(0, 0, 0, 0.8);
-  background-size: cover;
+  background-size: 100% 100%;
   width: 100%; }
   @media (min-width: 600px) {
     .drop-down {
       background: url(../../assets/images/drop-down-tablet.png) no-repeat, rgba(0, 0, 0, 0.8);
-      background-size: cover; } }
+      background-size: 100% 100%; } }
+  @media (min-width: 1024px) {
+    .drop-down {
+      background: url(../../assets/images/drop-down-desktop.png) no-repeat, rgba(0, 0, 0, 0.8);
+      background-size: 100% 100%; } }
   .drop-down img {
     width: 100%; }
   .drop-down .game-dropdown {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     display: grid;
-    grid-template-areas: "title prizes" "img img" "img img" "img img" "meta program" "coins coins" "buttons design";
+    grid-template-areas: "title prizes" "img img" "img img" "img img" "meta program" "coins coins" "buttons design";
     color: white;
     min-height: 453px;
     padding: 10px 30px;
@@ -2043,10 +2047,14 @@ main {
         padding-left: 45px;
         padding-top: 10%;
         font-size: 18px;
-        grid-template-areas: "title img" "meta img" "program img" "design img" "coins img" "buttons prizes";
+        grid-template-areas: "title img" "meta img" "program img" "design img" "coins img" "buttons prizes";
         grid-template-rows: 13% 13% 13% 13% 13% 20%; }
         .drop-down .game-dropdown h4 {
           margin: 0; } }
+    @media (min-width: 1024px) {
+      .drop-down .game-dropdown {
+        font-size: 20px;
+        grid-template-areas: "title img" "meta img" "program img" "design img" "buttons img" "coins prizes"; } }
   .drop-down .title {
     grid-area: title;
     display: -webkit-box;
@@ -2149,12 +2157,18 @@ main {
       margin: 0; }
     .drop-down .buttons h4 {
       margin: 0; }
+    @media (min-width: 1024px) {
+      .drop-down .buttons .play-game img {
+        width: 50px; } }
     .drop-down .buttons img {
       width: 20px; }
       @media (min-width: 600px) {
         .drop-down .buttons img {
           width: 25px;
           margin: 10px; } }
+      @media (min-width: 1024px) {
+        .drop-down .buttons img {
+          width: 35px; } }
     .drop-down .buttons .play-game,
     .drop-down .buttons .download {
       display: none; }
@@ -2177,6 +2191,12 @@ main {
             -ms-flex-align: center;
                 align-items: center;
         min-width: 280px; } }
+    @media (min-width: 1024px) {
+      .drop-down .thumbnail {
+        height: 400px;
+        -webkit-box-align: start;
+            -ms-flex-align: start;
+                align-items: flex-start; } }
     .drop-down .thumbnail img {
       height: auto;
       min-height: 256px;
@@ -2186,6 +2206,10 @@ main {
         .drop-down .thumbnail img {
           min-width: 256px;
           min-height: 245px; } }
+      @media (min-width: 1024px) {
+        .drop-down .thumbnail img {
+          height: 300px;
+          width: 500px; } }
   .drop-down .gem {
     grid-area: prizes;
     display: -webkit-box;
@@ -2224,6 +2248,10 @@ main {
         height: 30px;
         margin: 5px;
         border: none; }
+        @media (min-width: 1024px) {
+          .drop-down .gem div img {
+            width: 40px;
+            height: 40px; } }
 
 .-category:last-of-type .drop-down {
   position: static; }
@@ -2257,10 +2285,10 @@ main {
           .rainbow-game-container .game-background .featured-game-section .featured-games .featured-game:first-child {
             -webkit-transform: rotate(-25deg);
                     transform: rotate(-25deg);
-            -webkit-transition: top 0.35s ease-in-out, width 0.35s ease-in-out, height 0.35s ease-in-out, -webkit-transform 0.35s ease-in-out;
-            transition: top 0.35s ease-in-out, width 0.35s ease-in-out, height 0.35s ease-in-out, -webkit-transform 0.35s ease-in-out;
-            transition: transform 0.35s ease-in-out, top 0.35s ease-in-out, width 0.35s ease-in-out, height 0.35s ease-in-out;
-            transition: transform 0.35s ease-in-out, top 0.35s ease-in-out, width 0.35s ease-in-out, height 0.35s ease-in-out, -webkit-transform 0.35s ease-in-out;
+            -webkit-transition: top 0.35s ease-in-out, width 0.35s ease-in-out, height 0.35s ease-in-out, -webkit-transform 0.35s ease-in-out;
+            transition: top 0.35s ease-in-out, width 0.35s ease-in-out, height 0.35s ease-in-out, -webkit-transform 0.35s ease-in-out;
+            transition: transform 0.35s ease-in-out, top 0.35s ease-in-out, width 0.35s ease-in-out, height 0.35s ease-in-out;
+            transition: transform 0.35s ease-in-out, top 0.35s ease-in-out, width 0.35s ease-in-out, height 0.35s ease-in-out, -webkit-transform 0.35s ease-in-out;
             position: absolute;
             left: 10%; }
             .rainbow-game-container .game-background .featured-game-section .featured-games .featured-game:first-child:hover {
@@ -2328,10 +2356,10 @@ main {
           .rainbow-game-container .game-background .featured-game-section .featured-games .featured-game:last-child {
             -webkit-transform: rotate(25deg);
                     transform: rotate(25deg);
-            -webkit-transition: top 0.45s ease-in-out, width 0.45s ease-in-out, height 0.45s ease-in-out, -webkit-transform 0.45s ease-in-out;
-            transition: top 0.45s ease-in-out, width 0.45s ease-in-out, height 0.45s ease-in-out, -webkit-transform 0.45s ease-in-out;
-            transition: transform 0.45s ease-in-out, top 0.45s ease-in-out, width 0.45s ease-in-out, height 0.45s ease-in-out;
-            transition: transform 0.45s ease-in-out, top 0.45s ease-in-out, width 0.45s ease-in-out, height 0.45s ease-in-out, -webkit-transform 0.45s ease-in-out;
+            -webkit-transition: top 0.45s ease-in-out, width 0.45s ease-in-out, height 0.45s ease-in-out, -webkit-transform 0.45s ease-in-out;
+            transition: top 0.45s ease-in-out, width 0.45s ease-in-out, height 0.45s ease-in-out, -webkit-transform 0.45s ease-in-out;
+            transition: transform 0.45s ease-in-out, top 0.45s ease-in-out, width 0.45s ease-in-out, height 0.45s ease-in-out;
+            transition: transform 0.45s ease-in-out, top 0.45s ease-in-out, width 0.45s ease-in-out, height 0.45s ease-in-out, -webkit-transform 0.45s ease-in-out;
             position: absolute;
             right: 10%; }
             .rainbow-game-container .game-background .featured-game-section .featured-games .featured-game:last-child:hover {
