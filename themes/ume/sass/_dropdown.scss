@@ -3,11 +3,15 @@
     position: absolute;
     z-index: 1000;
     background: url(../../assets/images/drop-down.png) no-repeat, rgba(0, 0, 0, 0.8);
-    background-size: cover;
+    background-size: 100% 100%;
     width: 100%;
     @include tablet {
         background: url(../../assets/images/drop-down-tablet.png) no-repeat, rgba(0, 0, 0, 0.8);
-        background-size: cover;
+        background-size: 100% 100%;
+    }
+    @include desktop {
+        background: url(../../assets/images/drop-down-desktop.png) no-repeat, rgba(0, 0, 0, 0.8);
+        background-size: 100% 100%;
     }
     img {
         width: 100%;
@@ -44,6 +48,16 @@
             h4 {
                 margin: 0;
             }
+        }
+        @include desktop {
+            font-size: 20px;
+            grid-template-areas: 
+            "title img"
+            "meta img"
+            "program img"
+            "design img"
+            "buttons img"
+            "coins prizes";
         }
     }
     // grid template areas
@@ -139,11 +153,22 @@
         h4 {
             margin: 0;
         }
+        @include desktop {
+            .play-game {
+                img {
+                    width: 50px;
+                }
+            }
+        }
         img {
             width: 20px;
             @include tablet {
                 width: 25px;
                 margin: 10px;
+            }
+            @include desktop {
+            width: 35px;
+            
             }
         }
         .play-game, 
@@ -158,13 +183,16 @@
     .thumbnail {
         grid-area: img;
         text-align: center;
-        // border-left: 1px solid white;
-        // border-bottom: 1px solid white;
+
         @include tablet {
             display: flex;
             justify-content: center;
             align-items: center;
             min-width: 280px;
+        }
+        @include desktop {
+            height: 400px;
+            align-items: flex-start;
         }
         img {
             height: auto;
@@ -174,6 +202,10 @@
             @include tablet {
                 min-width: 256px;
                 min-height: 245px;
+            }
+            @include desktop {
+                height: 300px;
+                width: 500px;
             }
         }
     }
@@ -203,6 +235,10 @@
             height: 30px;
             margin: 5px;
             border: none;
+            @include desktop {
+                width: 40px;
+                height: 40px;
+            }
             }
         }
     }
