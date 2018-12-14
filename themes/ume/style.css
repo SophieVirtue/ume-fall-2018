@@ -1960,7 +1960,7 @@ main {
             height: auto; } }
       .search .search-results-container .search-game .type-game .author h4,
       .search-results .search-results-container .search-game .type-game .author h4 {
-        margin-bottom: 1rem;
+        margin-bottom: 0.5rem;
         font-family: 'Futura-Bk-BT';
         font-size: 12px;
         margin-top: 0; }
@@ -2583,10 +2583,6 @@ main {
           .rainbow-game-container .game-background .featured-game-section .featured-games .featured-game:last-child {
             -webkit-transform: rotate(25deg);
                     transform: rotate(25deg);
-            -webkit-transition: top 0.45s ease-in-out, width 0.45s ease-in-out, height 0.45s ease-in-out, -webkit-transform 0.45s ease-in-out;
-            transition: top 0.45s ease-in-out, width 0.45s ease-in-out, height 0.45s ease-in-out, -webkit-transform 0.45s ease-in-out;
-            transition: transform 0.45s ease-in-out, top 0.45s ease-in-out, width 0.45s ease-in-out, height 0.45s ease-in-out;
-            transition: transform 0.45s ease-in-out, top 0.45s ease-in-out, width 0.45s ease-in-out, height 0.45s ease-in-out, -webkit-transform 0.45s ease-in-out;
             -webkit-transition: top 0.45s ease-in-out, width 0.75s ease-in-out, height 0.75s ease-in-out, -webkit-transform 0.45s ease-in-out;
             transition: top 0.45s ease-in-out, width 0.75s ease-in-out, height 0.75s ease-in-out, -webkit-transform 0.45s ease-in-out;
             transition: transform 0.45s ease-in-out, top 0.45s ease-in-out, width 0.75s ease-in-out, height 0.75s ease-in-out;
