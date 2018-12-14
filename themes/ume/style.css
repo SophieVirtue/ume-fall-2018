@@ -2140,18 +2140,6 @@ main {
     text-transform: uppercase; }
     @media (min-width: 600px) {
       .drop-down .game-dropdown {
-        grid-template-areas: "title img" "meta img" "program img" "design img" "coins img" "buttons prizes"; } }
-    .drop-down .game-dropdown .buttons {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-align: end;
-          -ms-flex-align: end;
-              align-items: flex-end; }
-      .drop-down .game-dropdown .buttons img {
-        width: 20px; }
-    .drop-down .game-dropdown h4 {
-      margin: 0; 
         padding: 15px;
         padding-left: 45px;
         padding-top: 10%;
@@ -2159,15 +2147,11 @@ main {
         grid-template-areas: "title img" "meta img" "program img" "design img" "coins img" "buttons prizes";
         grid-template-rows: 13% 13% 13% 13% 13% 20%; }
         .drop-down .game-dropdown h4 {
-<<<<<<< HEAD
           margin: 0; } }
     @media (min-width: 1024px) {
       .drop-down .game-dropdown {
         font-size: 20px;
         grid-template-areas: "title img" "meta img" "program img" "design img" "buttons img" "coins prizes"; } }
-=======
-          margin: 0; } 
->>>>>>> 559d4ee8d1a583d3faeb3ecf336fa28c2013521e
   .drop-down .title {
     grid-area: title;
     display: -webkit-box;
@@ -2469,21 +2453,10 @@ main {
           .rainbow-game-container .game-background .featured-game-section .featured-games .featured-game:last-child {
             -webkit-transform: rotate(25deg);
                     transform: rotate(25deg);
-<<<<<<< HEAD
             -webkit-transition: top 0.45s ease-in-out, width 0.45s ease-in-out, height 0.45s ease-in-out, -webkit-transform 0.45s ease-in-out;
             transition: top 0.45s ease-in-out, width 0.45s ease-in-out, height 0.45s ease-in-out, -webkit-transform 0.45s ease-in-out;
             transition: transform 0.45s ease-in-out, top 0.45s ease-in-out, width 0.45s ease-in-out, height 0.45s ease-in-out;
             transition: transform 0.45s ease-in-out, top 0.45s ease-in-out, width 0.45s ease-in-out, height 0.45s ease-in-out, -webkit-transform 0.45s ease-in-out;
-=======
-            -webkit-transition: top 0.35s ease-in-out, width 0.35s ease-in-out, height 0.35s ease-in-out, -webkit-transform 0.35s ease-in-out;
-            transition: top 0.35s ease-in-out, width 0.35s ease-in-out, height 0.35s ease-in-out, -webkit-transform 0.35s ease-in-out;
-            transition: transform 0.35s ease-in-out, top 0.35s ease-in-out, width 0.35s ease-in-out, height 0.35s ease-in-out;
-            transition: transform 0.35s ease-in-out, top 0.35s ease-in-out, width 0.35s ease-in-out, height 0.35s ease-in-out, -webkit-transform 0.35s ease-in-out;
-            -webkit-transition: top 0.45s ease-in-out, width 0.45s ease-in-out, height 0.45s ease-in-out, -webkit-transform 0.45s ease-in-out;
-            transition: top 0.45s ease-in-out, width 0.45s ease-in-out, height 0.45s ease-in-out, -webkit-transform 0.45s ease-in-out;
-            transition: transform 0.45s ease-in-out, top 0.45s ease-in-out, width 0.45s ease-in-out, height 0.45s ease-in-out;
-            transition: transform 0.45s ease-in-out, top 0.45s ease-in-out, width 0.45s ease-in-out, height 0.45s ease-in-out, -webkit-transform 0.45s ease-in-out;
->>>>>>> 559d4ee8d1a583d3faeb3ecf336fa28c2013521e
             position: absolute;
             right: 10%; }
             .rainbow-game-container .game-background .featured-game-section .featured-games .featured-game:last-child:hover {
