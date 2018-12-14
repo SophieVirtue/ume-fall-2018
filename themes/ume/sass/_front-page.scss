@@ -1,9 +1,10 @@
 .flickity-viewport {
+  width: 95%;
   height: 278px !important;
   z-index: 1;
   position: relative;
   @include tablet {
-    height: 490px !important;
+    height: 330px !important;
   }
   @include desktop {
     height: 483px !important;
@@ -14,9 +15,7 @@
   display: none;
 }
 
-.flickity-button {
-  display: none;
-}
+
 
 .carousel-cell {
   height: 260px;
@@ -36,15 +35,17 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    height: 258px;
+    height: 252px;
     background: url(../../assets/images/game-card-mobile.png) no-repeat;
-    background-size: cover;
+    background-size: 100% 98%;
     @include tablet {
       background: url(../../assets/images/game-card-tablet.png) no-repeat;
-      height: auto;
+      background-size: 100% 100%;
     }
     @include desktop {
       background: url(../../assets/images/game-card-desktop.png) no-repeat;
+      background-size: 100% 100%;
+      height: 300px;
     }
   }
 
@@ -164,117 +165,76 @@
 
 //Styling of Folder for Category Games
 
-//Draft Code
+
+
+
 
 
 .category-folder:nth-of-type(1){
   background: url(../../assets/images/agriculture-file.png);
-  background-repeat: no-repeat;
-  background-size: 100% 365px;
-  padding-top: 1rem;
   @include tablet{
-    margin-top: 7rem;
-    background-position-y: -0.5rem;
-    background-size: 100% 410px;
+    margin-top: 6rem;
   }
   @include desktop{
     background: url(../../assets/images/agriculture-file.png), url(../../assets/images/ambient-squares.png);
-  background-repeat: no-repeat;
-  background-size: 80% 445px, 100% 480px;
-  background-position: center top;
 }
 }
 
 
 .category-folder:nth-of-type(2){
   background: url(../../assets/images/set-up-file.png);
-  background-repeat: no-repeat;
-  background-size: 100% 365px;
-  padding-top: 1rem;
-  padding-bottom: 2rem;
-  @include tablet{
-    background-position-y: -0.5rem;
-    background-size: 100% 410px;
-    }
   @include desktop{
     background: url(../../assets/images/set-up-file.png), url(../../assets/images/ambient-squares.png);
-    background-repeat: no-repeat;
-    background-size: 80% 445px, 100% 480px;
-    background-position: center top;  
 }
 }
 
 .category-folder:nth-of-type(3){
   background: url(../../assets/images/character-file.png);
-  background-repeat: no-repeat;
-  background-size: 100% 365px;
-  padding-top: 1rem;
-  padding-bottom: 2rem;
-  @include tablet{
-    background-position-y: -0.5rem;
-    background-size: 100% 410px;
-    }
   @include desktop{
     background: url(../../assets/images/character-file.png), url(../../assets/images/ambient-squares.png);
-  background-repeat: no-repeat;
-  background-size: 80% 445px, 100% 480px;
-  background-position: center top;
 }
 }
 
 .category-folder:nth-of-type(4){
   background: url(../../assets/images/cutest-pet-file.png);
-  background-repeat: no-repeat;
-  background-size: 100% 365px;
-  padding-top: 1rem;
-  padding-bottom: 2rem;
-  @include tablet{
-    background-position-y: -0.5rem;
-    background-size: 100% 410px;
-    }
   @include desktop{
     background: url(../../assets/images/cutest-pet-file.png), url(../../assets/images/ambient-squares.png);
-    background-repeat: no-repeat;
-    background-size: 80% 445px, 100% 480px;
-    background-position: center top; 
 }
 }
 .category-folder:nth-of-type(5){
   background: url(../../assets/images/space-file.png);
-  background-repeat: no-repeat;
-  background-size: 100% 365px;
-  padding-top: 1rem;
-  padding-bottom: 2rem;
-  @include tablet{
-    background-position-y: -0.5rem;
-    background-size: 100% 410px;    }
   @include desktop{
     background: url(../../assets/images/space-file.png), url(../../assets/images/ambient-squares.png);
-    background-repeat: no-repeat;
-    background-size: 80% 445px, 100% 480px;
-    background-position: center top;
-  
 }
 }
 
 .category-folder:nth-of-type(6){
   background: url(../../assets/images/wild-p-file.png);
+  margin-bottom: 2rem;
+  @include desktop{
+  background: url(../../assets/images/wild-p-file.png), url(../../assets/images/ambient-squares.png); 
+}
+}
+
+.category-folder:nth-of-type(1), .category-folder:nth-of-type(2), .category-folder:nth-of-type(3), .category-folder:nth-of-type(4), .category-folder:nth-of-type(5), .category-folder:nth-of-type(6){
+
   background-repeat: no-repeat;
-  background-size: 100% 365px;
+  background-size: 100% 330px;
   padding-top: 1rem;
   padding-bottom: 2rem;
   @include tablet{
-    background-position-y: -0.5rem;
-    background-size: 100% 410px;
+  background-position-y: -0.5rem;
+  background-size: 100% 360px;
   }
   @include desktop{
-  background: url(../../assets/images/wild-p-file.png), url(../../assets/images/ambient-squares.png);
   background-repeat: no-repeat;
-  background-size: 80% 445px, 100% 480px;
+  background-size:  70% 400px, 88% 420px;
   background-position: center top;
 
+
+  }
 }
-}
+
 
 .category {
   padding-left: 1.5rem;
@@ -295,17 +255,17 @@
     padding-left: 0.5rem;
   }
   @include desktop{
-    font-size: 1.4rem;
+    font-size: 0.9rem;
+    padding-left: 5rem;
   }
 }
 }
 
 .carousel-cell{ 
   img {
-    height: 120px;
+    height: 110px;
     width: 120px;
    @include tablet {
-     height: 150px;
      width: 150px;
    }
    @include desktop{
@@ -343,16 +303,33 @@
 
 /* no circle */
 .flickity-button {
-  background: transparent;
+   display: none;
+   @include desktop{
+     display: inline-block;
+     background: transparent !important;
+     box-shadow: none !important;
+     z-index: 20;
+     width: 100px !important;
+     height: 300px !important;
+     top: 30% !important;
+   }
 }
+
 /* big previous & next buttons */
-.flickity-prev-next-button {
-  width: 100px;
-  height: 100px;
+.flickity-prev-next-button.previous{
+  left: -5rem !important;
 }
+
+
+.flickity-prev-next-button.next{
+  right: 10rem !important;
+}
+
 /* icon color */
 .flickity-button-icon {
-  fill: white;
+  fill: #fff !important;
+  width: 73% !important;
+
 }
 /* hide disabled button */
 .flickity-button:disabled {

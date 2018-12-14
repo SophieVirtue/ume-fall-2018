@@ -1037,20 +1037,18 @@ main {
     text-transform: uppercase; }
 
 .flickity-viewport {
+  width: 95%;
   height: 278px !important;
   z-index: 1;
   position: relative; }
   @media (min-width: 600px) {
     .flickity-viewport {
-      height: 490px !important; } }
+      height: 330px !important; } }
   @media (min-width: 1024px) {
     .flickity-viewport {
       height: 483px !important; } }
 
 .flickity-page-dots {
-  display: none; }
-
-.flickity-button {
   display: none; }
 
 .carousel-cell {
@@ -1079,16 +1077,18 @@ main {
             align-items: center;
     -ms-flex-pack: distribute;
         justify-content: space-around;
-    height: 258px;
+    height: 252px;
     background: url(../../assets/images/game-card-mobile.png) no-repeat;
-    background-size: cover; }
+    background-size: 100% 98%; }
     @media (min-width: 600px) {
       .carousel-cell .content {
         background: url(../../assets/images/game-card-tablet.png) no-repeat;
-        height: auto; } }
+        background-size: 100% 100%; } }
     @media (min-width: 1024px) {
       .carousel-cell .content {
-        background: url(../../assets/images/game-card-desktop.png) no-repeat; } }
+        background: url(../../assets/images/game-card-desktop.png) no-repeat;
+        background-size: 100% 100%;
+        height: 300px; } }
 
 .featured-games {
   display: -webkit-box;
@@ -1195,105 +1195,58 @@ main {
       padding-top: 40%; } }
 
 .category-folder:nth-of-type(1) {
-  background: url(../../assets/images/agriculture-file.png);
-  background-repeat: no-repeat;
-  background-size: 100% 365px;
-  padding-top: 1rem; }
+  background: url(../../assets/images/agriculture-file.png); }
   @media (min-width: 600px) {
     .category-folder:nth-of-type(1) {
-      margin-top: 7rem;
-      background-position-y: -0.5rem;
-      background-size: 100% 410px; } }
+      margin-top: 6rem; } }
   @media (min-width: 1024px) {
     .category-folder:nth-of-type(1) {
-      background: url(../../assets/images/agriculture-file.png), url(../../assets/images/ambient-squares.png);
-      background-repeat: no-repeat;
-      background-size: 80% 445px, 100% 480px;
-      background-position: center top; } }
+      background: url(../../assets/images/agriculture-file.png), url(../../assets/images/ambient-squares.png); } }
 
 .category-folder:nth-of-type(2) {
-  background: url(../../assets/images/set-up-file.png);
-  background-repeat: no-repeat;
-  background-size: 100% 365px;
-  padding-top: 1rem;
-  padding-bottom: 2rem; }
-  @media (min-width: 600px) {
-    .category-folder:nth-of-type(2) {
-      background-position-y: -0.5rem;
-      background-size: 100% 410px; } }
+  background: url(../../assets/images/set-up-file.png); }
   @media (min-width: 1024px) {
     .category-folder:nth-of-type(2) {
-      background: url(../../assets/images/set-up-file.png), url(../../assets/images/ambient-squares.png);
-      background-repeat: no-repeat;
-      background-size: 80% 445px, 100% 480px;
-      background-position: center top; } }
+      background: url(../../assets/images/set-up-file.png), url(../../assets/images/ambient-squares.png); } }
 
 .category-folder:nth-of-type(3) {
-  background: url(../../assets/images/character-file.png);
-  background-repeat: no-repeat;
-  background-size: 100% 365px;
-  padding-top: 1rem;
-  padding-bottom: 2rem; }
-  @media (min-width: 600px) {
-    .category-folder:nth-of-type(3) {
-      background-position-y: -0.5rem;
-      background-size: 100% 410px; } }
+  background: url(../../assets/images/character-file.png); }
   @media (min-width: 1024px) {
     .category-folder:nth-of-type(3) {
-      background: url(../../assets/images/character-file.png), url(../../assets/images/ambient-squares.png);
-      background-repeat: no-repeat;
-      background-size: 80% 445px, 100% 480px;
-      background-position: center top; } }
+      background: url(../../assets/images/character-file.png), url(../../assets/images/ambient-squares.png); } }
 
 .category-folder:nth-of-type(4) {
-  background: url(../../assets/images/cutest-pet-file.png);
-  background-repeat: no-repeat;
-  background-size: 100% 365px;
-  padding-top: 1rem;
-  padding-bottom: 2rem; }
-  @media (min-width: 600px) {
-    .category-folder:nth-of-type(4) {
-      background-position-y: -0.5rem;
-      background-size: 100% 410px; } }
+  background: url(../../assets/images/cutest-pet-file.png); }
   @media (min-width: 1024px) {
     .category-folder:nth-of-type(4) {
-      background: url(../../assets/images/cutest-pet-file.png), url(../../assets/images/ambient-squares.png);
-      background-repeat: no-repeat;
-      background-size: 80% 445px, 100% 480px;
-      background-position: center top; } }
+      background: url(../../assets/images/cutest-pet-file.png), url(../../assets/images/ambient-squares.png); } }
 
 .category-folder:nth-of-type(5) {
-  background: url(../../assets/images/space-file.png);
-  background-repeat: no-repeat;
-  background-size: 100% 365px;
-  padding-top: 1rem;
-  padding-bottom: 2rem; }
-  @media (min-width: 600px) {
-    .category-folder:nth-of-type(5) {
-      background-position-y: -0.5rem;
-      background-size: 100% 410px; } }
+  background: url(../../assets/images/space-file.png); }
   @media (min-width: 1024px) {
     .category-folder:nth-of-type(5) {
-      background: url(../../assets/images/space-file.png), url(../../assets/images/ambient-squares.png);
-      background-repeat: no-repeat;
-      background-size: 80% 445px, 100% 480px;
-      background-position: center top; } }
+      background: url(../../assets/images/space-file.png), url(../../assets/images/ambient-squares.png); } }
 
 .category-folder:nth-of-type(6) {
   background: url(../../assets/images/wild-p-file.png);
+  margin-bottom: 2rem; }
+  @media (min-width: 1024px) {
+    .category-folder:nth-of-type(6) {
+      background: url(../../assets/images/wild-p-file.png), url(../../assets/images/ambient-squares.png); } }
+
+.category-folder:nth-of-type(1), .category-folder:nth-of-type(2), .category-folder:nth-of-type(3), .category-folder:nth-of-type(4), .category-folder:nth-of-type(5), .category-folder:nth-of-type(6) {
   background-repeat: no-repeat;
-  background-size: 100% 365px;
+  background-size: 100% 330px;
   padding-top: 1rem;
   padding-bottom: 2rem; }
   @media (min-width: 600px) {
-    .category-folder:nth-of-type(6) {
+    .category-folder:nth-of-type(1), .category-folder:nth-of-type(2), .category-folder:nth-of-type(3), .category-folder:nth-of-type(4), .category-folder:nth-of-type(5), .category-folder:nth-of-type(6) {
       background-position-y: -0.5rem;
-      background-size: 100% 410px; } }
+      background-size: 100% 360px; } }
   @media (min-width: 1024px) {
-    .category-folder:nth-of-type(6) {
-      background: url(../../assets/images/wild-p-file.png), url(../../assets/images/ambient-squares.png);
+    .category-folder:nth-of-type(1), .category-folder:nth-of-type(2), .category-folder:nth-of-type(3), .category-folder:nth-of-type(4), .category-folder:nth-of-type(5), .category-folder:nth-of-type(6) {
       background-repeat: no-repeat;
-      background-size: 80% 445px, 100% 480px;
+      background-size: 70% 400px, 88% 420px;
       background-position: center top; } }
 
 .category {
@@ -1316,14 +1269,14 @@ main {
         padding-left: 0.5rem; } }
     @media (min-width: 1024px) {
       .category h2 {
-        font-size: 1.4rem; } }
+        font-size: 0.9rem;
+        padding-left: 5rem; } }
 
 .carousel-cell img {
-  height: 120px;
+  height: 110px;
   width: 120px; }
   @media (min-width: 600px) {
     .carousel-cell img {
-      height: 150px;
       width: 150px; } }
   @media (min-width: 1024px) {
     .carousel-cell img {
@@ -1353,38 +1306,46 @@ main {
 
 /* no circle */
 .flickity-button {
-  background: transparent; }
+  display: none; }
+  @media (min-width: 1024px) {
+    .flickity-button {
+      display: inline-block;
+      background: transparent !important;
+      -webkit-box-shadow: none !important;
+              box-shadow: none !important;
+      z-index: 20;
+      width: 100px !important;
+      height: 300px !important;
+      top: 30% !important; } }
 
 /* big previous & next buttons */
-.flickity-prev-next-button {
-  width: 100px;
-  height: 100px; }
+.flickity-prev-next-button.previous {
+  left: -5rem !important; }
+
+.flickity-prev-next-button.next {
+  right: 10rem !important; }
 
 /* icon color */
 .flickity-button-icon {
-  fill: white; }
+  fill: #fff !important;
+  width: 73% !important; }
 
 /* hide disabled button */
 .flickity-button:disabled {
   display: none; }
 
 .widget-area {
-  display: none;
-  height: 192px;
-  width: 287px;
-  background: url(../../assets/images/grid-lines.png), linear-gradient(180.06deg, #3A193F 0%, #672973 2.75%, #5A3073 11.07%, #5E2D72 22.02%, #5F2C72 30.78%, #43366C 49.79%, #304371 63.66%, #294872 77.54%, #086B85 100%);
-  background-size: cover, 800px, 0, cover;
+  height: 50%;
+  width: 60%;
   position: fixed;
-  left: 40%;
-  top: 40vh;
-  text-align: center;
+  left: 20vw;
+  top: 20%;
   z-index: 5000; }
-  .widget-area img {
-    width: 100px; }
-  .widget-area p {
-    color: white;
-    font-family: 'Futura-Bk-BT';
-    font-size: 18px; }
+  @media (min-width: 600px) {
+    .widget-area {
+      height: 30%;
+      width: 40%;
+      left: 30%; } }
 
 .hidden-copy {
   border: 0;
@@ -2220,7 +2181,7 @@ main {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     display: grid;
-    grid-template-areas: "title prizes" "img img" "img img" "img img" "meta program" "coins coins" "buttons design";
+    grid-template-areas: "title prizes" "img img" "img img" "img img" "meta program" "coins coins" "buttons design";
     color: white;
     min-height: 453px;
     padding: 10px 30px;
@@ -2232,14 +2193,14 @@ main {
         padding-left: 45px;
         padding-top: 10%;
         font-size: 18px;
-        grid-template-areas: "title img" "meta img" "program img" "design img" "coins img" "buttons prizes";
+        grid-template-areas: "title img" "meta img" "program img" "design img" "coins img" "buttons prizes";
         grid-template-rows: 13% 13% 13% 13% 13% 20%; }
         .drop-down .game-dropdown h4 {
           margin: 0; } }
     @media (min-width: 1024px) {
       .drop-down .game-dropdown {
         font-size: 20px;
-        grid-template-areas: "title img" "meta img" "program img" "design img" "buttons img" "coins prizes"; } }
+        grid-template-areas: "title img" "meta img" "program img" "design img" "buttons img" "coins prizes"; } }
   .drop-down .title {
     grid-area: title;
     display: -webkit-box;
@@ -2335,7 +2296,10 @@ main {
       @media (min-width: 1024px) {
         .drop-down .coins h4 {
           padding-left: 20%;
-          max-width: 100%; } }
+          max-width: 100%;
+          border-top: 1px solid white;
+          margin-top: 3.5%;
+          width: 66%; } }
       .drop-down .coins h4 img {
         width: 20px; }
         @media (min-width: 600px) {
@@ -2362,7 +2326,8 @@ main {
     @media (min-width: 1024px) {
       .drop-down .buttons {
         padding-left: 20%;
-        max-width: 100%; } }
+        max-width: 100%;
+        border-top: none; } }
     .drop-down .buttons p {
       margin: 0; }
     .drop-down .buttons h4 {
@@ -2462,7 +2427,11 @@ main {
           height: 60%;
           width: 1px;
           position: absolute;
-          left: 53%; }
+          left: 53%; } }
+    @media (min-width: 600px) and (min-width: 1024px) {
+      .drop-down .gem:before {
+        left: 44%; } }
+    @media (min-width: 600px) {
         .drop-down .gem h4 {
           margin: 0;
           margin-bottom: 12px; } }
@@ -2470,7 +2439,10 @@ main {
       .drop-down .gem {
         -webkit-box-pack: start;
             -ms-flex-pack: start;
-                justify-content: flex-start; } }
+                justify-content: flex-start;
+        width: 100%;
+        margin: 0;
+        margin-top: 3%; } }
     .drop-down .gem div {
       border: none; }
       .drop-down .gem div img {
@@ -2516,10 +2488,10 @@ main {
           .rainbow-game-container .game-background .featured-game-section .featured-games .featured-game:first-child {
             -webkit-transform: rotate(-25deg);
                     transform: rotate(-25deg);
-            -webkit-transition: top 0.65s ease-in-out, width 0.75s ease-in-out, height 0.75s ease-in-out, -webkit-transform 0.65s ease-in-out;
-            transition: top 0.65s ease-in-out, width 0.75s ease-in-out, height 0.75s ease-in-out, -webkit-transform 0.65s ease-in-out;
-            transition: transform 0.65s ease-in-out, top 0.65s ease-in-out, width 0.75s ease-in-out, height 0.75s ease-in-out;
-            transition: transform 0.65s ease-in-out, top 0.65s ease-in-out, width 0.75s ease-in-out, height 0.75s ease-in-out, -webkit-transform 0.65s ease-in-out;
+            -webkit-transition: top 0.65s ease-in-out, width 0.75s ease-in-out, height 0.75s ease-in-out, -webkit-transform 0.65s ease-in-out;
+            transition: top 0.65s ease-in-out, width 0.75s ease-in-out, height 0.75s ease-in-out, -webkit-transform 0.65s ease-in-out;
+            transition: transform 0.65s ease-in-out, top 0.65s ease-in-out, width 0.75s ease-in-out, height 0.75s ease-in-out;
+            transition: transform 0.65s ease-in-out, top 0.65s ease-in-out, width 0.75s ease-in-out, height 0.75s ease-in-out, -webkit-transform 0.65s ease-in-out;
             position: absolute;
             left: 10%; }
             .rainbow-game-container .game-background .featured-game-section .featured-games .featured-game:first-child:hover {
@@ -2587,10 +2559,10 @@ main {
           .rainbow-game-container .game-background .featured-game-section .featured-games .featured-game:last-child {
             -webkit-transform: rotate(25deg);
                     transform: rotate(25deg);
-            -webkit-transition: top 0.45s ease-in-out, width 0.75s ease-in-out, height 0.75s ease-in-out, -webkit-transform 0.45s ease-in-out;
-            transition: top 0.45s ease-in-out, width 0.75s ease-in-out, height 0.75s ease-in-out, -webkit-transform 0.45s ease-in-out;
-            transition: transform 0.45s ease-in-out, top 0.45s ease-in-out, width 0.75s ease-in-out, height 0.75s ease-in-out;
-            transition: transform 0.45s ease-in-out, top 0.45s ease-in-out, width 0.75s ease-in-out, height 0.75s ease-in-out, -webkit-transform 0.45s ease-in-out;
+            -webkit-transition: top 0.65s ease-in-out, width 0.75s ease-in-out, height 0.75s ease-in-out, -webkit-transform 0.65s ease-in-out;
+            transition: top 0.65s ease-in-out, width 0.75s ease-in-out, height 0.75s ease-in-out, -webkit-transform 0.65s ease-in-out;
+            transition: transform 0.65s ease-in-out, top 0.65s ease-in-out, width 0.75s ease-in-out, height 0.75s ease-in-out;
+            transition: transform 0.65s ease-in-out, top 0.65s ease-in-out, width 0.75s ease-in-out, height 0.75s ease-in-out, -webkit-transform 0.65s ease-in-out;
             position: absolute;
             right: 10%; }
             .rainbow-game-container .game-background .featured-game-section .featured-games .featured-game:last-child:hover {
@@ -2694,22 +2666,22 @@ main {
   -webkit-transition: width 0.35s ease-in-out, height 0.35s ease-in-out;
   transition: width 0.35s ease-in-out, height 0.35s ease-in-out; }
 
-@media (min-width: 600px) {
-  .rainbow-game-container .featured-game:first-child .author h4, .rainbow-game-container .featured-game:nth-child(2) .author h4, .rainbow-game-container .featured-game:last-child .author h4 {
-    padding-top: 0.5rem;
-    font-family: Futura-Bk-Bt;
-    font-weight: 200; } }
-
-.rainbow-game-container .featured-game:first-child .author h4 .author-transform, .rainbow-game-container .featured-game:nth-child(2) .author h4 .author-transform, .rainbow-game-container .featured-game:last-child .author h4 .author-transform {
-  margin: 0;
-  padding-bottom: 7px;
+.rainbow-game-container .featured-game:first-child .author h4, .rainbow-game-container .featured-game:nth-child(2) .author h4, .rainbow-game-container .featured-game:last-child .author h4 {
   font-family: Futura-Bk-Bt;
-  font-weight: 400;
-  color: white;
-  font-size: 14px; }
-  @media (min-width: 1024px) {
-    .rainbow-game-container .featured-game:first-child .author h4 .author-transform, .rainbow-game-container .featured-game:nth-child(2) .author h4 .author-transform, .rainbow-game-container .featured-game:last-child .author h4 .author-transform {
-      font-size: 1rem; } }
+  font-weight: 200; }
+  @media (min-width: 600px) {
+    .rainbow-game-container .featured-game:first-child .author h4, .rainbow-game-container .featured-game:nth-child(2) .author h4, .rainbow-game-container .featured-game:last-child .author h4 {
+      padding-top: 0.5rem; } }
+  .rainbow-game-container .featured-game:first-child .author h4 .author-transform, .rainbow-game-container .featured-game:nth-child(2) .author h4 .author-transform, .rainbow-game-container .featured-game:last-child .author h4 .author-transform {
+    margin: 0;
+    padding-bottom: 7px;
+    font-family: Futura-Bk-Bt;
+    font-weight: 400;
+    color: white;
+    font-size: 14px; }
+    @media (min-width: 1024px) {
+      .rainbow-game-container .featured-game:first-child .author h4 .author-transform, .rainbow-game-container .featured-game:nth-child(2) .author h4 .author-transform, .rainbow-game-container .featured-game:last-child .author h4 .author-transform {
+        font-size: 1rem; } }
 
 .rainbow-game-container .featured-game:first-child .play-button-featured img, .rainbow-game-container .featured-game:nth-child(2) .play-button-featured img, .rainbow-game-container .featured-game:last-child .play-button-featured img {
   margin: 0 auto;
