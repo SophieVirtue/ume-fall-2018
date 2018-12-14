@@ -96,8 +96,8 @@
           }
           &:last-child {
             transform: rotate(25deg);
-            transition: transform 0.35s ease-in-out, top 0.35s ease-in-out,
-              width 0.35s ease-in-out, height 0.35s ease-in-out;
+            transition: transform 0.45s ease-in-out, top 0.45s ease-in-out,
+              width 0.45s ease-in-out, height 0.45s ease-in-out;
             position: absolute;
             right: 10%;
             &:hover {
@@ -127,6 +127,7 @@
               background-size: contain;
               height: 390px;
               width: 320px;
+              
               &:hover {
                 height: 440px;
                 width: 300px;

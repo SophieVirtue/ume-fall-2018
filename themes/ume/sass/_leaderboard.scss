@@ -1,396 +1,470 @@
-.leaderboard {
-    
+.page-leaderboard {
+    .top-three {
+        height: 375px;
+        @include tablet {
+            height: 443px;
+        }
+        @include desktop {
+            height: 680px;
+        }
+    }
     .top-three .leader-thumbnail{
-    background: url(../../assets/images/first-place.png);
-    border-radius: 50%;
-    background-size: cover;
-    background-position: center;
-    padding: 24px;
-    @include tablet{
-        padding: 41px;
+        background: url(../../assets/images/first-place.png);
+        border-radius: 50%;
+        background-size: cover;
+        background-position: center;
+        padding: 24px;
+        @include tablet{
+            padding: 41px;
+        }
+        @include desktop{
+            padding: 64px;
+        }
     }
-    @include desktop{
-       padding: 64px;
-    }
-    }
-
     .leaderboard-title{
         text-align: center;    
     }
     .remaining-player {
-       .leader-ranking {
-        background: linear-gradient(180deg, rgb(245, 196, 35) 0%,  #ff8800 100%);
-        width: 58px;
-        height: 62px;
-        border-radius: 50%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin: 21px 0 -25px 32px;
-        position: sticky;
-        box-shadow: 0px 0px 8px 8px rgba( 255, 255, 255, 0.6);
-        font-size: 1.5rem;
-         font-family: Futura-Bold;
-         color: white;
-         @include tablet{
-            position: relative;
-            top: 7rem;
-            width: 90px;
-            height: 90px;
-            left: -1rem;
-         }
-       }
-    .leader-content {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        background: linear-gradient(180deg, #000000 0%, #2B164A 100%);
-        @include tablet{ 
-            background: radial-gradient(circle at left, transparent, transparent 130px,  #2B164A 70px, #2B164A 100%);
-        }
-        
-        img.size-thumbnail {
-            width: 160px;
-            height: 110px;
-            position: relative;
-            top: 1.5rem;
-            right: 1rem;
-            @include tablet{
-                width: 160px;
-               height: 120px;
-                top: 1rem;
-                right: -1rem;
-            @include desktop{
-             width: 190px;
-             height: 130px;
-            }     
-            }       
-        }
-        a {
+        .leader-ranking {
+            background: linear-gradient(180deg, rgb(245, 196, 35) 0%,  #ff8800 100%);
+            width: 58px;
+            height: 62px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 21px 0 -25px 32px;
+            position: sticky;
+            box-shadow: 0px 0px 8px 8px rgba( 255, 255, 255, 0.6);
+            font-size: 1.5rem;
+            font-family: Futura-Bold;
             color: white;
-            text-decoration: none;
+            @include tablet{
+                position: relative;
+                top: 5rem;
+                width: 90px;
+                height: 90px;
+                left: -1rem;
+            }
+            @include desktop {
+                top: 8rem;
+                width: 120px;
+                height: 120px;
+                left: -3.5rem;
+            }
+        }
+        .leader-content {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            background: linear-gradient(180deg, #000000 0%, #2B164A 100%);
+            @include tablet{ 
+                background: radial-gradient(circle at left, transparent, transparent 130px,  #2B164A 70px, #2B164A 100%);
+            }
+            img.size-thumbnail {
+                width: 160px;
+                height: 110px;
+                position: relative;
+                top: 1.5rem;
+                right: 1rem;
+                @include tablet{
+                    width: 140px;
+                    height: 100px;
+                    top: 1rem;
+                    right: -1rem;
+                }
+                @include desktop{
+                    width: 290px;
+                    height: 180px;  
+                    right: 0;  
+                }       
+            }
+            a {
+                color: white;
+                text-decoration: none;
+            }
         }
     }
-}
-}
-.top-players{
-    display: flex;
-    justify-content: center;
-    position: relative;
-    bottom: 7.5rem;
-
-}
-.top-seven{
-    padding-top: 3rem;
-}
-.board-page {
-    background: url(../../assets/images/grid-lines.png), url(../../assets/images/background.jpg); 
-    background-repeat: no-repeat;
-    background-size: auto 500px, auto 100%;
-    overflow: hidden;
-    background-position: top; 
-    text-align: center;
-    width: 100%;
-    @include tablet {
-       background-size: 100% 600px,100% 100%;     
+    .top-players{
+        display: flex;
+        justify-content: center;
+        position: relative;
+        bottom: 7.5rem;
     }
-    @include desktop {
-        background-size: 100% 1100px, 100% 100%;  
-    }
-     img.leaderboard-logo {
-        width: 19rem;
-    padding-top: 5rem;
+    .board-page {
+        background: url(../../assets/images/grid-lines.png), url(../../assets/images/background.jpg); 
+        background-repeat: no-repeat;
+        background-size: 100% 390px, auto 100%;
+        overflow: hidden;
+        background-position: top; 
+        text-align: center;
+        width: 100%;
         @include tablet {
-            width: 418px;
-            padding-top: 81px;
+           background-size: 100% 580px,100% 100%;     
         }
         @include desktop {
-            width: 943px;
-            padding-top: 100px;
+            background-size: 100% 900px, 100% 100%;  
         }
+        img.leaderboard-logo {
+            width: 22rem;
+            padding-top: 5rem;
+            @include tablet {
+                width: 418px;
+                padding-top: 81px;
+            }
+            @include desktop {
+                width: 943px;
+                padding-top: 100px;
+            }
+        }
+        
     }
-    
-}
-.top-player{
-    .leader-ranking p{   
-        font-size: 2rem;
-        margin-bottom: 0;        
+    .top-player {
+        .leader-ranking p {   
+            font-size: 2rem;
+            margin-bottom: 0;        
             color: #FFF6E8;
             font-family: Futura-Bold;   
             text-shadow: 1.2px 1.2px #F5A623;
             position: relative;
-           left: 2.5rem;
-          top: 3.4rem;
-          z-index: 5;
-          font-weight: lighter;
-          @include tablet{
-            left: 3rem;
-            top: 3.7rem;
-            font-size: 2.5rem;
-          }
-    }
-    .leader-info{
-    position: relative;
-    bottom: 2rem;
-    }
-    .img-responsive{
-    width: 85px;
-    height: 85px;
-    box-shadow: 0 0 4px 0 rgba(255,255,255,0.45), 0 2px 4px 0 rgba(0,0,0,0.5), 0 0 22px 7px #9BC9FF;
-    border-radius: 50%;
-    position: relative;
-    top: 0.2rem;
-     @include tablet{
-        width: 140px;
-        height: 140px;
-        position: relative;
-        top: 0.15rem;
-     }
-     @include desktop{
-            height: 220px;
-            width: 220px; 
-     }
-     }
-    h3{
-        font-weight: 900;
-    font-family: Futura-Heavy;
-    font-size: 1.3rem;
+            left: 2.5rem;
+            top: 3.4rem;
+            z-index: 5;
+            font-weight: lighter;
+            @include tablet {
+                left: 3rem;
+                top: 3.7rem;
+                font-size: 2.5rem;
+            }
+        }
+        .leader-info {
+            position: relative;
+            bottom: 2rem;
+        }
+        .img-responsive {
+            width: 85px;
+            height: 85px;
+            box-shadow: 0 0 4px 0 rgba(255,255,255,0.45), 0 2px 4px 0 rgba(0,0,0,0.5), 0 0 22px 7px #9BC9FF;
+            border-radius: 50%;
+            position: relative;
+            top: 0.2rem;
+            @include tablet {
+                width: 140px;
+                height: 140px;
+                position: relative;
+                top: 0.15rem;
+            }
+            @include desktop {
+                height: 220px;
+                width: 220px; 
+            }
+        }
+        h3 {
+            font-weight: 900;
+            font-family: Futura-Heavy;
+            font-size: 1.3rem;
             color: #FFFFFF;
             text-align: center;
             text-transform: uppercase;
-    @include tablet{
-        font-size: 1.7rem;
-    }
-}
-    .leader-name h4, .leader-coins h4{
-        font-weight: lighter;
-        font-family: Futura-Bk-BT;
-        font-size: 0.9rem;
-         color: #FFFFFF;
-         text-align: center;
-         text-transform: uppercase;
-         position: relative;
-         bottom: 1.2rem;
-
-         @include tablet{
-             font-size: 1.3rem;
-         }    
-    }
-    .leader-coins h4{
-        position: relative;
-    bottom: 2.2rem;
-    @include tablet{
-        bottom: 1.7rem;
-    }
-    }
-    
-    img.coin{
-        width: 10%;
-        position:relative;
-        top: 0.3rem;
-    @include desktop{
-        top: 0.5rem;
-    }
-      
-    }
-      a{
-        color: white;
-        text-decoration: none;
-    }
-}
-//Separate Styles for the first three games
-.top-player:nth-of-type(1) { 
-    order: 2;
-    @include desktop{
-        bottom: 6rem;
-    position: relative;
-    }
-    .img-responsive{
-    width: 125px;
-    height: 125px;
-    position: relative;
-    top: 0.15rem;
-    @include tablet{
-        width: 180px;
-        height: 180px;
-    }
-    @include desktop{
-        width: 330px;
-        height: 330px;
-    }
-    }
-    .leader-title h3{
-        @include tablet{
+            @include tablet{
+                font-size: 1.7rem;
+            }
+        }
+        .leader-name h4, .leader-coins h4 {
+            font-weight: lighter;
+            font-family: Futura-Bk-BT;
+            font-size: 0.9rem;
+            color: #FFFFFF;
+            text-align: center;
+            text-transform: uppercase;
             position: relative;
-            top: 0.6rem;
+            bottom: 1.2rem;
+            @include tablet{
+                font-size: 1.3rem;
+            }    
         }
-        @include desktop{
-            top:-0.6rem;
-        }
-    }
-    .leader-name h4{
-        @include tablet{
+        .leader-coins h4{
             position: relative;
-            bottom: 0.4rem;
+            bottom: 1.8rem;
+            @include tablet{
+                bottom: 1.7rem;
+            }
         }
+        img.coin{
+            width: 18px;
+            position:relative;
+            top: 0.25rem;
+            @include tablet {
+                width: 24px;
+            }
+            @include desktop {
+                width: 30px;
+                top: 0.5rem;
+            }
+        }
+        a{
+            color: white;
+            text-decoration: none;
+        }
+    }
+    //Separate Styles for the first three games
+    .top-player:nth-of-type(1) { 
+        order: 2;
         @include desktop{
-            bottom: 1.6rem;
+            bottom: 6rem;
+            position: relative;
         }
-    }   
-    .leader-thumbnail{
-        padding: 34px;
-    @include tablet{
-        padding: 50px;
-    }
-    @include desktop{
-        padding: 87px;
-    }
-    }
-    .leader-ranking p{
-    font-size: 3.5rem;
-    top: 5rem;
-    left: 3rem;
-    @include desktop{
-    top: 11rem;
-    left: 8rem;
-    font-size: 6rem;
-    }
-    }
-    .leader-coins h4{
-        @include desktop{
-            bottom: 3.3rem;
+        .img-responsive{
+            width: 125px;
+            height: 125px;
+            position: relative;
+            top: 0.15rem;
+            @include tablet{
+                width: 180px;
+                height: 180px;
+            }
+            @include desktop{
+                width: 330px;
+                height: 330px;
+            }
         }
-    }
-    img.coin{
-        @include desktop{
-        top: 1rem;
+        .leader-title h3 {
+            @include tablet {
+                position: relative;
+                top: 0.6rem;
+            }
+            @include desktop {
+                top:-0.6rem;
+            }
         }
-    }
-};
-.top-player:nth-of-type(2) { 
-    order: 1 ;
-    position: relative;
-    left: 2.6rem;
-    padding-right: 0.5rem;
-};
-.top-player:nth-of-type(3) { 
-    order: 3;
-    position: relative;
-    right: 2.6rem;
-    padding-left: 0.5rem;
-};
-.top-player:nth-of-type(2), .top-player:nth-of-type(3) {
-    padding-top: 2.56rem;
-    top: 4.1rem;
-    @include tablet{
-        padding-top: 1.56rem;
-    }
-    @include desktop{
-        padding-top: 2.56rem;
-    }
-    img.coin{
-        top: 0.1rem;
-        @include desktop{
-            top: 0.6rem;
+        .leader-name h4 {
+            @include tablet {
+                position: relative;
+                bottom: 0.4rem;
+                margin-top: 0;
+                font-size: 1rem;
+            }
+            @include desktop {
+                bottom: 1.6rem;
+            }
+        }   
+        .leader-thumbnail {
+            padding: 34px;
+            @include tablet {
+                padding: 50px;
+            }
+            @include desktop {
+                padding: 87px;
+            }
         }
-    }
-    .leader-ranking p{  
-    @include desktop{
-    font-size: 4rem;
-    left: 5rem;
-    top: 7rem;
-    }
-    }
-    .leader-info{
-        bottom: 1.3rem;
-        @include tablet{
-        bottom: 0.7rem;
+        .leader-ranking p {
+            font-size: 3.5rem;
+            top: 5rem;
+            left: 3rem;
+            @include desktop {
+                top: 11rem;
+                left: 8rem;
+                font-size: 6rem;
+            }
+        }
+        .leader-coins h4 {
+            @include desktop {
+                bottom: 3.75rem;
+            }
         }
     }
-    .leader-title h3{
-        font-size: 1rem;
-        @include tablet{
-            font-size: 1.3rem;
-        }
-    }
-    .leader-name h4{
-        bottom: 0.9rem;
-        @include tablet{
-            bottom: 0.7rem;
-        }
-    }
-    .leader-coins h4{
-        bottom: 1.5rem;
-        @include tablet{
-            bottom: 1.7rem;
-        }
-    }
-}
-//Styling for Seven Games
-.remaining-players .top-seven{
-    position: relative;
-    bottom: 12rem;
-    .remaining-player{
-        padding-bottom: 0.7rem;
-        @include tablet{
-            padding-left: 3rem;
-    padding-right: 3rem;
-        }
-        @include desktop{
-            padding-left: 10rem;
-    padding-right: 10rem;
-        }     
-    }
-    .leader-content{
-        height: 180px;
-    }
-    .leader-info{
-    padding-top: 2rem;
-    padding-left: 1rem;
-    text-align: left;
-    @include tablet{
+    .top-player:nth-of-type(2) { 
+        order: 1;
         position: relative;
-    left: 6rem;
-    } 
-    }
-    img.coin{
-        width: 10%;
-        position: relative;
-        top: 0.2rem;
+        left: 2.6rem;
         padding-right: 0.5rem;
-    }    
-    h3{
-        font-weight: 900;
-    font-family: Futura-Bk-Bt;
-    font-size: 1.2rem;
-    color: #FFFFFF;
-    text-transform: uppercase;
-    margin: 0.15rem 0.5rem;
-    @include tablet{
-        font-size: 1.3rem;
     }
+    .top-player:nth-of-type(3) { 
+        order: 3;
+        position: relative;
+        right: 2.6rem;
+        padding-left: 0.5rem;
     }
-    .leader-name h4, .leader-coins h4{
-        font-weight: 900;
-        font-family: Futura-Bk-BT;
-        font-size: 0.7rem;
-         color: #FFFFFF;
-         text-transform: uppercase;
-         margin: 0.15rem 0.5rem;
-         font-weight: lighter;      
-         @include tablet{
-             font-size: 0.9rem;
-         }      
-    }  
-}
-//Prize Bar
-.prize-bar{
-    border: 1px solid white;
-    width: 100px;
-    margin: 0.5rem 0.5rem;
-}
-.inner-bar{
-    background: #E725E7;
-    width: 90px;
-    height: 5px;
+    .top-player:nth-of-type(2), .top-player:nth-of-type(3) {
+        padding-top: 2.56rem;
+        top: 4.1rem;
+        @include tablet {
+            padding-top: 1.56rem;
+        }
+        @include desktop {
+            padding-top: 2.56rem;
+        }
+        img.coin {
+            top: 0.25rem;
+            @include desktop {
+                top: 0.5rem;
+            }
+        }
+        .leader-ranking p {  
+            @include desktop {
+                font-size: 4rem;
+                left: 5rem;
+                top: 7rem;
+            }
+        }
+        .leader-info {
+            bottom: 1.3rem;
+            @include tablet {
+                bottom: 0.7rem;
+            }
+        }
+        .leader-title h3 {
+            font-size: 1rem;
+            @include tablet {
+                font-size: 1.3rem;
+            }
+        }
+        .leader-name h4 {
+            bottom: 0.9rem;
+            @include tablet {
+                bottom: 0.7rem;
+                margin-top: 0;
+                font-size: 1rem;
+            }
+        }
+        .leader-coins h4 {
+            bottom: 1.5rem;
+            @include tablet {
+                bottom: 1.7rem;
+            }
+            @include desktop {
+                bottom: 2.5rem;
+            }
+        }
+    }
+    //Styling for Seven Games
+    .remaining-players .top-seven {
+        position: relative;
+        bottom: 6rem;
+        @include tablet {
+            padding-bottom: 3rem;
+        }
+        @include desktop {
+            padding-bottom: 10rem;
+        }
+        .remaining-player {
+            @include tablet {
+                padding-left: 3em;
+                padding-right: 3rem;
+                height: 130px;
+            }
+            @include desktop {
+                padding-left: 7rem;
+                padding-right: 7rem;
+                height: 220px;
+            }     
+        }
+        .leader-content {
+            height: 168px;
+            @include tablet {
+                height: 118px;
+            }
+            @include desktop {
+                height: 206px;
+            }
+        }
+        .leader-info {
+            padding-top: 1.5rem;
+            padding-left: 1rem;
+            text-align: left;
+            @include tablet {
+                position: relative;
+                left: 5rem;
+                padding-top: 0.25rem;
+                width: 250px;
+            } 
+            @include desktop {
+                width: 300px;
+            }
+        }
+        .leader-name {
+            padding-bottom: 1rem;
+            @include tablet {
+                padding-bottom: 0.25rem;
+            }
+            @include desktop {
+                padding-bottom: 1rem;
+            }
+        }
+        .leader-info .leader-coins h4.leader-prizes {
+            @include tablet {
+                font-size: 0.7rem;
+            }
+        }
+        img.coin {
+            width: 28px;
+            position: relative;
+            top: 0.2rem;
+            padding-right: 0.5rem;
+            @include desktop {
+                width: 40px;
+                top: 0.5rem;
+            }
+        } 
+        .leader-info .leader-name h4.leader-name-top-7 {
+            @include tablet {
+                font-size: 0.7rem;
+            }
+            @include desktop {
+                font-size: 1rem;
+            }
+        }
+        .leader-info .leader-coins h4.coin-amount-top-7 {
+            font-size: 1rem;
+            @include desktop {
+                font-size: 1.5rem;
+            }
+        }
+        h3 {
+            font-weight: 900;
+            font-family: Futura-Bk-Bt;
+            font-size: 1.2rem;
+            color: #FFFFFF;
+            text-transform: uppercase;
+            margin: 0.15rem 0.5rem;
+            @include tablet {
+                font-size: 1.3rem;
+            }
+            @include desktop {
+                font-size: 1.75rem;
+            }
+        }
+        .leader-name h4, .leader-coins h4 {
+            font-weight: 900;
+            font-family: Futura-Bk-BT;
+            font-size: 0.7rem;
+            color: #FFFFFF;
+            text-transform: uppercase;
+            margin: 0.15rem 0.5rem;
+            font-weight: lighter;      
+            @include tablet{
+                font-size: 0.9rem;
+            }      
+        } 
+        .leader-thumbnail {
+            padding-bottom: 2rem;
+            @include desktop {
+                padding-bottom: 1.75rem;
+            }
+        } 
+    }
+    //Prize Bar
+    .prize-bar {
+        border: 1px solid white;
+        width: 100px;
+        margin: 0.5rem 0.5rem;
+        @include tablet {
+            margin-bottom: 0;
+        }
+    }
+    .inner-bar{
+        background: #E725E7;
+        width: 90px;
+        height: 5px;
+    }
 }
