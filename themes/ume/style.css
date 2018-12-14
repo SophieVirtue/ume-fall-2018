@@ -1332,20 +1332,17 @@ main {
   display: none; }
 
 .widget-area {
-  display: none;
-  height: 192px;
-  width: 287px;
+  height: 50%;
+  width: 60%;
   position: fixed;
-  left: 40%;
-  top: 40vh;
-  text-align: center;
+  left: 20vw;
+  top: 20%;
   z-index: 5000; }
-  .widget-area img {
-    width: 100px; }
-  .widget-area p {
-    color: white;
-    font-family: 'Futura-Bk-BT';
-    font-size: 18px; }
+  @media (min-width: 600px) {
+    .widget-area {
+      height: 30%;
+      width: 40%;
+      left: 30%; } }
 
 .hidden-copy {
   border: 0;
