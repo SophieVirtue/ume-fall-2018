@@ -127,7 +127,7 @@
               background-size: contain;
               height: 390px;
               width: 320px;
-              
+
               &:hover {
                 height: 440px;
                 width: 300px;
@@ -242,15 +242,17 @@
       }
       .author {
         h4 {
-          margin: 0;
-          padding-bottom: 7px;
-          font-family: 'futura-bk', sans-serif;
-          font-weight: 400;
-          color: white;
-          font-size: 14px;
-          text-transform: uppercase;
-          @include desktop {
-            font-size: 1rem;
+          .author-transform {
+            margin: 0;
+            padding-bottom: 7px;
+            font-family: 'futura-bk', sans-serif;
+            font-weight: 400;
+            color: white;
+            font-size: 14px;
+            text-transform: uppercase;
+            @include desktop {
+              font-size: 1rem;
+            }
           }
         }
       }

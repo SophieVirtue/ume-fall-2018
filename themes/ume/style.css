@@ -2436,7 +2436,7 @@ main {
   -webkit-transition: width 0.35s ease-in-out, height 0.35s ease-in-out;
   transition: width 0.35s ease-in-out, height 0.35s ease-in-out; }
 
-.rainbow-game-container .featured-game:first-child .author h4, .rainbow-game-container .featured-game:nth-child(2) .author h4, .rainbow-game-container .featured-game:last-child .author h4 {
+.rainbow-game-container .featured-game:first-child .author h4 .author-transform, .rainbow-game-container .featured-game:nth-child(2) .author h4 .author-transform, .rainbow-game-container .featured-game:last-child .author h4 .author-transform {
   margin: 0;
   padding-bottom: 7px;
   font-family: 'futura-bk', sans-serif;
@@ -2445,7 +2445,7 @@ main {
   font-size: 14px;
   text-transform: uppercase; }
   @media (min-width: 1024px) {
-    .rainbow-game-container .featured-game:first-child .author h4, .rainbow-game-container .featured-game:nth-child(2) .author h4, .rainbow-game-container .featured-game:last-child .author h4 {
+    .rainbow-game-container .featured-game:first-child .author h4 .author-transform, .rainbow-game-container .featured-game:nth-child(2) .author h4 .author-transform, .rainbow-game-container .featured-game:last-child .author h4 .author-transform {
       font-size: 1rem; } }
 
 .rainbow-game-container .featured-game:first-child .play-button-featured img, .rainbow-game-container .featured-game:nth-child(2) .play-button-featured img, .rainbow-game-container .featured-game:last-child .play-button-featured img {
