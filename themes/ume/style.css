@@ -1081,7 +1081,8 @@ main {
     background-size: cover; }
     @media (min-width: 600px) {
       .carousel-cell .content {
-        background: url(../../assets/images/game-card-tablet.png) no-repeat; } }
+        background: url(../../assets/images/game-card-tablet.png) no-repeat;
+        height: auto; } }
     @media (min-width: 1024px) {
       .carousel-cell .content {
         background: url(../../assets/images/game-card-desktop.png) no-repeat; } }
@@ -1195,9 +1196,13 @@ main {
   background-repeat: no-repeat;
   background-size: 100% 365px;
   padding-top: 1rem; }
+  @media (min-width: 600px) {
+    .category-folder:nth-of-type(1) {
+      margin-top: 7rem;
+      background-position-y: -0.5rem;
+      background-size: 100% 410px; } }
   @media (min-width: 1024px) {
     .category-folder:nth-of-type(1) {
-      background-position-y: -1rem;
       background-size: 80% 480px; } }
 
 .category-folder:nth-of-type(2) {
@@ -1206,9 +1211,12 @@ main {
   background-size: 100% 365px;
   padding-top: 1rem;
   padding-bottom: 2rem; }
+  @media (min-width: 600px) {
+    .category-folder:nth-of-type(2) {
+      background-position-y: -0.5rem;
+      background-size: 100% 410px; } }
   @media (min-width: 1024px) {
     .category-folder:nth-of-type(2) {
-      background-position-y: -1rem;
       background-size: 80% 480px; } }
 
 .category-folder:nth-of-type(3) {
@@ -1217,9 +1225,12 @@ main {
   background-size: 100% 365px;
   padding-top: 1rem;
   padding-bottom: 2rem; }
+  @media (min-width: 600px) {
+    .category-folder:nth-of-type(3) {
+      background-position-y: -0.5rem;
+      background-size: 100% 410px; } }
   @media (min-width: 1024px) {
     .category-folder:nth-of-type(3) {
-      background-position-y: -1rem;
       background-size: 80% 480px; } }
 
 .category-folder:nth-of-type(4) {
@@ -1228,9 +1239,12 @@ main {
   background-size: 100% 365px;
   padding-top: 1rem;
   padding-bottom: 2rem; }
+  @media (min-width: 600px) {
+    .category-folder:nth-of-type(4) {
+      background-position-y: -0.5rem;
+      background-size: 100% 410px; } }
   @media (min-width: 1024px) {
     .category-folder:nth-of-type(4) {
-      background-position-y: -1rem;
       background-size: 80% 480px; } }
 
 .category-folder:nth-of-type(5) {
@@ -1239,9 +1253,12 @@ main {
   background-size: 100% 365px;
   padding-top: 1rem;
   padding-bottom: 2rem; }
+  @media (min-width: 600px) {
+    .category-folder:nth-of-type(5) {
+      background-position-y: -0.5rem;
+      background-size: 100% 410px; } }
   @media (min-width: 1024px) {
     .category-folder:nth-of-type(5) {
-      background-position-y: -1rem;
       background-size: 80% 480px; } }
 
 .category-folder:nth-of-type(6) {
@@ -1250,9 +1267,12 @@ main {
   background-size: 100% 365px;
   padding-top: 1rem;
   padding-bottom: 2rem; }
+  @media (min-width: 600px) {
+    .category-folder:nth-of-type(6) {
+      background-position-y: -0.5rem;
+      background-size: 100% 410px; } }
   @media (min-width: 1024px) {
     .category-folder:nth-of-type(6) {
-      background-position-y: -1rem;
       background-size: 80% 480px; } }
 
 .category {
@@ -1261,14 +1281,16 @@ main {
     font-size: 0.79rem;
     text-transform: uppercase;
     padding-right: 18rem;
-    padding-left: 0rem;
+    padding-left: 0;
     color: white;
     font-family: Futura-Bk-Bt;
     text-transform: uppercase; }
+    @media (min-width: 600px) {
+      .category h2 {
+        padding-left: 1rem; } }
     @media (min-width: 1024px) {
       .category h2 {
-        font-size: 1.4rem;
-        padding-left: 4rem; } }
+        font-size: 1.4rem; } }
 
 .carousel-cell .arrow img {
   width: 23px;
