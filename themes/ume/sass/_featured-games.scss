@@ -23,10 +23,12 @@
           height: 200px;
           width: 135px;
 
+          //First card on the left
+
           &:first-child {
             transform: rotate(-25deg);
-            transition: transform 0.35s ease-in-out, top 0.35s ease-in-out,
-              width 0.35s ease-in-out, height 0.35s ease-in-out;
+            transition: transform 0.65s ease-in-out, top 0.65s ease-in-out,
+              width 0.75s ease-in-out, height 0.75s ease-in-out;
             position: absolute;
             left: 10%;
             &:hover {
@@ -66,6 +68,9 @@
               }
             }
           }
+
+          //Middle card
+
           &:nth-child(2) {
             background-size: cover;
             height: 240px;
@@ -94,10 +99,13 @@
               width: 300px;
             }
           }
+
+          //Card on right
+
           &:last-child {
             transform: rotate(25deg);
-            transition: transform 0.45s ease-in-out, top 0.45s ease-in-out,
-              width 0.45s ease-in-out, height 0.45s ease-in-out;
+            transition: transform 0.65s ease-in-out, top 0.65s ease-in-out,
+              width 0.75s ease-in-out, height 0.75s ease-in-out;
             position: absolute;
             right: 10%;
             &:hover {
@@ -128,6 +136,7 @@
               height: 390px;
               width: 320px;
               
+
               &:hover {
                 height: 440px;
                 width: 300px;
@@ -144,6 +153,9 @@
   }
 }
 
+
+// Section for everything inside of the cards e.g. title, thumbnail, Author, Play button
+
 .rainbow-game-container {
   .featured-game {
     &:first-child,
@@ -159,7 +171,7 @@
         img {
           width: 100px;
           height: 100px;
-          transition: width 0.35s ease-in-out, height 0.35s ease-in-out;
+          transition: width 0.65s ease-in-out, height 0.65s ease-in-out;
           @include desktop {
             width: 200px;
             height: 200px;
@@ -188,6 +200,9 @@
         }
       }
     }
+
+    //Middle Card (bigger than the other two at all queries)
+
     &:nth-child(2) {
       h3 {
         @include desktop {
@@ -217,6 +232,8 @@
   }
 }
 
+//Everything inside cards 
+
 .rainbow-game-container {
   .featured-game {
     &:first-child,
@@ -224,12 +241,11 @@
     &:last-child {
       h3 {
         a {
-          font-family: 'futura-bk', sans-serif;
-          font-weight: 400;
+          font-family: Futura-Bk-Bt;
+          font-weight: 300;
           color: white;
           text-decoration: none;
           font-size: 14px;
-          text-transform: uppercase;
           @include desktop {
             font-size: 1.3rem;
           }
@@ -242,15 +258,23 @@
       }
       .author {
         h4 {
-          margin: 0;
-          padding-bottom: 7px;
-          font-family: 'futura-bk', sans-serif;
-          font-weight: 400;
-          color: white;
-          font-size: 14px;
-          text-transform: uppercase;
-          @include desktop {
-            font-size: 1rem;
+          
+            font-family: Futura-Bk-Bt;
+            font-weight: 200;
+          @include tablet {
+            padding-top: 0.5rem;
+            
+          }
+          .author-transform {
+            margin: 0;
+            padding-bottom: 7px;
+            font-family: Futura-Bk-Bt;
+            font-weight: 400;
+            color: white;
+            font-size: 14px;
+            @include desktop {
+              font-size: 1rem;
+            }
           }
         }
       }

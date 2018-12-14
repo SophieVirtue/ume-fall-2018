@@ -10,7 +10,7 @@
        <?php the_post_thumbnail( 'thumbnail');?>
   </a>
    <div class="author">
-   <h4> By: <?php echo CFS()->get ( 'game_author' ); ?> </h4>
+   <h4> By: <span class="author-transform"><?php echo CFS()->get ( 'game_author' ); ?> </span></h4>
    </div>
    <div class="play-button-featured">
 	<?php printf( '<a href="%s" class="play-button-img"><img src="'.get_template_directory_uri().'/assets/images/play-button.png"/></a>', esc_url( get_permalink() ) ); ?>

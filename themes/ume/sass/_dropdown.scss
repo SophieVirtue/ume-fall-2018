@@ -1,17 +1,28 @@
 .drop-down {
+    *{
+        box-sizing: initial !important;
+    &:after,
+    &:before {
+        box-sizing: initial !important;
+    }
+    font-family: 'Futura-Bk-BT';
+    }
     display: none;
     position: absolute;
     z-index: 1000;
     background: url(../../assets/images/drop-down.png) no-repeat, rgba(0, 0, 0, 0.8);
     background-size: 100% 100%;
     width: 100%;
+    margin-left: -1.5rem;
     @include tablet {
         background: url(../../assets/images/drop-down-tablet.png) no-repeat, rgba(0, 0, 0, 0.8);
         background-size: 100% 100%;
+        margin-left: -1.5rem;
     }
     @include desktop {
         background: url(../../assets/images/drop-down-desktop.png) no-repeat, rgba(0, 0, 0, 0.8);
         background-size: 100% 100%;
+        margin-left: -9.5rem;
     }
     img {
         width: 100%;
@@ -70,6 +81,10 @@
         @include tablet {
             min-width: 280px;
         }
+        @include desktop {
+            padding-left: 20%;
+            max-width: 100%;
+        }
         h3 {
             font-size: 20px;
             display: inline-block;
@@ -85,12 +100,20 @@
     }
     .meta {
         grid-area: meta;
+        @include desktop {
+            padding-left: 20%;
+            max-width: 100%;
+        }
     }
     .program {
         text-align: end;
         grid-area: program;
         @include tablet {
             text-align: start;
+        }
+        @include desktop {
+            padding-left: 20%;
+            max-width: 100%;
         }
         a {
             color: #78F7FA;
@@ -103,6 +126,10 @@
         justify-content: flex-end;
         @include tablet {
             justify-content: flex-start;
+        }
+        @include desktop {
+            padding-left: 20%;
+            max-width: 100%;
         }
         a {
             background: linear-gradient(180deg, #f5d672, #e77839);
@@ -127,6 +154,13 @@
             @include tablet {
                 height: 100%;
             }
+            @include desktop {
+                padding-left: 20%;
+                max-width: 100%;
+                border-top: 1px solid white;
+                margin-top: 3.5%;
+                width: 66%;
+            }
             img {
             width: 20px;
             @include tablet {
@@ -143,9 +177,14 @@
         width: 50%;
         @include tablet {
             align-items: flex-end;
-            // border-top: 1px solid white;
-            width: 100%;
+            border-top: 1px solid white;
+            width: 102%;
             height: 100%;
+        }
+        @include desktop {
+            padding-left: 20%;
+            max-width: 100%;
+            border-top: none;
         }
         p {
             margin: 0;
@@ -193,12 +232,12 @@
         @include desktop {
             height: 400px;
             align-items: flex-start;
+            justify-content: flex-start;
         }
         img {
             height: auto;
             min-height: 256px;
             width: 100%;
-            max-width: 320px;
             @include tablet {
                 min-width: 256px;
                 min-height: 245px;
@@ -220,12 +259,32 @@
         @include tablet {
             flex-direction: row;
             align-items: flex-end;
-            // border-left: 1px solid white;
-            // border-top: 1px solid white;
+            justify-content: flex-start;
+            border-top: 1px solid white;
+            width: 75%;
+            margin-left: 18%;
+            right: 0;
+            &:before {
+                content: "";
+                border-left: 1px solid white;
+                height: 60%;
+                width: 1px;
+                position: absolute;
+                left: 53%;
+                @include desktop {
+                    left: 44%;
+                }
+            }
             h4 {
                 margin: 0;
                 margin-bottom: 12px;
             }
+        }
+        @include desktop {
+            justify-content: flex-start;
+            width: 100%;
+            margin: 0;
+            margin-top: 3%;
         }
         div {
             border: none;
