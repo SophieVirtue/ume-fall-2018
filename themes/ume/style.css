@@ -1203,7 +1203,10 @@ main {
       background-size: 100% 410px; } }
   @media (min-width: 1024px) {
     .category-folder:nth-of-type(1) {
-      background-size: 80% 480px; } }
+      background: url(../../assets/images/agriculture-file.png), url(../../assets/images/ambient-squares.png);
+      background-repeat: no-repeat;
+      background-size: 80% 445px, 100% 480px;
+      background-position: center top; } }
 
 .category-folder:nth-of-type(2) {
   background: url(../../assets/images/set-up-file.png);
@@ -1217,7 +1220,10 @@ main {
       background-size: 100% 410px; } }
   @media (min-width: 1024px) {
     .category-folder:nth-of-type(2) {
-      background-size: 80% 480px; } }
+      background: url(../../assets/images/set-up-file.png), url(../../assets/images/ambient-squares.png);
+      background-repeat: no-repeat;
+      background-size: 80% 445px, 100% 480px;
+      background-position: center top; } }
 
 .category-folder:nth-of-type(3) {
   background: url(../../assets/images/character-file.png);
@@ -1231,7 +1237,10 @@ main {
       background-size: 100% 410px; } }
   @media (min-width: 1024px) {
     .category-folder:nth-of-type(3) {
-      background-size: 80% 480px; } }
+      background: url(../../assets/images/character-file.png), url(../../assets/images/ambient-squares.png);
+      background-repeat: no-repeat;
+      background-size: 80% 445px, 100% 480px;
+      background-position: center top; } }
 
 .category-folder:nth-of-type(4) {
   background: url(../../assets/images/cutest-pet-file.png);
@@ -1245,7 +1254,10 @@ main {
       background-size: 100% 410px; } }
   @media (min-width: 1024px) {
     .category-folder:nth-of-type(4) {
-      background-size: 80% 480px; } }
+      background: url(../../assets/images/cutest-pet-file.png), url(../../assets/images/ambient-squares.png);
+      background-repeat: no-repeat;
+      background-size: 80% 445px, 100% 480px;
+      background-position: center top; } }
 
 .category-folder:nth-of-type(5) {
   background: url(../../assets/images/space-file.png);
@@ -1259,7 +1271,10 @@ main {
       background-size: 100% 410px; } }
   @media (min-width: 1024px) {
     .category-folder:nth-of-type(5) {
-      background-size: 80% 480px; } }
+      background: url(../../assets/images/space-file.png), url(../../assets/images/ambient-squares.png);
+      background-repeat: no-repeat;
+      background-size: 80% 445px, 100% 480px;
+      background-position: center top; } }
 
 .category-folder:nth-of-type(6) {
   background: url(../../assets/images/wild-p-file.png);
@@ -1273,12 +1288,19 @@ main {
       background-size: 100% 410px; } }
   @media (min-width: 1024px) {
     .category-folder:nth-of-type(6) {
-      background-size: 80% 480px; } }
+      background: url(../../assets/images/wild-p-file.png), url(../../assets/images/ambient-squares.png);
+      background-repeat: no-repeat;
+      background-size: 80% 445px, 100% 480px;
+      background-position: center top; } }
 
 .category {
   padding-left: 1.5rem; }
+  @media (min-width: 1024px) {
+    .category {
+      position: relative;
+      left: 8rem; } }
   .category h2 {
-    font-size: 0.79rem;
+    font-size: 0.7rem;
     text-transform: uppercase;
     padding-right: 18rem;
     padding-left: 0;
@@ -1287,13 +1309,27 @@ main {
     text-transform: uppercase; }
     @media (min-width: 600px) {
       .category h2 {
-        padding-left: 1rem; } }
+        font-size: 1rem;
+        padding-left: 0.5rem; } }
     @media (min-width: 1024px) {
       .category h2 {
         font-size: 1.4rem; } }
 
+.carousel-cell img {
+  height: 120px;
+  width: 120px; }
+  @media (min-width: 600px) {
+    .carousel-cell img {
+      height: 150px;
+      width: 150px; } }
+  @media (min-width: 1024px) {
+    .carousel-cell img {
+      height: 170px;
+      width: 170px; } }
+
 .carousel-cell .arrow img {
   width: 23px;
+  height: 40px;
   padding-bottom: 1rem; }
 
 .carousel-cell h3 {
@@ -1312,14 +1348,22 @@ main {
   margin-top: 0.5rem;
   margin-bottom: 0.25rem; }
 
-.carousel-cell img {
-  height: auto;
-  width: 129px; }
-  @media (min-width: 600px) {
-    .carousel-cell img {
-      height: 120px;
-      width: 180px;
-      height: auto; } }
+/* no circle */
+.flickity-button {
+  background: transparent; }
+
+/* big previous & next buttons */
+.flickity-prev-next-button {
+  width: 100px;
+  height: 100px; }
+
+/* icon color */
+.flickity-button-icon {
+  fill: white; }
+
+/* hide disabled button */
+.flickity-button:disabled {
+  display: none; }
 
 .widget-area {
   display: none;
@@ -2136,18 +2180,6 @@ main {
     text-transform: uppercase; }
     @media (min-width: 600px) {
       .drop-down .game-dropdown {
-        grid-template-areas: "title img" "meta img" "program img" "design img" "coins img" "buttons prizes"; } }
-    .drop-down .game-dropdown .buttons {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-align: end;
-          -ms-flex-align: end;
-              align-items: flex-end; }
-      .drop-down .game-dropdown .buttons img {
-        width: 20px; }
-    .drop-down .game-dropdown h4 {
-      margin: 0; 
         padding: 15px;
         padding-left: 45px;
         padding-top: 10%;
@@ -2155,7 +2187,7 @@ main {
         grid-template-areas: "title img" "meta img" "program img" "design img" "coins img" "buttons prizes";
         grid-template-rows: 13% 13% 13% 13% 13% 20%; }
         .drop-down .game-dropdown h4 {
-          margin: 0; } 
+          margin: 0; } }
   .drop-down .title {
     grid-area: title;
     display: -webkit-box;
@@ -2437,10 +2469,6 @@ main {
           .rainbow-game-container .game-background .featured-game-section .featured-games .featured-game:last-child {
             -webkit-transform: rotate(25deg);
                     transform: rotate(25deg);
-            -webkit-transition: top 0.35s ease-in-out, width 0.35s ease-in-out, height 0.35s ease-in-out, -webkit-transform 0.35s ease-in-out;
-            transition: top 0.35s ease-in-out, width 0.35s ease-in-out, height 0.35s ease-in-out, -webkit-transform 0.35s ease-in-out;
-            transition: transform 0.35s ease-in-out, top 0.35s ease-in-out, width 0.35s ease-in-out, height 0.35s ease-in-out;
-            transition: transform 0.35s ease-in-out, top 0.35s ease-in-out, width 0.35s ease-in-out, height 0.35s ease-in-out, -webkit-transform 0.35s ease-in-out;
             -webkit-transition: top 0.45s ease-in-out, width 0.45s ease-in-out, height 0.45s ease-in-out, -webkit-transform 0.45s ease-in-out;
             transition: top 0.45s ease-in-out, width 0.45s ease-in-out, height 0.45s ease-in-out, -webkit-transform 0.45s ease-in-out;
             transition: transform 0.45s ease-in-out, top 0.45s ease-in-out, width 0.45s ease-in-out, height 0.45s ease-in-out;
