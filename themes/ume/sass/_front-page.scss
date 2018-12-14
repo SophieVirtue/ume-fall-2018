@@ -41,6 +41,7 @@
     background-size: cover;
     @include tablet {
       background: url(../../assets/images/game-card-tablet.png) no-repeat;
+      height: auto;
     }
     @include desktop {
       background: url(../../assets/images/game-card-desktop.png) no-repeat;
@@ -165,16 +166,25 @@
 
 //Draft Code
 
+
 .category-folder:nth-of-type(1){
   background: url(../../assets/images/agriculture-file.png);
   background-repeat: no-repeat;
   background-size: 100% 365px;
   padding-top: 1rem;
+  @include tablet{
+    margin-top: 7rem;
+    background-position-y: -0.5rem;
+    background-size: 100% 410px;
+  }
   @include desktop{
-  background-position-y: -1rem;
-  background-size: 80% 480px;
+    background: url(../../assets/images/agriculture-file.png), url(../../assets/images/ambient-squares.png);
+  background-repeat: no-repeat;
+  background-size: 80% 445px, 100% 480px;
+  background-position: center top;
 }
 }
+
 
 .category-folder:nth-of-type(2){
   background: url(../../assets/images/set-up-file.png);
@@ -182,9 +192,15 @@
   background-size: 100% 365px;
   padding-top: 1rem;
   padding-bottom: 2rem;
+  @include tablet{
+    background-position-y: -0.5rem;
+    background-size: 100% 410px;
+    }
   @include desktop{
-  background-position-y: -1rem;
-  background-size: 80% 480px;
+    background: url(../../assets/images/set-up-file.png), url(../../assets/images/ambient-squares.png);
+    background-repeat: no-repeat;
+    background-size: 80% 445px, 100% 480px;
+    background-position: center top;  
 }
 }
 
@@ -194,9 +210,15 @@
   background-size: 100% 365px;
   padding-top: 1rem;
   padding-bottom: 2rem;
+  @include tablet{
+    background-position-y: -0.5rem;
+    background-size: 100% 410px;
+    }
   @include desktop{
-  background-position-y: -1rem;
-  background-size: 80% 480px;
+    background: url(../../assets/images/character-file.png), url(../../assets/images/ambient-squares.png);
+  background-repeat: no-repeat;
+  background-size: 80% 445px, 100% 480px;
+  background-position: center top;
 }
 }
 
@@ -206,9 +228,15 @@
   background-size: 100% 365px;
   padding-top: 1rem;
   padding-bottom: 2rem;
+  @include tablet{
+    background-position-y: -0.5rem;
+    background-size: 100% 410px;
+    }
   @include desktop{
-  background-position-y: -1rem;
-  background-size: 80% 480px;
+    background: url(../../assets/images/cutest-pet-file.png), url(../../assets/images/ambient-squares.png);
+    background-repeat: no-repeat;
+    background-size: 80% 445px, 100% 480px;
+    background-position: center top; 
 }
 }
 .category-folder:nth-of-type(5){
@@ -217,9 +245,15 @@
   background-size: 100% 365px;
   padding-top: 1rem;
   padding-bottom: 2rem;
+  @include tablet{
+    background-position-y: -0.5rem;
+    background-size: 100% 410px;    }
   @include desktop{
-  background-position-y: -1rem;
-  background-size: 80% 480px;
+    background: url(../../assets/images/space-file.png), url(../../assets/images/ambient-squares.png);
+    background-repeat: no-repeat;
+    background-size: 80% 445px, 100% 480px;
+    background-position: center top;
+  
 }
 }
 
@@ -229,33 +263,60 @@
   background-size: 100% 365px;
   padding-top: 1rem;
   padding-bottom: 2rem;
+  @include tablet{
+    background-position-y: -0.5rem;
+    background-size: 100% 410px;
+  }
   @include desktop{
-  background-position-y: -1rem;
-  background-size: 80% 480px;
+  background: url(../../assets/images/wild-p-file.png), url(../../assets/images/ambient-squares.png);
+  background-repeat: no-repeat;
+  background-size: 80% 445px, 100% 480px;
+  background-position: center top;
+
 }
 }
 
 .category {
   padding-left: 1.5rem;
+  @include desktop{
+    position: relative;
+    left: 8rem;
+  }
   h2{
-  font-size: 0.79rem;
+  font-size: 0.7rem;
   text-transform: uppercase;
   padding-right: 18rem;
-  padding-left: 0rem;
+  padding-left: 0;
   color: white;
   font-family: Futura-Bk-Bt;
   text-transform: uppercase;
+  @include tablet{
+    font-size: 1rem;
+    padding-left: 0.5rem;
+  }
   @include desktop{
     font-size: 1.4rem;
-    padding-left: 4rem;
-
   }
 }
 }
 
 .carousel-cell{ 
+  img {
+    height: 120px;
+    width: 120px;
+   @include tablet {
+     height: 150px;
+     width: 150px;
+   }
+   @include desktop{
+     height: 170px;
+     width: 170px;
+
+   }
+ }
   .arrow img{
     width: 23px;
+    height: 40px;
     padding-bottom: 1rem;
   }
   h3{
@@ -275,13 +336,25 @@
     margin-top: 0.5rem;
     margin-bottom: 0.25rem;
   }
-    img {
-       height: auto;
-       width: 129px;
-      @include tablet {
-        height: 120px;
-        width: 180px;
-        height: auto;
-      }
-    }
+    
+}
+
+//Carousel Arrow
+
+/* no circle */
+.flickity-button {
+  background: transparent;
+}
+/* big previous & next buttons */
+.flickity-prev-next-button {
+  width: 100px;
+  height: 100px;
+}
+/* icon color */
+.flickity-button-icon {
+  fill: white;
+}
+/* hide disabled button */
+.flickity-button:disabled {
+  display: none;
 }
