@@ -27,7 +27,9 @@ get_header(); ?>
                 <p><?php  echo $i++; ?></p>
 </div>      
 <div class="leader-thumbnail">   
+<a href="<?php echo esc_url( get_the_permalink()); ?>" class="play">
             <?php the_post_thumbnail( 'thumbnail', array( 'class' => 'img-responsive' ) ); ?>
+            </a>
          </div>
             <div class="leader-content">
            <div class="leader-info">
@@ -102,8 +104,10 @@ get_header(); ?>
               
         
           <div class="leader-icon">
-          <div class="leader-thumbnail">   
+          <div class="leader-thumbnail">  
+          <a href="<?php echo esc_url( get_the_permalink()); ?>" class="play"> 
             <?php the_post_thumbnail( 'thumbnail' ); ?>
+          </a>
          </div>
 </div>
 </div>
