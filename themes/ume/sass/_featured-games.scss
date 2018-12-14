@@ -104,7 +104,7 @@
 
           &:last-child {
             transform: rotate(25deg);
-            transition: transform 0.45s ease-in-out, top 0.45s ease-in-out,
+            transition: transform 0.65s ease-in-out, top 0.65s ease-in-out,
               width 0.75s ease-in-out, height 0.75s ease-in-out;
             position: absolute;
             right: 10%;
@@ -135,6 +135,7 @@
               background-size: contain;
               height: 390px;
               width: 320px;
+              
 
               &:hover {
                 height: 440px;
@@ -201,7 +202,7 @@
     }
 
     //Middle Card (bigger than the other two at all queries)
-    
+
     &:nth-child(2) {
       h3 {
         @include desktop {
@@ -257,10 +258,12 @@
       }
       .author {
         h4 {
-          @include tablet {
-            padding-top: 0.5rem;
+          
             font-family: Futura-Bk-Bt;
             font-weight: 200;
+          @include tablet {
+            padding-top: 0.5rem;
+            
           }
           .author-transform {
             margin: 0;
