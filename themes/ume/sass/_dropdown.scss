@@ -5,6 +5,7 @@
     &:before {
         box-sizing: initial !important;
     }
+    font-family: 'Futura-Bk-BT';
     }
     display: none;
     position: absolute;
@@ -174,7 +175,7 @@
         @include tablet {
             align-items: flex-end;
             border-top: 1px solid white;
-            width: 98%;
+            width: 102%;
             height: 100%;
         }
         @include desktop {
@@ -223,7 +224,6 @@
             justify-content: center;
             align-items: center;
             min-width: 280px;
-            border-left: 1px solid white;
         }
         @include desktop {
             height: 400px;
@@ -255,10 +255,19 @@
         @include tablet {
             flex-direction: row;
             align-items: flex-end;
-            border-left: 1px solid white;
+            justify-content: flex-start;
             border-top: 1px solid white;
-            // width: 98%;
-            // margin-left: 2%;
+            width: 75%;
+            margin-left: 18%;
+            right: 0;
+            &:before {
+                content: "";
+                border-left: 1px solid white;
+                height: 60%;
+                width: 1px;
+                position: absolute;
+                left: 53%;
+            }
             h4 {
                 margin: 0;
                 margin-bottom: 12px;

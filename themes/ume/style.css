@@ -2165,7 +2165,8 @@ main {
   margin-left: -1.5rem; }
   .drop-down * {
     -webkit-box-sizing: initial !important;
-            box-sizing: initial !important; }
+            box-sizing: initial !important;
+    font-family: 'Futura-Bk-BT'; }
     .drop-down *:after, .drop-down *:before {
       -webkit-box-sizing: initial !important;
               box-sizing: initial !important; }
@@ -2322,7 +2323,7 @@ main {
             -ms-flex-align: end;
                 align-items: flex-end;
         border-top: 1px solid white;
-        width: 98%;
+        width: 102%;
         height: 100%; } }
     @media (min-width: 1024px) {
       .drop-down .buttons {
@@ -2365,8 +2366,7 @@ main {
         -webkit-box-align: center;
             -ms-flex-align: center;
                 align-items: center;
-        min-width: 280px;
-        border-left: 1px solid white; } }
+        min-width: 280px; } }
     @media (min-width: 1024px) {
       .drop-down .thumbnail {
         height: 400px;
@@ -2415,8 +2415,20 @@ main {
         -webkit-box-align: end;
             -ms-flex-align: end;
                 align-items: flex-end;
-        border-left: 1px solid white;
-        border-top: 1px solid white; }
+        -webkit-box-pack: start;
+            -ms-flex-pack: start;
+                justify-content: flex-start;
+        border-top: 1px solid white;
+        width: 75%;
+        margin-left: 18%;
+        right: 0; }
+        .drop-down .gem:before {
+          content: "";
+          border-left: 1px solid white;
+          height: 60%;
+          width: 1px;
+          position: absolute;
+          left: 53%; }
         .drop-down .gem h4 {
           margin: 0;
           margin-bottom: 12px; } }
