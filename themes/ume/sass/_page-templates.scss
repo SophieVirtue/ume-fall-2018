@@ -18,6 +18,9 @@
     background-size: contain;
     height: auto;
   }
+  @include desktop {
+    background-size: 100% 1000px;
+  }
   
 }
 
