@@ -82,7 +82,6 @@ get_sidebar(); ?>
         get_template_part( 'template-parts/content-front' );?>
       </div><!-- end of category-content div -->
 </div>
-   
 <?php endforeach; wp_reset_postdata(); 
         ?>
 
@@ -90,7 +89,7 @@ get_sidebar(); ?>
           <?php foreach ( $game_posts as $post ) : setup_postdata( $post ); ?>
           <div class="drop-down" data-id="<?php the_ID(); ?>">
            <?php get_template_part( 'template-parts/content-drop' ); ?>
-      </div>
+          </div>
 <?php endforeach; wp_reset_postdata(); ?>
           </section>
           </div>
