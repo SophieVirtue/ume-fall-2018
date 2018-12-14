@@ -1,22 +1,27 @@
-//Final Code
 .single-design .site-main{
     background:  url(../../assets/images/background.jpg); 
     background-repeat: no-repeat;
     background-size: 100% 100%;
     background-position: top; 
+    li {
+        font-size: 13px;
+    }
 }
-
 .work-section, .character-section, .obstacles-section, .important-section{
     text-align: center;
 }
-
 .single-design .entry-header{
     @include desktop{
     padding-left: 5rem;
     padding-top: 3rem;
     padding-bottom: 3rem;
     }
-
+h2.entry-title {
+    padding-top: 4rem;
+    @include tablet {
+        margin-bottom: 30px;
+    }
+}
 
 a{
     color: #fff;
@@ -27,7 +32,10 @@ a{
 }
 }
 
-
+.design {
+    margin: 0 auto;
+    padding-bottom: 5rem;
+}
 
 //Draft Code
 .work-folder{
@@ -56,36 +64,41 @@ a{
 }
 .design-folder{ 
     background-repeat: no-repeat;
-    background-size: 90% 300px;
+    background-size: 338px 300px;
     background-position: left top;
-    height: auto;
-    width: auto;
-    margin-bottom: 5rem;
+    margin-bottom: 2rem;
+    @include tablet {
+        background-size: 550px 300px; 
+    }
     @include desktop{
-    background-size: 87% 300px, 100% 350px;
+    background-size: 780px 380px, 1000px 380px;
     background-position: center top;
+    margin-bottom: 5rem;
     }
 }
-
-
 
 .design-section {
     color: #fff;
     background: rgba(0,0,0,0.6);
+    width: 322px;
     margin-left: 2rem;
-    margin-right: 2rem;
+    margin-right: 1.3rem;
+    padding-bottom: 0.1rem;
     @include tablet{
         display: flex;
+        width: 600px;
     }
     @include desktop{
     justify-content: center;
     margin-left: 10rem;
     margin-right: 4rem;
+    width: 770px;
+    min-height: 340px;
     }
     
 }
 
-.design-title{
+.design-title {
     color: #fff;
     width: 112px;
     font-size: 0.85rem;
@@ -93,55 +106,61 @@ a{
     text-transform: uppercase;
     padding-top: 1.5rem;
     padding-left: 1.1rem;
-    @include tablet{
+    height: 60px;
+    @include tablet {
     font-size: 1.1rem;
     padding-left: 2rem;
     width: 150px;
-    @include desktop{
+    height: 70px;
+    @include desktop {
     font-size: 1.1rem;
-    padding-left: 9rem;
-    width: 300px;
-
+    padding-left: 10rem;
+    width: 320px;
     }
 
     }
 }
-
 .design-text{
     text-align: left;
-    margin-right: 1rem;
+    margin: 0 1rem;
     line-height: 1.25rem;
     @include tablet{
     margin-left: 1rem;
     padding-top: 2rem;
     padding-bottom: 1rem;
     }
-}
-
-.design-image img{
-    width: 271px;
-    height: auto;
-    padding-top: 1rem;
-    @include tablet{
-    padding-bottom: 2rem;
-    padding-right: 1rem;
-    padding-top: 3rem;
+    h3 {
+        display: none;
+    }
+    p {
+        font-size: 0.9rem;
     }
 }
-
+.design-image img {
+    width: 250px;
+    height: auto;
+    padding-top: 1rem;
+    @include tablet {
+        padding-bottom: 2rem;
+        padding-right: 1rem;
+        padding-top: 3rem;
+    }
+    @include desktop {
+        width: 350px;
+    }
+}
 .design-border{
     border-bottom: 1px solid #fff;
-    padding-top: 2rem;
+    padding-top: 1rem;
     margin-left: 6rem;
     margin-right: 6rem;
 }
-
 .design-image {
+    height: 220px;
     @include tablet{
         order: 3;
     }
 }
-
 .design-border {
     @include tablet{
     order: 2;
