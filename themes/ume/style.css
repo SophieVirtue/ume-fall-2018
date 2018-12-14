@@ -2163,6 +2163,12 @@ main {
   background-size: 100% 100%;
   width: 100%;
   margin-left: -1.5rem; }
+  .drop-down * {
+    -webkit-box-sizing: initial !important;
+            box-sizing: initial !important; }
+    .drop-down *:after, .drop-down *:before {
+      -webkit-box-sizing: initial !important;
+              box-sizing: initial !important; }
   @media (min-width: 600px) {
     .drop-down {
       background: url(../../assets/images/drop-down-tablet.png) no-repeat, rgba(0, 0, 0, 0.8);
@@ -2213,6 +2219,10 @@ main {
     @media (min-width: 600px) {
       .drop-down .title {
         min-width: 280px; } }
+    @media (min-width: 1024px) {
+      .drop-down .title {
+        padding-left: 20%;
+        max-width: 100%; } }
     .drop-down .title h3 {
       font-size: 20px;
       display: inline-block;
@@ -2225,12 +2235,20 @@ main {
         text-decoration: none; }
   .drop-down .meta {
     grid-area: meta; }
+    @media (min-width: 1024px) {
+      .drop-down .meta {
+        padding-left: 20%;
+        max-width: 100%; } }
   .drop-down .program {
     text-align: end;
     grid-area: program; }
     @media (min-width: 600px) {
       .drop-down .program {
         text-align: start; } }
+    @media (min-width: 1024px) {
+      .drop-down .program {
+        padding-left: 20%;
+        max-width: 100%; } }
     .drop-down .program a {
       color: #78F7FA; }
   .drop-down .design {
@@ -2249,6 +2267,10 @@ main {
         -webkit-box-pack: start;
             -ms-flex-pack: start;
                 justify-content: flex-start; } }
+    @media (min-width: 1024px) {
+      .drop-down .design {
+        padding-left: 20%;
+        max-width: 100%; } }
     .drop-down .design a {
       background: -webkit-gradient(linear, left top, left bottom, from(#f5d672), to(#e77839));
       background: linear-gradient(180deg, #f5d672, #e77839);
@@ -2275,6 +2297,10 @@ main {
       @media (min-width: 600px) {
         .drop-down .coins h4 {
           height: 100%; } }
+      @media (min-width: 1024px) {
+        .drop-down .coins h4 {
+          padding-left: 20%;
+          max-width: 100%; } }
       .drop-down .coins h4 img {
         width: 20px; }
         @media (min-width: 600px) {
@@ -2297,6 +2323,10 @@ main {
                 align-items: flex-end;
         width: 100%;
         height: 100%; } }
+    @media (min-width: 1024px) {
+      .drop-down .buttons {
+        padding-left: 20%;
+        max-width: 100%; } }
     .drop-down .buttons p {
       margin: 0; }
     .drop-down .buttons h4 {
@@ -2340,12 +2370,14 @@ main {
         height: 400px;
         -webkit-box-align: start;
             -ms-flex-align: start;
-                align-items: flex-start; } }
+                align-items: flex-start;
+        -webkit-box-pack: start;
+            -ms-flex-pack: start;
+                justify-content: flex-start; } }
     .drop-down .thumbnail img {
       height: auto;
       min-height: 256px;
-      width: 100%;
-      max-width: 320px; }
+      width: 100%; }
       @media (min-width: 600px) {
         .drop-down .thumbnail img {
           min-width: 256px;
@@ -2384,6 +2416,11 @@ main {
         .drop-down .gem h4 {
           margin: 0;
           margin-bottom: 12px; } }
+    @media (min-width: 1024px) {
+      .drop-down .gem {
+        -webkit-box-pack: start;
+            -ms-flex-pack: start;
+                justify-content: flex-start; } }
     .drop-down .gem div {
       border: none; }
       .drop-down .gem div img {
