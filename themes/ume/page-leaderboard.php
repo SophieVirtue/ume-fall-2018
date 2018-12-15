@@ -96,7 +96,15 @@ get_header(); ?>
                <div class="inner-bar"
                style="width: <?php echo ume_get_prizes( CFS()->get ( 'game_coins' ))*90*0.0833 ?>px">
                </div>
+               <div class="inner-bar-tablet"
+               style="width: <?php echo ume_get_prizes( CFS()->get ( 'game_coins' ))*290*0.0833 ?>px">
                </div>
+               <div class="inner-bar-desktop"
+               style="width: <?php echo ume_get_prizes( CFS()->get ( 'game_coins' ))*390*0.0833 ?>px">
+               </div>
+               </div>
+
+               
 
               <h4 class="coin-amount-top-7"> <img class="coin" src="<?php echo get_template_directory_uri();?>/assets/images/coin.png" alt="coin"/><?php echo CFS()->get ( 'game_coins' ); ?> </h4>
             </div>
