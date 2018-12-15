@@ -13,7 +13,8 @@
                 event.preventDefault();
                 $popup.toggle();
             }); //end of popup .onclick
-            $(document).on( 'mouseup', function() {
+            $(document).on( 'mouseup', function(event) {
+                event.preventDefault();
                 $popup.hide();
             } );
         }//end of if browsertype
@@ -45,8 +46,8 @@
             event.preventDefault();
             $(this).next('.hidden-copy').focus().select();
             document.execCommand('copy');
+            $('<p style="color:white; font-size: 14px">Link saved to Clipboard!</p>').appendTo($share).delay(1000).hide(1000);
         });
-
 
         // flickity
         $('.main-carousel').flickity({

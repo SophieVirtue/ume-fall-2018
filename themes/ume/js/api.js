@@ -45,7 +45,7 @@
             })
             .done(function () {
                 $( '.wpcf7-form' ).slideUp(1000);
-                $( '.wpcf7' ).append('<h3>Thanks, your download request was recieved!</h3>');
+                $( '.wpcf7' ).append('<h3>Thanks, your download request was received!</h3>');
             })
             .fail(function(err){
                 console.log(err);
