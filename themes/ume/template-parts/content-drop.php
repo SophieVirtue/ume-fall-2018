@@ -16,7 +16,7 @@
     <div class="program">
 	    <h4><a href="https://ume.academy/programs/"><?php echo CFS()->get ( 'game_program' ); ?></a></h4>
     </div>
-    <div class="design">
+    <div class="view-design">
         <?php $game_design = CFS()->get ( 'game_design' ); ?>
         <?php if (is_array($game_design)) : ?>
         <a href="<?php echo get_permalink($game_design[0]); ?>">
@@ -37,7 +37,7 @@
             </a>
         </p> 
         <p class="share">
-            <a href="<?php echo esc_url( get_the_permalink()); ?>" class="play">
+            <a href="<?php echo esc_url( get_the_permalink()); ?>">
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/images/Share-Icon.png" alt="">
             </a>
             <input type="text" class="hidden-copy" value="<?php echo get_the_permalink() ?>">
