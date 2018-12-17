@@ -7,7 +7,7 @@
 
 ?>
 
-<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+<article data-id="<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class="entry-header">
 		<?php the_title( sprintf( '<h2 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' ); ?>
 
@@ -17,17 +17,22 @@
 	</header><!-- .entry-header -->
 	
 	
-		<div class="thumbnail-image">
+		<div class="thumbnail-image" data-id="<?php the_ID(); ?>">
 		<?php the_post_thumbnail( 'thumbnail', printf( '<a href="%s" rel="bookmark">', esc_url( get_permalink() ) )); ?></a>
 		</div>
     <div class="author">
 	<h4> By: <?php echo CFS()->get ( 'game_author' ); ?> </h4>
     </div>
-    <div class="arrow">
-	<?php printf( '<a href="%s" class="play"><img src="'.get_template_directory_uri().'/assets/images/play-button.png"/></a>', esc_url( get_permalink() ) ); ?>
+    <div class="search-arrow">
+	<?php //printf( '<a href="%s" class="play"><img src="'.get_template_directory_uri().'/assets/images/play-button.png"/></a>', esc_url( get_permalink() ) ); ?>
+	<div class="arrow">
+            <img class="arrow-img" src="<?php echo get_template_directory_uri(); ?>/assets/images/down-arrow.png"/>
+	</div>
 	
 	</div>
-    
+    <div class="drop-down" data-id="<?php the_ID(); ?>">
+           <?php get_template_part( 'template-parts/content-drop' ); ?>
+    </div>
 	
 </article><!-- #post-## -->
 
