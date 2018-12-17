@@ -2251,21 +2251,31 @@ main {
     min-height: 453px;
     padding: 10px 30px;
     font-size: 14px;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    width: 320px;
+    margin: 0 auto; }
     @media (min-width: 600px) {
       .drop-down .game-dropdown {
         padding: 15px;
-        padding-left: 45px;
-        padding-top: 10%;
+        padding-top: 2rem;
         font-size: 18px;
         grid-template-areas: "title img" "meta img" "program img" "design img" "coins img" "buttons prizes";
+<<<<<<< HEAD
         grid-template-rows: 13% 13% 13% 13% 13% 20%; }
+=======
+        width: 592px; }
+>>>>>>> 2f4f556201edafc6d391c5af152e5da3578c7e79
         .drop-down .game-dropdown h4 {
           margin: 0; } }
     @media (min-width: 1024px) {
       .drop-down .game-dropdown {
         font-size: 20px;
+<<<<<<< HEAD
         grid-template-areas: "title img" "meta img" "program img" "design img" "buttons img" "coins prizes"; } }
+=======
+        grid-template-areas: "title img" "meta img" "program img" "design img" "buttons img" "coins prizes";
+        width: 990px; } }
+>>>>>>> 2f4f556201edafc6d391c5af152e5da3578c7e79
   .drop-down .title {
     grid-area: title;
     display: -webkit-box;
@@ -2280,10 +2290,10 @@ main {
     height: 70px; }
     @media (min-width: 600px) {
       .drop-down .title {
-        min-width: 280px; } }
+        min-width: 280px;
+        height: 58px; } }
     @media (min-width: 1024px) {
       .drop-down .title {
-        padding-left: 20%;
         max-width: 100%; } }
     .drop-down .title h3 {
       font-size: 20px;
@@ -2297,20 +2307,26 @@ main {
         color: white;
         text-decoration: none; }
   .drop-down .meta {
-    grid-area: meta; }
+    grid-area: meta;
+    padding-top: 1rem; }
+    .drop-down .meta h4 {
+      margin: 0;
+      letter-spacing: 1px; }
+    @media (min-width: 600px) {
+      .drop-down .meta {
+        height: 43px; } }
     @media (min-width: 1024px) {
       .drop-down .meta {
-        padding-left: 20%;
         max-width: 100%; } }
   .drop-down .program {
     text-align: end;
-    grid-area: program; }
+    grid-area: program;
+    letter-spacing: 1px; }
     @media (min-width: 600px) {
       .drop-down .program {
         text-align: start; } }
     @media (min-width: 1024px) {
       .drop-down .program {
-        padding-left: 20%;
         max-width: 100%; } }
     .drop-down .program a {
       color: #78F7FA; }
@@ -2324,15 +2340,16 @@ main {
             align-items: center;
     -webkit-box-pack: end;
         -ms-flex-pack: end;
-            justify-content: flex-end; }
+            justify-content: flex-end;
+    margin: 1rem 0; }
     @media (min-width: 600px) {
       .drop-down .view-design {
         -webkit-box-pack: start;
             -ms-flex-pack: start;
-                justify-content: flex-start; } }
+                justify-content: flex-start;
+        height: 27px; } }
     @media (min-width: 1024px) {
       .drop-down .view-design {
-        padding-left: 20%;
         max-width: 100%; } }
     .drop-down .view-design a {
       background: -webkit-gradient(linear, left top, left bottom, from(#f5d672), to(#e77839));
@@ -2341,14 +2358,24 @@ main {
       color: white;
       text-decoration: none;
       border-radius: 5px;
-      font-size: 11px; }
+      font-size: 11px;
+      letter-spacing: 1px; }
       @media (min-width: 600px) {
         .drop-down .view-design a {
           font-size: 15px;
           border-radius: 2px;
           padding: 15px 30px; } }
+      @media (min-width: 1024px) {
+        .drop-down .view-design a {
+          padding: 15px 50px; } }
   .drop-down .coins {
     grid-area: coins; }
+    @media (min-width: 600px) {
+      .drop-down .coins {
+        height: 59px; } }
+    @media (min-width: 1024px) {
+      .drop-down .coins {
+        height: 75px; } }
     .drop-down .coins h4 {
       margin: 0;
       display: -webkit-box;
@@ -2362,16 +2389,17 @@ main {
           height: 100%; } }
       @media (min-width: 1024px) {
         .drop-down .coins h4 {
-          padding-left: 20%;
           max-width: 100%;
           border-top: 1px solid white;
-          margin-top: 3.5%;
-          width: 66%; } }
+          width: 76%; } }
       .drop-down .coins h4 img {
         width: 20px; }
         @media (min-width: 600px) {
           .drop-down .coins h4 img {
             width: 25px; } }
+        @media (min-width: 1024px) {
+          .drop-down .coins h4 img {
+            width: 40px; } }
   .drop-down .buttons {
     grid-area: buttons;
     height: 40px;
@@ -2381,20 +2409,25 @@ main {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    width: 50%; }
+    width: 50%;
+    margin: 1rem 0; }
     @media (min-width: 600px) {
       .drop-down .buttons {
         -webkit-box-align: end;
             -ms-flex-align: end;
                 align-items: flex-end;
         border-top: 1px solid white;
-        width: 102%;
-        height: 100%; } }
+        width: 90%;
+        height: 90px;
+        margin: 0;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center; } }
     @media (min-width: 1024px) {
       .drop-down .buttons {
-        padding-left: 20%;
         max-width: 100%;
-        border-top: none; } }
+        border-top: none;
+        padding-left: 3.5rem; } }
     .drop-down .buttons p {
       margin: 0; }
     .drop-down .buttons h4 {
@@ -2403,10 +2436,10 @@ main {
       .drop-down .buttons .play-game img {
         width: 50px; } }
     .drop-down .buttons img {
-      width: 20px; }
+      width: 30px; }
       @media (min-width: 600px) {
         .drop-down .buttons img {
-          width: 25px;
+          width: 35px;
           margin: 10px; } }
       @media (min-width: 1024px) {
         .drop-down .buttons img {
@@ -2435,7 +2468,7 @@ main {
         min-width: 280px; } }
     @media (min-width: 1024px) {
       .drop-down .thumbnail {
-        height: 400px;
+        height: 340px;
         -webkit-box-align: start;
             -ms-flex-align: start;
                 align-items: flex-start;
@@ -2453,7 +2486,10 @@ main {
       @media (min-width: 1024px) {
         .drop-down .thumbnail img {
           height: 300px;
-          width: 500px; } }
+          width: 500px;
+          padding-top: 3rem;
+          border-bottom: 1px solid white;
+          padding-bottom: 1.5rem; } }
   .drop-down .gem {
     grid-area: prizes;
     display: -webkit-box;
@@ -2489,19 +2525,20 @@ main {
             -ms-flex-pack: start;
                 justify-content: flex-start;
         border-top: 1px solid white;
-        width: 75%;
-        margin-left: 18%;
-        right: 0; }
+        margin-left: 1rem;
+        height: 90px; }
         .drop-down .gem:before {
           content: "";
           border-left: 1px solid white;
-          height: 60%;
+          height: 70%;
           width: 1px;
           position: absolute;
-          left: 53%; } }
+          left: 49%; } }
     @media (min-width: 600px) and (min-width: 1024px) {
       .drop-down .gem:before {
-        left: 44%; } }
+        left: 35%;
+        bottom: 6%;
+        height: 75%; } }
     @media (min-width: 600px) {
         .drop-down .gem h4 {
           margin: 0;
@@ -2513,7 +2550,8 @@ main {
                 justify-content: flex-start;
         width: 100%;
         margin: 0;
-        margin-top: 3%; } }
+        height: 67px;
+        border-top: none; } }
     .drop-down .gem div {
       border: none; }
       .drop-down .gem div img {

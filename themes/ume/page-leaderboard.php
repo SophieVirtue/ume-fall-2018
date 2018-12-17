@@ -5,7 +5,8 @@
  * @package UME
  */
 
-get_header(); ?>
+get_header(); 
+get_sidebar();?>
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main board-page" role="main">
@@ -35,7 +36,7 @@ get_header(); ?>
            <div class="leader-info">
                 <div class="leader-title">
             <h3>
-                <a href="<?php echo get_the_permalink(); ?>">
+                <a href="<?php echo get_the_permalink(); ?>" class="play">
                 <?php the_title(); ?> </a>
             </h3>
                </div>
@@ -82,7 +83,7 @@ get_header(); ?>
            <div class="leader-info">
                 <div class="leader-title">
             <h3>
-                <a href="<?php echo get_the_permalink(); ?>">
+                <a href="<?php echo get_the_permalink(); ?>" class="play">
                 <?php the_title(); ?> </a>
             </h3>
                </div>
