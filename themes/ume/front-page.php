@@ -65,12 +65,16 @@ get_sidebar(); ?>
         <?php   
    $game_categories = get_terms( array(
            'taxonomy' => 'game_category',
-           'hide_empty' => true,
+           'hide_empty' => false
    ) );
+
+//    var_dump($game_categories);
         foreach( $game_categories as $category ): 
 
-   $args = array( 'post_type' => 'game', 'posts_per_page' => '-1', 'category_name' => $category->name );
+   $args = array( 'post_type' => 'game', 'posts_per_page' => -1, 'category_name' => $category->name );
    $game_posts = get_posts( $args ); // returns an array of posts
+
+//    var_dump($game_posts);
 ?>
         <div class="category-folder">
         <section class="<?php $category->slug ?>category">
