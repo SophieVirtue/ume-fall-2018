@@ -78,6 +78,7 @@
         flex-wrap:wrap;
         align-items: center;
         max-width: 160px;
+        height: 70px;
         @include tablet {
             min-width: 280px;
         }
@@ -89,6 +90,7 @@
             font-size: 20px;
             display: inline-block;
             margin: 0;
+            padding-left: 1rem;
             @include tablet {
                 font-size: 30px;
             }
@@ -256,6 +258,11 @@
         align-items: flex-end;
         justify-content: center;
         font-weight: lighter;
+        h4 {
+            padding-right: 0.4rem;
+            margin: 5px 0;
+            letter-spacing: 1px;
+        }
         @include tablet {
             flex-direction: row;
             align-items: flex-end;

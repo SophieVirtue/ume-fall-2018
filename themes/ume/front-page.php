@@ -68,33 +68,42 @@ get_sidebar(); ?>
            'hide_empty' => false
    ) );
 
-//    var_dump($game_categories);
-        foreach( $game_categories as $category ): 
+    foreach( $game_categories as $category ): 
 
-   $args = array( 'post_type' => 'game', 'posts_per_page' => -1, 'category_name' => $category->name );
-   $game_posts = get_posts( $args ); // returns an array of posts
+    $args = array( 
+       'post_type' => 'game', 
+       'posts_per_page' => -1, 
+       'tax_query' => array(
+           array(
+                'taxonomy' => 'game_category',
+                'field' => 'term_id',
+                'terms' => $category->term_id
+            )
+        )
+    );
+   //$game_posts = get_posts( $args ); // returns an array of posts
 
-//    var_dump($game_posts);
+   $game_posts = new WP_Query($args);
 ?>
         <div class="category-folder">
         <section class="<?php $category->slug ?>category">
         <h2><?php echo $category->name ?></h2>
         <div class="<?php $category->slug ?>-games main-carousel">
-<?php foreach ( $game_posts as $post ) : setup_postdata( $post ); ?>
+<?php while ( $game_posts->have_posts() ) : $game_posts->the_post(); ?>
 <div class="<?php $category->slug ?>-game carousel-cell" data-id="<?php the_ID(); ?>">
       <div class="content"><?php 
         get_template_part( 'template-parts/content-front' );?>
       </div><!-- end of category-content div -->
 </div>
-<?php endforeach; wp_reset_postdata(); 
+        <?php endwhile; wp_reset_postdata(); 
         ?>
 
     </div>
-          <?php foreach ( $game_posts as $post ) : setup_postdata( $post ); ?>
+    <?php while ( $game_posts->have_posts() ) : $game_posts->the_post(); ?>
           <div class="drop-down" data-id="<?php the_ID(); ?>">
            <?php get_template_part( 'template-parts/content-drop' ); ?>
           </div>
-<?php endforeach; wp_reset_postdata(); ?>
+          <?php endwhile; wp_reset_postdata(); ?>
           </section>
           </div>
 

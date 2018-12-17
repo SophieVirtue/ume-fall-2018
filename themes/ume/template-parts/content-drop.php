@@ -52,7 +52,7 @@
    </div>
     
     <div class="gem">
-        <h4>Prizes Earned: </h4>
+        <h4>Prizes Earned </h4>
         <div><?php $gems =  ume_get_icons ( CFS()->get ( 'game_coins' ))?>
             <?php foreach($gems as $gem): 
                 echo $gem;
