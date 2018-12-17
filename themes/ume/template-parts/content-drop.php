@@ -14,7 +14,7 @@
 	    <h4> <?php echo CFS()->get ( 'game_location' ); ?> </h4>
     </div>
     <div class="program">
-	    <h4><a href="https://ume.academy/programs/"><?php echo CFS()->get ( 'game_program' ); ?></a></h4>
+	    <h4><a href="https://ume.academy/programs/"><?php echo CFS()->get ( 'game_program' ); ?> Program</a></h4>
     </div>
     <div class="view-design">
         <?php $game_design = CFS()->get ( 'game_design' ); ?>
@@ -52,7 +52,7 @@
    </div>
     
     <div class="gem">
-        <h4>Prizes Earned </h4>
+        <h4>Prizes Earned: </h4>
         <div><?php $gems =  ume_get_icons ( CFS()->get ( 'game_coins' ))?>
             <?php foreach($gems as $gem): 
                 echo $gem;
