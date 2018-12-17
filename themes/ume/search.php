@@ -25,9 +25,7 @@ get_sidebar(); ?>
 						<?php get_template_part( 'template-parts/content', 'search' ); ?>
 					  
 					</div>
-			<!-- <div class="drop-down" data-id="<?php the_ID(); ?>"> -->
-           <?php //get_template_part( 'template-parts/content-drop' ); ?>
-          <!-- </div> -->
+			
 
 				<?php endwhile; ?>
 

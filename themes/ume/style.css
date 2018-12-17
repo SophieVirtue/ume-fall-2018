@@ -2288,8 +2288,7 @@ main {
     .drop-down .title h3 {
       font-size: 20px;
       display: inline-block;
-      margin: 0;
-      padding-left: 1rem; }
+      margin: 0; }
       @media (min-width: 600px) {
         .drop-down .title h3 {
           font-size: 30px; } }
@@ -2790,3 +2789,6 @@ main {
     .rainbow-game-container .featured-game:first-child .play-button-featured img, .rainbow-game-container .featured-game:nth-child(2) .play-button-featured img, .rainbow-game-container .featured-game:last-child .play-button-featured img {
       width: 30px;
       height: 30px; } }
+
+.search-results .drop-down {
+  margin-left: 0; }
