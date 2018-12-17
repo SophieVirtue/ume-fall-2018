@@ -481,35 +481,40 @@
     width: 90px;
     height: 5px;
     @include tablet {
-      width: 290px;
+      display: none;
     }
     @include desktop {
-      width: 390px;
+     display: none;
     }
   }
-}
-
-.prize-bar-tablet {
   .inner-bar-tablet {
-    // display: none;
+    background: #e725e7;
+   
+    height: 5px;
+    display: none;
     @include tablet {
       width: 290px;
     }
     @include desktop {
-    //   display: none;
+      display: none;
     }
   }
-}
 
-.prize-bar-desktop {
+
 
   .inner-bar-desktop {
-    // display: none;
+    background: #e725e7;
+    
+    height: 5px;
+    display: none;
     @include tablet {
-    //   display: none;
+      display: none;
     }
     @include desktop {
       width: 390px;
     }
   }
 }
+
+
+  

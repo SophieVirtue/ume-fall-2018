@@ -1836,18 +1836,32 @@ main {
   height: 5px; }
   @media (min-width: 600px) {
     .page-leaderboard .inner-bar {
-      width: 290px; } }
+      display: none; } }
   @media (min-width: 1024px) {
     .page-leaderboard .inner-bar {
+      display: none; } }
+
+.page-leaderboard .inner-bar-tablet {
+  background: #e725e7;
+  height: 5px;
+  display: none; }
+  @media (min-width: 600px) {
+    .page-leaderboard .inner-bar-tablet {
+      width: 290px; } }
+  @media (min-width: 1024px) {
+    .page-leaderboard .inner-bar-tablet {
+      display: none; } }
+
+.page-leaderboard .inner-bar-desktop {
+  background: #e725e7;
+  height: 5px;
+  display: none; }
+  @media (min-width: 600px) {
+    .page-leaderboard .inner-bar-desktop {
+      display: none; } }
+  @media (min-width: 1024px) {
+    .page-leaderboard .inner-bar-desktop {
       width: 390px; } }
-
-@media (min-width: 600px) {
-  .prize-bar-tablet .inner-bar-tablet {
-    width: 290px; } }
-
-@media (min-width: 1024px) {
-  .prize-bar-desktop .inner-bar-desktop {
-    width: 390px; } }
 
 .game-template-default.single-game {
   color: #fff;
