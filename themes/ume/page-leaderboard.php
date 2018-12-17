@@ -97,10 +97,10 @@ get_header(); ?>
                style="width: <?php echo ume_get_prizes( CFS()->get ( 'game_coins' ))*90*0.0833 ?>px">
                </div>
                <div class="inner-bar-tablet"
-               style="width: <?php echo ume_get_prizes( CFS()->get ( 'game_coins' ))*290*0.0833 ?>px">
+               style="width: <?php echo ume_get_prizes( CFS()->get ( 'game_coins' ))*205*0.0833 ?>px">
                </div>
                <div class="inner-bar-desktop"
-               style="width: <?php echo ume_get_prizes( CFS()->get ( 'game_coins' ))*390*0.0833 ?>px">
+               style="width: <?php echo ume_get_prizes( CFS()->get ( 'game_coins' ))*290*0.0833 ?>px">
                </div>
                </div>
 

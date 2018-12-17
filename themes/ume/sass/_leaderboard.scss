@@ -470,10 +470,10 @@
     margin: 0.5rem 0.5rem;
     @include tablet {
       margin-bottom: 0;
-      width: 300px;
+      width: 215px;
     }
     @include desktop {
-      width: 400px;
+      width: 300px;
     }
   }
   .inner-bar {
@@ -493,6 +493,7 @@
     height: 5px;
     display: none;
     @include tablet {
+        display: block;
       width: 290px;
     }
     @include desktop {
@@ -512,6 +513,7 @@
     }
     @include desktop {
       width: 390px;
+      display: block;
     }
   }
 }
