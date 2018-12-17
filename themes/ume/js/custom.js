@@ -3,11 +3,10 @@
         const $play = $('.play');
         const $popup = $('.widget-area');
         const $carouselArrow = $('.carousel-cell .arrow');
-        const $featureArrow = $('.featured-game .arrow');
+        const $searchArrow = $('.search-arrow');
         const $share = $('.share a');
         
-        // popup toggle
-        
+        // play game only on laptop
         if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
             $play.on('click', function(event) {
                 event.preventDefault();
@@ -19,29 +18,30 @@
             } );
         }//end of if browsertype
 
+        //toggle dropdown on front page
         $carouselArrow.on('click', function() {
             let gameID = $(this).closest('.carousel-cell').data('id');
             $(this).closest('section').find('.drop-down[data-id!="' + gameID + '"]').hide();
             $(this).closest('section').find('.drop-down[data-id="' + gameID + '"]').toggle();
         });
 
-        $(document).on('mouseup', function(event) {
-       
-            if((!$(event.target).is('.game-dropdown') )&&
-    ($(event.target).parents('.game-dropdown').length === 0) ) {
-                $('.drop-down').hide();
-            }               
-            });
-
-        $featureArrow.on('click', function() {
-            $(this).closest('.featured-game').find('.drop-down').toggle();
-        })
-
-        $featureArrow.blur(function(){
-            $(this).closest('.featured-game').find('.drop-down').hide();
+        //toggle dropdown on search page 
+        $searchArrow.on('click', function(){
+            let gameID = $(this).closest('article').data('id');
+            $(this).closest('section').find('.drop-down[data-id!="' + gameID + '"]').hide();
+            $(this).closest('section').find('.drop-down[data-id="' + gameID + '"]').toggle();
         });
 
+        //hide dropdown when not clicking in the actual dropdown
+        $(document).on('mouseup', function(event) {
+            if((!$(event.target).is('.drop-down') ) &&
+            ($(event.target).parents('.drop-down').length === 0) ) {
+                if((!$(event.target).is('.arrow-img') ))
+                    $('.drop-down').hide();
+            }
+        });
 
+        //copy game link to clipboard
         $share.on('click', function(event) {
             event.preventDefault();
             $(this).next('.hidden-copy').focus().select();
@@ -49,7 +49,7 @@
             $('<p style="color:white; font-size: 14px">Link saved to Clipboard!</p>').appendTo($share).delay(1000).hide(1000);
         });
 
-        // flickity
+        // flickity carousel front page
         $('.main-carousel').flickity({
             // options
             cellAlign: 'left',
@@ -70,7 +70,6 @@
             document.getElementById('side-menu').style.width = '0%';
         }) // end of hamburger menu
  
-
     }); //end of doc.ready
 })(jQuery);
  //end of jquery
