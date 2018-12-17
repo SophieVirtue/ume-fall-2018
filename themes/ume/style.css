@@ -1078,15 +1078,15 @@ main {
             align-items: center;
     -ms-flex-pack: distribute;
         justify-content: space-around;
-    width: 132px;
-    height: 252px;
+    width: 122px;
+    height: 234px;
     background: url(../../assets/images/game-card-mobile.png) no-repeat;
     background-size: 100% 98%; }
     @media (min-width: 600px) {
       .carousel-cell .content {
         background: url(../../assets/images/game-card-tablet.png) no-repeat;
         background-size: 100% 100%;
-        width: 185px;
+        width: 175px;
         height: 270px; } }
     @media (min-width: 1024px) {
       .carousel-cell .content {
@@ -1240,18 +1240,23 @@ main {
 
 .category-folder:nth-of-type(1), .category-folder:nth-of-type(2), .category-folder:nth-of-type(3), .category-folder:nth-of-type(4), .category-folder:nth-of-type(5), .category-folder:nth-of-type(6) {
   background-repeat: no-repeat;
-  background-size: 100% 330px;
+  background-size: 375px 315px;
   padding-top: 1rem;
-  padding-bottom: 2rem; }
+  padding-bottom: 2rem;
+  width: 385px; }
   @media (min-width: 600px) {
     .category-folder:nth-of-type(1), .category-folder:nth-of-type(2), .category-folder:nth-of-type(3), .category-folder:nth-of-type(4), .category-folder:nth-of-type(5), .category-folder:nth-of-type(6) {
       background-position-y: -0.5rem;
-      background-size: 100% 360px; } }
+      background-size: 600px 360px;
+      width: 610px; } }
   @media (min-width: 1024px) {
     .category-folder:nth-of-type(1), .category-folder:nth-of-type(2), .category-folder:nth-of-type(3), .category-folder:nth-of-type(4), .category-folder:nth-of-type(5), .category-folder:nth-of-type(6) {
       background-repeat: no-repeat;
-      background-size: 70% 400px, 88% 420px;
-      background-position: center top; } }
+      background-size: 725px 400px, 870px 420px;
+      background-position: center top;
+      background-position-x: 11rem, 8rem;
+      width: 1035px;
+      margin-left: 5rem; } }
 
 .category {
   padding-left: 1.5rem; }
@@ -1278,7 +1283,7 @@ main {
 
 .carousel-cell img {
   height: 110px;
-  width: 120px; }
+  width: 110px; }
   @media (min-width: 600px) {
     .carousel-cell img {
       width: 150px;
@@ -1294,8 +1299,7 @@ main {
   padding-bottom: 1rem; }
 
 .carousel-cell h3 {
-  padding-top: 1rem;
-  padding-left: 1rem;
+  padding: 0.5rem 0;
   font-family: Futura-Bk-Bt;
   font-size: 0.9rem; }
   .carousel-cell h3 a {
