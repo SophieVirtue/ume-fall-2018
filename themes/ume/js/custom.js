@@ -69,6 +69,7 @@
         $closeSlideMenu.on('click', function() {
             document.getElementById('side-menu').style.width = '0%';
         }) // end of hamburger menu
+
  
 
     }); //end of doc.ready
