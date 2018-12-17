@@ -8,6 +8,7 @@
   }
   @include desktop {
     height: 483px !important;
+    width: 78%;
   }
 }
 
@@ -28,19 +29,22 @@
   }
   @include desktop {
     height: 376px;
-    width: 20%;
+    width: 31%;
   }
   .content {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
+    width: 132px;
     height: 252px;
     background: url(../../assets/images/game-card-mobile.png) no-repeat;
     background-size: 100% 98%;
     @include tablet {
       background: url(../../assets/images/game-card-tablet.png) no-repeat;
       background-size: 100% 100%;
+      width: 185px;
+      height: 270px;
     }
     @include desktop {
       background: url(../../assets/images/game-card-desktop.png) no-repeat;
@@ -267,6 +271,7 @@
     width: 120px;
    @include tablet {
      width: 150px;
+     height: 145px;
    }
    @include desktop{
      height: 170px;
