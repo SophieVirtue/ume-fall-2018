@@ -9,7 +9,7 @@
 
 <article data-id="<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class="entry-header">
-		<?php the_title( sprintf( '<h2 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' ); ?>
+		<?php the_title( sprintf( '<h2 class="entry-title"><a href="%s" rel="bookmark" class="play">', esc_url( get_permalink() ) ), '</a></h2>' ); ?>
 
 		<?php if ( 'post' === get_post_type() ) : ?>
 		
@@ -18,7 +18,7 @@
 	
 	
 		<div class="thumbnail-image" data-id="<?php the_ID(); ?>">
-		<?php the_post_thumbnail( 'thumbnail', printf( '<a href="%s" rel="bookmark">', esc_url( get_permalink() ) )); ?></a>
+		<?php the_post_thumbnail( 'thumbnail', printf( '<a href="%s" rel="bookmark" class="play">', esc_url( get_permalink() ) )); ?></a>
 		</div>
     <div class="author">
 	<h4> By: <?php echo CFS()->get ( 'game_author' ); ?> </h4>
