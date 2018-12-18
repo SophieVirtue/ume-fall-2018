@@ -10,13 +10,11 @@
     padding-top: 5rem;
   }
   .entry-content {
-    padding: 0 0 32rem 0;
+    padding: 0 0 6rem 0;
     position: relative;
     text-align: center;
   }
   .game-wrapper {
-    margin: 0 auto;
-    width: 966px;
     margin-top: 2rem;
     margin-bottom: 2rem;
   }
@@ -29,12 +27,8 @@
   }
   iframe {
     border: none;
-    top: -4px; 
-    left: -4px;
     width: 966px; 
-    height: 480px;
-    position: absolute;
-    margin: 0 auto;
+    height: 615px;
   }
 
   .no-game-found {

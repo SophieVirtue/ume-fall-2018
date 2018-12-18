@@ -38,7 +38,7 @@
         "meta program"
         "coins coins"
         "buttons design";
-        color: white;
+        color: $color__main-text;
         min-height: 453px;
         padding: 10px 30px;
         font-size: 14px;
@@ -97,7 +97,7 @@
                 font-size: 30px;
             }
             a {
-            color: white;
+            color: $color__main-text;
             text-decoration: none;
             }
         }
@@ -146,7 +146,7 @@
         a {
             background: linear-gradient(180deg, #f5d672, #e77839);
             padding: 10px;
-            color: white;
+            color: $color__main-text;
             text-decoration: none;
             border-radius: 5px;
             font-size: 11px;
@@ -179,7 +179,7 @@
             }
             @include desktop {
                 max-width: 100%;
-                border-top: 1px solid white;
+                border-top: $white__border-thin;
                 width: 76%;
             }
             img {
@@ -202,7 +202,7 @@
         margin: 1rem 0;
         @include tablet {
             align-items: flex-end;
-            border-top: 1px solid white;
+            border-top: $white__border-thin;
             width: 90%;
             height: 90px;
             margin: 0;
@@ -273,7 +273,7 @@
                 height: 300px;
                 width: 500px;
                 padding-top: 3rem;
-                border-bottom: 1px solid white;
+                border-bottom: $white__border-thin;
                 padding-bottom: 1.5rem;
             }
         }
@@ -295,12 +295,12 @@
             flex-direction: row;
             align-items: flex-end;
             justify-content: flex-start;
-            border-top: 1px solid white;
+            border-top: $white__border-thin;
             margin-left: 1rem;
             height: 90px;
             &:before {
                 content: "";
-                border-left: 1px solid white;
+                border-left: $white__border-thin;
                 height: 70%;
                 width: 1px;
                 position: absolute;
