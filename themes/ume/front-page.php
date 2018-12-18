@@ -88,24 +88,25 @@ get_sidebar(); ?>
         <div class="category-folder">
         <section class="<?php $category->slug ?>category">
         <h2><?php echo $category->name ?></h2>
-        <div class="<?php $category->slug ?>-games main-carousel">
+            <div class="<?php $category->slug ?>-games main-carousel">
 <?php while ( $game_posts->have_posts() ) : $game_posts->the_post(); ?>
-<div class="<?php $category->slug ?>-game carousel-cell" data-id="<?php the_ID(); ?>">
-      <div class="content"><?php 
+                <div class="<?php $category->slug ?>-game carousel-cell" data-id="<?php the_ID(); ?>">
+                  <div class="content"><?php 
         get_template_part( 'template-parts/content-front' );?>
-      </div><!-- end of category-content div -->
-</div>
+                 </div><!-- end of category-content div -->
+               </div>
         <?php endwhile; wp_reset_postdata(); 
         ?>
-
-    </div>
+  
+            </div>
     <?php while ( $game_posts->have_posts() ) : $game_posts->the_post(); ?>
           <div class="drop-down" data-id="<?php the_ID(); ?>">
            <?php get_template_part( 'template-parts/content-drop' ); ?>
           </div>
           <?php endwhile; wp_reset_postdata(); ?>
           </section>
-          </div>
+        </div>
+        
 
         <?php endforeach; ?>
         <!-- end of game categories -->

@@ -982,7 +982,7 @@ main {
   .page-download .site-content {
     padding-top: 50px; }
   .page-download .entry-title {
-    font-family: 'futura-bold';
+    font-family: futura-bold;
     font-size: 30px;
     text-transform: uppercase;
     line-height: 53px;
@@ -1002,7 +1002,7 @@ main {
         max-width: 90%; } }
   .page-download .email {
     margin-top: 2rem;
-    font-family: 'futura-bold';
+    font-family: futura-bold;
     font-size: 25px;
     text-transform: uppercase;
     display: -webkit-box;
@@ -1017,9 +1017,11 @@ main {
       text-transform: lowercase; }
     .page-download .email label {
       width: 100%; }
-    @media (min-width: 1024px) {
-      .page-download .email input {
-        width: 40%; } }
+    .page-download .email input {
+      text-transform: lowercase; }
+      @media (min-width: 1024px) {
+        .page-download .email input {
+          width: 40%; } }
   .page-download .submit {
     margin-top: 6rem;
     margin-bottom: 12rem;
@@ -1033,7 +1035,7 @@ main {
     border-radius: 3px; }
   .page-download input[type='submit'] {
     font-size: 25px;
-    font-family: 'futura-bk-bt' normal;
+    font-family: futura-bk-bt;
     text-transform: uppercase; }
 
 .flickity-viewport {
@@ -1041,12 +1043,9 @@ main {
   height: 278px !important;
   z-index: 1;
   position: relative; }
-  @media (min-width: 600px) {
-    .flickity-viewport {
-      height: 330px !important; } }
   @media (min-width: 1024px) {
     .flickity-viewport {
-      height: 483px !important;
+      height: 400px !important;
       width: 78%; } }
 
 .flickity-page-dots {
@@ -1087,12 +1086,14 @@ main {
         background: url(../../assets/images/game-card-tablet.png) no-repeat;
         background-size: 100% 100%;
         width: 175px;
-        height: 270px; } }
+        height: 270px;
+        margin-left: 3rem; } }
     @media (min-width: 1024px) {
       .carousel-cell .content {
         background: url(../../assets/images/game-card-desktop.png) no-repeat;
         background-size: 100% 100%;
-        height: 300px; } }
+        height: 300px;
+        margin-left: 0; } }
 
 .featured-games {
   display: -webkit-box;
@@ -1200,9 +1201,6 @@ main {
 
 .category-folder:nth-of-type(1) {
   background: url(../../assets/images/agriculture-file.png); }
-  @media (min-width: 600px) {
-    .category-folder:nth-of-type(1) {
-      margin-top: 6rem; } }
   @media (min-width: 1024px) {
     .category-folder:nth-of-type(1) {
       background: url(../../assets/images/agriculture-file.png), url(../../assets/images/ambient-squares.png); } }
@@ -1243,7 +1241,8 @@ main {
   background-size: 375px 315px;
   padding-top: 1rem;
   padding-bottom: 2rem;
-  width: 385px; }
+  width: 385px;
+  margin: auto; }
   @media (min-width: 600px) {
     .category-folder:nth-of-type(1), .category-folder:nth-of-type(2), .category-folder:nth-of-type(3), .category-folder:nth-of-type(4), .category-folder:nth-of-type(5), .category-folder:nth-of-type(6) {
       background-position-y: -0.5rem;
@@ -1254,9 +1253,14 @@ main {
       background-repeat: no-repeat;
       background-size: 725px 400px, 870px 420px;
       background-position: center top;
-      background-position-x: 11rem, 8rem;
-      width: 1035px;
-      margin-left: 5rem; } }
+      width: 1035px; } }
+
+@media (min-width: 600px) {
+  .category-folder:nth-of-type(1) {
+    margin-top: 6rem; } }
+
+.category-folder:nth-of-type(6) {
+  margin-bottom: 4rem; }
 
 .category {
   padding-left: 1.5rem; }
@@ -1279,7 +1283,7 @@ main {
     @media (min-width: 1024px) {
       .category h2 {
         font-size: 0.9rem;
-        padding-left: 5rem; } }
+        padding-left: 3rem; } }
 
 .carousel-cell img {
   height: 110px;
@@ -1291,7 +1295,7 @@ main {
   @media (min-width: 1024px) {
     .carousel-cell img {
       height: 170px;
-      width: 170px; } }
+      width: 160px; } }
 
 .carousel-cell .arrow img {
   width: 23px;
@@ -1888,9 +1892,13 @@ main {
     text-align: center; }
   .game-template-default.single-game .game-wrapper {
     margin: 0 auto;
-    width: 966px; }
+    width: 966px;
+    margin-top: 2rem;
+    margin-bottom: 2rem; }
   .game-template-default.single-game .loading-message {
     padding-top: 4rem;
+    position: absolute;
+    left: 500px;
     font-family: 'Futura-Bk-BT', sans-serif;
     font-size: 20px; }
   .game-template-default.single-game iframe {
@@ -1901,6 +1909,12 @@ main {
     height: 480px;
     position: absolute;
     margin: 0 auto; }
+  .game-template-default.single-game .no-game-found {
+    font-size: 1.1rem; }
+    .game-template-default.single-game .no-game-found a {
+      color: white; }
+      .game-template-default.single-game .no-game-found a:hover {
+        color: #F08BC4; }
 
 .search,
 .search-results {
@@ -2257,15 +2271,31 @@ main {
         padding: 15px;
         padding-top: 2rem;
         font-size: 18px;
+<<<<<<< HEAD
         grid-template-areas: "title img" "meta img" "program img" "design img" "coins img" "buttons prizes";
+=======
+        grid-template-areas: "title img" "meta img" "program img" "design img" "coins img" "buttons prizes";
+<<<<<<< HEAD
+        grid-template-rows: 13% 13% 13% 13% 13% 20%; }
+=======
+>>>>>>> 66d61de97f75599fd7dc25b9c68d751dcfb4e730
         width: 592px; }
+>>>>>>> 2f4f556201edafc6d391c5af152e5da3578c7e79
         .drop-down .game-dropdown h4 {
           margin: 0; } }
     @media (min-width: 1024px) {
       .drop-down .game-dropdown {
         font-size: 20px;
+<<<<<<< HEAD
         grid-template-areas: "title img" "meta img" "program img" "design img" "buttons img" "coins prizes";
+=======
+<<<<<<< HEAD
+        grid-template-areas: "title img" "meta img" "program img" "design img" "buttons img" "coins prizes"; } }
+=======
+        grid-template-areas: "title img" "meta img" "program img" "design img" "buttons img" "coins prizes";
+>>>>>>> 66d61de97f75599fd7dc25b9c68d751dcfb4e730
         width: 990px; } }
+>>>>>>> 2f4f556201edafc6d391c5af152e5da3578c7e79
   .drop-down .title {
     grid-area: title;
     display: -webkit-box;
@@ -2789,3 +2819,6 @@ main {
     .rainbow-game-container .featured-game:first-child .play-button-featured img, .rainbow-game-container .featured-game:nth-child(2) .play-button-featured img, .rainbow-game-container .featured-game:last-child .play-button-featured img {
       width: 30px;
       height: 30px; } }
+
+.search-results .drop-down {
+  margin-left: 0; }
