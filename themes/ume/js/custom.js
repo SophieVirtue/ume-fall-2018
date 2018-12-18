@@ -47,7 +47,6 @@
             if (!dropDownShowing){
             $(this).closest('section').find('.drop-down[data-id="' + gameID + '"]').show();
             dropDownShowing = true;
-            console.log(dropDownShowing);
             $(this).closest('.search-game').addClass('padding');
         }
         else {
