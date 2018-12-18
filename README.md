@@ -5,26 +5,6 @@ A WordPress starter theme for RED Academy students, forked from Underscores.
 
 ![Getting Started](themes/ume/screenshot.png)
 
-## Installation
-
-### 1. Download me (don't clone me!)
-
-Then add me to your `wp-content` directory.
-
-### 2. Rename the `UME-master` directory
-
-Make sure that the theme directory name is project appropriate!
-
-### 3. Install the dev dependencies
-
-Next you'll need to run `npm install` **inside your theme directory** next to install the node modules you'll need for Gulp, etc.
-
-### 4. Update the proxy in `gulpfile.js`
-
-Lastly, be sure to update your `gulpfile.js` with the appropriate URL for the Browsersync proxy (so change `localhost[:port-here]/[your-dir-name-here]` to the appropriate localhost URL).
-
-
-Then, git init 
 
 Technologies Used
 - HTML
@@ -53,6 +33,30 @@ Technologies Used
     - Custom Field Suite
     - UME functionality
 
-Below are the subsequent learning outcomes.
+Learning Outcomes 
+- Importance of traversing the DOM in Javascript, especially related to the code for the carousel functions.
+- Not having a model to try and mimic made the UME project a little harder becuase a lot of the 
+- Seperation of concerns made the project easier in a group setting. Pushing code while other project members were in the same file would cause problems. Seperating files allowed for less conflict. 
 
 
+
+## Installation
+
+### 1. Download me (don't clone me!)
+
+Then add me to your `wp-content` directory.
+
+### 2. Rename the `UME-master` directory
+
+Make sure that the theme directory name is project appropriate!
+
+### 3. Install the dev dependencies
+
+Next you'll need to run `npm install` **inside your theme directory** next to install the node modules you'll need for Gulp, etc.
+
+### 4. Update the proxy in `gulpfile.js`
+
+Lastly, be sure to update your `gulpfile.js` with the appropriate URL for the Browsersync proxy (so change `localhost[:port-here]/[your-dir-name-here]` to the appropriate localhost URL).
+
+
+Then, git init 
