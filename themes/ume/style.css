@@ -651,7 +651,7 @@ main {
     text-decoration: none;
     font-size: 17px;
     font-family: Futura-Bk-Bt;
-    color: white;
+    color: #fff;
     text-transform: uppercase;
     padding: 0 16px; }
     @media (min-width: 1024px) {
@@ -881,7 +881,7 @@ main {
             height: 40px; } }
       .prizes .coin-legend .coin-winnings p {
         font-size: 15px;
-        color: white;
+        color: #fff;
         font-family: Futura-Bk-Bt;
         margin: 0;
         padding: 9px 0; }
@@ -1990,7 +1990,11 @@ main {
         .search-results .search-results-container .search-game .type-game .entry-title a {
           color: #fff;
           font-family: Futura-Bk-Bt;
+<<<<<<< HEAD
+          color: #fff; }
+=======
           text-decoration: none; }
+>>>>>>> aea46daae5e07296b0499fe62aece404417c3e79
       .search .search-results-container .search-game .type-game .thumbnail-image img,
       .search-results .search-results-container .search-game .type-game .thumbnail-image img {
         width: 125px;
@@ -2269,12 +2273,20 @@ main {
     color: #fff;
 =======
 <<<<<<< HEAD
+    color: #fff;
+=======
+<<<<<<< HEAD
+    color: #fff;
+=======
+<<<<<<< HEAD
     color: white;
 =======
     color: #fff;
 >>>>>>> d687b7e851706bd5d54a2a6a1912f0c6e8f0a390
 >>>>>>> 569fa73fd0c29fa5d41d651fc902833708919cd4
 >>>>>>> 6d45c27102f6039f3312739e1616ece1b8f7cde0
+>>>>>>> aea46daae5e07296b0499fe62aece404417c3e79
+>>>>>>> a547c71fe87c90ffa6a52e7da76e383e94d08527
     min-height: 453px;
     padding: 10px 30px;
     font-size: 14px;
@@ -2777,6 +2789,7 @@ main {
       padding: 1rem 0; } }
 
 .rainbow-game-container .featured-game:first-child h3 a, .rainbow-game-container .featured-game:nth-child(2) h3 a, .rainbow-game-container .featured-game:last-child h3 a {
+  font-family: Futura-Bk-Bt;
   color: #fff;
   font-family: Futura-Bk-Bt;
   text-decoration: none;
@@ -2818,3 +2831,5 @@ main {
 
 .search-results .drop-down {
   margin-left: 0; }
+  .search-results .drop-down .meta {
+    text-align: left; }

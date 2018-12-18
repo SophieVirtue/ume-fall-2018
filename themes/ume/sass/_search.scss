@@ -50,6 +50,9 @@
             padding-bottom: 0.5rem;
           }
           a {
+            text-decoration: none;
+            font-family: $font__futura-bk;
+            color: $color__main-text;
             @include anchor;
           }
         }
@@ -113,7 +116,7 @@
       padding-bottom: 1rem;
     }
     span {
-        background: #17447F;
+        background: $color__span;
         padding: 10px;
         border-radius: 5px;
         text-transform: uppercase;
