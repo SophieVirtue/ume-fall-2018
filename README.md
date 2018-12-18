@@ -2,13 +2,13 @@
 
 UME Academy Arcade is an extension the the UME Academy website (https://ume.academy/). The arcade hosts all of the games using a new and vibrant look. 
 
-Welcome to UME Arcade !
+Welcome to UME Arcade!
 
 
 
 ![](themes/ume/giphy.gif)
 
-Technologies Used
+## Technologies Used
 - HTML
 - CSS
 - JavaScript
@@ -35,9 +35,8 @@ Technologies Used
     - Custom Field Suite
     - UME functionality
 
-Learning Outcomes 
+## Learning Outcomes 
 - Importance of traversing the DOM in Javascript, especially related to the code for the carousel functions.
-- Not having a model to try and mimic made the UME project a little harder becuase a lot of the 
 - Seperation of concerns made the project easier in a group setting. Pushing code while other project members were in the same file would cause problems. Seperating files allowed for less conflict. 
 
 
@@ -62,3 +61,6 @@ Lastly, be sure to update your `gulpfile.js` with the appropriate URL for the Br
 
 
 Then, git init 
+
+## Authors
+Jeff Liknes, Tim Nguyen, Jenna Pegg, and Sophie Virtue
