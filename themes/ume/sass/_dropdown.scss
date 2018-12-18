@@ -10,7 +10,7 @@
     left: 0;
     display: none;
     position: absolute;
-    z-index: 1000;
+    z-index: 90;
     background: url(../../assets/images/drop-down.png) no-repeat, rgba(0, 0, 0, 0.8);
     background-size: 100% 100%;
     width: 100%;
@@ -21,7 +21,7 @@
     @include desktop {
         background: url(../../assets/images/drop-down-desktop.png) no-repeat, rgba(0, 0, 0, 0.8);
         background-size: 100% 100%;
-        margin-left: -9.5rem;
+        margin-left: -6.5rem;
     }
     img {
         width: 100%;
