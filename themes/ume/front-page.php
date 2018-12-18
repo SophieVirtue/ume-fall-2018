@@ -74,9 +74,6 @@ get_sidebar(); ?>
                 )
             );
 
-           $game_posts = new WP_Query($args);
-            ?>
-            <?php endforeach; ?>
            $game_posts = new WP_Query($args);?>
             <div class="category-folder">
                 <section class="<?php echo $category->slug ?> category">

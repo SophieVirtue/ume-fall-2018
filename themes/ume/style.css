@@ -261,9 +261,6 @@ th {
   font-style: normal; }
 
 /*--------------------------------------------------------------
-# Typography
---------------------------------------------------------------*/
-/*--------------------------------------------------------------
 # Elements
 --------------------------------------------------------------*/
 html {
@@ -346,9 +343,6 @@ textarea {
   padding-left: 3px;
   width: 100%; }
 
-/*--------------------------------------------------------------
-# Navigation
---------------------------------------------------------------*/
 /*--------------------------------------------------------------
 # Accessibility
 --------------------------------------------------------------*/
@@ -1907,7 +1901,7 @@ main {
     padding-top: 4rem;
     position: absolute;
     left: 500px;
-    font-family: 'Futura-Bk-BT', sans-serif;
+    font-family: Futura-Bk-Bt;
     font-size: 20px; }
   .game-template-default.single-game iframe {
     border: none;
@@ -1992,8 +1986,8 @@ main {
         .search .search-results-container .search-game .type-game .entry-title a,
         .search-results .search-results-container .search-game .type-game .entry-title a {
           text-decoration: none;
-          font-family: 'Futura-Bk-BT';
-          color: white; }
+          font-family: Futura-Bk-Bt;
+          color: #fff; }
       .search .search-results-container .search-game .type-game .thumbnail-image img,
       .search-results .search-results-container .search-game .type-game .thumbnail-image img {
         width: 125px;
@@ -2006,7 +2000,7 @@ main {
       .search .search-results-container .search-game .type-game .author h4,
       .search-results .search-results-container .search-game .type-game .author h4 {
         margin-bottom: 0.5rem;
-        font-family: 'Futura-Bk-BT';
+        font-family: Futura-Bk-Bt;
         font-size: 12px;
         margin-top: 0; }
         @media (min-width: 600px) {
