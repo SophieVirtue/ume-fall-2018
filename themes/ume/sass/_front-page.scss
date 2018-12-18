@@ -216,6 +216,8 @@ body.page-arcade {
   }
 }
 
+
+
 .category-folder:nth-of-type(1),
 .category-folder:nth-of-type(2),
 .category-folder:nth-of-type(3),
@@ -228,6 +230,15 @@ body.page-arcade {
   padding-bottom: 2rem;
   width: 385px;
   margin: auto;
+  .padding {
+    padding-bottom: 35rem;
+    @include tablet {
+      padding-bottom: 30rem;
+    }
+    @include desktop {
+      padding-bottom: 32rem;
+    }
+  }
   @include tablet {
     background-position-y: -0.5rem;
     background-size: 600px 360px;

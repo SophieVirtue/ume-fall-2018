@@ -23,6 +23,7 @@
             let gameID = $(this).closest('.carousel-cell').data('id');
             $(this).closest('section').find('.drop-down[data-id!="' + gameID + '"]').hide();
             $(this).closest('section').find('.drop-down[data-id="' + gameID + '"]').toggle();
+            $(this).closest('.category').toggleClass('padding');
         });
 
         //toggle dropdown on search page 
@@ -39,6 +40,7 @@
                 if((!$(event.target).is('.arrow-img') ))
                     $('.drop-down').hide();
             }
+            $('.category').removeClass('padding');
         });
 
         //copy game link to clipboard
