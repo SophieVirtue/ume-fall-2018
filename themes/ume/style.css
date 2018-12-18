@@ -662,6 +662,11 @@ main {
     padding-left: 0; }
   .site-header .main-navigation h3 {
     margin: 0; }
+    @media (min-width: 600px) {
+      .site-header .main-navigation h3 {
+        font-size: 15px; }
+        .site-header .main-navigation h3 .prizes-nav {
+          padding-right: 0; } }
   .site-header .search-form {
     display: -webkit-box;
     display: -ms-flexbox;
