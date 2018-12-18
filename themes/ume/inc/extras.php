@@ -81,7 +81,7 @@ function ume_get_icons ($game_coins) {
 	}
 
  if ($game_coins >= 10) {
-	$gems[1]= '<img class="gem" src="'.get_template_directory_uri().'/assets/images/gems/blue-diamond.png">alt="blue diamond"';
+	$gems[1]= '<img class="gem" src="'.get_template_directory_uri().'/assets/images/gems/blue-diamond.png" alt="blue diamond>"';
 }
  if ($game_coins >= 20) {
 	$gems[2]= '<img class="gem" src="'.get_template_directory_uri().'/assets/images/gems/pink.png" alt="pink gem">';
