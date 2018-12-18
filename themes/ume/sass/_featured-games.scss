@@ -241,7 +241,11 @@
     &:last-child {
       h3 {
         a {
+<<<<<<< HEAD
+          font-family: $font__futura-bk;
+=======
           @include anchor;
+>>>>>>> d687b7e851706bd5d54a2a6a1912f0c6e8f0a390
           font-weight: 300;
           font-size: 14px;
           @include desktop {

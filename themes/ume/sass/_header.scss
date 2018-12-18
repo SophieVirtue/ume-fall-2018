@@ -22,7 +22,7 @@
         text-decoration: none;
         .site-title{
             color: #FF008C;	
-            font-family: 'Futura-Heavy', sans-serif;	
+            font-family: $font__futura-bk;
             font-size: 13px;
             text-transform: uppercase;
             letter-spacing: 1px;
@@ -69,7 +69,7 @@
         text-align: center;
         text-decoration: none;
         font-size: 17px;
-        font-family: 'Futura-Bk-BT', sans-serif;
+        font-family: $font__futura-bk;
         color: white;
         text-transform: uppercase;
         padding: 0 16px;
@@ -97,8 +97,13 @@
         width: 110px;
         height: 14px;
         border-width: 2px;
+<<<<<<< HEAD
+        border-color: white;
+        color: white;
+=======
         border-color: $color__main-text;
         color: $color__main-text;
+>>>>>>> d687b7e851706bd5d54a2a6a1912f0c6e8f0a390
         font-family: $font__futura-bk;
         @include tablet {
             height: 22px;
