@@ -241,6 +241,7 @@
     &:last-child {
       h3 {
         a {
+          font-family: $font__futura-bk;
           @include anchor;
           font-weight: 300;
           font-size: 14px;
