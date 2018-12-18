@@ -6,9 +6,6 @@ Welcome to UME Arcade !
 
 
 
-![Getting Started](themes/ume/screenshot.png)
-
-
 ![](themes/ume/giphy.gif)
 
 Technologies Used
