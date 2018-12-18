@@ -31,7 +31,7 @@
     </div><!-- end of view-design -->
     <div class="coins">
 	    <h4> 
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/coin.png" alt=""> <?php echo CFS()->get ( 'game_coins' ); ?> 
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/coin.png" alt="coin"> <?php echo CFS()->get ( 'game_coins' ); ?> 
         </h4>
     </div><!-- end of coins -->
     <div class="buttons">
