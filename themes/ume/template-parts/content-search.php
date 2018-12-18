@@ -14,6 +14,8 @@
 		<?php if ( 'post' === get_post_type() ) : ?>
 		<?php endif; ?>
 	</header><!-- .entry-header -->
+	
+
 	<div class="thumbnail-image" data-id="<?php the_ID(); ?>">
 		<?php the_post_thumbnail( 'thumbnail', printf( '<a href="%s" rel="bookmark" class="play">', esc_url( get_permalink() ) )); ?></a>
 	</div>

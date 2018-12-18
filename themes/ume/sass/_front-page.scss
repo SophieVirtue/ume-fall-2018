@@ -269,6 +269,11 @@
       padding-left: 3rem;
     }
   }
+  .main-carousel {
+    @include tablet {
+      padding-bottom: 2rem;
+    }
+  }
 }
 
 .carousel-cell {
