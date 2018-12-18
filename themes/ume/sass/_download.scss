@@ -2,10 +2,10 @@
 .page-download {
   color: #fff;
   background: url(../../assets/images/background.jpg);
-  background-size: cover, 800px;
+  background-size: $background__no-grid;
   @include desktop {
     background: url(../../assets/images/background.jpg);
-    background-size: cover, 800px;
+    background-size: $background__no-grid;
   }
 
   .site-content {
@@ -44,7 +44,7 @@
     }
     ::-webkit-input-placeholder {
       /* Chrome/Opera/Safari */
-      color: white;
+      color: $color__main-text;
       font-size: 1rem;
       opacity: 0.5;
       text-transform: capitalize;
@@ -53,7 +53,7 @@
 
   input[type='email'],
   input[type='text'] {
-    color: #fff;
+    color: $color__main-text;
     padding: 15px 10px;
     background: transparent;
     border: 3px solid white;
@@ -131,7 +131,7 @@
   //Custom Button
 
   .wpcf7-submit {
-    color: white;
+    color: $color__main-text;
     width: 275px;
     padding: 20px;
     background: linear-gradient(180deg, #f5d672, #e77839);
