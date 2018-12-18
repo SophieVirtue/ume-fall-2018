@@ -1,12 +1,8 @@
 // the download page
 .page-download {
-  color: #fff;
+  color: $color__main-text;
   background: url(../../assets/images/background.jpg);
   background-size: $background__no-grid;
-  @include desktop {
-    background: url(../../assets/images/background.jpg);
-    background-size: $background__no-grid;
-  }
 
   .site-content {
     margin-top: 4rem;
@@ -33,7 +29,7 @@
     display: block;
     .parentsName,
     .studentsName {
-      font-family: 'futura-bold';
+      font-family: $font__futura-bold;
       text-transform: uppercase;
       font-size: 25px;
       justify-content: space-between;
@@ -45,7 +41,7 @@
     ::-webkit-input-placeholder {
       /* Chrome/Opera/Safari */
       color: $color__main-text;
-      font-size: 1rem;
+      font-size: $size__font;
       opacity: 0.5;
       text-transform: capitalize;
     }
@@ -74,7 +70,7 @@
   }
 
   .entry-title {
-    font-family: futura-bold;
+    font-family: $font__futura-bold;
     font-size: 30px;
     text-transform: uppercase;
     line-height: 53px;
@@ -89,7 +85,7 @@
   .project-setup {
     margin-top: 3rem;
     line-height: 1.6;
-    font-family: 'futura-heavy';
+    font-family: $font__futura-heavy;
     font-weight: lighter;
     @include desktop {
       margin-top: 2rem;
@@ -100,7 +96,7 @@
   //eMail section
   .email {
     margin-top: 2rem;
-    font-family: futura-bold;
+    font-family: $font__futura-bold;
     font-size: 25px;
     text-transform: uppercase;
     display: flex;
@@ -140,7 +136,7 @@
 
   input[type='submit'] {
     font-size: 25px;
-    font-family: futura-bk-bt;
+    font-family: $font__futura-bk;
     text-transform: uppercase;
   }
 }
