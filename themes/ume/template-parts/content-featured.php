@@ -13,7 +13,7 @@
    <h4> By: <span class="author-transform"><?php echo CFS()->get ( 'game_author' ); ?> </span></h4>
    </div>
    <div class="play-button-featured">
-	<?php printf( '<a href="%s" class="play-button-img play"><img src="'.get_template_directory_uri().'/assets/images/play-button.png"/></a>', esc_url( get_permalink() ) ); ?>
+	<?php printf( '<a href="%s" class="play-button-img play"><img src="'.get_template_directory_uri().'/assets/images/play-button.png" alt="Play"/></a>', esc_url( get_permalink() ) ); ?>
 	
 	</div>
 

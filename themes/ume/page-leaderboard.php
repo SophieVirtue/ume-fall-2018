@@ -12,7 +12,7 @@ get_sidebar();?>
 		<main id="main" class="site-main board-page" role="main">
      <div class="leaderboard">
             <div class="leaderboard-title">
-                <img class="leaderboard-logo" src="<?php echo get_template_directory_uri() . '/assets/images/pink-neon-words/leaderboard.png' ?>" alt="">
+                <img class="leaderboard-logo" src="<?php echo get_template_directory_uri() . '/assets/images/pink-neon-words/leaderboard.png' ?>" alt="leaderboard">
                 <section class="top-three">
              <div class="top-players">
       <?php

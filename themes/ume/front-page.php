@@ -2,7 +2,7 @@
 /**
  * The main template file.
  *
- * @package RED_Starter_Theme
+ * @package UME
  */
 
 get_header(); 
@@ -10,29 +10,27 @@ get_sidebar(); ?>
 
 <div id="primary" class="content-area">
     <main id="main" class="site-main" role="main">
-        <!-- <div class="popup">
-            <p>Please play our games on a desktop or laptop!</p>
-        </div> -->
+        
 
         <section class="grid-banner-container">
             <div class="banner">
                 <div class="upper-row">
                     <div class="left-lightning">
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/lightning-left.png"/>
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/lightning-left.png" alt="lightning-bolt"/>
                     </div>
                     <div class="center-label">
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/ume-academy-words.png"/>
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/ume-academy-words.png" alt="UME Academy"/>
                     </div>
                     <div class="right-lightning">
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/lightning-right.png"/>
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/lightning-right.png" alt="lightning-bolt"/>
                     </div>  
                 </div>
                 <div class="lower-row">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/pink-neon-words/arcade.png"/>
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/pink-neon-words/arcade.png" alt="Arcade"/>
                 </div>
                 <div class="rainbow-game-container">
                     <div class="white-rainbow">
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/scroll-wheel.png"/>
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/scroll-wheel.png" alt="light arc"/>
                     </div>
                     
                     <!-- beginning of featured games  -->
@@ -81,7 +79,6 @@ get_sidebar(); ?>
             )
         )
     );
-   //$game_posts = get_posts( $args ); // returns an array of posts
 
    $game_posts = new WP_Query($args);
 ?>
