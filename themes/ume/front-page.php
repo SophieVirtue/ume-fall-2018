@@ -74,7 +74,6 @@ get_sidebar(); ?>
                 )
             );
 
-<<<<<<< HEAD
     $args = array( 
        'post_type' => 'game', 
        'posts_per_page' => -1, 
@@ -113,8 +112,6 @@ get_sidebar(); ?>
         
 
         <?php endforeach; ?>
-=======
->>>>>>> f18602095b158f412d226d6a2d7927a0c55eaa29
            $game_posts = new WP_Query($args);?>
             <div class="category-folder">
                 <section class="<?php echo $category->slug ?> category">
