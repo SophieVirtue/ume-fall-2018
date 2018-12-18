@@ -2835,6 +2835,15 @@ body.page-arcade {
       width: 30px;
       height: 30px; } }
 
+.search-results .article .padding {
+  padding-bottom: 35rem; }
+  @media (min-width: 600px) {
+    .search-results .article .padding {
+      padding-bottom: 30rem; } }
+  @media (min-width: 1024px) {
+    .search-results .article .padding {
+      padding-bottom: 32rem; } }
+
 .search-results .drop-down {
   margin-left: 0; }
   .search-results .drop-down .meta {
