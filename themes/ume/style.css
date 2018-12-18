@@ -1313,7 +1313,7 @@ body.page-arcade {
     @media (min-width: 1024px) {
       .category h2 {
         font-size: 0.9rem;
-        padding-left: 3rem; } }
+        padding-left: 4.5rem; } }
   @media (min-width: 600px) {
     .category .main-carousel {
       padding-bottom: 2rem; } }
