@@ -74,17 +74,6 @@ get_sidebar(); ?>
                 )
             );
 
-    $args = array( 
-       'post_type' => 'game', 
-       'posts_per_page' => -1, 
-       'tax_query' => array(
-           array(
-                'taxonomy' => 'game_category',
-                'field' => 'term_id',
-                'terms' => $category->term_id
-            )
-        )
-    );
 
            $game_posts = new WP_Query($args);?>
             <div class="category-folder">

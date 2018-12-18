@@ -258,8 +258,8 @@
     text-transform: uppercase;
     padding-right: 18rem;
     padding-left: 0;
-    color: white;
-    font-family: Futura-Bk-Bt;
+    color: $color__main-text;
+    font-family: $font__futura-bk;
     @include tablet {
       font-size: 1rem;
       padding-left: 0.5rem;
