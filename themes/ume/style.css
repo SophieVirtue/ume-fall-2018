@@ -2271,8 +2271,8 @@ main {
         padding: 15px;
         padding-top: 2rem;
         font-size: 18px;
-<<<<<<< HEAD
         grid-template-areas: "title img" "meta img" "program img" "design img" "coins img" "buttons prizes";
+<<<<<<< HEAD
 =======
         grid-template-areas: "title img" "meta img" "program img" "design img" "coins img" "buttons prizes";
 <<<<<<< HEAD
@@ -2282,12 +2282,15 @@ main {
 =======
 >>>>>>> 66d61de97f75599fd7dc25b9c68d751dcfb4e730
 >>>>>>> faaab3392eb1746678460a513521db07b26de4b3
+=======
+>>>>>>> 6ec77565afe7bc0b8574461cf8ff4df13f211430
         width: 592px; }
         .drop-down .game-dropdown h4 {
           margin: 0; } }
     @media (min-width: 1024px) {
       .drop-down .game-dropdown {
         font-size: 20px;
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -2299,6 +2302,9 @@ main {
 >>>>>>> faaab3392eb1746678460a513521db07b26de4b3
         grid-template-areas: "title img" "meta img" "program img" "design img" "buttons img" "coins prizes";
 >>>>>>> 66d61de97f75599fd7dc25b9c68d751dcfb4e730
+=======
+        grid-template-areas: "title img" "meta img" "program img" "design img" "buttons img" "coins prizes";
+>>>>>>> 6ec77565afe7bc0b8574461cf8ff4df13f211430
         width: 990px; } }
   .drop-down .title {
     grid-area: title;
