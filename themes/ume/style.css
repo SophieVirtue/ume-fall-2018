@@ -958,7 +958,7 @@ main {
           display: flex; } }
     .page-download .wpcf7-form ::-webkit-input-placeholder {
       /* Chrome/Opera/Safari */
-      color: white;
+      color: #fff;
       font-size: 1rem;
       opacity: 0.5;
       text-transform: capitalize; }
@@ -1027,7 +1027,7 @@ main {
     margin-bottom: 12rem;
     text-align: center; }
   .page-download .wpcf7-submit {
-    color: white;
+    color: #fff;
     width: 275px;
     padding: 20px;
     background: -webkit-gradient(linear, left top, left bottom, from(#f5d672), to(#e77839));
@@ -1912,7 +1912,7 @@ main {
   .game-template-default.single-game .no-game-found {
     font-size: 1.1rem; }
     .game-template-default.single-game .no-game-found a {
-      color: white; }
+      color: #fff; }
       .game-template-default.single-game .no-game-found a:hover {
         color: #F08BC4; }
 
@@ -2272,39 +2272,13 @@ main {
         padding-top: 2rem;
         font-size: 18px;
         grid-template-areas: "title img" "meta img" "program img" "design img" "coins img" "buttons prizes";
-<<<<<<< HEAD
-=======
-        grid-template-areas: "title img" "meta img" "program img" "design img" "coins img" "buttons prizes";
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-        grid-template-rows: 13% 13% 13% 13% 13% 20%; }
-=======
->>>>>>> 66d61de97f75599fd7dc25b9c68d751dcfb4e730
->>>>>>> faaab3392eb1746678460a513521db07b26de4b3
-=======
->>>>>>> 6ec77565afe7bc0b8574461cf8ff4df13f211430
         width: 592px; }
         .drop-down .game-dropdown h4 {
           margin: 0; } }
     @media (min-width: 1024px) {
       .drop-down .game-dropdown {
         font-size: 20px;
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
         grid-template-areas: "title img" "meta img" "program img" "design img" "buttons img" "coins prizes";
-=======
-<<<<<<< HEAD
-        grid-template-areas: "title img" "meta img" "program img" "design img" "buttons img" "coins prizes"; } }
-=======
->>>>>>> faaab3392eb1746678460a513521db07b26de4b3
-        grid-template-areas: "title img" "meta img" "program img" "design img" "buttons img" "coins prizes";
->>>>>>> 66d61de97f75599fd7dc25b9c68d751dcfb4e730
-=======
-        grid-template-areas: "title img" "meta img" "program img" "design img" "buttons img" "coins prizes";
->>>>>>> 6ec77565afe7bc0b8574461cf8ff4df13f211430
         width: 990px; } }
   .drop-down .title {
     grid-area: title;
@@ -2831,4 +2805,4 @@ main {
       height: 30px; } }
 
 .search-results .drop-down {
-  margin-left: 0; }
+  margin-left: 10px; }

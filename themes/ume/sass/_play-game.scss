@@ -1,8 +1,8 @@
 .game-template-default.single-game {
-  color: #fff;
+  color: $color__main-text;
   background: url(../../assets/images/grid-lines.png),
     url(../../assets/images/background.jpg);
-  background-size: cover, 800px, 0, cover;
+  background-size: $background__size;
   .site-content {
     text-align: center;
   }
@@ -41,7 +41,7 @@
     font-size: 1.1rem;
     a {
       
-      color: white;
+      color: $color__main-text;
       &:hover {
         color: #F08BC4;
       }
