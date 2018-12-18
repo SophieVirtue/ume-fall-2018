@@ -1601,7 +1601,7 @@ body.page-arcade {
       top: 0.5rem; } }
 
 .page-leaderboard .top-player a {
-  color: Futura-Bk-Bt;
+  color: #fff;
   text-decoration: none; }
 
 .page-leaderboard .top-player:nth-of-type(1) {
