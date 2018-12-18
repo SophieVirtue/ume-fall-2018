@@ -51,7 +51,7 @@
           }
           a {
             text-decoration: none;
-            font-family: 'Futura-Bk-BT';
+            font-family: $font__futura-bk;
             color: white;
           }
         }
@@ -68,7 +68,7 @@
         .author {
           h4 {
             margin-bottom: 0.5rem;
-            font-family: 'Futura-Bk-BT';
+            font-family: $font__futura-bk;
             font-size: 12px;
             margin-top: 0;
             @include tablet {

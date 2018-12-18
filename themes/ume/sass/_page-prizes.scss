@@ -30,7 +30,7 @@
         text-transform: uppercase;
         font-size: 10px;
         color: white;
-        font-family: 'Futura-Bk-BT', sans-serif;
+        font-family: $font__futura-bk;
         padding-bottom: 45px;
         margin: 0;
         letter-spacing: 1px;
@@ -75,7 +75,7 @@
             p {
                 font-size: 15px;
                 color: white;
-                font-family: 'Futura-Bk-BT', sans-serif;
+                font-family: $font__futura-bk;
                 margin: 0;
                 padding: 9px 0;
                 @include desktop {

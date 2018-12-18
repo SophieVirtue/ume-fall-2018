@@ -44,7 +44,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 	## Front page
 --------------------------------------------------------------*/
 html {
-  font-family: sans-serif;
+  font-family: Futura-Bk-Bt;
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%; }
 
@@ -505,7 +505,7 @@ object {
   height: 53px;
   width: 100%;
   z-index: 5000;
-  font-family: 'Futura-Bk-BT', sans-serif;
+  font-family: Futura-Bk-Bt;
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.25)), to(rgba(0, 0, 0, 0.7)));
   background: linear-gradient(rgba(255, 255, 255, 0.25), rgba(0, 0, 0, 0.7));
   -webkit-box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.5);
@@ -607,7 +607,7 @@ main {
     text-decoration: none; }
     .site-header a .site-title {
       color: #FF008C;
-      font-family: 'Futura-Heavy', sans-serif;
+      font-family: Futura-Bk-Bt;
       font-size: 13px;
       text-transform: uppercase;
       letter-spacing: 1px;
@@ -656,7 +656,7 @@ main {
     text-align: center;
     text-decoration: none;
     font-size: 17px;
-    font-family: 'Futura-Bk-BT', sans-serif;
+    font-family: Futura-Bk-Bt;
     color: white;
     text-transform: uppercase;
     padding: 0 16px; }
@@ -685,7 +685,7 @@ main {
     border-width: 2px;
     border-color: white;
     color: white;
-    font-family: 'Futura-Bk-BT', sans-serif; }
+    font-family: Futura-Bk-Bt; }
     @media (min-width: 600px) {
       .site-header input.search-field {
         height: 22px;
@@ -784,7 +784,7 @@ main {
               flex-direction: column;
       color: white;
       text-transform: uppercase;
-      font-family: 'Futura-Bk-BT', sans-serif;
+      font-family: Futura-Bk-Bt;
       font-size: 20px;
       text-align: center;
       padding-bottom: 20px;
@@ -834,7 +834,7 @@ main {
     text-transform: uppercase;
     font-size: 10px;
     color: white;
-    font-family: 'Futura-Bk-BT', sans-serif;
+    font-family: Futura-Bk-Bt;
     padding-bottom: 45px;
     margin: 0;
     letter-spacing: 1px; }
@@ -888,7 +888,7 @@ main {
       .prizes .coin-legend .coin-winnings p {
         font-size: 15px;
         color: white;
-        font-family: 'Futura-Bk-BT', sans-serif;
+        font-family: Futura-Bk-Bt;
         margin: 0;
         padding: 9px 0; }
         @media (min-width: 1024px) {
@@ -990,7 +990,7 @@ main {
   .page-download .project-setup {
     margin-top: 3rem;
     line-height: 1.6;
-    font-family: futura-heavy;
+    font-family: Futura-Bk-Bt;
     font-weight: lighter; }
     @media (min-width: 1024px) {
       .page-download .project-setup {
@@ -1428,7 +1428,7 @@ main {
   -webkit-box-shadow: 0px 0px 8px 8px rgba(255, 255, 255, 0.6);
           box-shadow: 0px 0px 8px 8px rgba(255, 255, 255, 0.6);
   font-size: 1.5rem;
-  font-family: Futura-Bold;
+  font-family: futura-bold;
   color: white; }
   @media (min-width: 600px) {
     .page-leaderboard .remaining-player .leader-ranking {
@@ -1519,7 +1519,7 @@ main {
   font-size: 2rem;
   margin-bottom: 0;
   color: #fff6e8;
-  font-family: Futura-Bold;
+  font-family: futura-bold;
   text-shadow: 1.2px 1.2px #f5a623;
   position: relative;
   left: 2.5rem;
@@ -1557,7 +1557,7 @@ main {
 
 .page-leaderboard .top-player h3 {
   font-weight: 900;
-  font-family: Futura-Heavy;
+  font-family: futura-heavy;
   font-size: 1.3rem;
   color: #ffffff;
   text-align: center;
@@ -1569,7 +1569,7 @@ main {
 .page-leaderboard .top-player .leader-name h4,
 .page-leaderboard .top-player .leader-coins h4 {
   font-weight: lighter;
-  font-family: Futura-Bk-BT;
+  font-family: Futura-Bk-Bt;
   font-size: 0.9rem;
   color: #ffffff;
   text-align: center;
@@ -1825,7 +1825,7 @@ main {
   .page-leaderboard .remaining-players .top-seven .leader-name h4,
   .page-leaderboard .remaining-players .top-seven .leader-coins h4 {
     font-weight: 900;
-    font-family: Futura-Bk-BT;
+    font-family: Futura-Bk-Bt;
     font-size: 0.7rem;
     color: #ffffff;
     text-transform: uppercase;
@@ -1907,7 +1907,7 @@ main {
     padding-top: 4rem;
     position: absolute;
     left: 500px;
-    font-family: 'Futura-Bk-BT', sans-serif;
+    font-family: Futura-Bk-Bt;
     font-size: 20px; }
   .game-template-default.single-game iframe {
     border: none;
@@ -1992,7 +1992,7 @@ main {
         .search .search-results-container .search-game .type-game .entry-title a,
         .search-results .search-results-container .search-game .type-game .entry-title a {
           text-decoration: none;
-          font-family: 'Futura-Bk-BT';
+          font-family: Futura-Bk-Bt;
           color: white; }
       .search .search-results-container .search-game .type-game .thumbnail-image img,
       .search-results .search-results-container .search-game .type-game .thumbnail-image img {
@@ -2006,7 +2006,7 @@ main {
       .search .search-results-container .search-game .type-game .author h4,
       .search-results .search-results-container .search-game .type-game .author h4 {
         margin-bottom: 0.5rem;
-        font-family: 'Futura-Bk-BT';
+        font-family: Futura-Bk-Bt;
         font-size: 12px;
         margin-top: 0; }
         @media (min-width: 600px) {
@@ -2245,7 +2245,7 @@ main {
   .drop-down * {
     -webkit-box-sizing: initial !important;
             box-sizing: initial !important;
-    font-family: 'Futura-Bk-BT'; }
+    font-family: Futura-Bk-Bt; }
     .drop-down *:after, .drop-down *:before {
       -webkit-box-sizing: initial !important;
               box-sizing: initial !important; }
@@ -2265,7 +2265,7 @@ main {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     display: grid;
-    grid-template-areas: "title prizes" "img img" "img img" "img img" "meta program" "coins coins" "buttons design";
+    grid-template-areas: "title prizes" "img img" "img img" "img img" "meta program" "coins coins" "buttons design";
     color: white;
     min-height: 453px;
     padding: 10px 30px;
@@ -2278,14 +2278,14 @@ main {
         padding: 15px;
         padding-top: 2rem;
         font-size: 18px;
-        grid-template-areas: "title img" "meta img" "program img" "design img" "coins img" "buttons prizes";
+        grid-template-areas: "title img" "meta img" "program img" "design img" "coins img" "buttons prizes";
         width: 592px; }
         .drop-down .game-dropdown h4 {
           margin: 0; } }
     @media (min-width: 1024px) {
       .drop-down .game-dropdown {
         font-size: 20px;
-        grid-template-areas: "title img" "meta img" "program img" "design img" "buttons img" "coins prizes";
+        grid-template-areas: "title img" "meta img" "program img" "design img" "buttons img" "coins prizes";
         width: 990px; } }
   .drop-down .title {
     grid-area: title;
@@ -2607,10 +2607,10 @@ main {
           .rainbow-game-container .game-background .featured-game-section .featured-games .featured-game:first-child {
             -webkit-transform: rotate(-25deg);
                     transform: rotate(-25deg);
-            -webkit-transition: top 0.65s ease-in-out, width 0.75s ease-in-out, height 0.75s ease-in-out, -webkit-transform 0.65s ease-in-out;
-            transition: top 0.65s ease-in-out, width 0.75s ease-in-out, height 0.75s ease-in-out, -webkit-transform 0.65s ease-in-out;
-            transition: transform 0.65s ease-in-out, top 0.65s ease-in-out, width 0.75s ease-in-out, height 0.75s ease-in-out;
-            transition: transform 0.65s ease-in-out, top 0.65s ease-in-out, width 0.75s ease-in-out, height 0.75s ease-in-out, -webkit-transform 0.65s ease-in-out;
+            -webkit-transition: top 0.65s ease-in-out, width 0.75s ease-in-out, height 0.75s ease-in-out, -webkit-transform 0.65s ease-in-out;
+            transition: top 0.65s ease-in-out, width 0.75s ease-in-out, height 0.75s ease-in-out, -webkit-transform 0.65s ease-in-out;
+            transition: transform 0.65s ease-in-out, top 0.65s ease-in-out, width 0.75s ease-in-out, height 0.75s ease-in-out;
+            transition: transform 0.65s ease-in-out, top 0.65s ease-in-out, width 0.75s ease-in-out, height 0.75s ease-in-out, -webkit-transform 0.65s ease-in-out;
             position: absolute;
             left: 10%; }
             .rainbow-game-container .game-background .featured-game-section .featured-games .featured-game:first-child:hover {
@@ -2678,10 +2678,10 @@ main {
           .rainbow-game-container .game-background .featured-game-section .featured-games .featured-game:last-child {
             -webkit-transform: rotate(25deg);
                     transform: rotate(25deg);
-            -webkit-transition: top 0.65s ease-in-out, width 0.75s ease-in-out, height 0.75s ease-in-out, -webkit-transform 0.65s ease-in-out;
-            transition: top 0.65s ease-in-out, width 0.75s ease-in-out, height 0.75s ease-in-out, -webkit-transform 0.65s ease-in-out;
-            transition: transform 0.65s ease-in-out, top 0.65s ease-in-out, width 0.75s ease-in-out, height 0.75s ease-in-out;
-            transition: transform 0.65s ease-in-out, top 0.65s ease-in-out, width 0.75s ease-in-out, height 0.75s ease-in-out, -webkit-transform 0.65s ease-in-out;
+            -webkit-transition: top 0.65s ease-in-out, width 0.75s ease-in-out, height 0.75s ease-in-out, -webkit-transform 0.65s ease-in-out;
+            transition: top 0.65s ease-in-out, width 0.75s ease-in-out, height 0.75s ease-in-out, -webkit-transform 0.65s ease-in-out;
+            transition: transform 0.65s ease-in-out, top 0.65s ease-in-out, width 0.75s ease-in-out, height 0.75s ease-in-out;
+            transition: transform 0.65s ease-in-out, top 0.65s ease-in-out, width 0.75s ease-in-out, height 0.75s ease-in-out, -webkit-transform 0.65s ease-in-out;
             position: absolute;
             right: 10%; }
             .rainbow-game-container .game-background .featured-game-section .featured-games .featured-game:last-child:hover {
@@ -2812,4 +2812,4 @@ main {
       height: 30px; } }
 
 .search-results .drop-down {
-  margin-left: 10px; }
+  margin-left: 0; }
