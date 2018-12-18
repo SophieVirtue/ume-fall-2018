@@ -44,7 +44,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 	## Front page
 --------------------------------------------------------------*/
 html {
-  font-family: sans-serif;
+  font-family: Futura-Bk-Bt;
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%; }
 
@@ -499,7 +499,7 @@ object {
   height: 53px;
   width: 100%;
   z-index: 5000;
-  font-family: 'Futura-Bk-BT', sans-serif;
+  font-family: Futura-Bk-Bt;
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.25)), to(rgba(0, 0, 0, 0.7)));
   background: linear-gradient(rgba(255, 255, 255, 0.25), rgba(0, 0, 0, 0.7));
   -webkit-box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.5);
@@ -601,7 +601,7 @@ main {
     text-decoration: none; }
     .site-header a .site-title {
       color: #FF008C;
-      font-family: 'Futura-Heavy', sans-serif;
+      font-family: Futura-Bk-Bt;
       font-size: 13px;
       text-transform: uppercase;
       letter-spacing: 1px;
@@ -650,7 +650,7 @@ main {
     text-align: center;
     text-decoration: none;
     font-size: 17px;
-    font-family: 'Futura-Bk-BT', sans-serif;
+    font-family: Futura-Bk-Bt;
     color: white;
     text-transform: uppercase;
     padding: 0 16px; }
@@ -882,7 +882,7 @@ main {
       .prizes .coin-legend .coin-winnings p {
         font-size: 15px;
         color: white;
-        font-family: 'Futura-Bk-BT', sans-serif;
+        font-family: Futura-Bk-Bt;
         margin: 0;
         padding: 9px 0; }
         @media (min-width: 1024px) {
@@ -984,7 +984,7 @@ main {
   .page-download .project-setup {
     margin-top: 3rem;
     line-height: 1.6;
-    font-family: futura-heavy;
+    font-family: Futura-Bk-Bt;
     font-weight: lighter; }
     @media (min-width: 1024px) {
       .page-download .project-setup {
@@ -1288,6 +1288,9 @@ main {
       .category h2 {
         font-size: 0.9rem;
         padding-left: 3rem; } }
+  @media (min-width: 600px) {
+    .category .main-carousel {
+      padding-bottom: 2rem; } }
 
 .carousel-cell img {
   height: 110px;
@@ -1551,7 +1554,7 @@ main {
 
 .page-leaderboard .top-player h3 {
   font-weight: 900;
-  font-family: Futura-Heavy;
+  font-family: futura-heavy;
   font-size: 1.3rem;
   color: #fff;
   text-align: center;
@@ -2229,25 +2232,24 @@ main {
     margin: 4rem 1rem; } }
 
 .drop-down {
+  left: 0;
   display: none;
   position: absolute;
   z-index: 1000;
   background: url(../../assets/images/drop-down.png) no-repeat, rgba(0, 0, 0, 0.8);
   background-size: 100% 100%;
-  width: 100%;
-  margin-left: -1.5rem; }
+  width: 100%; }
   .drop-down * {
     -webkit-box-sizing: initial !important;
             box-sizing: initial !important;
-    font-family: 'Futura-Bk-BT'; }
+    font-family: Futura-Bk-Bt; }
     .drop-down *:after, .drop-down *:before {
       -webkit-box-sizing: initial !important;
               box-sizing: initial !important; }
   @media (min-width: 600px) {
     .drop-down {
       background: url(../../assets/images/drop-down-tablet.png) no-repeat, rgba(0, 0, 0, 0.8);
-      background-size: 100% 100%;
-      margin-left: -1.5rem; } }
+      background-size: 100% 100%; } }
   @media (min-width: 1024px) {
     .drop-down {
       background: url(../../assets/images/drop-down-desktop.png) no-repeat, rgba(0, 0, 0, 0.8);
@@ -2260,7 +2262,19 @@ main {
         flex-wrap: wrap;
     display: grid;
     grid-template-areas: "title prizes" "img img" "img img" "img img" "meta program" "coins coins" "buttons design";
+<<<<<<< HEAD
     color: #fff;
+=======
+<<<<<<< HEAD
+    color: #fff;
+=======
+<<<<<<< HEAD
+    color: white;
+=======
+    color: #fff;
+>>>>>>> d687b7e851706bd5d54a2a6a1912f0c6e8f0a390
+>>>>>>> 569fa73fd0c29fa5d41d651fc902833708919cd4
+>>>>>>> 6d45c27102f6039f3312739e1616ece1b8f7cde0
     min-height: 453px;
     padding: 10px 30px;
     font-size: 14px;
@@ -2423,10 +2437,7 @@ main {
         border-top: 1px solid white;
         width: 90%;
         height: 90px;
-        margin: 0;
-        -webkit-box-align: center;
-            -ms-flex-align: center;
-                align-items: center; } }
+        margin: 0; } }
     @media (min-width: 1024px) {
       .drop-down .buttons {
         max-width: 100%;

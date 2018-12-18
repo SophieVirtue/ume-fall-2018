@@ -75,7 +75,7 @@
             p {
                 font-size: 15px;
                 color: white;
-                font-family: 'Futura-Bk-BT', sans-serif;
+                font-family: $font__futura-bk;
                 margin: 0;
                 padding: 9px 0;
                 @include desktop {

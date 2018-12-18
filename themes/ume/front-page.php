@@ -74,6 +74,7 @@ get_sidebar(); ?>
                 )
             );
 
+
            $game_posts = new WP_Query($args);?>
             <div class="category-folder">
                 <section class="<?php echo $category->slug ?> category">
@@ -94,7 +95,7 @@ get_sidebar(); ?>
                     <?php endwhile; wp_reset_postdata(); ?>
                 </section> <!-- end of category section -->
             </div> <!-- end of category-folder -->
-            <?php endforeach; ?>
+            <?php endforeach; ?> 
         <!-- end of game categories -->
         </section><!-- end of main section container -->
 	</main><!-- #main -->
