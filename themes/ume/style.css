@@ -651,7 +651,7 @@ main {
     text-decoration: none;
     font-size: 17px;
     font-family: Futura-Bk-Bt;
-    color: white;
+    color: #fff;
     text-transform: uppercase;
     padding: 0 16px; }
     @media (min-width: 1024px) {
@@ -881,7 +881,7 @@ main {
             height: 40px; } }
       .prizes .coin-legend .coin-winnings p {
         font-size: 15px;
-        color: white;
+        color: #fff;
         font-family: Futura-Bk-Bt;
         margin: 0;
         padding: 9px 0; }
@@ -2262,19 +2262,7 @@ main {
         flex-wrap: wrap;
     display: grid;
     grid-template-areas: "title prizes" "img img" "img img" "img img" "meta program" "coins coins" "buttons design";
-<<<<<<< HEAD
     color: #fff;
-=======
-<<<<<<< HEAD
-    color: #fff;
-=======
-<<<<<<< HEAD
-    color: white;
-=======
-    color: #fff;
->>>>>>> d687b7e851706bd5d54a2a6a1912f0c6e8f0a390
->>>>>>> 569fa73fd0c29fa5d41d651fc902833708919cd4
->>>>>>> 6d45c27102f6039f3312739e1616ece1b8f7cde0
     min-height: 453px;
     padding: 10px 30px;
     font-size: 14px;

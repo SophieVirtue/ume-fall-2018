@@ -129,7 +129,7 @@
     .leader-ranking p {
       font-size: 2rem;
       margin-bottom: 0;
-      color: #fff6e8;
+      color: $color__ranking;
       font-family: $font__futura-bold;
       text-shadow: 1.2px 1.2px #f5a623;
       position: relative;
@@ -477,7 +477,7 @@
     }
   }
   .inner-bar {
-    background: #e725e7;
+    background: $color__bar;
     width: 90px;
     height: 5px;
     @include tablet {
@@ -488,7 +488,7 @@
     }
   }
   .inner-bar-tablet {
-    background: #e725e7;
+    background: $color__bar;
    
     height: 5px;
     display: none;
@@ -504,7 +504,7 @@
 
 
   .inner-bar-desktop {
-    background: #e725e7;
+    background: $color__bar;
     
     height: 5px;
     display: none;

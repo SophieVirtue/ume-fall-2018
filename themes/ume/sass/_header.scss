@@ -21,7 +21,7 @@
     a {
         text-decoration: none;
         .site-title{
-            color: #FF008C;	
+            color: $color__header;	
             font-family: $font__futura-bk;
             font-size: 13px;
             text-transform: uppercase;
@@ -70,7 +70,7 @@
         text-decoration: none;
         font-size: 17px;
         font-family: $font__futura-bk;
-        color: white;
+        color: $color__main-text;
         text-transform: uppercase;
         padding: 0 16px;
         @include desktop {
