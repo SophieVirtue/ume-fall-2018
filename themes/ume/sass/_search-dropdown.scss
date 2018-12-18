@@ -3,4 +3,19 @@
     .meta {
         text-align: left;
     }
+    .title h3 {
+        text-align: left;
+    }
+    .gem {
+        @include desktop {
+            &:before {       
+                left: 39%;
+            }
+        }
+    }
+    .program h4 {
+        @include tablet {
+            width: 300px;
+        }
+    }
 }
