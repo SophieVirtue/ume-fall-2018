@@ -21,7 +21,7 @@
         //toggle dropdown on front page
         $carouselArrow.on('click', function() {
             let gameID = $(this).closest('.carousel-cell').data('id');
-            $(this).closest('section').find('.drop-down[data-id!="' + gameID + '"]').hide();
+            $('.drop-down').hide();
             $(this).closest('section').find('.drop-down[data-id="' + gameID + '"]').toggle();
             $(this).closest('.category').toggleClass('padding');
         });
