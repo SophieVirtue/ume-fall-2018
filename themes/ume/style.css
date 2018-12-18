@@ -2789,7 +2789,7 @@ body.page-arcade {
 
 .rainbow-game-container .featured-game:nth-child(2) .author h4 {
   margin: 0;
-  padding-bottom: 7px; }
+  padding-bottom: 4px; }
   @media (min-width: 1024px) {
     .rainbow-game-container .featured-game:nth-child(2) .author h4 {
       padding: 1rem 0; } }
@@ -2817,7 +2817,7 @@ body.page-arcade {
       padding-top: 0.5rem; } }
   .rainbow-game-container .featured-game:first-child .author h4 .author-transform, .rainbow-game-container .featured-game:nth-child(2) .author h4 .author-transform, .rainbow-game-container .featured-game:last-child .author h4 .author-transform {
     margin: 0;
-    padding-bottom: 7px;
+    padding-bottom: 4px;
     font-family: Futura-Bk-Bt;
     font-weight: 400;
     color: #fff;
