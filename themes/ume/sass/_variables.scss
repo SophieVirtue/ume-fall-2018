@@ -19,17 +19,19 @@ $color__main-text: #fff;
 
 // Typography
 
-$font__futura: "futura";
-$font__futura-bold: "futura-bold";
-$font__futura-heavy: "futura-heavy";
-$font__futura-bk: "futura-bk";
+$font__futura: futura;
+$font__futura-bold: futura-bold;
+$font__futura-heavy: futura-heavy;
+$font__futura-bk: Futura-Bk-Bt;
   
 
+// Font Size
+
+$size__font: 1rem;
 
 
 
-
-
+// Original Fonts as fallback
 
 $font__main: sans-serif;
 $font__code: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
