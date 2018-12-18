@@ -3,7 +3,7 @@
 A WordPress starter theme for RED Academy students, forked from Underscores.
 
 
-![Getting Started](screenshot.png)
+![Getting Started](themes/ume/screenshot.png)
 
 ## Installation
 
