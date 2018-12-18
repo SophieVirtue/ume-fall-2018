@@ -2266,7 +2266,11 @@ main {
         flex-wrap: wrap;
     display: grid;
     grid-template-areas: "title prizes" "img img" "img img" "img img" "meta program" "coins coins" "buttons design";
+<<<<<<< HEAD
     color: #fff;
+=======
+    color: white;
+>>>>>>> f18602095b158f412d226d6a2d7927a0c55eaa29
     min-height: 453px;
     padding: 10px 30px;
     font-size: 14px;

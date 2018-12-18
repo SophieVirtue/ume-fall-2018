@@ -74,6 +74,7 @@ get_sidebar(); ?>
                 )
             );
 
+<<<<<<< HEAD
     $args = array( 
        'post_type' => 'game', 
        'posts_per_page' => -1, 
@@ -112,9 +113,11 @@ get_sidebar(); ?>
         
 
         <?php endforeach; ?>
+=======
+>>>>>>> f18602095b158f412d226d6a2d7927a0c55eaa29
            $game_posts = new WP_Query($args);?>
             <div class="category-folder">
-                <section class="<?php echo $category->slug ?>category">
+                <section class="<?php echo $category->slug ?> category">
                     <h2><?php echo $category->name ?></h2>
                         <div class="<?php echo $category->slug ?>-games main-carousel">
                             <?php while ( $game_posts->have_posts() ) : $game_posts->the_post(); ?>
