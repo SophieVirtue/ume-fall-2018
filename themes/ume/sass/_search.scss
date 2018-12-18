@@ -1,6 +1,6 @@
 .search,
 .search-results {
-  color: #fff;
+  color: $color__main-text;
   background: url(../../assets/images/background.jpg);
   background-size: cover, 400px;
   .site-main {
@@ -52,11 +52,8 @@
           a {
             text-decoration: none;
             font-family: $font__futura-bk;
-<<<<<<< HEAD
-            color: white;
-=======
             color: $color__main-text;
->>>>>>> d687b7e851706bd5d54a2a6a1912f0c6e8f0a390
+            @include anchor;
           }
         }
         .thumbnail-image {
