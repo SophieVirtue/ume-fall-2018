@@ -1294,6 +1294,9 @@ main {
       .category h2 {
         font-size: 0.9rem;
         padding-left: 3rem; } }
+  @media (min-width: 600px) {
+    .category .main-carousel {
+      padding-bottom: 2rem; } }
 
 .carousel-cell img {
   height: 110px;
@@ -2252,8 +2255,7 @@ main {
   @media (min-width: 600px) {
     .drop-down {
       background: url(../../assets/images/drop-down-tablet.png) no-repeat, rgba(0, 0, 0, 0.8);
-      background-size: 100% 100%;
-      margin-left: -1.5rem; } }
+      background-size: 100% 100%; } }
   @media (min-width: 1024px) {
     .drop-down {
       background: url(../../assets/images/drop-down-desktop.png) no-repeat, rgba(0, 0, 0, 0.8);
@@ -2266,11 +2268,7 @@ main {
         flex-wrap: wrap;
     display: grid;
     grid-template-areas: "title prizes" "img img" "img img" "img img" "meta program" "coins coins" "buttons design";
-<<<<<<< HEAD
     color: #fff;
-=======
-    color: white;
->>>>>>> f18602095b158f412d226d6a2d7927a0c55eaa29
     min-height: 453px;
     padding: 10px 30px;
     font-size: 14px;
@@ -2433,10 +2431,7 @@ main {
         border-top: 1px solid white;
         width: 90%;
         height: 90px;
-        margin: 0;
-        -webkit-box-align: center;
-            -ms-flex-align: center;
-                align-items: center; } }
+        margin: 0; } }
     @media (min-width: 1024px) {
       .drop-down .buttons {
         max-width: 100%;

@@ -17,7 +17,6 @@
     @include tablet {
         background: url(../../assets/images/drop-down-tablet.png) no-repeat, rgba(0, 0, 0, 0.8);
         background-size: 100% 100%;
-        margin-left: -1.5rem;
     }
     @include desktop {
         background: url(../../assets/images/drop-down-desktop.png) no-repeat, rgba(0, 0, 0, 0.8);
@@ -206,7 +205,6 @@
             width: 90%;
             height: 90px;
             margin: 0;
-            align-items: center;
         }
         @include desktop {
             max-width: 100%;

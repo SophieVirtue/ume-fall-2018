@@ -86,32 +86,6 @@ get_sidebar(); ?>
         )
     );
 
-   $game_posts = new WP_Query($args);
-?>
-        <div class="category-folder">
-        <section class="<?php echo $category->slug ?> category">
-        <h2><?php echo $category->name ?></h2>
-            <div class="<?php echo $category->slug ?>-games main-carousel">
-<?php while ( $game_posts->have_posts() ) : $game_posts->the_post(); ?>
-                <div class="<?php $category->slug ?>-game carousel-cell" data-id="<?php the_ID(); ?>">
-                  <div class="content"><?php 
-        get_template_part( 'template-parts/content-front' );?>
-                 </div><!-- end of category-content div -->
-               </div>
-        <?php endwhile; wp_reset_postdata(); 
-        ?>
-  
-            </div>
-    <?php while ( $game_posts->have_posts() ) : $game_posts->the_post(); ?>
-          <div class="drop-down" data-id="<?php the_ID(); ?>">
-           <?php get_template_part( 'template-parts/content-drop' ); ?>
-          </div>
-          <?php endwhile; wp_reset_postdata(); ?>
-          </section>
-        </div>
-        
-
-        <?php endforeach; ?>
            $game_posts = new WP_Query($args);?>
             <div class="category-folder">
                 <section class="<?php echo $category->slug ?> category">
@@ -132,7 +106,7 @@ get_sidebar(); ?>
                     <?php endwhile; wp_reset_postdata(); ?>
                 </section> <!-- end of category section -->
             </div> <!-- end of category-folder -->
-            <?php endforeach; ?>
+            <?php endforeach; ?> 
         <!-- end of game categories -->
         </section><!-- end of main section container -->
 	</main><!-- #main -->
