@@ -241,10 +241,8 @@
     &:last-child {
       h3 {
         a {
-          font-family: Futura-Bk-Bt;
+          @include anchor;
           font-weight: 300;
-          color: white;
-          text-decoration: none;
           font-size: 14px;
           @include desktop {
             font-size: 1.3rem;
@@ -259,7 +257,7 @@
       .author {
         h4 {
           
-            font-family: Futura-Bk-Bt;
+            font-family: $font__futura-bk;
             font-weight: 200;
           @include tablet {
             padding-top: 0.5rem;
@@ -268,9 +266,9 @@
           .author-transform {
             margin: 0;
             padding-bottom: 7px;
-            font-family: Futura-Bk-Bt;
+            font-family: $font__futura-bk;
             font-weight: 400;
-            color: white;
+            color: $color__main-text;
             font-size: 14px;
             @include desktop {
               font-size: 1rem;
