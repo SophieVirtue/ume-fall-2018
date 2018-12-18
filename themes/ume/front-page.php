@@ -18,21 +18,21 @@ get_sidebar(); ?>
             <div class="banner">
                 <div class="upper-row">
                     <div class="left-lightning">
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/lightning-left.png"/>
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/lightning-left.png" alt="lightning-bolt"/>
                     </div>
                     <div class="center-label">
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/ume-academy-words.png"/>
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/ume-academy-words.png" alt="UME Academy"/>
                     </div>
                     <div class="right-lightning">
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/lightning-right.png"/>
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/lightning-right.png" alt="lightning-bolt"/>
                     </div>  
                 </div>
                 <div class="lower-row">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/pink-neon-words/arcade.png"/>
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/pink-neon-words/arcade.png" alt="Arcade"/>
                 </div>
                 <div class="rainbow-game-container">
                     <div class="white-rainbow">
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/scroll-wheel.png"/>
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/scroll-wheel.png" alt="light arc"/>
                     </div>
                     
                     <!-- beginning of featured games  -->

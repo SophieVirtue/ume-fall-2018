@@ -16,7 +16,7 @@ get_header(); ?>
 	<header class="entry-header">
     
         <div class="neon-play-game">	
-			<img src="<?php echo get_template_directory_uri(); ?>/assets/images/pink-neon-words/play.png" />
+			<img src="<?php echo get_template_directory_uri(); ?>/assets/images/pink-neon-words/play.png" alt="Play Game"/>
 		</div>
     
     </header><!-- .entry-header -->
