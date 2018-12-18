@@ -73,10 +73,10 @@ get_sidebar(); ?>
                     )
                 )
             );
-            
+
            $game_posts = new WP_Query($args);?>
             <div class="category-folder">
-                <section class="<?php echo $category->slug ?>category">
+                <section class="<?php echo $category->slug ?> category">
                     <h2><?php echo $category->name ?></h2>
                         <div class="<?php echo $category->slug ?>-games main-carousel">
                             <?php while ( $game_posts->have_posts() ) : $game_posts->the_post(); ?>
