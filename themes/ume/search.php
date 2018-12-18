@@ -16,7 +16,7 @@ get_sidebar(); ?>
 				<header class="page-header">
 					<h1 class="page-title"><?php printf( esc_html( 'Search results for: %s' ), '<span id="inquired">' . get_search_query() . '</span>' ); ?></h1>
 				</header><!-- .page-header -->
-				<div class="search-results-container" data-id="<?php the_ID(); ?>"">
+				<div class="search-results-container" data-id="<?php the_ID();?>">
 					<?php /* Start the Loop */ ?>
 					<?php while ( have_posts() ) : the_post(); ?>
 						<div class="search-game" data-id="<?php the_ID(); ?>">
