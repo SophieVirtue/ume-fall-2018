@@ -2,7 +2,7 @@
 /**
  * The main template file.
  *
- * @package RED_Starter_Theme
+ * @package UME
  */
 
 get_header(); 
@@ -10,9 +10,7 @@ get_sidebar(); ?>
 
 <div id="primary" class="content-area">
     <main id="main" class="site-main" role="main">
-        <!-- <div class="popup">
-            <p>Please play our games on a desktop or laptop!</p>
-        </div> -->
+        
 
         <section class="grid-banner-container">
             <div class="banner">
@@ -81,7 +79,6 @@ get_sidebar(); ?>
             )
         )
     );
-   //$game_posts = get_posts( $args ); // returns an array of posts
 
    $game_posts = new WP_Query($args);
 ?>
