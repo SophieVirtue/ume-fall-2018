@@ -97,8 +97,13 @@
         width: 110px;
         height: 14px;
         border-width: 2px;
+<<<<<<< HEAD
         border-color: white;
         color: white;
+=======
+        border-color: $color__main-text;
+        color: $color__main-text;
+>>>>>>> d687b7e851706bd5d54a2a6a1912f0c6e8f0a390
         font-family: $font__futura-bk;
         @include tablet {
             height: 22px;
@@ -109,7 +114,7 @@
             width: 210px; 
         }
         &::placeholder{
-            color: white;
+            color: $color__main-text;
             font-size: 11px;
             text-transform: uppercase;
             @include tablet {
@@ -121,7 +126,7 @@
         }
     }
     i.fa-bars {
-        color: white;
+        color: $color__main-text;
         font-size: 25px;
         @include tablet {
             display: none;
@@ -142,7 +147,7 @@
         }
     }
     i.fa-search{
-        color: white;
+        color: $color__main-text;
         font-size: 12px;
         @include tablet {
             font-size: 18px;
@@ -178,7 +183,7 @@
         a {
             display: flex;
             flex-direction: column;
-            color: white;
+            color: $color__main-text;
             text-transform: uppercase;
             font-family: $font__futura-bk;
             font-size: 20px;

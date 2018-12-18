@@ -38,7 +38,11 @@
       box-shadow: 0px 0px 8px 8px rgba(255, 255, 255, 0.6);
       font-size: 1.5rem;
       font-family: $font__futura-bold;
+<<<<<<< HEAD
       color: white;
+=======
+      color: $color__main-text;
+>>>>>>> d687b7e851706bd5d54a2a6a1912f0c6e8f0a390
       @include tablet {
         position: relative;
         top: 5rem;
@@ -86,7 +90,7 @@
         }
       }
       a {
-        color: white;
+        color: $color__main-text;
         text-decoration: none;
       }
     }
@@ -170,7 +174,7 @@
       font-weight: 900;
       font-family: $font__futura-heavy;
       font-size: 1.3rem;
-      color: #ffffff;
+      color: $color__main-text;
       text-align: center;
       text-transform: uppercase;
       @include tablet {
@@ -182,7 +186,7 @@
       font-weight: lighter;
       font-family: $font__futura-bk;
       font-size: 0.9rem;
-      color: #ffffff;
+      color: $color__main-text;
       text-align: center;
       text-transform: uppercase;
       position: relative;
@@ -211,7 +215,7 @@
       }
     }
     a {
-      color: white;
+      color: $font__futura-bk;
       text-decoration: none;
     }
   }
@@ -433,7 +437,7 @@
       font-weight: 900;
       font-family: $font__futura-bk;
       font-size: 1.2rem;
-      color: #ffffff;
+      color: $color__main-text;
       text-transform: uppercase;
       margin: 0.15rem 0.5rem;
       @include tablet {
@@ -448,7 +452,7 @@
       font-weight: 900;
       font-family: $font__futura-bk;
       font-size: 0.7rem;
-      color: #ffffff;
+      color: $color__main-text;
       text-transform: uppercase;
       margin: 0.15rem 0.5rem;
       font-weight: lighter;
@@ -465,7 +469,7 @@
   }
   //Prize Bar
   .prize-bar {
-    border: 1px solid white;
+    border: $white__border-thin;
     width: 100px;
     margin: 0.5rem 0.5rem;
     @include tablet {
