@@ -2789,7 +2789,7 @@ body.page-arcade {
 
 .rainbow-game-container .featured-game:nth-child(2) .author h4 {
   margin: 0;
-  padding-bottom: 7px; }
+  padding-bottom: 4px; }
   @media (min-width: 1024px) {
     .rainbow-game-container .featured-game:nth-child(2) .author h4 {
       padding: 1rem 0; } }
