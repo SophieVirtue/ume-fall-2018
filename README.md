@@ -3,7 +3,7 @@
 A WordPress starter theme for RED Academy students, forked from Underscores.
 
 
-![Alt text](/screenshot.png "Optional Title")
+![Getting Started](themes/ume/screenshot.png)
 
 ## Installation
 

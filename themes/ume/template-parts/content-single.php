@@ -14,9 +14,9 @@
 		<?php endif; ?>
 		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 		<div class="entry-meta">
-			<?php red_starter_posted_on(); ?>
-			<?php red_starter_comment_count(); ?> 
-			<?php red_starter_posted_by(); ?>
+			<?php ume_posted_on(); ?>
+			<?php ume_comment_count(); ?> 
+			<?php ume_posted_by(); ?>
 		</div><!-- end of entry-meta -->
 	</header><!-- end of entry-header -->
 	<div class="entry-content">
@@ -29,6 +29,6 @@
 		?>
 	</div><!-- end of entry-content -->
 	<footer class="entry-footer">
-		<?php red_starter_entry_footer(); ?>
+		<?php ume_entry_footer(); ?>
 	</footer><!-- .entry-footer -->
 </article><!-- #post-## -->

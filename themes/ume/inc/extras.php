@@ -11,7 +11,7 @@
  * @param array $classes Classes for the body element.
  * @return array
  */
-function red_starter_body_classes( $classes ) {
+function ume_body_classes( $classes ) {
 	// Adds a class of group-blog to blogs with more than 1 published author.
 	if ( is_multi_author() ) {
 		$classes[] = 'group-blog';
@@ -19,7 +19,7 @@ function red_starter_body_classes( $classes ) {
 
 	return $classes;
 }
-add_filter( 'body_class', 'red_starter_body_classes' );
+add_filter( 'body_class', 'ume_body_classes' );
 
 
 //LeaderBoard Prizes
@@ -81,7 +81,7 @@ function ume_get_icons ($game_coins) {
 	}
 
  if ($game_coins >= 10) {
-	$gems[1]= '<img class="gem" src="'.get_template_directory_uri().'/assets/images/gems/blue-diamond.png">alt="blue diamond"';
+	$gems[1]= '<img class="gem" src="'.get_template_directory_uri().'/assets/images/gems/blue-diamond.png" alt="blue diamond>"';
 }
  if ($game_coins >= 20) {
 	$gems[2]= '<img class="gem" src="'.get_template_directory_uri().'/assets/images/gems/pink.png" alt="pink gem">';
