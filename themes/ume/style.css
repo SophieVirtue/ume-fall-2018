@@ -1988,9 +1988,13 @@ main {
             padding-bottom: 0.5rem; } }
         .search .search-results-container .search-game .type-game .entry-title a,
         .search-results .search-results-container .search-game .type-game .entry-title a {
-          text-decoration: none;
+          color: #fff;
           font-family: Futura-Bk-Bt;
+<<<<<<< HEAD
           color: #fff; }
+=======
+          text-decoration: none; }
+>>>>>>> aea46daae5e07296b0499fe62aece404417c3e79
       .search .search-results-container .search-game .type-game .thumbnail-image img,
       .search-results .search-results-container .search-game .type-game .thumbnail-image img {
         width: 125px;
@@ -2262,7 +2266,23 @@ main {
         flex-wrap: wrap;
     display: grid;
     grid-template-areas: "title prizes" "img img" "img img" "img img" "meta program" "coins coins" "buttons design";
+<<<<<<< HEAD
     color: #fff;
+=======
+<<<<<<< HEAD
+    color: #fff;
+=======
+<<<<<<< HEAD
+    color: #fff;
+=======
+<<<<<<< HEAD
+    color: white;
+=======
+    color: #fff;
+>>>>>>> d687b7e851706bd5d54a2a6a1912f0c6e8f0a390
+>>>>>>> 569fa73fd0c29fa5d41d651fc902833708919cd4
+>>>>>>> 6d45c27102f6039f3312739e1616ece1b8f7cde0
+>>>>>>> aea46daae5e07296b0499fe62aece404417c3e79
     min-height: 453px;
     padding: 10px 30px;
     font-size: 14px;
