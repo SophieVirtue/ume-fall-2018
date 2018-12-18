@@ -1985,9 +1985,9 @@ main {
             padding-bottom: 0.5rem; } }
         .search .search-results-container .search-game .type-game .entry-title a,
         .search-results .search-results-container .search-game .type-game .entry-title a {
-          text-decoration: none;
+          color: #fff;
           font-family: Futura-Bk-Bt;
-          color: #fff; }
+          text-decoration: none; }
       .search .search-results-container .search-game .type-game .thumbnail-image img,
       .search-results .search-results-container .search-game .type-game .thumbnail-image img {
         width: 125px;
