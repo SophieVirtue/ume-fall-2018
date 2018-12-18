@@ -37,8 +37,8 @@
       position: sticky;
       box-shadow: 0px 0px 8px 8px rgba(255, 255, 255, 0.6);
       font-size: 1.5rem;
-      font-family: Futura-Bold;
-      color: white;
+      font-family: $font__futura-bold;
+      color: $color__main-text;
       @include tablet {
         position: relative;
         top: 5rem;
@@ -86,7 +86,7 @@
         }
       }
       a {
-        color: white;
+        color: $color__main-text;
         text-decoration: none;
       }
     }
@@ -130,7 +130,7 @@
       font-size: 2rem;
       margin-bottom: 0;
       color: #fff6e8;
-      font-family: Futura-Bold;
+      font-family: $font__futura-bold;
       text-shadow: 1.2px 1.2px #f5a623;
       position: relative;
       left: 2.5rem;
@@ -170,7 +170,7 @@
       font-weight: 900;
       font-family: Futura-Heavy;
       font-size: 1.3rem;
-      color: #ffffff;
+      color: $color__main-text;
       text-align: center;
       text-transform: uppercase;
       @include tablet {
@@ -180,9 +180,9 @@
     .leader-name h4,
     .leader-coins h4 {
       font-weight: lighter;
-      font-family: Futura-Bk-BT;
+      font-family: $font__futura-bk;
       font-size: 0.9rem;
-      color: #ffffff;
+      color: $color__main-text;
       text-align: center;
       text-transform: uppercase;
       position: relative;
@@ -211,7 +211,7 @@
       }
     }
     a {
-      color: white;
+      color: $font__futura-bk;
       text-decoration: none;
     }
   }
@@ -431,9 +431,9 @@
     }
     h3 {
       font-weight: 900;
-      font-family: Futura-Bk-Bt;
+      font-family: $font__futura-bk;
       font-size: 1.2rem;
-      color: #ffffff;
+      color: $color__main-text;
       text-transform: uppercase;
       margin: 0.15rem 0.5rem;
       @include tablet {
@@ -446,9 +446,9 @@
     .leader-name h4,
     .leader-coins h4 {
       font-weight: 900;
-      font-family: Futura-Bk-BT;
+      font-family: $font__futura-bk;
       font-size: 0.7rem;
-      color: #ffffff;
+      color: $color__main-text;
       text-transform: uppercase;
       margin: 0.15rem 0.5rem;
       font-weight: lighter;
@@ -465,7 +465,7 @@
   }
   //Prize Bar
   .prize-bar {
-    border: 1px solid white;
+    border: $white__border-thin;
     width: 100px;
     margin: 0.5rem 0.5rem;
     @include tablet {
