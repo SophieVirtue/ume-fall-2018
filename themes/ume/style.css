@@ -2271,31 +2271,15 @@ main {
         padding: 15px;
         padding-top: 2rem;
         font-size: 18px;
-<<<<<<< HEAD
         grid-template-areas: "title img" "meta img" "program img" "design img" "coins img" "buttons prizes";
-=======
-        grid-template-areas: "title img" "meta img" "program img" "design img" "coins img" "buttons prizes";
-<<<<<<< HEAD
-        grid-template-rows: 13% 13% 13% 13% 13% 20%; }
-=======
->>>>>>> 66d61de97f75599fd7dc25b9c68d751dcfb4e730
         width: 592px; }
->>>>>>> 2f4f556201edafc6d391c5af152e5da3578c7e79
         .drop-down .game-dropdown h4 {
           margin: 0; } }
     @media (min-width: 1024px) {
       .drop-down .game-dropdown {
         font-size: 20px;
-<<<<<<< HEAD
         grid-template-areas: "title img" "meta img" "program img" "design img" "buttons img" "coins prizes";
-=======
-<<<<<<< HEAD
-        grid-template-areas: "title img" "meta img" "program img" "design img" "buttons img" "coins prizes"; } }
-=======
-        grid-template-areas: "title img" "meta img" "program img" "design img" "buttons img" "coins prizes";
->>>>>>> 66d61de97f75599fd7dc25b9c68d751dcfb4e730
         width: 990px; } }
->>>>>>> 2f4f556201edafc6d391c5af152e5da3578c7e79
   .drop-down .title {
     grid-area: title;
     display: -webkit-box;
