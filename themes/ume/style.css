@@ -2266,7 +2266,11 @@ main {
         flex-wrap: wrap;
     display: grid;
     grid-template-areas: "title prizes" "img img" "img img" "img img" "meta program" "coins coins" "buttons design";
+<<<<<<< HEAD
+    color: #fff;
+=======
     color: white;
+>>>>>>> f18602095b158f412d226d6a2d7927a0c55eaa29
     min-height: 453px;
     padding: 10px 30px;
     font-size: 14px;
@@ -2314,7 +2318,7 @@ main {
         .drop-down .title h3 {
           font-size: 30px; } }
       .drop-down .title h3 a {
-        color: white;
+        color: #fff;
         text-decoration: none; }
   .drop-down .meta {
     grid-area: meta;
@@ -2365,7 +2369,7 @@ main {
       background: -webkit-gradient(linear, left top, left bottom, from(#f5d672), to(#e77839));
       background: linear-gradient(180deg, #f5d672, #e77839);
       padding: 10px;
-      color: white;
+      color: #fff;
       text-decoration: none;
       border-radius: 5px;
       font-size: 11px;
