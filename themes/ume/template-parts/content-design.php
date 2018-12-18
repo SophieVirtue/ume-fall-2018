@@ -22,7 +22,7 @@
 		</h3>
        <div class="work-section design-section">  
 	      	<div class="work-image design-image">
-              <img class="work-flow-image" src="<?php echo CFS()->get ( 'work_flow_image' )?>">
+              <img class="work-flow-image" src="<?php echo CFS()->get ( 'work_flow_image' )?>" alt="Game Work Flow Image">
 			  </div>
 			  <div class="design-border">
               </div>
@@ -40,7 +40,7 @@
 		</h3>
 		     <div class="character-section design-section">
              <div class="character-image design-image">
-			 <img class="character-image" src="<?php echo CFS()->get ( 'character_image' )?>">
+			 <img class="character-image" src="<?php echo CFS()->get ( 'character_image' )?>" alt="Game Character Set up Image">
 			 </div>
 			 <div class="design-border">
               </div>
@@ -61,7 +61,7 @@
 		</h3>
 		<div class="obstacles-section design-section">
           <div class="obstacles-image design-image">
-          <img class="obstacles-image" src="<?php echo CFS()->get ( 'obstacles_image' )?>">
+          <img class="obstacles-image" src="<?php echo CFS()->get ( 'obstacles_image' )?>" alt="Game Obstacles Image">
 		  </div>
 		  <div class="design-border">
 </div>
@@ -79,7 +79,7 @@
 		</h3>    
 		<div class="important-section design-section">
 		 <div class="important-image design-image">
-	    <img class="important-image" src="<?php echo CFS()->get ( 'important_image' )?>">
+	    <img class="important-image" src="<?php echo CFS()->get ( 'important_image' )?>" alt="Important Game Info Image">
 		</div>
 		<div class="design-border">
         </div>
