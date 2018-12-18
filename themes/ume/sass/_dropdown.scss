@@ -121,6 +121,7 @@
         letter-spacing: 1px;
         @include tablet {
             text-align: start;
+            width: 300px;
         }
         @include desktop {
             max-width: 100%;
