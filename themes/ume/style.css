@@ -2260,22 +2260,14 @@ main {
         padding-top: 2rem;
         font-size: 18px;
         grid-template-areas: "title img" "meta img" "program img" "design img" "coins img" "buttons prizes";
-<<<<<<< HEAD
-        grid-template-rows: 13% 13% 13% 13% 13% 20%; }
-=======
         width: 592px; }
->>>>>>> 2f4f556201edafc6d391c5af152e5da3578c7e79
         .drop-down .game-dropdown h4 {
           margin: 0; } }
     @media (min-width: 1024px) {
       .drop-down .game-dropdown {
         font-size: 20px;
-<<<<<<< HEAD
-        grid-template-areas: "title img" "meta img" "program img" "design img" "buttons img" "coins prizes"; } }
-=======
         grid-template-areas: "title img" "meta img" "program img" "design img" "buttons img" "coins prizes";
         width: 990px; } }
->>>>>>> 2f4f556201edafc6d391c5af152e5da3578c7e79
   .drop-down .title {
     grid-area: title;
     display: -webkit-box;
@@ -2801,4 +2793,4 @@ main {
       height: 30px; } }
 
 .search-results .drop-down {
-  margin-left: 0; }
+  margin-left: 10px; }
