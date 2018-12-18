@@ -17,9 +17,13 @@
   .game-wrapper {
     margin: 0 auto;
     width: 966px;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
   }
   .loading-message {
     padding-top: 4rem;
+    position: absolute;
+    left: 500px;
     font-family: 'Futura-Bk-BT', sans-serif;
     font-size: 20px;
   }
@@ -31,6 +35,17 @@
     height: 480px;
     position: absolute;
     margin: 0 auto;
+  }
+
+  .no-game-found {
+    font-size: 1.1rem;
+    a {
+      
+      color: white;
+      &:hover {
+        color: #F08BC4;
+      }
+    }
   }
 }
 

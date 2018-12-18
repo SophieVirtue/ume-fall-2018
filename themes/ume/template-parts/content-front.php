@@ -11,7 +11,7 @@
 	<h4> By: <?php echo CFS()->get ( 'game_author' ); ?> </h4>
     </div>
     <div class="arrow">
-            <img  src="<?php echo get_template_directory_uri(); ?>/assets/images/down-arrow.png"/>
+            <img  src="<?php echo get_template_directory_uri(); ?>/assets/images/down-arrow.png" alt="Dropdown Arrow"/>
 </div>
     
     

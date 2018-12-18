@@ -26,7 +26,7 @@
 				</div><!-- .site-branding -->
 				<div class="main-header">
 			  		<div class="left-column">
-				  		<img class="lightning" src="<?php echo get_template_directory_uri();?>/assets/images/lightning-right.png" alt="lightning-right"/>
+				  		<img class="lightning" src="<?php echo get_template_directory_uri();?>/assets/images/lightning-right.png" alt="lightning bolt"/>
 				  		<a href="<?php echo get_home_url(); ?>">
 							<h3 class="site-title"> UME Arcade </h3>
                    		</a>
