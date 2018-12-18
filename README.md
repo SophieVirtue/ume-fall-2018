@@ -1,10 +1,15 @@
-# UME Academy 
+# UME Academy Arcade
 
-A WordPress starter theme for RED Academy students, forked from Underscores.
+UME Academy Arcade is an extension the the UME Academy website (https://ume.academy/). The arcade hosts all of the games using a new and vibrant look. 
+
+Welcome to UME Arcade !
+
 
 
 ![Getting Started](themes/ume/screenshot.png)
 
+
+![](themes/ume/giphy.gif)
 
 Technologies Used
 - HTML
