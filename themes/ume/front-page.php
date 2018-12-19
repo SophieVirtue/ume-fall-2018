@@ -57,7 +57,8 @@ get_sidebar(); ?>
                 <?php   
            $game_categories = get_terms( array(
                    'taxonomy' => 'game_category',
-                   'hide_empty' => false
+                   'hide_empty' => false,
+                   'exclude' => array(15)
            ) );
 
             foreach( $game_categories as $category ): 
@@ -70,7 +71,7 @@ get_sidebar(); ?>
                         'taxonomy' => 'game_category',
                         'field' => 'term_id',
                         'terms' => $category->term_id
-                    )
+                   )
                 )
             );
 
