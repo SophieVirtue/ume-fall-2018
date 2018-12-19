@@ -34,7 +34,7 @@ get_sidebar(); ?>
                     <div class="game-background">
     
                         <?php      
-                        $args = array( 'post_type' => 'game', 'posts_per_page' => '3');
+                        $args = array( 'post_type' => 'game', 'posts_per_page' => '3', 'game_category' => 'Featured');
                         $game_posts = get_posts( $args ); // returns an array of posts
                         ?>
                         <section class="featured-game-section">
