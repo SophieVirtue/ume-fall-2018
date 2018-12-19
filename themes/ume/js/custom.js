@@ -30,12 +30,13 @@
             $(this).closest('.category').addClass('padding');
         }
         else {
+            $('.category').removeClass('padding'); 
             if ($('.drop-down[data-id="' + gameID + '"]').is(':visible')){
                 $(this).closest('section').find('.drop-down[data-id="' + gameID + '"]').hide();
                 dropDownShowing = false;
-                $(this).closest('.category').removeClass('padding'); 
             } else {
-                $(this).closest('section').find('.drop-down[data-id="' + gameID + '"]').show();  
+                $(this).closest('section').find('.drop-down[data-id="' + gameID + '"]').show(); 
+                $(this).closest('.category').addClass('padding'); 
             }  
         }    
         });
@@ -50,12 +51,13 @@
             $(this).closest('.search-game').addClass('padding');
         }
         else {
+            $('.search-game').removeClass('padding');
             if ($('.drop-down[data-id="' + gameID + '"]').is(':visible')){
                 $(this).closest('section').find('.drop-down[data-id="' + gameID + '"]').hide();
                 dropDownShowing = false;
-                $(this).closest('.search-game').removeClass('padding'); 
             } else {
-                $(this).closest('section').find('.drop-down[data-id="' + gameID + '"]').show();  
+                $(this).closest('section').find('.drop-down[data-id="' + gameID + '"]').show(); 
+                $(this).closest('.search-game').addClass('padding');  
             }  
         } 
         });

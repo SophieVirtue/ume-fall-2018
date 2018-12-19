@@ -34,7 +34,7 @@ get_sidebar(); ?>
                     <div class="game-background">
     
                         <?php      
-                        $args = array( 'post_type' => 'game', 'posts_per_page' => '3');
+                        $args = array( 'post_type' => 'game', 'posts_per_page' => '3', 'game_category' => 'Featured');
                         $game_posts = get_posts( $args ); // returns an array of posts
                         ?>
                         <section class="featured-game-section">
@@ -57,7 +57,8 @@ get_sidebar(); ?>
                 <?php   
            $game_categories = get_terms( array(
                    'taxonomy' => 'game_category',
-                   'hide_empty' => false
+                   'hide_empty' => false,
+                   'exclude' => array(15)
            ) );
 
             foreach( $game_categories as $category ): 
@@ -70,7 +71,7 @@ get_sidebar(); ?>
                         'taxonomy' => 'game_category',
                         'field' => 'term_id',
                         'terms' => $category->term_id
-                    )
+                   )
                 )
             );
 
