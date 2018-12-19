@@ -2864,3 +2864,23 @@ body.page-arcade {
   @media (min-width: 600px) {
     .search-results .drop-down .program h4 {
       width: 300px; } }
+
+.error404 {
+  background: url(../../assets/images/background.jpg);
+  background-size: 100% 100%;
+  color: white; }
+  .error404 .error-404 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 500px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
