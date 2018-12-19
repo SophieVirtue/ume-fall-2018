@@ -89,6 +89,9 @@
                     padding-right: 0;
                 }
             }
+            @include desktop {
+                font-size: 25px;
+            }
         }
     }
     .search-form{

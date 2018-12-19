@@ -667,6 +667,9 @@ main {
         font-size: 15px; }
         .site-header .main-navigation h3 .prizes-nav {
           padding-right: 0; } }
+    @media (min-width: 1024px) {
+      .site-header .main-navigation h3 {
+        font-size: 25px; } }
   .site-header .search-form {
     display: -webkit-box;
     display: -ms-flexbox;
