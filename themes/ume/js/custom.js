@@ -18,29 +18,61 @@
             } );
         }//end of if browsertype
 
+        
         //toggle dropdown on front page
+        let dropDownShowing = false
         $carouselArrow.on('click', function() {
             let gameID = $(this).closest('.carousel-cell').data('id');
-            $(this).closest('section').find('.drop-down[data-id!="' + gameID + '"]').hide();
-            $(this).closest('section').find('.drop-down[data-id="' + gameID + '"]').toggle();
-            $(this).closest('.category').toggleClass('padding');
+            $('.drop-down[data-id!="' + gameID + '"]').hide();
+            if (!dropDownShowing){
+            $(this).closest('section').find('.drop-down[data-id="' + gameID + '"]').show();
+            dropDownShowing = true;
+            $(this).closest('.category').addClass('padding');
+        }
+        else {
+            $('.category').removeClass('padding'); 
+            if ($('.drop-down[data-id="' + gameID + '"]').is(':visible')){
+                $(this).closest('section').find('.drop-down[data-id="' + gameID + '"]').hide();
+                dropDownShowing = false;
+            } else {
+                $(this).closest('section').find('.drop-down[data-id="' + gameID + '"]').show(); 
+                $(this).closest('.category').addClass('padding'); 
+            }  
+        }    
         });
 
         //toggle dropdown on search page 
         $searchArrow.on('click', function(){
             let gameID = $(this).closest('article').data('id');
-            $(this).closest('section').find('.drop-down[data-id!="' + gameID + '"]').hide();
-            $(this).closest('section').find('.drop-down[data-id="' + gameID + '"]').toggle();
+            $('.drop-down[data-id!="' + gameID + '"]').hide();
+            if (!dropDownShowing){
+            $(this).closest('section').find('.drop-down[data-id="' + gameID + '"]').show();
+            dropDownShowing = true;
+            $(this).closest('.search-game').addClass('padding');
+        }
+        else {
+            $('.search-game').removeClass('padding');
+            if ($('.drop-down[data-id="' + gameID + '"]').is(':visible')){
+                $(this).closest('section').find('.drop-down[data-id="' + gameID + '"]').hide();
+                dropDownShowing = false;
+            } else {
+                $(this).closest('section').find('.drop-down[data-id="' + gameID + '"]').show(); 
+                $(this).closest('.search-game').addClass('padding');  
+            }  
+        } 
         });
 
         //hide dropdown when not clicking in the actual dropdown
         $(document).on('mouseup', function(event) {
             if((!$(event.target).is('.drop-down') ) &&
             ($(event.target).parents('.drop-down').length === 0) ) {
-                if((!$(event.target).is('.arrow-img') ))
+                if((!$(event.target).is('.arrow-img') )) {
                     $('.drop-down').hide();
-            }
-            $('.category').removeClass('padding');
+                    dropDownShowing = false;  
+                    $('.search-game').removeClass('padding');
+                    $('.category').removeClass('padding');  
+                }    
+            }    
         });
 
         //copy game link to clipboard

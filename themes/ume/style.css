@@ -662,6 +662,14 @@ main {
     padding-left: 0; }
   .site-header .main-navigation h3 {
     margin: 0; }
+    @media (min-width: 600px) {
+      .site-header .main-navigation h3 {
+        font-size: 15px; }
+        .site-header .main-navigation h3 .prizes-nav {
+          padding-right: 0; } }
+    @media (min-width: 1024px) {
+      .site-header .main-navigation h3 {
+        font-size: 25px; } }
   .site-header .search-form {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1313,7 +1321,7 @@ body.page-arcade {
     @media (min-width: 1024px) {
       .category h2 {
         font-size: 0.9rem;
-        padding-left: 3rem; } }
+        padding-left: 4.5rem; } }
   @media (min-width: 600px) {
     .category .main-carousel {
       padding-bottom: 2rem; } }
@@ -2290,7 +2298,7 @@ body.page-arcade {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     display: grid;
-    grid-template-areas: "title prizes" "img img" "img img" "img img" "meta program" "coins coins" "buttons design";
+    grid-template-areas: "title prizes" "img img" "img img" "img img" "meta program" "coins coins" "buttons design";
     color: #fff;
     min-height: 453px;
     padding: 10px 30px;
@@ -2303,14 +2311,14 @@ body.page-arcade {
         padding: 15px;
         padding-top: 2rem;
         font-size: 18px;
-        grid-template-areas: "title img" "meta img" "program img" "design img" "coins img" "buttons prizes";
+        grid-template-areas: "title img" "meta img" "program img" "design img" "coins img" "buttons prizes";
         width: 592px; }
         .drop-down .game-dropdown h4 {
           margin: 0; } }
     @media (min-width: 1024px) {
       .drop-down .game-dropdown {
         font-size: 20px;
-        grid-template-areas: "title img" "meta img" "program img" "design img" "buttons img" "coins prizes";
+        grid-template-areas: "title img" "meta img" "program img" "design img" "buttons img" "coins prizes";
         width: 990px; } }
   .drop-down .title {
     grid-area: title;
@@ -2630,10 +2638,10 @@ body.page-arcade {
           .rainbow-game-container .game-background .featured-game-section .featured-games .featured-game:first-child {
             -webkit-transform: rotate(-25deg);
                     transform: rotate(-25deg);
-            -webkit-transition: top 0.65s ease-in-out, width 0.75s ease-in-out, height 0.75s ease-in-out, -webkit-transform 0.65s ease-in-out;
-            transition: top 0.65s ease-in-out, width 0.75s ease-in-out, height 0.75s ease-in-out, -webkit-transform 0.65s ease-in-out;
-            transition: transform 0.65s ease-in-out, top 0.65s ease-in-out, width 0.75s ease-in-out, height 0.75s ease-in-out;
-            transition: transform 0.65s ease-in-out, top 0.65s ease-in-out, width 0.75s ease-in-out, height 0.75s ease-in-out, -webkit-transform 0.65s ease-in-out;
+            -webkit-transition: top 0.65s ease-in-out, width 0.75s ease-in-out, height 0.75s ease-in-out, -webkit-transform 0.65s ease-in-out;
+            transition: top 0.65s ease-in-out, width 0.75s ease-in-out, height 0.75s ease-in-out, -webkit-transform 0.65s ease-in-out;
+            transition: transform 0.65s ease-in-out, top 0.65s ease-in-out, width 0.75s ease-in-out, height 0.75s ease-in-out;
+            transition: transform 0.65s ease-in-out, top 0.65s ease-in-out, width 0.75s ease-in-out, height 0.75s ease-in-out, -webkit-transform 0.65s ease-in-out;
             position: absolute;
             left: 10%; }
             .rainbow-game-container .game-background .featured-game-section .featured-games .featured-game:first-child:hover {
@@ -2701,10 +2709,10 @@ body.page-arcade {
           .rainbow-game-container .game-background .featured-game-section .featured-games .featured-game:last-child {
             -webkit-transform: rotate(25deg);
                     transform: rotate(25deg);
-            -webkit-transition: top 0.65s ease-in-out, width 0.75s ease-in-out, height 0.75s ease-in-out, -webkit-transform 0.65s ease-in-out;
-            transition: top 0.65s ease-in-out, width 0.75s ease-in-out, height 0.75s ease-in-out, -webkit-transform 0.65s ease-in-out;
-            transition: transform 0.65s ease-in-out, top 0.65s ease-in-out, width 0.75s ease-in-out, height 0.75s ease-in-out;
-            transition: transform 0.65s ease-in-out, top 0.65s ease-in-out, width 0.75s ease-in-out, height 0.75s ease-in-out, -webkit-transform 0.65s ease-in-out;
+            -webkit-transition: top 0.65s ease-in-out, width 0.75s ease-in-out, height 0.75s ease-in-out, -webkit-transform 0.65s ease-in-out;
+            transition: top 0.65s ease-in-out, width 0.75s ease-in-out, height 0.75s ease-in-out, -webkit-transform 0.65s ease-in-out;
+            transition: transform 0.65s ease-in-out, top 0.65s ease-in-out, width 0.75s ease-in-out, height 0.75s ease-in-out;
+            transition: transform 0.65s ease-in-out, top 0.65s ease-in-out, width 0.75s ease-in-out, height 0.75s ease-in-out, -webkit-transform 0.65s ease-in-out;
             position: absolute;
             right: 10%; }
             .rainbow-game-container .game-background .featured-game-section .featured-games .featured-game:last-child:hover {
@@ -2789,7 +2797,7 @@ body.page-arcade {
 
 .rainbow-game-container .featured-game:nth-child(2) .author h4 {
   margin: 0;
-  padding-bottom: 7px; }
+  padding-bottom: 4px; }
   @media (min-width: 1024px) {
     .rainbow-game-container .featured-game:nth-child(2) .author h4 {
       padding: 1rem 0; } }
@@ -2817,7 +2825,7 @@ body.page-arcade {
       padding-top: 0.5rem; } }
   .rainbow-game-container .featured-game:first-child .author h4 .author-transform, .rainbow-game-container .featured-game:nth-child(2) .author h4 .author-transform, .rainbow-game-container .featured-game:last-child .author h4 .author-transform {
     margin: 0;
-    padding-bottom: 7px;
+    padding-bottom: 4px;
     font-family: Futura-Bk-Bt;
     font-weight: 400;
     color: #fff;
@@ -2834,6 +2842,15 @@ body.page-arcade {
     .rainbow-game-container .featured-game:first-child .play-button-featured img, .rainbow-game-container .featured-game:nth-child(2) .play-button-featured img, .rainbow-game-container .featured-game:last-child .play-button-featured img {
       width: 30px;
       height: 30px; } }
+
+.search-results .search-game.padding {
+  padding-bottom: 35rem; }
+  @media (min-width: 600px) {
+    .search-results .search-game.padding {
+      padding-bottom: 32rem; } }
+  @media (min-width: 1024px) {
+    .search-results .search-game.padding {
+      padding-bottom: 32rem; } }
 
 .search-results .drop-down {
   margin-left: 0; }

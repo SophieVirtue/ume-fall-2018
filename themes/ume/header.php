@@ -37,7 +37,7 @@
 						<nav id="site-navigation" class="main-navigation" role="navigation">
 							<div class="mobile-hidden-nav">
 								<a class="leader-nav" href="./leaderboard"><h3 class="main-nav">Leaderboard</h3></a>
-								<a href="./prizes"><h3 class="main-nav">Prizes</h3></a>	
+								<a href="./prizes"><h3 class="main-nav prizes-nav">Prizes</h3></a>	
 							</div>
 							<span class="open-slide">
 								<a href="#" class="btn-open"><i class="fas fa-bars"></i></a>
